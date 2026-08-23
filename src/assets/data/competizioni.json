@@ -1,0 +1,204 @@
+{   "competizioni" : [
+        {
+            "id": 1,
+            "nome": "Campionato",
+            "stato": "Attivo",
+            "inizio": "1' giornata di serie A",
+            "fine": "38' gironata di serie A",
+            "avanzamento": 2.6,
+            "img": "/images/campionato.png",
+            "link": "/campionato",
+            "squadre": 24
+        },
+        {
+            "id": 2,
+            "nome": "Serie A - B - C",
+            "stato": "None"
+        },
+        {
+            "id": 3,
+            "nome": "Coppe Europee",
+            "stato": "None",
+            "inizio": "3' giornata di serie A"
+        },
+        {
+            "id": 4,
+            "nome": "Supercoppa Europea",
+            "stato": "In attesa",
+            "inizio": "35' giornata di serie A",
+            "avanzamento": 0,
+            "img": "images/sup_cop_EUR.png",
+            "link": "/supercoppaEur",
+            "squadre": 2
+        },
+        {
+            "id": 5,
+            "nome": "Coppa Italia",
+            "stato": "In attesa",
+            "inizio": "8' giornata di serie A",
+            "fine": "32' giornata di serie A",
+            "avanzamento": 0,
+            "img": "images/coppa_Italia.png",
+            "link": "/coppaIta",
+            "squadre": 24
+        },
+        {
+            "id": 6,
+            "nome": "Supercoppa Italiana",
+            "stato": "In attesa",
+            "inizio": "37' giornata di serie A",
+            "avanzamento": 0,
+            "img": "/images/sup_cop_ITA.png",
+            "link": "/supercoppaIta",
+            "squadre": 2
+        },
+        {
+            "id": 7,
+            "nome": "Survivor Cup",
+            "stato": "In attesa",
+            "inizio": "3' giornata di serie A",
+            "fine": "29' giornata di serie A",
+            "avanzamento": 0,
+            "img": "/images/survivor.png",
+            "link": "/survivor",
+            "squadre": 24
+        },
+        {
+            "id": 8,
+            "nome": "Squid Game Cup",
+            "stato": "None"
+        },
+        {
+            "id": 9,
+            "nome": "Punteggio Più Alto di Giornata",
+            "stato": "Attivo",
+            "inizio":"1' giornata di serie A",
+            "fine":"38' gironata di serie A",
+            "avanzamento": 2.6,
+            "icon":  "🔝",
+            "link": "/punteggio",
+            "squadre": 24
+        },
+        {
+            "id": 10,
+            "nome": "Preliminari Coppe Europee",
+            "stato": "In attesa",
+            "inizio": "3' giornata di serie A",
+            "fine":"7' giornata di serie A",
+            "avanzamento": 0,
+            "icon": "🌍",
+            "link": "/preliminari",
+            "squadre": 24
+        },
+        {
+            "id": 11,
+            "nome": "Champions League",
+            "stato": "In attesa",
+            "inizio": "9' giornata di serie A",
+            "fine": "33' giornata di serie A",
+            "avanzamento": 0,
+            "img": "/images/champions.png",
+            "link": "/championsLeague",
+            "squadre": 8
+        },
+        {
+            "id": 12,
+            "nome": "Europa League",
+            "stato": "In attesa",
+            "inizio": "9' giornata di serie A",
+            "fine": "33' giornata di serie A",
+            "avanzamento": 0,
+            "img": "/images/europaLeague.png",
+            "link": "/europaLeague",
+            "squadre": 8
+        },
+        {
+            "id": 13,
+            "nome": "Conference League",
+            "stato": "In attesa",
+            "inizio": "9' giornata di serie A",
+            "fine": "33' giornata di serie A",
+            "avanzamento": 0,
+            "img": "/images/conference.png",
+            "link": "conferenceLeague",
+            "squadre": 8
+        },
+        {
+            "id": 14,
+            "nome": "Squid Game Cup 1'",
+            "stato": "Attivo",
+            "inizio": "1' giornata di serie A",
+            "fine": "5' giornata di serie A",
+            "avanzamento": 20.0,
+            "img": "/images/squid.png",
+            "link": "/squidGame1",
+            "squadre": 24
+        },
+        {
+            "id": 15,
+            "nome": "Squid Game Cup 2'",
+            "stato": "In attesa",
+            "inizio": "11' giornata di serie A",
+            "fine": "15' giornata di serie A",
+            "avanzamento": 0,
+            "img": "/images/squid.png",
+            "link": "/squidGame2",
+            "squadre": 24
+        },
+        {
+            "id": 16,
+            "nome": "Squid Game Cup 3'",
+            "stato": "In attesa",
+            "inizio": "21' giornata di serie A",
+            "fine": "25' giornata di serie A",
+            "avanzamento": 0,
+            "img": "/images/squid.png",
+            "link": "/squidGame3",
+            "squadre": 24
+        },
+        {
+            "id": 17,
+            "nome": "Squid Game Cup 4'",
+            "stato": "In attesa",
+            "inizio": "31' giornata di serie A",
+            "fine": "35' giornata di serie A",
+            "avanzamento": 0,
+            "img": "/images/squid.png",
+            "link": "/squidGame4",
+            "squadre": 24
+        },
+        {
+            "id": 18,
+            "nome": "Serie A",
+            "stato": "Attivo",
+            "inizio": "1' giornata di serie A",
+            "fine": "35' giornata di serie A",
+            "avanzamento": 2.8,
+            "img": "/images/serieA.png",
+            "link": "/serieA",
+            "squadre": 8
+        },
+        {
+            "id": 19,
+            "nome": "Serie B",
+            "stato": "Attivo",
+            "inizio": "1' giornata di serie A",
+            "fine": "35' giornata di serie A",
+            "avanzamento": 2.8,
+            "img": "/images/serieB.png",
+            "link": "/serieB",
+            "squadre": 8
+        },
+        {
+            "id": 20,
+            "nome": "Serie C",
+            "stato": "Attivo",
+            "inizio": "1' giornata di serie A",
+            "fine": "35' giornata di serie A",
+            "avanzamento": 2.8,
+            "img": "/images/serieC.png",
+            "link": "/serieC",
+            "squadre": 8
+        }
+    ]
+}
