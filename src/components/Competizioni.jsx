@@ -71,7 +71,7 @@ export default function Competizioni() {
 
                         {comp.stato === 'Attivo' || comp.stato === 'Terminata' ? (
                             <Link
-                                to={comp.link || `/competizioni/${comp.id}`}
+                                to={`/competizioni${comp.link}`}
                                 className="w-30 bg-sky-700 text-white px-4 py-1.5 rounded-full hover:bg-sky-800 transition text-center"
                             >
                                 Info

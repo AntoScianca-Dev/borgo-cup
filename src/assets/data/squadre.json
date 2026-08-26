@@ -4,6 +4,9 @@
             "nome": "FC Carmine",
             "allenatore": "micheleazz84",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 18,
+            "punteggio": 75.0,
             "border": "#652D8E",
             "rosa": [
                 {
@@ -240,6 +243,9 @@
             "nome": "FC Santo Stefano",
             "allenatore": "CosdelRed77",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 14,
+            "punteggio": 78.0,
             "border": "#F78A8A",
             "rosa": [
                 {
@@ -476,6 +482,9 @@
             "nome": "Spera Ebbasta",
             "allenatore": "joca17",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 17,
+            "punteggio": 75.0,
             "border": "#5D2A82",
             "rosa": [
                 {
@@ -712,6 +721,9 @@
             "nome": "Banana83",
             "allenatore": "Enrico",
             "valore": 298,
+            "variazione": 0,
+            "posizione": 20,
+            "punteggio": 74.0,
             "border": "#FAD7D7",
             "rosa": [
                 {
@@ -948,6 +960,9 @@
             "nome": "Longobarda united",
             "allenatore": "Oronzo Canà",
             "valore": 298,
+            "variazione": 0,
+            "posizione": 15,
+            "punteggio": 76.0,
             "border": "#EC7074",
             "rosa": [
                 {
@@ -1184,6 +1199,9 @@
             "nome": "San Marino",
             "allenatore": "il Franco",
             "valore": 280,
+            "variazione": 0,
+            "posizione": 16,
+            "punteggio": 75.5,
             "border": "#ACE2F9",
             "rosa":[
                 {
@@ -1420,6 +1438,9 @@
             "nome": "A.C. Marchigiana",
             "allenatore": "Beppe",
             "valore": 299,
+            "variazione": 0,
+            "posizione": 3,
+            "punteggio": 87.5,
             "border": "#E9262E",
             "rosa": [
                 {
@@ -1656,6 +1677,9 @@
             "nome": "TenenteRagno",
             "allenatore": "mancio8188",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 2,
+            "punteggio": 89.0,
             "border": "#990B5A",
             "rosa": [
                 {
@@ -1893,6 +1917,9 @@
             "allenatore": "GianpyAniello",
             "allenatore2": "Frankyno",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 19,
+            "punteggio": 74.5,
             "border": "#773448",
             "rosa": [
                 {
@@ -2129,6 +2156,9 @@
             "nome": "sam PDOR",
             "allenatore": "Davide Smile",
             "valore": 299,
+            "variazione": 0,
+            "posizione": 13,
+            "punteggio": 79.5,
             "border": "#0B22F4",
             "rosa": [
                 {
@@ -2365,6 +2395,9 @@
             "nome": "Squarta Praga",
             "allenatore": "Nico Squeo",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 24,
+            "punteggio": 0.0,
             "border": "#550808",
             "rosa": [
                 {
@@ -2601,6 +2634,9 @@
             "nome": "Amala fc",
             "allenatore": "Claudio",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 22,
+            "punteggio": 72.0,
             "border": "#E9484E",
             "rosa": [
                 {
@@ -2838,6 +2874,9 @@
             "allenatore": "gaetano13",
             "allenatore2": "Giacomo",
             "valore": 299,
+            "variazione": 0,
+            "posizione": 23,
+            "punteggio": 71,
             "border": "#393C3D",
             "rosa": [
                 {
@@ -3075,6 +3114,9 @@
             "allenatore": "Giacomo Sancilio",
             "allenatore2": "Dpm75",
             "valore": 296,
+            "variazione": 0,
+            "posizione": 6,
+            "punteggio": 84.5,
             "border": "#5CADA7",
             "rosa": [
                 {
@@ -3311,6 +3353,9 @@
             "nome": "all in - quae intus",
             "allenatore": "al kahib",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 5,
+            "punteggio": 84.5,
             "border": "#6A3394",
             "rosa": [
                 {
@@ -3548,6 +3593,9 @@
             "allenatore": "Domenico Angione",
             "allenatore2": "Beppe",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 7,
+            "punteggio": 84.0,
             "border": "#FA0F1E",
             "rosa": [
                 {
@@ -3785,6 +3833,9 @@
             "allenatore": "Bombetta",
             "allenatore2": "Vincenzo 87",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 9,
+            "punteggio": 82.5,
             "border": "#F92734",
             "rosa": [
                 {
@@ -4022,6 +4073,9 @@
             "allenatore": "Raffaele",
             "allenatore2": "oronzocana",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 12,
+            "punteggio": 79.5,
             "border": "#683092",
             "rosa": [
                 {
@@ -4258,6 +4312,9 @@
             "nome": "AG13 FC",
             "allenatore": "AntonioGada",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 10,
+            "punteggio": 81.0,
             "border": "#1DA6E0",
             "rosa": [
                 {
@@ -4494,6 +4551,9 @@
             "nome": "REVOLUTION",
             "allenatore": "Corrado Mezzina",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 21,
+            "punteggio": 72.5,
             "border": "#901F1F",
             "rosa": [
                 {
@@ -4730,6 +4790,9 @@
             "nome": "VeroMat29",
             "allenatore": "rinodepalma",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 11,
+            "punteggio": 80.5,
             "border": "#2AF4F3",
             "rosa": [
                 {
@@ -4966,6 +5029,9 @@
             "nome": "DG Team",
             "allenatore": "Danilo",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 1,
+            "punteggio": 91.0,
             "border": "#3C3D3D",
             "rosa": [
                 {
@@ -5202,6 +5268,9 @@
             "nome": "HAPPY MILF FC",
             "allenatore": "Luigi Polar",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 4,
+            "punteggio": 85.5,
             "border": "#CD0A16",
             "rosa": [
                 {
@@ -5439,6 +5508,9 @@
             "allenatore": "LeoMessi",
             "allenatore2": "pasqualedagostino79",
             "valore": 300,
+            "variazione": 0,
+            "posizione": 8,
+            "punteggio": 82.5,
             "border": "#10499E",
             "rosa": [
                 {

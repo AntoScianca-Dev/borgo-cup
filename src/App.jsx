@@ -8,6 +8,7 @@ import Regolamento from './components/Regolamento'
 import './index.css'
 import ScrollToTop from './components/ScrollToTop'
 import Squadre from './components/Squadre'
+import Campionato from './components/Campionato'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/competizioni" element={<Competizioni />} />
             <Route path="/regolamento" element={<Regolamento />} />
             <Route path='/squadre' element={<Squadre/> } />
+            <Route path='/competizioni/campionato' element={<Campionato/> } />
           </Routes>
         </main>
         <Footer

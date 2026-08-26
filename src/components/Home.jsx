@@ -32,7 +32,7 @@ export default function Home() {
                                 title={comp.nome}
                                 img={comp.img}
                                 icon={comp.icon}
-                                link="/competizioni"
+                                link={`/competizioni${comp.link}`}
                             />
                         ))}
                 </div>
