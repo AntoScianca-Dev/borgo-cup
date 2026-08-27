@@ -11,25 +11,30 @@ export default function Classifica() {
         <div className="max-w-4xl mx-auto space-y-6">
         {/* Header Schermata */}
         <div className="text-center space-y-2">
-            <h1 className="text-4xl font-extrabold text-sky-900 tracking-tight flex items-center justify-center gap-3">
+            <h1 className="text-4xl font-bold text-sky-900 tracking-tight flex items-center justify-center gap-3">
                 Classifica Campionato
             </h1>
-            <p className="text-gray-600 text-sm md:text-base">
-                1' giornata
-            </p>
+            <div className="flex items-center justify-evenly px-10">
+                <div className='rounded-full shadow  shadow-sky-950 w-20 p-2 object-center m-0 overflow-hidden'>
+                    <img src="../images/campionato.png" className='object-contain' alt="Logo campionato" />
+                </div>
+                <p className="text-sky-900 font-medium uppercase text-2xl">
+                    1' giornata
+                </p>
+            </div>
         </div>
 
         {/* Scheda Tabella */}
         <div className="rounded-2x overflow-hidden">
             
             {/* Banner testata tabella */}
-            <div className="bg-linear-to-r from-sky-900 via-sky-800 mb-2 to-sky-900 px-6 py-4 text-amber-50 flex justify-between items-center rounded-2xl">
+            <div className="bg-linear-to-r from-sky-950 via-sky-800 mb-2 to-sky-950 px-6 py-4 text-amber-50 flex justify-between items-center rounded-2xl">
                 <span className="font-semibold text-sm tracking-wider uppercase">Squadra</span>
                 <span className="font-semibold text-sm tracking-wider uppercase">Punti</span>
             </div>
 
             {/* Lista Squadre */}
-            <div className="grid gap-2">
+            <div className="grid gap-4 mb-4 p-1">
             {classificaOrdinata.map((squadra, index) => {
                 const posizione = index + 1
                 const isPrimo = posizione === 1
@@ -41,7 +46,7 @@ export default function Classifica() {
                 return (
                 <div
                     key={squadra.id || index}
-                    className={`flex items-center justify-between px-2 py-2 border-x-4 rounded-2xl transition-all duration-200 hover:bg-sky-50/50 group ${
+                    className={`flex items-center justify-between px-2 py-2 border-l-8 border-r-2 rounded-2xl shadow shadow-sky-950 transition-all duration-200 hover:bg-sky-50/50 group ${
                     isPrimo ? 'bg-amber-50/40' : ''
                     }`}
                     style={{borderLeftColor: squadra.border, borderRightColor: squadra.border}}

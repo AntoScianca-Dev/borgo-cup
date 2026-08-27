@@ -9,7 +9,7 @@ export default function Home() {
         <div className="space-y-8 max-w-6xl mx-auto px-4">
             {/* Header */}
             <div className="text-center">
-                <h1 className="text-5xl font-bold text-sky-800 mb-2">
+                <h1 className="text-6xl font-extrabold text-sky-800 mb-2">
                     Borgo Cup
                 </h1>
                 <p className="text-lg text-gray-600">
