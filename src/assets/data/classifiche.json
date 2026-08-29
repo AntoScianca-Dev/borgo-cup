@@ -417,31 +417,7 @@
                     "id_S": 22,
                     "nome": "DG Team",
                     "border": "#3C3D3D",
-                    "punteggio": 0
-                },
-                {
-                    "id": 2,
-                    "titolo": "Giornata 2",
-                    "id_S": 22,
-                    "nome": "DG Team",
-                    "border": "#2AF4F3",
-                    "punteggio": 0
-                },
-                {
-                    "id": 3,
-                    "titolo": "Giornata 3",
-                    "id_S": 22,
-                    "nome": "DG Team",
-                    "border": "#3C3D3D",
-                    "punteggio": 0
-                },
-                {
-                    "id": 4,
-                    "titolo": "Giornata 4",
-                    "id_S": 22,
-                    "nome": "DG Team",
-                    "border": "#3C3D3D",
-                    "punteggio": 0
+                    "punteggio": 91
                 }
             ]
         },
