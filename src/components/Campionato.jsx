@@ -1,23 +1,43 @@
 // import { useState } from 'react'
-import squadreData from '../assets/data/squadre.json'
+import squadreData from '../assets/data/classifiche.json'
 import { ArrowUpIcon, ArrowDownIcon, MinusIcon } from '@heroicons/react/24/solid'
+import headerC from '../assets/image/header_campionato.png'
+import { Link } from 'react-router-dom'
 
 export default function Classifica() {
-    const squadre = squadreData.squadre || squadreData
-    // Ordiniamo le squadre per punteggio decrescente
-    const classificaOrdinata = [...squadre].sort((a, b) => (a.posizione || 0) - (b.posizione || 0))
+    // 1. Estrai la classifica del "Campionato" (id: 1)
+    const campionatoObj = squadreData.classifiche.find(
+        (item) => item.nome === 'Campionato' // oppure item.id === 1
+    )
+
+    // 2. Prendi l'array dei partecipanti (con fallback ad array vuoto)
+    const partecipantiRaw = campionatoObj?.partecipanti || []
+
+    // 3. Ordina i partecipanti per posizione crescente (1°, 2°, 3°, ...)
+    const classificaOrdinata = [...partecipantiRaw].sort((a, b) => a.posizione - b.posizione)
 
     return (
         <div className="max-w-4xl mx-auto space-y-6">
         {/* Header Schermata */}
-        <div className="text-center space-y-2">
-            <h1 className="text-4xl font-bold text-sky-900 tracking-tight flex items-center justify-center gap-3">
-                Classifica Campionato
-            </h1>
+        <div className="text-center space-y-2 text-sky-50">
+            <Link to='/competizioni'>
+                <h1 className="text-4xl tracking-tight flex items-center justify-center gap-3 py-6 rounded-tl-4xl rounded-br-4xl font-medium mb-2"
+                style={{ 
+                    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${headerC})`, 
+                    backgroundSize: 'cover', 
+                    backgroundPosition: 'center' 
+                }}>
+                    <span className='flex justify-center items-center px-4'>
+                        <div className='w-20 h-20 flex items-center justify-center object-center m-0 overflow-hidden'>
+                            <img src="../images/campionato.png" className='object-contain w-15 h-15 m-0 p-1.5' alt="Logo campionato" />
+                        </div>
+                        <span>
+                        Classifica Campionato
+                        </span>
+                    </span>
+                </h1>
+            </Link>
             <div className="flex items-center justify-evenly px-10">
-                <div className='rounded-full shadow  shadow-sky-950 w-20 p-2 object-center m-0 overflow-hidden'>
-                    <img src="../images/campionato.png" className='object-contain' alt="Logo campionato" />
-                </div>
                 <p className="text-sky-900 font-medium uppercase text-2xl">
                     1' giornata
                 </p>

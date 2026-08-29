@@ -1,0 +1,178 @@
+{   "squadre" : [
+        {
+            "id": 1,
+            "nome": "FC Carmine",
+            "allenatore": "micheleazz84",
+            "valore": 300,
+            "border": "#652D8E"
+        },
+        {
+            "id": 2,
+            "nome": "FC Santo Stefano",
+            "allenatore": "CosdelRed77",
+            "valore": 300,
+            "border": "#F78A8A"
+        },
+        {
+            "id": 3,
+            "nome": "Spera Ebbasta",
+            "allenatore": "joca17",
+            "valore": 300,
+            "border": "#5D2A82"
+        },
+        {
+            "id": 4,
+            "nome": "Banana83",
+            "allenatore": "Enrico",
+            "valore": 298,
+            "border": "#FAD7D7"
+        },
+        {
+            "id": 5,
+            "nome": "Longobarda united",
+            "allenatore": "Oronzo Canà",
+            "valore": 298,
+            "border": "#EC7074"
+        },
+        {
+            "id": 6,
+            "nome": "San Marino",
+            "allenatore": "il Franco",
+            "valore": 280,
+            "border": "#ACE2F9"
+        },
+        {
+            "id": 7,
+            "nome": "A.C. Marchigiana",
+            "allenatore": "Beppe",
+            "valore": 299,
+            "border": "#E9262E"
+        },
+        {
+            "id": 8,
+            "nome": "TenenteRagno",
+            "allenatore": "mancio8188",
+            "valore": 300,
+            "border": "#990B5A"
+        },
+        {
+            "id": 9,
+            "nome": "Hertha Vernello VII - La maturazione",
+            "allenatore": "GianpyAniello",
+            "allenatore2": "Frankyno",
+            "valore": 300,
+            "border": "#773448"
+        },
+        {
+            "id": 10,
+            "nome": "sam PDOR",
+            "allenatore": "Davide Smile",
+            "valore": 299,
+            "border": "#0B22F4"
+        },
+        {
+            "id": 11,
+            "nome": "Squarta Praga",
+            "allenatore": "Nico Squeo",
+            "valore": 300,
+            "border": "#550808"
+        },
+        {
+            "id": 12,
+            "nome": "Amala fc",
+            "allenatore": "Claudio",
+            "valore": 300,
+            "border": "#E9484E"
+        },
+        {
+            "id": 13,
+            "nome": "SenzaNome",
+            "allenatore": "gaetano13",
+            "allenatore2": "Giacomo",
+            "valore": 299,
+            "border": "#393C3D"
+        },
+        {
+            "id": 14,
+            "nome": "G.s.11",
+            "allenatore": "Giacomo Sancilio",
+            "allenatore2": "Dpm75",
+            "valore": 296,
+            "border": "#5CADA7"
+        },
+        {
+            "id": 15,
+            "nome": "all in - quae intus",
+            "allenatore": "al kahib",
+            "valore": 300,
+            "border": "#6A3394"
+        },
+        {
+            "id": 16,
+            "nome": "Zanzibar",
+            "allenatore": "Domenico Angione",
+            "allenatore2": "Beppe",
+            "valore": 300,
+            "border": "#FA0F1E"
+        },
+        {
+            "id": 17,
+            "nome": "FC TORETTO",
+            "allenatore": "Bombetta",
+            "allenatore2": "Vincenzo 87",
+            "valore": 300,
+            "border": "#F92734"
+        },
+        {
+            "id": 18,
+            "nome": "Sgherza s  Fc",
+            "allenatore": "Raffaele",
+            "allenatore2": "oronzocana",
+            "valore": 300,
+            "border": "#683092"
+        },
+        {
+            "id": 19,
+            "nome": "AG13 FC",
+            "allenatore": "AntonioGada",
+            "valore": 300,
+            "border": "#1DA6E0"
+        },
+        {
+            "id": 20,
+            "nome": "REVOLUTION",
+            "allenatore": "Corrado Mezzina",
+            "valore": 300,
+            "border": "#901F1F"
+        },
+        {
+            "id": 21,
+            "nome": "VeroMat29",
+            "allenatore": "rinodepalma",
+            "valore": 300,
+            "border": "#2AF4F3"
+        },
+        {
+            "id": 22,
+            "nome": "DG Team",
+            "allenatore": "Danilo",
+            "valore": 300,
+            "border": "#3C3D3D"
+        },
+        {
+            "id": 23,
+            "nome": "HAPPY MILF FC",
+            "allenatore": "Luigi Polar",
+            "valore": 300,
+            "border": "#CD0A16"
+        },
+        {
+            "id": 24,
+            "nome": "MESSI MALE FC",
+            "allenatore": "LeoMessi",
+            "allenatore2": "pasqualedagostino79",
+            "valore": 300,
+            "border": "#10499E"
+        }
+    ]
+}

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import squadreData from '../assets/data/squadre.json'
 import RosaModale from './RosaModale'
 import Top11Modale from './Top11Modale'
-// import { Link } from 'react-router-dom'
+import headerS from '../assets/image/header_squadre.png'
 
 export default function Squadre() {
     const squadre = squadreData.squadre || squadreData
@@ -22,8 +22,16 @@ export default function Squadre() {
     
     return (
         <div className="space-y-8">
-            <h1 className="text-3xl font-bold text-gray-800">Squadre</h1>
-            
+            <div className="text-4xl h-20 tracking-tight flex items-center justify-center gap-3 py-6 rounded-tl-4xl rounded-br-4xl font-extrabold text-sky-50 text-shadow-2xs text-shadow-sky-950 mb-0"
+            style={{ 
+                backgroundImage: `linear-gradient(rgba(7, 89, 133,  0.05), rgba(7, 89, 133, 0.05)), url(${headerS})`, 
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center' 
+            }}>
+                
+            </div>
+            <h1 className='text-4xl font-medium text-center py-0 mt-0 text-sky-800'>Squadre</h1>
+
             <div className="grid md:grid-cols-2 gap-6">
             {squadre.sort((a, b) => a.nome.localeCompare(b.nome))
                 .map((squad) => (

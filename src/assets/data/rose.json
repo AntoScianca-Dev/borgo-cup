@@ -1,0 +1,4370 @@
+{   "rose" : [
+        {
+            "id": 1,
+            "rosa": [
+                {
+                    "p1": [
+                        {
+                            "nome": "Martinez Jo.",
+                            "costo": "17",
+                            "top": "SI"
+                        }
+                    ],
+                    "p2": [
+                        {
+                            "nome": "Provedel",
+                            "costo": "2",
+                            "top": "NO"
+                        }
+                    ],
+                    "p3": [
+                        {
+                            "nome": "Di Gennaro",
+                            "costo": "1",
+                            "top": "NO"
+                        }
+                    ],
+                    "d1": [
+                        {
+                            "nome": "Dimarco",
+                            "costo": "32",
+                            "top": "SI"
+                        }
+                    ],
+                    "d2": [
+                        {
+                            "nome": "Akanji",
+                            "costo": "16",
+                            "top": "SI"
+                        }
+                    ],
+                    "d3": [
+                        {
+                            "nome": "Spinazzola",
+                            "costo": "8",
+                            "top": "SI"
+                        }
+                    ],
+                    "d4": [
+                        {
+                            "nome": "Rodriguez Ju.",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ],
+                    "d5": [
+                        {
+                            "nome": "Kouadio",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ],
+                    "d6": [
+                        {
+                            "nome": "Troilo",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ],
+                    "d7": [
+                        {
+                            "nome": "Joao Mario",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ],
+                    "d8": [
+                        {
+                            "nome": "Pellegrini Lu.",
+                            "costo": "2",
+                            "top": "NO"
+                        }
+                    ],
+                    "c1": [
+                        {
+                            "nome": "Calhanoglu",
+                            "costo": "27",
+                            "top": "SI"
+                        }
+                    ],
+                    "c2": [
+                        {
+                            "nome": "Orsolini",
+                            "costo": "26",
+                            "top": "SI"
+                        }
+                    ],
+                    "c3": [
+                        {
+                            "nome": "Baturina",
+                            "costo": "19",
+                            "top": "SI"
+                        }
+                    ],
+                    "c4": [
+                        {
+                            "nome": "Cristante",
+                            "costo": "8",
+                            "top": "SI"
+                        }
+                    ],
+                    "c5": [
+                        {
+                            "nome": "Frattesi",
+                            "costo": "7",
+                            "top": "NO"
+                        }
+                    ],
+                    "c6": [
+                        {
+                            "nome": "Karlstrom",
+                            "costo": "6",
+                            "top": "NO"
+                        }
+                    ],
+                    "c7": [
+                        {
+                            "nome": "Maleh",
+                            "costo": "2",
+                            "top": "NO"
+                        }
+                    ],
+                    "c8": [
+                        {
+                            "nome": "El Azzouzi A.",
+                            "costo": "1",
+                            "top": "NO"
+                        }
+                    ],
+                    "a1": [
+                        {
+                            "nome": "Martinez L.",
+                            "costo": "35",
+                            "top": "SI"
+                        }
+                    ],
+                    "a2": [
+                        {
+                            "nome": "Malen",
+                            "costo": "34",
+                            "top": "SI"
+                        }
+                    ],
+                    "a3": [
+                        {
+                            "nome": "Kolo Muani",
+                            "costo": "26",
+                            "top": "SI"
+                        }
+                    ],
+                    "a4": [
+                        {
+                            "nome": "Colombo",
+                            "costo": "11",
+                            "top": "NO"
+                        }
+                    ],
+                    "a5": [
+                        {
+                            "nome": "Maldini",
+                            "costo": "5",
+                            "top": "NO"
+                        }
+                    ],
+                    "a6": [
+                        {
+                            "nome": "Varela G.",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "rosa": [
+                {
+                    "p1": [
+                        {
+                            "nome": "Maignan",
+                            "costo": "15",
+                            "top": "SI"
+                        }
+                    ],
+                    "p2": [
+                        {
+                            "nome": "Torriani",
+                            "costo": "1",
+                            "top": "NO"
+                        }
+                    ],
+                    "p3": [
+                        {
+                            "nome": "Terracciano",
+                            "costo": "1",
+                            "top": "NO"
+                        }
+                    ],
+                    "d1": [
+                        {
+                            "nome": "Dimarco",
+                            "costo": "32",
+                            "top": "SI"
+                        }
+                    ],
+                    "d2": [
+                        {
+                            "nome": "Molina N.",
+                            "costo": "18",
+                            "top": "SI"
+                        }
+                    ],
+                    "d3": [
+                        {
+                            "nome": "Pavlovic",
+                            "costo": "14",
+                            "top": "SI"
+                        }
+                    ],
+                    "d4": [
+                        {
+                            "nome": "Kristensen T.",
+                            "costo": "7",
+                            "top": "NO"
+                        }
+                    ],
+                    "d5": [
+                        {
+                            "nome": "Valdepenas",
+                            "costo": "6",
+                            "top": "NO"
+                        }
+                    ],
+                    "d6": [
+                        {
+                            "nome": "Candè",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ],
+                    "d7": [
+                        {
+                            "nome": "Hainaut",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ],
+                    "d8": [
+                        {
+                            "nome": "Missori",
+                            "costo": "1",
+                            "top": "NO"
+                        }
+                    ],
+                    "c1": [
+                        {
+                            "nome": "Paz N.",
+                            "costo": "30",
+                            "top": "SI"
+                        }
+                    ],
+                    "c2": [
+                        {
+                            "nome": "Calhanoglu",
+                            "costo": "27",
+                            "top": "SI"
+                        }
+                    ],
+                    "c3": [
+                        {
+                            "nome": "De Bruyne",
+                            "costo": "15",
+                            "top": "SI"
+                        }
+                    ],
+                    "c4": [
+                        {
+                            "nome": "Gudmundsson A.",
+                            "costo": "13",
+                            "top": "SI"
+                        }
+                    ],
+                    "c5": [
+                        {
+                            "nome": "Frattesi",
+                            "costo": "7",
+                            "top": "NO"
+                        }
+                    ],
+                    "c6": [
+                        {
+                            "nome": "Douglas Luiz",
+                            "costo": "4",
+                            "top": "NO"
+                        }
+                    ],
+                    "c7": [
+                        {
+                            "nome": "Loftus-Cheek",
+                            "costo": "4",
+                            "top": "NO"
+                        }
+                    ],
+                    "c8": [
+                        {
+                            "nome": "Belahyane",
+                            "costo": "1",
+                            "top": "NO"
+                        }
+                    ],
+                    "a1": [
+                        {
+                            "nome": "Malen",
+                            "costo": "34",
+                            "top": "SI"
+                        }
+                    ],
+                    "a2": [
+                        {
+                            "nome": "Hojlund",
+                            "costo": "28",
+                            "top": "SI"
+                        }
+                    ],
+                    "a3": [
+                        {
+                            "nome": "Ramos G.",
+                            "costo": "27",
+                            "top": "SI"
+                        }
+                    ],
+                    "a4": [
+                        {
+                            "nome": "Maldini",
+                            "costo": "5",
+                            "top": "NO"
+                        }
+                    ],
+                    "a5": [
+                        {
+                            "nome": "N'Dri",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ],
+                    "a6": [
+                        {
+                            "nome": "Vaz",
+                            "costo": "1",
+                            "top": "NO"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "rosa": [
+                {
+                    "p1": [
+                        {
+                            "nome": "De Gea",
+                            "costo": "13",
+                            "top": "SI"
+                        }
+                    ],
+                    "p2": [
+                        {
+                            "nome": "Provedel",
+                            "costo": "2",
+                            "top": "NO"
+                        }
+                    ],
+                    "p3": [
+                        {
+                            "nome": "Christensen O.",
+                            "costo": "1",
+                            "top": "NO"
+                        }
+                    ],
+                    "d1": [
+                        {
+                            "nome": "Dimarco",
+                            "costo": "32",
+                            "top": "SI"
+                        }
+                    ],
+                    "d2": [
+                        {
+                            "nome": "Molina N.",
+                            "costo": "18",
+                            "top": "SI"
+                        }
+                    ],
+                    "d3": [
+                        {
+                            "nome": "Bremer",
+                            "costo": "15",
+                            "top": "SI"
+                        }
+                    ],
+                    "d4": [
+                        {
+                            "nome": "Solet",
+                            "costo": "13",
+                            "top": "SI"
+                        }
+                    ],
+                    "d5": [
+                        {
+                            "nome": "Chalobah T.",
+                            "costo": "9",
+                            "top": "NO"
+                        }
+                    ],
+                    "d6": [
+                        {
+                            "nome": "Mangas",
+                            "costo": "6",
+                            "top": "NO"
+                        }
+                    ],
+                    "d7": [
+                        {
+                            "nome": "Marcandalli",
+                            "costo": "6",
+                            "top": "NO"
+                        }
+                    ],
+                    "d8": [
+                        {
+                            "nome": "Cabal",
+                            "costo": "1",
+                            "top": "NO"
+                        }
+                    ],
+                    "c1": [
+                        {
+                            "nome": "Calhanoglu",
+                            "costo": "27",
+                            "top": "SI"
+                        }
+                    ],
+                    "c2": [
+                        {
+                            "nome": "Baturina",
+                            "costo": "19",
+                            "top": "SI"
+                        }
+                    ],
+                    "c3": [
+                        {
+                            "nome": "Alajbegovic",
+                            "costo": "12",
+                            "top": "SI"
+                        }
+                    ],
+                    "c4": [
+                        {
+                            "nome": "Frattesi",
+                            "costo": "7",
+                            "top": "NO"
+                        }
+                    ],
+                    "c5": [
+                        {
+                            "nome": "Berisha M.",
+                            "costo": "5",
+                            "top": "NO"
+                        }
+                    ],
+                    "c6": [
+                        {
+                            "nome": "Busio",
+                            "costo": "5",
+                            "top": "NO"
+                        }
+                    ],
+                    "c7": [
+                        {
+                            "nome": "Fitz-Jim",
+                            "costo": "4",
+                            "top": "NO"
+                        }
+                    ],
+                    "c8": [
+                        {
+                            "nome": "Dominguez B.",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ],
+                    "a1": [
+                        {
+                            "nome": "Thuram",
+                            "costo": "29",
+                            "top": "SI"
+                        }
+                    ],
+                    "a2": [
+                        {
+                            "nome": "Ramos G.",
+                            "costo": "27",
+                            "top": "SI"
+                        }
+                    ],
+                    "a3": [
+                        {
+                            "nome": "Kolo Muani",
+                            "costo": "26",
+                            "top": "SI"
+                        }
+                    ],
+                    "a4": [
+                        {
+                            "nome": "Castro S.",
+                            "costo": "14",
+                            "top": "NO"
+                        }
+                    ],
+                    "a5": [
+                        {
+                            "nome": "Varela G.",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ],
+                    "a6": [
+                        {
+                            "nome": "Elphege",
+                            "costo": "3",
+                            "top": "NO"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "De Gea",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Christensen O.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Lezzerini",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dodò",
+                        "costo": "10",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Chalobah T.",
+                        "costo": "9",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Vojvoda",
+                        "costo": "8",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Heggem",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Marcandalli",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Comuzzo",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Lazzari",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Goldaniga",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Da Cunha",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Atta",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Samardzic",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Baldanzi",
+                        "costo": "11",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Konè M.",
+                        "costo": "10",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Stankovic A.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Duncan",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Yildiz",
+                        "costo": "23",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Colombo",
+                        "costo": "11",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Mota",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 5,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Martinez Jo.",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Provedel",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Di Gennaro",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Wesley",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Di Lorenzo",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Vojvoda",
+                        "costo": "8",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Zappacosta",
+                        "costo": "8",
+                        "top":"NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Zortea",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Gatti",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Biraghi",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Pieragnolo",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "McTominay",
+                        "costo": "28",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Baturina",
+                        "costo": "19",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Vlasic",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Gudmundsson A.",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Samardzic",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Bernardeschi",
+                        "costo": "9",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Frattesi",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Liteta",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Simeone",
+                        "costo": "15",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Maldini",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Lontani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 6,
+            "rosa":[
+                {
+                    "p1": [
+                    {
+                        "nome": "Butez",
+                        "costo": "16",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Tornqvist",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Vigorito",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Rrahmani",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Dragusin",
+                        "costo": "8",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Celik",
+                        "costo": "8",
+                        "top": "NO"
+                    }],
+                    "d5": [
+                    {
+                        "nome": "Mangas",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Comuzzo",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Kelly L.",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Terzic",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Zaniolo",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Alajbegovic",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Mastantuono",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Conceicao",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Rowe",
+                        "costo": "11",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Oulai",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Zhegrova",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Adzic",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Kolo Muani",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Santos A.",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Adams A.",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Boga",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Mota",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 7,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Martinez Jo.",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Provedel",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Di Gennaro",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Wesley",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Rrahmani",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Miranda J.",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Kaiki",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Marcandalli",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Hainaut",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Da Cunha",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Conceicao",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Moreira",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Fazzini",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Adzic",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Kaba",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Belahyane",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Thuram",
+                        "costo": "29",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Kolo Muani",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Dybala",
+                        "costo": "14",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Kvernadze",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Vaz",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 8,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Martinez Jo.",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Provedel",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Di Gennaro",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Wesley",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Bisseck",
+                        "costo": "11",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Ramon",
+                        "costo": "10",
+                        "top": "SI"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Kempf",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Hainaut",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Missori",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "De Bruyne",
+                        "costo": "15",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Vlasic",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Ndour",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Chukwueze",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Stankovic A.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Lipani",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Dagasso",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Kolo Muani",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Kean",
+                        "costo": "25",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Varela G.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Lontani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 9,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Carnesecchi",
+                        "costo": "16",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Vismara",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Sportiello",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Ostigard",
+                        "costo": "11",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Miranda J.",
+                        "costo": "8",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Doekhi",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Valdepenas",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Bernasconi",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Troilo",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Missori",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "McTominay",
+                        "costo": "28",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Orsolini",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Da Cunha",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Vlasic",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Calò",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Zalewski",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Adzic",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Forson O.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "NO"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Kolo Muani",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Kvernadze",
+                        "costo": "4",
+                        "top": "SI"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Varela G.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Vaz",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 10,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Maignan",
+                        "costo": "15",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Torriani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Terracciano",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Bastoni",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Chalobah T.",
+                        "costo": "9",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Jimenez A.",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Bernasconi",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Joao Mario",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Puczka",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "McTominay",
+                        "costo": "28",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Zaniolo",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Alajbegovic",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Fitz-Jim",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Douglas Luiz",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Fadera",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Lipani",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Kolo Muani",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Colombo",
+                        "costo": "11",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Lucca",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Lontani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 11,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Maignan",
+                        "costo": "15",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Torriani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Terracciano",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Bremer",
+                        "costo": "15",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Bastoni",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Di Lorenzo",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Valdepenas",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Valenti",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Kabasele",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Rodriguez Ju.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Paz N.",
+                        "costo": "30",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "McTominay",
+                        "costo": "28",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Gudmundsson A.",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Conceicao",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Douglas Luiz",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Hasa",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Ilic",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Kolo Muani",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Raspadori",
+                        "costo": "13",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Maldini",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Vaz",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Meret",
+                        "costo": "11",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Milinkovic-Savic V.",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Provedel",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Wesley",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Bastoni",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Spence",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Di Lorenzo",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Tiago Gabriel",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Pedersen",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Provstgaard",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Bakoune",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Paz N.",
+                        "costo": "30",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Orsolini",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Barella",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Alajbegovic",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Mastantuono",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Diouf",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Stankovic A.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Forson O.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Douvikas",
+                        "costo": "20",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Raspadori",
+                        "costo": "13",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Maldini",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Buksa",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 13,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Meret",
+                        "costo": "11",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Milinkovic-Savic V.",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Contini",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Wesley",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Kalulu",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Couto",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Kabasele",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Joao Mario",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Marianucci",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "McTominay",
+                        "costo": "28",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Conceicao",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Samardzic",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Rowe",
+                        "costo": "11",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Frattesi",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Adzic",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Forson O.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Kolo Muani",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Neres",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Maldini",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Lontani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 14,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Meret",
+                        "costo": "11",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Milinkovic-Savic V.",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Contini",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Molina N.",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Rrahmani",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Kalulu",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Di Lorenzo",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Bisseck",
+                        "costo": "11",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Lucumì",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Bellanova",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Missori",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Rabiot",
+                        "costo": "22",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Da Cunha",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Atta",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Mastantuono",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Chukwueze",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Kaba",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Zarraga",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Belahyane",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Kolo Muani",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Davis K.",
+                        "costo": "19",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Colombo",
+                        "costo": "11",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Vaz",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 15,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Maignan",
+                        "costo": "15",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Torriani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Terracciano",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Bremer",
+                        "costo": "15",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Gila",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Di Lorenzo",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Cambiaso",
+                        "costo": "9",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Jimenez A.",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Lucumì",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Carlos Augusto",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Pellegrini Lu.",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Zaccagni",
+                        "costo": "16",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Gudmundsson A.",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Alajbegovic",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Mastantuono",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Conceicao",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Sucic P.",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Hasa",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Kolo Muani",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Kean",
+                        "costo": "25",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Castro S.",
+                        "costo": "14",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Neres",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Lucca",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 16,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Meret",
+                        "costo": "11",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Milinkovic-Savic V.",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Contini",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Spence",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Scalvini",
+                        "costo": "10",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Norton-Cuffy",
+                        "costo": "8",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Vojvoda",
+                        "costo": "8",
+                        "top": "NO"
+                    }],
+                    "d5": [
+                    {
+                        "nome": "Heggem",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Oyono A.",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Kouadio",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Palma",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Paz N.",
+                        "costo": "30",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Zaniolo",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "De Bruyne",
+                        "costo": "15",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Gudmundsson A.",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Conceicao",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Moreira",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Calò",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Forson O.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Davis K.",
+                        "costo": "19",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Maldini",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Lontani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 17,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Martinez Jo.",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Provedel",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Di Gennaro",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Rrahmani",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Solet",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Chalobah T.",
+                        "costo": "9",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Rodriguez Ju.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Kouadio",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Marianucci",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "McTominay",
+                        "costo": "28",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Zaniolo",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Mastantuono",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Fitz-Jim",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Colombo L.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Forson O.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Kaba",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Adams A.",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Lontani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Bayo V.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 18,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Meret",
+                        "costo": "11",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Milinkovic-Savic V.",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Paleari",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Molina N.",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Couto",
+                        "costo": "8",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Vojvoda",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Rodriguez Ju.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Oyono J.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Marianucci",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Paz N.",
+                        "costo": "30",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "McTominay",
+                        "costo": "28",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Zaniolo",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Politano",
+                        "costo": "10",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Zielinski",
+                        "costo": "10",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Frattesi",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Loftus-Cheek",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "El Azzouzi A.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Maldini",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Moro L.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Vaz",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 19,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Butez",
+                        "costo": "16",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Tornqvist",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Vigorito",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Molina N.",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Rrahmani",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Chalobah T.",
+                        "costo": "9",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Valdepenas",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Kouadio",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Palma",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Marin R.",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "McTominay",
+                        "costo": "28",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Baturina",
+                        "costo": "19",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Vlasic",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Mastantuono",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Pisilli",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Sorensen O.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Ilic",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Krstovic",
+                        "costo": "18",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Elphege",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Lontani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 20,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Martinez Jo.",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Provedel",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Di Gennaro",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Molina N.",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Spence",
+                        "costo": "12",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Di Lorenzo",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Valenti",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Rodriguez Ju.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Missori",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Orsolini",
+                        "costo": "26",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Vlasic",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Gudmundsson A.",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Keita M.",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Fofana Sa.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Zarraga",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Belahyane",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Kean",
+                        "costo": "25",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Colombo",
+                        "costo": "11",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Lucca",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Vaz",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 21,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Meret",
+                        "costo": "11",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Milinkovic-Savic V.",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Paleari",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Molina N.",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Solet",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Ostigard",
+                        "costo": "11",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Jimenez A.",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Bernasconi",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Pedersen",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Ndaba",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Da Cunha",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Zaniolo",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Atta",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Moreira",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Busio",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Kaba",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Zarraga",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Ramos G.",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Yildiz",
+                        "costo": "23",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Lontani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Bayo V.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 22,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Svilar",
+                        "costo": "18",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "De Marzi",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Gollini",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Bremer",
+                        "costo": "15",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Mancini",
+                        "costo": "15",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Pedersen",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Kouadio",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Joao Mario",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Sagrado",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Missori",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Paz N.",
+                        "costo": "30",
+                        "top": "SI"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Calhanoglu",
+                        "costo": "27",
+                        "top": "SI"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Vlasic",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Gudmundsson A.",
+                        "costo": "13",
+                        "top": "SI"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Calò",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Adzic",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Almqvist",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Forson O.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "SI"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "SI"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Douvikas",
+                        "costo": "20",
+                        "top": "SI"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Bonny",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Kvernadze",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "N'Dri",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": 23,
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Martinez Jo.",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Provedel",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Corvi",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "SI"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Wesley",
+                        "costo": "17",
+                        "top": "SI"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Pavlovic",
+                        "costo": "14",
+                        "top": "SI"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Vojvoda",
+                        "costo": "8",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Carlos Augusto",
+                        "costo": "7",
+                        "top": "NO"
+                    } 
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Valdepenas",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Marin R.",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Missori",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Da Cunha",
+                        "costo": "18",
+                        "top": "NO"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Atta",
+                        "costo": "17",
+                        "top": "NO"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Alajbegovic",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Conceicao",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Samardzic",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Fazzini",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Pierotti",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Maleh",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "NO"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Scamacca",
+                        "costo": "19",
+                        "top": "NO"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Krstovic",
+                        "costo": "18",
+                        "top": "NO"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Esposito F.P.",
+                        "costo": "16",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Santos A.",
+                        "costo": "14",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Neres",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+        },
+        {
+            "id": "24",
+            "rosa": [
+                {
+                    "p1": [
+                    {
+                        "nome": "Meret",
+                        "costo": "11",
+                        "top": "SI"
+                    }
+                    ],
+                    "p2": [
+                    {
+                        "nome": "Milinkovic-Savic V.",
+                        "costo": "5",
+                        "top": "NO"
+                    }
+                    ],
+                    "p3": [
+                    {
+                        "nome": "Contini",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d1": [
+                    {
+                        "nome": "Dimarco",
+                        "costo": "32",
+                        "top": "NO"
+                    }
+                    ],
+                    "d2": [
+                    {
+                        "nome": "Di Lorenzo",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "d3": [
+                    {
+                        "nome": "Chalobah T.",
+                        "costo": "9",
+                        "top": "NO"
+                    }
+                    ],
+                    "d4": [
+                    {
+                        "nome": "Valdepenas",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d5": [
+                    {
+                        "nome": "Bernasconi",
+                        "costo": "6",
+                        "top": "NO"
+                    }
+                    ],
+                    "d6": [
+                    {
+                        "nome": "Carboni A.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "d7": [
+                    {
+                        "nome": "Ziolkowski",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "d8": [
+                    {
+                        "nome": "Cabal",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "c1": [
+                    {
+                        "nome": "Paz N.",
+                        "costo": "30",
+                        "top": "NO"
+                    }
+                    ],
+                    "c2": [
+                    {
+                        "nome": "Pulisic",
+                        "costo": "25",
+                        "top": "NO"
+                    }
+                    ],
+                    "c3": [
+                    {
+                        "nome": "Zaniolo",
+                        "costo": "18",
+                        "top": "NO"
+                    }
+                    ],
+                    "c4": [
+                    {
+                        "nome": "Conceicao",
+                        "costo": "12",
+                        "top": "NO"
+                    }
+                    ],
+                    "c5": [
+                    {
+                        "nome": "Frattesi",
+                        "costo": "7",
+                        "top": "NO"
+                    }
+                    ],
+                    "c6": [
+                    {
+                        "nome": "Diallo O.",
+                        "costo": "3",
+                        "top": "NO"
+                    }
+                    ],
+                    "c7": [
+                    {
+                        "nome": "Venturino",
+                        "costo": "2",
+                        "top": "NO"
+                    }
+                    ],
+                    "c8": [
+                    {
+                        "nome": "Forson O.",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ],
+                    "a1": [
+                    {
+                        "nome": "Martinez L.",
+                        "costo": "35",
+                        "top": "NO"
+                    }
+                    ],
+                    "a2": [
+                    {
+                        "nome": "Malen",
+                        "costo": "34",
+                        "top": "NO"
+                    }
+                    ],
+                    "a3": [
+                    {
+                        "nome": "Kolo Muani",
+                        "costo": "26",
+                        "top": "NO"
+                    }
+                    ],
+                    "a4": [
+                    {
+                        "nome": "Simeone",
+                        "costo": "15",
+                        "top": "NO"
+                    }
+                    ],
+                    "a5": [
+                    {
+                        "nome": "Mendy P.",
+                        "costo": "4",
+                        "top": "NO"
+                    }
+                    ],
+                    "a6": [
+                    {
+                        "nome": "Lontani",
+                        "costo": "1",
+                        "top": "NO"
+                    }
+                    ]
+                }
+                ]
+            }
+        ]
+    }
+        

@@ -1,0 +1,1005 @@
+{   "classifiche" : [
+        {
+            "id": 1,
+            "nome": "Campionato",
+            "partecipanti": [
+                {
+                    "id": 1,
+                    "nome": "FC Carmine",
+                    "variazione": 0,
+                    "posizione": 18,
+                    "punteggio": 75.0,
+                    "border": "#652D8E"
+                },
+                {
+                    "id": 2,
+                    "nome": "FC Santo Stefano",
+                    "variazione": 0,
+                    "posizione": 14,
+                    "punteggio": 78.0,
+                    "border": "#F78A8A"
+                },
+                {
+                    "id": 3,
+                    "nome": "Spera Ebbasta",
+                    "variazione": 0,
+                    "posizione": 17,
+                    "punteggio": 75.0,
+                    "border": "#5D2A82"
+                },
+                {
+                    "id": 4,
+                    "nome": "Banana83",
+                    "variazione": 0,
+                    "posizione": 20,
+                    "punteggio": 74.0,
+                    "border": "#FAD7D7"
+                },
+                {
+                    "id": 5,
+                    "nome": "Longobarda united",
+                    "variazione": 0,
+                    "posizione": 15,
+                    "punteggio": 76.0,
+                    "border": "#EC7074"
+                },
+                {
+                    "id": 6,
+                    "nome": "San Marino",
+                    "variazione": 0,
+                    "posizione": 16,
+                    "punteggio": 75.5,
+                    "border": "#ACE2F9"
+                },
+                {
+                    "id": 7,
+                    "nome": "A.C. Marchigiana",
+                    "variazione": 0,
+                    "posizione": 3,
+                    "punteggio": 87.5,
+                    "border": "#E9262E"
+                },
+                {
+                    "id": 8,
+                    "nome": "TenenteRagno",
+                    "variazione": 0,
+                    "posizione": 2,
+                    "punteggio": 89.0,
+                    "border": "#990B5A"
+                },
+                {
+                    "id": 9,
+                    "nome": "Hertha Vernello VII - La maturazione",
+                    "variazione": 0,
+                    "posizione": 19,
+                    "punteggio": 74.5,
+                    "border": "#773448"
+                },
+                {
+                    "id": 10,
+                    "nome": "sam PDOR",
+                    "variazione": 0,
+                    "posizione": 13,
+                    "punteggio": 79.5,
+                    "border": "#0B22F4"
+                },
+                {
+                    "id": 11,
+                    "nome": "Squarta Praga",
+                    "variazione": 0,
+                    "posizione": 24,
+                    "punteggio": 0.0,
+                    "border": "#550808"
+                },
+                {
+                    "id": 12,
+                    "nome": "Amala fc",
+                    "variazione": 0,
+                    "posizione": 22,
+                    "punteggio": 72.0,
+                    "border": "#E9484E"
+                },
+                {
+                    "id": 13,
+                    "nome": "SenzaNome",
+                    "variazione": 0,
+                    "posizione": 23,
+                    "punteggio": 71,
+                    "border": "#393C3D"
+                },
+                {
+                    "id": 14,
+                    "nome": "G.s.11",
+                    "variazione": 0,
+                    "posizione": 6,
+                    "punteggio": 84.5,
+                    "border": "#5CADA7"
+                },
+                {
+                    "id": 15,
+                    "nome": "all in - quae intus",
+                    "variazione": 0,
+                    "posizione": 5,
+                    "punteggio": 84.5,
+                    "border": "#6A3394"
+                },
+                {
+                    "id": 16,
+                    "nome": "Zanzibar",
+                    "variazione": 0,
+                    "posizione": 7,
+                    "punteggio": 84.0,
+                    "border": "#FA0F1E"
+                },
+                {
+                    "id": 17,
+                    "nome": "FC TORETTO",
+                    "variazione": 0,
+                    "posizione": 9,
+                    "punteggio": 82.5,
+                    "border": "#F92734"
+                },
+                {
+                    "id": 18,
+                    "nome": "Sgherza s  Fc",
+                    "variazione": 0,
+                    "posizione": 12,
+                    "punteggio": 79.5,
+                    "border": "#683092"
+                },
+                {
+                    "id": 19,
+                    "nome": "AG13 FC",
+                    "variazione": 0,
+                    "posizione": 10,
+                    "punteggio": 81.0,
+                    "border": "#1DA6E0"
+                },
+                {
+                    "id": 20,
+                    "nome": "REVOLUTION",
+                    "variazione": 0,
+                    "posizione": 21,
+                    "punteggio": 72.5,
+                    "border": "#901F1F"
+                },
+                {
+                    "id": 21,
+                    "nome": "VeroMat29",
+                    "variazione": 0,
+                    "posizione": 11,
+                    "punteggio": 80.5,
+                    "border": "#2AF4F3"
+                },
+                {
+                    "id": 22,
+                    "nome": "DG Team",
+                    "variazione": 0,
+                    "posizione": 1,
+                    "punteggio": 91.0,
+                    "border": "#3C3D3D"
+                },
+                {
+                    "id": 23,
+                    "nome": "HAPPY MILF FC",
+                    "variazione": 0,
+                    "posizione": 4,
+                    "punteggio": 85.5,
+                    "border": "#CD0A16"
+                },
+                {
+                    "id": 24,
+                    "nome": "MESSI MALE FC",
+                    "variazione": 0,
+                    "posizione": 8,
+                    "punteggio": 82.5,
+                    "border": "#10499E"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "Supercoppa Europea"
+        },
+        {
+            "id": 5,
+            "nome": "Coppa Italia"
+        },
+        {
+            "id": 6,
+            "nome": "Supercoppa Italiana"
+        },
+        {
+            "id": 7,
+            "nome": "Survivor Cup",
+            "partecipanti": [
+                {
+                    "id": 1,
+                    "nome": "FC Carmine",
+                    "variazione": 0,
+                    "posizione": 18,
+                    "punteggio": 75.0,
+                    "border": "#652D8E"
+                },
+                {
+                    "id": 2,
+                    "nome": "FC Santo Stefano",
+                    "variazione": 0,
+                    "posizione": 14,
+                    "punteggio": 78.0,
+                    "border": "#F78A8A"
+                },
+                {
+                    "id": 3,
+                    "nome": "Spera Ebbasta",
+                    "variazione": 0,
+                    "posizione": 17,
+                    "punteggio": 75.0,
+                    "border": "#5D2A82"
+                },
+                {
+                    "id": 4,
+                    "nome": "Banana83",
+                    "variazione": 0,
+                    "posizione": 20,
+                    "punteggio": 74.0,
+                    "border": "#FAD7D7"
+                },
+                {
+                    "id": 5,
+                    "nome": "Longobarda united",
+                    "variazione": 0,
+                    "posizione": 15,
+                    "punteggio": 76.0,
+                    "border": "#EC7074"
+                },
+                {
+                    "id": 6,
+                    "nome": "San Marino",
+                    "variazione": 0,
+                    "posizione": 16,
+                    "punteggio": 75.5,
+                    "border": "#ACE2F9"
+                },
+                {
+                    "id": 7,
+                    "nome": "A.C. Marchigiana",
+                    "variazione": 0,
+                    "posizione": 3,
+                    "punteggio": 87.5,
+                    "border": "#E9262E"
+                },
+                {
+                    "id": 8,
+                    "nome": "TenenteRagno",
+                    "variazione": 0,
+                    "posizione": 2,
+                    "punteggio": 89.0,
+                    "border": "#990B5A"
+                },
+                {
+                    "id": 9,
+                    "nome": "Hertha Vernello VII - La maturazione",
+                    "variazione": 0,
+                    "posizione": 19,
+                    "punteggio": 74.5,
+                    "border": "#773448"
+                },
+                {
+                    "id": 10,
+                    "nome": "sam PDOR",
+                    "variazione": 0,
+                    "posizione": 13,
+                    "punteggio": 79.5,
+                    "border": "#0B22F4"
+                },
+                {
+                    "id": 11,
+                    "nome": "Squarta Praga",
+                    "variazione": 0,
+                    "posizione": 24,
+                    "punteggio": 0.0,
+                    "border": "#550808"
+                },
+                {
+                    "id": 12,
+                    "nome": "Amala fc",
+                    "variazione": 0,
+                    "posizione": 22,
+                    "punteggio": 72.0,
+                    "border": "#E9484E"
+                },
+                {
+                    "id": 13,
+                    "nome": "SenzaNome",
+                    "variazione": 0,
+                    "posizione": 23,
+                    "punteggio": 71,
+                    "border": "#393C3D"
+                },
+                {
+                    "id": 14,
+                    "nome": "G.s.11",
+                    "variazione": 0,
+                    "posizione": 6,
+                    "punteggio": 84.5,
+                    "border": "#5CADA7"
+                },
+                {
+                    "id": 15,
+                    "nome": "all in - quae intus",
+                    "variazione": 0,
+                    "posizione": 5,
+                    "punteggio": 84.5,
+                    "border": "#6A3394"
+                },
+                {
+                    "id": 16,
+                    "nome": "Zanzibar",
+                    "variazione": 0,
+                    "posizione": 7,
+                    "punteggio": 84.0,
+                    "border": "#FA0F1E"
+                },
+                {
+                    "id": 17,
+                    "nome": "FC TORETTO",
+                    "variazione": 0,
+                    "posizione": 9,
+                    "punteggio": 82.5,
+                    "border": "#F92734"
+                },
+                {
+                    "id": 18,
+                    "nome": "Sgherza s  Fc",
+                    "variazione": 0,
+                    "posizione": 12,
+                    "punteggio": 79.5,
+                    "border": "#683092"
+                },
+                {
+                    "id": 19,
+                    "nome": "AG13 FC",
+                    "variazione": 0,
+                    "posizione": 10,
+                    "punteggio": 81.0,
+                    "border": "#1DA6E0"
+                },
+                {
+                    "id": 20,
+                    "nome": "REVOLUTION",
+                    "variazione": 0,
+                    "posizione": 21,
+                    "punteggio": 72.5,
+                    "border": "#901F1F"
+                },
+                {
+                    "id": 21,
+                    "nome": "VeroMat29",
+                    "variazione": 0,
+                    "posizione": 11,
+                    "punteggio": 80.5,
+                    "border": "#2AF4F3"
+                },
+                {
+                    "id": 22,
+                    "nome": "DG Team",
+                    "variazione": 0,
+                    "posizione": 1,
+                    "punteggio": 91.0,
+                    "border": "#3C3D3D"
+                },
+                {
+                    "id": 23,
+                    "nome": "HAPPY MILF FC",
+                    "variazione": 0,
+                    "posizione": 4,
+                    "punteggio": 85.5,
+                    "border": "#CD0A16"
+                },
+                {
+                    "id": 24,
+                    "nome": "MESSI MALE FC",
+                    "variazione": 0,
+                    "posizione": 8,
+                    "punteggio": 82.5,
+                    "border": "#10499E"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "nome": "Punteggio Più Alto di Giornata",
+            "partecipanti": [
+                {
+                    "id": 1,
+                    "titolo": "Giornata 1",
+                    "id_S": 22,
+                    "nome": "DG Team",
+                    "border": "#3C3D3D",
+                    "punteggio": 0
+                },
+                {
+                    "id": 2,
+                    "titolo": "Giornata 2",
+                    "id_S": 22,
+                    "nome": "DG Team",
+                    "border": "#2AF4F3",
+                    "punteggio": 0
+                },
+                {
+                    "id": 3,
+                    "titolo": "Giornata 3",
+                    "id_S": 22,
+                    "nome": "DG Team",
+                    "border": "#3C3D3D",
+                    "punteggio": 0
+                },
+                {
+                    "id": 4,
+                    "titolo": "Giornata 4",
+                    "id_S": 22,
+                    "nome": "DG Team",
+                    "border": "#3C3D3D",
+                    "punteggio": 0
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "nome": "Preliminari Coppe Europee"
+        },
+        {
+            "id": 11,
+            "nome": "Champions League"
+        },
+        {
+            "id": 12,
+            "nome": "Europa League"
+        },
+        {
+            "id": 13,
+            "nome": "Conference League"
+        },
+        {
+            "id": 14,
+            "nome": "Squid Game Cup 1'",
+            "partecipanti": [
+                {
+                    "id": 1,
+                    "nome": "FC Carmine",
+                    "variazione": 0,
+                    "posizione": 18,
+                    "punteggio": 75.0,
+                    "border": "#652D8E"
+                },
+                {
+                    "id": 2,
+                    "nome": "FC Santo Stefano",
+                    "variazione": 0,
+                    "posizione": 14,
+                    "punteggio": 78.0,
+                    "border": "#F78A8A"
+                },
+                {
+                    "id": 3,
+                    "nome": "Spera Ebbasta",
+                    "variazione": 0,
+                    "posizione": 17,
+                    "punteggio": 75.0,
+                    "border": "#5D2A82"
+                },
+                {
+                    "id": 4,
+                    "nome": "Banana83",
+                    "variazione": 0,
+                    "posizione": 20,
+                    "punteggio": 74.0,
+                    "border": "#FAD7D7"
+                },
+                {
+                    "id": 5,
+                    "nome": "Longobarda united",
+                    "variazione": 0,
+                    "posizione": 15,
+                    "punteggio": 76.0,
+                    "border": "#EC7074"
+                },
+                {
+                    "id": 6,
+                    "nome": "San Marino",
+                    "variazione": 0,
+                    "posizione": 16,
+                    "punteggio": 75.5,
+                    "border": "#ACE2F9"
+                },
+                {
+                    "id": 7,
+                    "nome": "A.C. Marchigiana",
+                    "variazione": 0,
+                    "posizione": 3,
+                    "punteggio": 87.5,
+                    "border": "#E9262E"
+                },
+                {
+                    "id": 8,
+                    "nome": "TenenteRagno",
+                    "variazione": 0,
+                    "posizione": 2,
+                    "punteggio": 89.0,
+                    "border": "#990B5A"
+                },
+                {
+                    "id": 9,
+                    "nome": "Hertha Vernello VII - La maturazione",
+                    "variazione": 0,
+                    "posizione": 19,
+                    "punteggio": 74.5,
+                    "border": "#773448"
+                },
+                {
+                    "id": 10,
+                    "nome": "sam PDOR",
+                    "variazione": 0,
+                    "posizione": 13,
+                    "punteggio": 79.5,
+                    "border": "#0B22F4"
+                },
+                {
+                    "id": 11,
+                    "nome": "Squarta Praga",
+                    "variazione": 0,
+                    "posizione": 24,
+                    "punteggio": 0.0,
+                    "border": "#550808"
+                },
+                {
+                    "id": 12,
+                    "nome": "Amala fc",
+                    "variazione": 0,
+                    "posizione": 22,
+                    "punteggio": 72.0,
+                    "border": "#E9484E"
+                },
+                {
+                    "id": 13,
+                    "nome": "SenzaNome",
+                    "variazione": 0,
+                    "posizione": 23,
+                    "punteggio": 71,
+                    "border": "#393C3D"
+                },
+                {
+                    "id": 14,
+                    "nome": "G.s.11",
+                    "variazione": 0,
+                    "posizione": 6,
+                    "punteggio": 84.5,
+                    "border": "#5CADA7"
+                },
+                {
+                    "id": 15,
+                    "nome": "all in - quae intus",
+                    "variazione": 0,
+                    "posizione": 5,
+                    "punteggio": 84.5,
+                    "border": "#6A3394"
+                },
+                {
+                    "id": 16,
+                    "nome": "Zanzibar",
+                    "variazione": 0,
+                    "posizione": 7,
+                    "punteggio": 84.0,
+                    "border": "#FA0F1E"
+                },
+                {
+                    "id": 17,
+                    "nome": "FC TORETTO",
+                    "variazione": 0,
+                    "posizione": 9,
+                    "punteggio": 82.5,
+                    "border": "#F92734"
+                },
+                {
+                    "id": 18,
+                    "nome": "Sgherza s  Fc",
+                    "variazione": 0,
+                    "posizione": 12,
+                    "punteggio": 79.5,
+                    "border": "#683092"
+                },
+                {
+                    "id": 19,
+                    "nome": "AG13 FC",
+                    "variazione": 0,
+                    "posizione": 10,
+                    "punteggio": 81.0,
+                    "border": "#1DA6E0"
+                },
+                {
+                    "id": 20,
+                    "nome": "REVOLUTION",
+                    "variazione": 0,
+                    "posizione": 21,
+                    "punteggio": 72.5,
+                    "border": "#901F1F"
+                },
+                {
+                    "id": 21,
+                    "nome": "VeroMat29",
+                    "variazione": 0,
+                    "posizione": 11,
+                    "punteggio": 80.5,
+                    "border": "#2AF4F3"
+                },
+                {
+                    "id": 22,
+                    "nome": "DG Team",
+                    "variazione": 0,
+                    "posizione": 1,
+                    "punteggio": 91.0,
+                    "border": "#3C3D3D"
+                },
+                {
+                    "id": 23,
+                    "nome": "HAPPY MILF FC",
+                    "variazione": 0,
+                    "posizione": 4,
+                    "punteggio": 85.5,
+                    "border": "#CD0A16"
+                },
+                {
+                    "id": 24,
+                    "nome": "MESSI MALE FC",
+                    "variazione": 0,
+                    "posizione": 8,
+                    "punteggio": 82.5,
+                    "border": "#10499E"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "nome": "Squid Game Cup 2'"
+        },
+        {
+            "id": 16,
+            "nome": "Squid Game Cup 3'"
+        },
+        {
+            "id": 17,
+            "nome": "Squid Game Cup 4'"
+        },
+        {
+            "id": 18,
+            "nome": "Serie A",
+            "partecipanti": [
+                {
+                    "id": 3,
+                    "nome": "Spera Ebbasta",
+                    "posizione": 6,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 2,
+                    "gs": 4,
+                    "border": "#5D2A82"
+                },
+                {
+                    "id": 7,
+                    "nome": "A.C. Marchigiana",
+                    "border": "#E9262E",
+                    "posizione": 1,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 4,
+                    "gs": 2
+                },
+                {
+                    "id": 8,
+                    "nome": "TenenteRagno",
+                    "border": "#990B5A",
+                    "posizione": 8,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 0,
+                    "gs": 2
+                },
+                {
+                    "id": 10,
+                    "nome": "sam PDOR",
+                    "border": "#0B22F4",
+                    "posizione": 5,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 2,
+                    "gs": 4
+                },
+                {
+                    "id": 11,
+                    "nome": "Squarta Praga",
+                    "border": "#550808",
+                    "posizione": 4,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 2,
+                    "gs": 0
+                },
+                {
+                    "id": 13,
+                    "nome": "SenzaNome",
+                    "border": "#393C3D",
+                    "posizione": 7,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 1,
+                    "gs": 3
+                },
+                {
+                    "id": 16,
+                    "nome": "Zanzibar",
+                    "border": "#FA0F1E",
+                    "posizione": 2,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 4,
+                    "gs": 3
+                },
+                {
+                    "id": 18,
+                    "nome": "Sgherza s  Fc",
+                    "border": "#683092",
+                    "posizione": 3,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 3,
+                    "gs": 1
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "nome": "Serie B",
+            "partecipanti": [
+                {
+                    "id": 1,
+                    "nome": "FC Carmine",
+                    "border": "#652D8E",
+                    "posizione": 6,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 2,
+                    "gs": 4
+                },
+                {
+                    "id": 4,
+                    "nome": "Banana83",
+                    "border": "#FAD7D7",
+                    "posizione": 7,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 2,
+                    "gs": 3
+                },
+                {
+                    "id": 9,
+                    "nome": "Hertha Vernello VII - La maturazione",
+                    "border": "#773448",
+                    "posizione": 8,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 0,
+                    "gs": 3
+                },
+                {
+                    "id": 15,
+                    "nome": "all in - quae intus",
+                    "border": "#6A3394",
+                    "posizione": 2,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 4,
+                    "gs": 2
+                },
+                {
+                    "id": 17,
+                    "nome": "FC TORETTO",
+                    "border": "#F92734",
+                    "posizione": 3,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 3,
+                    "gs": 0
+                },
+                {
+                    "id": 19,
+                    "nome": "AG13 FC",
+                    "border": "#1DA6E0",
+                    "posizione": 5,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 3,
+                    "gs": 4
+                },
+                {
+                    "id": 21,
+                    "nome": "VeroMat29",
+                    "border": "#2AF4F3",
+                    "posizione": 4,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 3,
+                    "gs": 2
+                },
+                {
+                    "id": 23,
+                    "nome": "HAPPY MILF FC",
+                    "border": "#CD0A16",
+                    "posizione": 1,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 4,
+                    "gs": 3
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "nome": "Serie C",
+            "partecipanti": [
+                {
+                    "id": 2,
+                    "nome": "FC Santo Stefano",
+                    "border": "#F78A8A",
+                    "posizione": 4,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 2,
+                    "gf": 3,
+                    "gs": 2
+                },
+                {
+                    "id": 5,
+                    "nome": "Longobarda united",
+                    "border": "#EC7074",
+                    "posizione": 8,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 0,
+                    "gs": 5
+                },
+                {
+                    "id": 6,
+                    "nome": "San Marino",
+                    "border": "#ACE2F9",
+                    "posizione": 5,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 2,
+                    "gs": 3
+                },
+                {
+                    "id": 12,
+                    "nome": "Amala fc",
+                    "border": "#E9484E",
+                    "posizione": 7,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 2,
+                    "gs": 4
+                },
+                {
+                    "id": 14,
+                    "nome": "G.s.11",
+                    "border": "#5CADA7",
+                    "posizione": 2,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 4,
+                    "gs": 2
+                },
+                {
+                    "id": 20,
+                    "nome": "REVOLUTION",
+                    "border": "#901F1F",
+                    "posizione": 6,
+                    "giocate": 1,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 1,
+                    "punteggio": 0,
+                    "gf": 2,
+                    "gs": 3
+                },
+                {
+                    "id": 22,
+                    "nome": "DG Team",
+                    "border": "#3C3D3D",
+                    "posizione": 1,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 5,
+                    "gs": 0
+                },
+                {
+                    "id": 24,
+                    "nome": "MESSI MALE FC",
+                    "border": "#10499E",
+                    "posizione": 3,
+                    "giocate": 1,
+                    "vinte": 1,
+                    "pari": 0,
+                    "perso": 0,
+                    "punteggio": 3,
+                    "gf": 3,
+                    "gs": 2
+                }
+            ]
+        }
+    ]
+}
