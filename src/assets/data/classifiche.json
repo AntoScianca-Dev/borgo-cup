@@ -444,194 +444,290 @@
                 {
                     "id": 1,
                     "nome": "FC Carmine",
-                    "variazione": 0,
-                    "posizione": 18,
                     "punteggio": 75.0,
+                    "step1": 75.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI",
                     "border": "#652D8E"
                 },
                 {
                     "id": 2,
                     "nome": "FC Santo Stefano",
-                    "variazione": 0,
-                    "posizione": 14,
                     "punteggio": 78.0,
+                    "step1": 78.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI",
                     "border": "#F78A8A"
                 },
                 {
                     "id": 3,
                     "nome": "Spera Ebbasta",
-                    "variazione": 0,
-                    "posizione": 17,
+                    "border": "#5D2A82",
                     "punteggio": 75.0,
-                    "border": "#5D2A82"
+                    "step1": 75.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 4,
                     "nome": "Banana83",
-                    "variazione": 0,
-                    "posizione": 20,
+                    "border": "#FAD7D7",
                     "punteggio": 74.0,
-                    "border": "#FAD7D7"
+                    "step1": 74.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 5,
                     "nome": "Longobarda united",
-                    "variazione": 0,
-                    "posizione": 15,
-                    "punteggio": 76.0,
-                    "border": "#EC7074"
+                    "border": "#EC7074",
+                    "punteggio": 0.0,
+                    "step1": 0.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "NO"
                 },
                 {
                     "id": 6,
                     "nome": "San Marino",
-                    "variazione": 0,
-                    "posizione": 16,
+                    "border": "#ACE2F9",
                     "punteggio": 75.5,
-                    "border": "#ACE2F9"
+                    "step1": 75.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 7,
                     "nome": "A.C. Marchigiana",
-                    "variazione": 0,
-                    "posizione": 3,
+                    "border": "#E9262E",
                     "punteggio": 87.5,
-                    "border": "#E9262E"
+                    "step1": 87.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 8,
                     "nome": "TenenteRagno",
-                    "variazione": 0,
-                    "posizione": 2,
-                    "punteggio": 89.0,
-                    "border": "#990B5A"
+                    "border": "#990B5A",
+                    "punteggio": 0.0,
+                    "step1": 0.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "NO"
                 },
                 {
                     "id": 9,
                     "nome": "Hertha Vernello VII - La maturazione",
-                    "variazione": 0,
-                    "posizione": 19,
-                    "punteggio": 74.5,
-                    "border": "#773448"
+                    "border": "#773448",
+                    "punteggio": 75.0,
+                    "step1": 75.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 10,
                     "nome": "sam PDOR",
-                    "variazione": 0,
-                    "posizione": 13,
+                    "border": "#0B22F4",
                     "punteggio": 79.5,
-                    "border": "#0B22F4"
+                    "step1": 79.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 11,
                     "nome": "Squarta Praga",
-                    "variazione": 0,
-                    "posizione": 24,
+                    "border": "#550808",
                     "punteggio": 0.0,
-                    "border": "#550808"
+                    "step1": 0.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "NO"
                 },
                 {
                     "id": 12,
                     "nome": "Amala fc",
-                    "variazione": 0,
-                    "posizione": 22,
+                    "border": "#E9484E",
                     "punteggio": 72.0,
-                    "border": "#E9484E"
+                    "step1": 72.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 13,
                     "nome": "SenzaNome",
-                    "variazione": 0,
-                    "posizione": 23,
-                    "punteggio": 71,
-                    "border": "#393C3D"
+                    "border": "#393C3D",
+                    "punteggio": 71.0,
+                    "step1": 71.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 14,
                     "nome": "G.s.11",
-                    "variazione": 0,
-                    "posizione": 6,
+                    "border": "#5CADA7",
                     "punteggio": 84.5,
-                    "border": "#5CADA7"
+                    "step1": 84.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 15,
                     "nome": "all in - quae intus",
-                    "variazione": 0,
-                    "posizione": 5,
+                    "border": "#6A3394",
                     "punteggio": 84.5,
-                    "border": "#6A3394"
+                    "step1": 84.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 16,
                     "nome": "Zanzibar",
-                    "variazione": 0,
-                    "posizione": 7,
+                    "border": "#FA0F1E",
                     "punteggio": 84.0,
-                    "border": "#FA0F1E"
+                    "step1": 84.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 17,
                     "nome": "FC TORETTO",
-                    "variazione": 0,
-                    "posizione": 9,
+                    "border": "#F92734",
                     "punteggio": 82.5,
-                    "border": "#F92734"
+                    "step1": 82.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 18,
                     "nome": "Sgherza s  Fc",
-                    "variazione": 0,
-                    "posizione": 12,
+                    "border": "#683092",
                     "punteggio": 79.5,
-                    "border": "#683092"
+                    "step1": 75.9,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 19,
                     "nome": "AG13 FC",
-                    "variazione": 0,
-                    "posizione": 10,
-                    "punteggio": 81.0,
-                    "border": "#1DA6E0"
+                    "border": "#1DA6E0",
+                    "punteggio": 81.5,
+                    "step1": 81.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 20,
                     "nome": "REVOLUTION",
-                    "variazione": 0,
-                    "posizione": 21,
+                    "border": "#901F1F",
                     "punteggio": 72.5,
-                    "border": "#901F1F"
+                    "step1": 72.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 21,
                     "nome": "VeroMat29",
-                    "variazione": 0,
-                    "posizione": 11,
+                    "border": "#2AF4F3",
                     "punteggio": 80.5,
-                    "border": "#2AF4F3"
+                    "step1": 80.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 22,
                     "nome": "DG Team",
-                    "variazione": 0,
-                    "posizione": 1,
+                    "border": "#3C3D3D",
                     "punteggio": 91.0,
-                    "border": "#3C3D3D"
+                    "step1": 91.0,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 23,
                     "nome": "HAPPY MILF FC",
-                    "variazione": 0,
-                    "posizione": 4,
+                    "border": "#CD0A16",
                     "punteggio": 85.5,
-                    "border": "#CD0A16"
+                    "step1": 85.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 },
                 {
                     "id": 24,
                     "nome": "MESSI MALE FC",
-                    "variazione": 0,
-                    "posizione": 8,
+                    "border": "#10499E",
                     "punteggio": 82.5,
-                    "border": "#10499E"
+                    "step1": 82.5,
+                    "step2": 0,
+                    "step3": 0,
+                    "step4": 0,
+                    "step5": 0,
+                    "attivo": "SI"
                 }
             ]
         },

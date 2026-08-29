@@ -11,6 +11,7 @@ import Squadre from './components/Squadre'
 import Campionato from './components/Campionato'
 import SerieABC from './components/SerieABC'
 import PunteggioTop from './components/PunteggioTop'
+import Squid from './components/Squid'
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
             <Route path='/competizioni/serieB' element={<SerieABC id={19}/> } />
             <Route path='/competizioni/serieC' element={<SerieABC id={20}/> } />
             <Route path='/competizioni/punteggio' element={<PunteggioTop/> } />
+            <Route path='/competizioni/squidGame1' element={<Squid id={14}/> } />
           </Routes>
         </main>
         <Footer
