@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import squadreData from '../assets/data/classifiche.json'
 import headerP from '../assets/image/header_punteggio.png'
 import { Link } from 'react-router-dom'

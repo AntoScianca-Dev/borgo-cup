@@ -28,7 +28,7 @@ export default function Home() {
                         .filter((comp) => comp.stato === "Attivo")
                         .map((comp) => (
                             <Card
-                                key={comp.id} // Prop key obbligatoria
+                                key={comp.id}
                                 title={comp.nome}
                                 img={comp.img}
                                 icon={comp.icon}

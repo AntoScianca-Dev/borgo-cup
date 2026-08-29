@@ -10,7 +10,7 @@ export default function Footer({ giornata = 25 }) {
                 </div>
                 
                 <div className="text-amber-100/80 text-xs">
-                    © {currentYear} Borgo Cup • Tutti i diritti riservati
+                    © {currentYear} Antonia Sciancalepore • Tutti i diritti riservati
                 </div>
             </div>
         </footer>

@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import squadreData from '../assets/data/squadre.json'
+import roseData from '../assets/data/rose.json'
+import calciatoriData from '../assets/data/calciatori.json'
 import RosaModale from './RosaModale'
 import Top11Modale from './Top11Modale'
 import headerS from '../assets/image/header_squadre.png'
@@ -10,8 +12,34 @@ export default function Squadre() {
     const [activeModal, setActiveModal] = useState(null) // 'rosa' | 'top11' | null
     const [selectedSquad, setSelectedSquad] = useState(null)
 
+    // Helper per arricchire i giocatori con dati da calciatori
+    const enrichGiocatore = (giocatore) => {
+        const calciatore = calciatoriData.calciatori.find(
+            c => c.nome === giocatore.nome
+        )
+        return {
+            ...giocatore,
+            quotazione: calciatore?.quotazione || 0,
+            variazione: (calciatore?.quotazione || 0) - (parseInt(giocatore.costo) || 0)
+        }
+    }
+
     const openModal = (squad, type) => {
-        setSelectedSquad(squad)
+        // Trova la rosa per questa squadra
+        const rosa = roseData.rose.find(r => r.id === squad.id)
+        
+        // Arricchisci la rosa con dati da calciatori
+        const squadEnriched = {
+            ...squad,
+            rosa: rosa ? [{
+                ...Object.entries(rosa.rosa[0]).reduce((acc, [key, value]) => {
+                    acc[key] = [enrichGiocatore(value[0])]
+                    return acc
+                }, {})
+            }] : []
+        }
+        
+        setSelectedSquad(squadEnriched)
         setActiveModal(type)
     }
 
@@ -47,7 +75,7 @@ export default function Squadre() {
                         <div className='grid gap-2'>
                             <span className="font-semibold col-span-2 text-sky-600">Allenatore:</span>
                             <span className="mt-0">{squad.allenatore}</span>
-                            <span className="mt-0">{squad.allenatore2}</span>
+                            {squad.allenatore2 && <span className="mt-0">{squad.allenatore2}</span>}
                         </div>
                         <div className='flex gap-3'>
                             <span className="font-semibold text-sky-600">Valore:</span> 

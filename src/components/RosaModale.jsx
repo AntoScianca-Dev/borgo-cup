@@ -75,24 +75,24 @@ export default function RosaModale({ isOpen, onClose, squad }) {
                           <h4 className="w-50">
                             {r.titolo}
                           </h4>
-                          <div className='w-15 text-center'>Costo</div>
-                          <div className='w-10 text-center'>Qt.A</div>
-                          <div className='w-10 text-center'>+/-</div>
+                          <div className='w-12 text-right'>Costo</div>
+                          <div className='w-12 text-right'>Q.A.</div>
+                          <div className='w-10 text-right'>+/-</div>
                         </div>
                         <div className="divide-y divide-gray-100">
                           {lista.map((g, idx) => (
                             <div key={idx} className="flex justify-between gap-1 items-center py-1.5 px-2 text-sm hover:bg-gray-50 rounded">
-                              <span className="font-medium w-30 text-gray-800">{g.nome}</span>
-                              <div className='w-15 text-right'>{g.costo}</div>
-                              <div className='w-8 text-right'>{g.quotazione}</div>
-                              <div className={`w-8 text-right font-bold ${
+                              <span className="font-medium w-40 text-gray-800">{g.nome}</span>
+                              <div className='w-12 text-right'>{g.costo}</div>
+                              <div className='w-12 text-right text-sky-700 font-semibold'>{g.quotazione}</div>
+                              <div className={`w-10 text-right font-bold ${
                                     g.variazione > 0 
                                       ? 'text-green-600' 
                                       : g.variazione < 0 
                                       ? 'text-red-600' 
                                       : 'text-gray-500'
                                   }`}>
-                                    {g.variazione}
+                                    {g.variazione > 0 ? '+' : ''}{g.variazione}
                               </div>
                             </div>
                           ))}
