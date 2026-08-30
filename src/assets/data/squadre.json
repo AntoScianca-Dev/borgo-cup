@@ -4,6 +4,7 @@
             "nome": "FC Carmine",
             "allenatore": "micheleazz84",
             "valore": 300,
+            "crediti": 0,
             "border": "#652D8E"
         },
         {
@@ -11,6 +12,7 @@
             "nome": "FC Santo Stefano",
             "allenatore": "CosdelRed77",
             "valore": 300,
+            "crediti": 0,
             "border": "#F78A8A"
         },
         {
@@ -18,6 +20,7 @@
             "nome": "Spera Ebbasta",
             "allenatore": "joca17",
             "valore": 300,
+            "crediti": 0,
             "border": "#5D2A82"
         },
         {
@@ -25,6 +28,7 @@
             "nome": "Banana83",
             "allenatore": "Enrico",
             "valore": 298,
+            "crediti": 2,
             "border": "#FAD7D7"
         },
         {
@@ -32,6 +36,7 @@
             "nome": "Longobarda united",
             "allenatore": "Oronzo Canà",
             "valore": 298,
+            "crediti": 2,
             "border": "#EC7074"
         },
         {
@@ -39,6 +44,7 @@
             "nome": "San Marino",
             "allenatore": "il Franco",
             "valore": 280,
+            "crediti": 20,
             "border": "#ACE2F9"
         },
         {
@@ -46,6 +52,7 @@
             "nome": "A.C. Marchigiana",
             "allenatore": "Beppe",
             "valore": 299,
+            "crediti": 1,
             "border": "#E9262E"
         },
         {
@@ -53,6 +60,7 @@
             "nome": "TenenteRagno",
             "allenatore": "mancio8188",
             "valore": 300,
+            "crediti": 0,
             "border": "#990B5A"
         },
         {
@@ -61,6 +69,7 @@
             "allenatore": "GianpyAniello",
             "allenatore2": "Frankyno",
             "valore": 300,
+            "crediti": 0,
             "border": "#773448"
         },
         {
@@ -68,6 +77,7 @@
             "nome": "sam PDOR",
             "allenatore": "Davide Smile",
             "valore": 299,
+            "crediti": 1,
             "border": "#0B22F4"
         },
         {
@@ -75,6 +85,7 @@
             "nome": "Squarta Praga",
             "allenatore": "Nico Squeo",
             "valore": 300,
+            "crediti": 0,
             "border": "#550808"
         },
         {
@@ -82,6 +93,7 @@
             "nome": "Amala fc",
             "allenatore": "Claudio",
             "valore": 300,
+            "crediti": 0,
             "border": "#E9484E"
         },
         {
@@ -90,6 +102,7 @@
             "allenatore": "gaetano13",
             "allenatore2": "Giacomo",
             "valore": 299,
+            "crediti": 1,
             "border": "#393C3D"
         },
         {
@@ -98,6 +111,7 @@
             "allenatore": "Giacomo Sancilio",
             "allenatore2": "Dpm75",
             "valore": 296,
+            "crediti": 4,
             "border": "#5CADA7"
         },
         {
@@ -105,6 +119,7 @@
             "nome": "all in - quae intus",
             "allenatore": "al kahib",
             "valore": 300,
+            "crediti": 0,
             "border": "#6A3394"
         },
         {
@@ -113,6 +128,7 @@
             "allenatore": "Domenico Angione",
             "allenatore2": "Beppe",
             "valore": 300,
+            "crediti": 0,
             "border": "#FA0F1E"
         },
         {
@@ -121,6 +137,7 @@
             "allenatore": "Bombetta",
             "allenatore2": "Vincenzo 87",
             "valore": 300,
+            "crediti": 0,
             "border": "#F92734"
         },
         {
@@ -129,13 +146,15 @@
             "allenatore": "Raffaele",
             "allenatore2": "oronzocana",
             "valore": 300,
-            "border": "#683092"
+            "crediti": 0,
+            "border": "#0B0FFF"
         },
         {
             "id": 19,
             "nome": "AG13 FC",
             "allenatore": "AntonioGada",
             "valore": 300,
+            "crediti": 0,
             "border": "#1DA6E0"
         },
         {
@@ -143,6 +162,7 @@
             "nome": "REVOLUTION",
             "allenatore": "Corrado Mezzina",
             "valore": 300,
+            "crediti": 0,
             "border": "#901F1F"
         },
         {
@@ -150,6 +170,7 @@
             "nome": "VeroMat29",
             "allenatore": "rinodepalma",
             "valore": 300,
+            "crediti": 0,
             "border": "#2AF4F3"
         },
         {
@@ -157,6 +178,7 @@
             "nome": "DG Team",
             "allenatore": "Danilo",
             "valore": 300,
+            "crediti": 0,
             "border": "#3C3D3D"
         },
         {
@@ -164,6 +186,7 @@
             "nome": "HAPPY MILF FC",
             "allenatore": "Luigi Polar",
             "valore": 300,
+            "crediti": 0,
             "border": "#CD0A16"
         },
         {
@@ -172,6 +195,7 @@
             "allenatore": "LeoMessi",
             "allenatore2": "pasqualedagostino79",
             "valore": 300,
+            "crediti": 0,
             "border": "#10499E"
         }
     ]

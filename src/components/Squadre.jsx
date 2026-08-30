@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import squadreData from '../assets/data/squadre.json'
 import roseData from '../assets/data/rose.json'
 import calciatoriData from '../assets/data/calciatori.json'
@@ -23,6 +23,37 @@ export default function Squadre() {
             variazione: (calciatore?.quotazione || 0) - (parseInt(giocatore.costo) || 0)
         }
     }
+
+    // Somma tutte le quotazioni da una rosa arricchita
+    const calculateSquadValue = (rosa) => {
+        if (!rosa || !rosa[0]) return 0
+        return Object.entries(rosa[0]).reduce((total, [, value]) => {
+            const giocatore = value[0]
+            return total + (giocatore.quotazione || 0)
+        }, 0)
+    }
+
+    const squadreConValori = useMemo(() => {
+        return squadre.map(squad => {
+            const rosa = roseData.rose.find(r => r.id === squad.id)
+            if (!rosa) return squad
+            
+            const rosaEnriched = [{
+                ...Object.entries(rosa.rosa[0]).reduce((acc, [key, value]) => {
+                    acc[key] = [enrichGiocatore(value[0])]
+                    return acc
+                }, {})
+            }]
+            
+            const valoreSuQuotazione = calculateSquadValue(rosaEnriched)
+            
+            return {
+                ...squad,
+                valoreSuQuotazione,     // ✅ Valore rosa aggiornato
+                differenza: squad.valore - valoreSuQuotazione  // ✅ Differenza
+            }
+        })
+    }, [])
 
     const openModal = (squad, type) => {
         // Trova la rosa per questa squadra
@@ -61,7 +92,7 @@ export default function Squadre() {
             <h1 className='text-4xl font-medium text-center py-0 mt-0 text-sky-800'>Squadre</h1>
 
             <div className="grid md:grid-cols-2 gap-6">
-            {squadre.sort((a, b) => a.nome.localeCompare(b.nome))
+            {squadreConValori.sort((a, b) => a.nome.localeCompare(b.nome))
                 .map((squad) => (
                 <div
                 key={squad.id}
@@ -71,18 +102,20 @@ export default function Squadre() {
 
                     <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">{squad.nome}</h2>
                     
-                    <div className="flex flex-col gap-2 text-gray-700 text-xl">
-                        <div className='grid gap-2'>
+                    <div className="flex flex-col gap-0.5 text-gray-700 text-xl">
+                        <div className='grid gap-0.5'>
                             <span className="font-semibold col-span-2 text-sky-600">Allenatore:</span>
                             <span className="mt-0">{squad.allenatore}</span>
                             {squad.allenatore2 && <span className="mt-0">{squad.allenatore2}</span>}
                         </div>
                         <div className='flex gap-3'>
-                            <span className="font-semibold text-sky-600">Valore:</span> 
-                            <span className="pl-4">{squad.valore} <span className='font-serif'>fc</span></span>
-
+                            <span className="font-semibold w-35 text-sky-600">Valore:</span> 
+                            <span className="pl-4 w-20 text-right">{squad.valoreSuQuotazione} <span className='font-serif'>fc</span></span>
                         </div>
-                    
+                        <div className="flex gap-3">
+                            <span className="font-semibold w-35 text-sky-600">Crediti residui:</span> 
+                            <span className="pl-4 w-20 text-right">{squad.crediti} <span className='font-serif'>fc</span></span>
+                        </div>
                     </div>
 
                     <div className="flex justify-between items-center gap-2 mt-6 font-semibold">
