@@ -3,7 +3,7 @@ import squadreData from '../assets/data/classifiche.json'
 import headerC from '../assets/image/header_campionato.png'
 import { Link } from 'react-router-dom'
 
-export default function SerieABC({ id }) {
+export default function SerieABC({ id, giornata }) {
 
     // 1. Estrai la classifica del "Serie" (id: 1)
     const serieObj = squadreData.classifiche.find(
@@ -40,7 +40,7 @@ export default function SerieABC({ id }) {
             </Link>
             <div className="flex items-center justify-evenly px-10">
                 <p className="text-sky-900 font-medium uppercase text-2xl">
-                    1' giornata
+                    {giornata}' giornata
                 </p>
             </div>
         </div>

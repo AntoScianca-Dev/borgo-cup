@@ -14,6 +14,8 @@ import PunteggioTop from './components/PunteggioTop'
 import Squid from './components/Squid'
 
 export default function App() {
+  const giornataA =  1
+
   return (
     <Router>
       <div className="min-h-screen flex flex-col bg-gray-50">
@@ -25,16 +27,16 @@ export default function App() {
             <Route path="/competizioni" element={<Competizioni />} />
             <Route path="/regolamento" element={<Regolamento />} />
             <Route path='/squadre' element={<Squadre/> } />
-            <Route path='/competizioni/campionato' element={<Campionato/> } />
-            <Route path='/competizioni/serieA' element={<SerieABC id={18}/> } />
-            <Route path='/competizioni/serieB' element={<SerieABC id={19}/> } />
-            <Route path='/competizioni/serieC' element={<SerieABC id={20}/> } />
+            <Route path='/competizioni/campionato' element={<Campionato giornata={giornataA}/> } />
+            <Route path='/competizioni/serieA' element={<SerieABC id={18} giornata={giornataA}/> } />
+            <Route path='/competizioni/serieB' element={<SerieABC id={19} giornata={giornataA}/> } />
+            <Route path='/competizioni/serieC' element={<SerieABC id={20} giornata={giornataA}/> } />
             <Route path='/competizioni/punteggio' element={<PunteggioTop/> } />
             <Route path='/competizioni/squidGame1' element={<Squid id={14}/> } />
           </Routes>
         </main>
         <Footer
-          giornata={1} 
+          giornata={giornataA} 
         />
       </div>
     </Router>

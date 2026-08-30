@@ -57,10 +57,10 @@ export default function Squid({ id }) {
                     </div>
                     <div className='flex justify-evenly'>
                         <div className="font-bold text-sm px-4 text-center">70</div>
-                        <div className="font-light text-sm px-4 text-center">70</div>
-                        <div className="font-light text-sm px-4 text-center">70</div>
-                        <div className="font-light text-sm px-4 text-center">70</div>
-                        <div className="font-light text-sm px-4 text-center">70</div>
+                        <div className="font-light text-sm px-4 text-center">73</div>
+                        <div className="font-light text-sm px-4 text-center">75</div>
+                        <div className="font-light text-sm px-4 text-center">78</div>
+                        <div className="font-light text-sm px-4 text-center">80</div>
                     </div>
                 </div>
 
@@ -104,7 +104,7 @@ export default function Squid({ id }) {
                                 <span
                                     className={`text-xl font-black px-4 py-1.5 rounded-xlbg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900`}
                                 >
-                                    {(squadra.step1 || 0).toFixed(1)}
+                                    {(squadra.punteggio || 0).toFixed(1)}
                                 </span>
                             </div>
                         </div>

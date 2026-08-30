@@ -4,7 +4,7 @@ import { ArrowUpIcon, ArrowDownIcon, MinusIcon } from '@heroicons/react/24/solid
 import headerC from '../assets/image/header_campionato.png'
 import { Link } from 'react-router-dom'
 
-export default function Classifica() {
+export default function Classifica({ giornata }) {
     // 1. Estrai la classifica del "Campionato" (id: 1)
     const campionatoObj = squadreData.classifiche.find(
         (item) => item.nome === 'Campionato' // oppure item.id === 1
@@ -39,7 +39,7 @@ export default function Classifica() {
             </Link>
             <div className="flex items-center justify-evenly px-10">
                 <p className="text-sky-900 font-medium uppercase text-2xl">
-                    1' giornata
+                        {giornata}' giornata
                 </p>
             </div>
         </div>
