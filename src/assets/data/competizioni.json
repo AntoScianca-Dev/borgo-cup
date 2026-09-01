@@ -6,6 +6,8 @@
             "inizio": "1' giornata di serie A",
             "fine": "38' gironata di serie A",
             "avanzamento": 2.6,
+            "totale": 38,
+            "giornata": 2,
             "img": "/images/campionato.png",
             "link": "/campionato",
             "squadre": 24
@@ -27,6 +29,8 @@
             "stato": "In attesa",
             "inizio": "35' giornata di serie A",
             "avanzamento": 0,
+            "totale": 1,
+            "giornata": 0,
             "img": "images/sup_cop_EUR.png",
             "link": "/supercoppaEur",
             "squadre": 2
@@ -38,6 +42,8 @@
             "inizio": "8' giornata di serie A",
             "fine": "32' giornata di serie A",
             "avanzamento": 0,
+            "totale": 9,
+            "giornata": 0,
             "img": "images/coppa_Italia.png",
             "link": "/coppaIta",
             "squadre": 24
@@ -48,6 +54,8 @@
             "stato": "In attesa",
             "inizio": "37' giornata di serie A",
             "avanzamento": 0,
+            "totale": 1,
+            "giornata": 0,
             "img": "/images/sup_cop_ITA.png",
             "link": "/supercoppaIta",
             "squadre": 2
@@ -55,10 +63,12 @@
         {
             "id": 7,
             "nome": "Survivor Cup",
-            "stato": "In attesa",
+            "stato": "Attivo",
             "inizio": "3' giornata di serie A",
             "fine": "29' giornata di serie A",
             "avanzamento": 0,
+            "totale": 14,
+            "giornata": 0,
             "img": "/images/survivor.png",
             "link": "/survivor",
             "squadre": 24
@@ -75,6 +85,8 @@
             "inizio":"1' giornata di serie A",
             "fine":"38' gironata di serie A",
             "avanzamento": 2.6,
+            "totale": 38,
+            "giornata": 2,
             "icon":  "🔝",
             "link": "/punteggio",
             "squadre": 24
@@ -82,10 +94,12 @@
         {
             "id": 10,
             "nome": "Preliminari Coppe Europee",
-            "stato": "In attesa",
+            "stato": "Attivo",
             "inizio": "3' giornata di serie A",
             "fine":"7' giornata di serie A",
             "avanzamento": 0,
+            "totale": 5,
+            "giornata": 0,
             "icon": "🌍",
             "link": "/preliminari",
             "squadre": 24
@@ -97,6 +111,8 @@
             "inizio": "9' giornata di serie A",
             "fine": "33' giornata di serie A",
             "avanzamento": 0,
+            "totale": 9,
+            "giornata": 0,
             "img": "/images/champions.png",
             "link": "/championsLeague",
             "squadre": 8
@@ -108,6 +124,8 @@
             "inizio": "9' giornata di serie A",
             "fine": "33' giornata di serie A",
             "avanzamento": 0,
+            "totale": 11,
+            "giornata": 0,
             "img": "/images/europaLeague.png",
             "link": "/europaLeague",
             "squadre": 8
@@ -119,6 +137,8 @@
             "inizio": "9' giornata di serie A",
             "fine": "33' giornata di serie A",
             "avanzamento": 0,
+            "totale": 9,
+            "giornata": 0,
             "img": "/images/conference.png",
             "link": "conferenceLeague",
             "squadre": 8
@@ -130,6 +150,8 @@
             "inizio": "1' giornata di serie A",
             "fine": "5' giornata di serie A",
             "avanzamento": 20.0,
+            "totale": 5,
+            "giornata": 2,
             "img": "/images/squid.png",
             "link": "/squidGame1",
             "squadre": 24
@@ -141,6 +163,8 @@
             "inizio": "11' giornata di serie A",
             "fine": "15' giornata di serie A",
             "avanzamento": 0,
+            "totale": 5,
+            "giornata": 0,
             "img": "/images/squid.png",
             "link": "/squidGame2",
             "squadre": 24
@@ -152,6 +176,8 @@
             "inizio": "21' giornata di serie A",
             "fine": "25' giornata di serie A",
             "avanzamento": 0,
+            "totale": 5,
+            "giornata": 0,
             "img": "/images/squid.png",
             "link": "/squidGame3",
             "squadre": 24
@@ -163,6 +189,8 @@
             "inizio": "31' giornata di serie A",
             "fine": "35' giornata di serie A",
             "avanzamento": 0,
+            "totale": 5,
+            "giornata": 0,
             "img": "/images/squid.png",
             "link": "/squidGame4",
             "squadre": 24
@@ -174,6 +202,8 @@
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
             "avanzamento": 2.8,
+            "totale": 35,
+            "giornata": 2,
             "img": "/images/serieA.png",
             "link": "/serieA",
             "squadre": 8
@@ -185,6 +215,8 @@
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
             "avanzamento": 2.8,
+            "totale": 35,
+            "giornata": 2,
             "img": "/images/serieB.png",
             "link": "/serieB",
             "squadre": 8
@@ -196,6 +228,8 @@
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
             "avanzamento": 2.8,
+            "totale": 35,
+            "giornata": 2,
             "img": "/images/serieC.png",
             "link": "/serieC",
             "squadre": 8

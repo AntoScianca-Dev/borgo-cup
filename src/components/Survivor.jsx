@@ -1,13 +1,13 @@
 // import { useState } from 'react'
 import squadreData from '../assets/data/classifiche.json'
-import headerS from '../assets/image/header_squid.png'
+import headerS from '../assets/image/header_campionato.png'
 import { Link } from 'react-router-dom'
 
-export default function Squid({ id }) {
+export default function Survivor() {
 
     // 1. Estrai la classifica del "Serie" (id: 1)
     const serieObj = squadreData.classifiche.find(
-        (item) => item.id === id 
+        (item) => item.id === 7
     )
 
     // 2. Prendi l'array dei partecipanti (con fallback ad array vuoto)
@@ -27,9 +27,9 @@ export default function Squid({ id }) {
                         backgroundSize: 'cover', 
                         backgroundPosition: 'center' 
                     }}>
-                        <span className='flex gap-0.5 items-center justify-center flex-col'>
+                        <span className='flex gap-0.5 items-center justify-center '>
                             <div className='w-20 h-20 flex items-center justify-center object-center m-0 overflow-hidden'>
-                                <img src={`../images/squid.png`} className='object-contain w-15 h-15 rounded-full' alt="Logo squid game" />
+                                <img src={`../images/survivor.png`} className='object-contain w-15 h-15 rounded-full' alt="Logo squid game" />
                             </div>
                             <span >
                                 {`${serieObj.nome}`}

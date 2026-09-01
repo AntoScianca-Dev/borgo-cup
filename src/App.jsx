@@ -12,9 +12,11 @@ import Campionato from './components/Campionato'
 import SerieABC from './components/SerieABC'
 import PunteggioTop from './components/PunteggioTop'
 import Squid from './components/Squid'
+import PreliminariCE from './components/PreliminariCE'
+import Survivor from './components/Survivor'
 
 export default function App() {
-  const giornataA =  1
+  const giornataA =  2
 
   return (
     <Router>
@@ -33,6 +35,8 @@ export default function App() {
             <Route path='/competizioni/serieC' element={<SerieABC id={20} giornata={giornataA}/> } />
             <Route path='/competizioni/punteggio' element={<PunteggioTop/> } />
             <Route path='/competizioni/squidGame1' element={<Squid id={14}/> } />
+            <Route path='/competizioni/preliminari' element={<PreliminariCE/> } />
+            <Route path='/competizioni/survivor' element={<Survivor /> } />
           </Routes>
         </main>
         <Footer

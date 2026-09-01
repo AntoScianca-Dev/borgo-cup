@@ -11,6 +11,18 @@ export default function Competizioni() {
     Terminata: 'bg-red-200 text-red-900',
     }
 
+    const calcAvanzamento = (competizioni) => {
+        return ((competizioni.giornata*100)/competizioni.totale).toFixed(1)
+    }
+
+    // Somma tutte le quotazioni da una rosa arricchita
+    // const calculateSquadValue = (rosa) => {
+    //     if (!rosa || !rosa[0]) return 0
+    //     return Object.entries(rosa[0]).reduce((total, [, value]) => {
+    //         const giocatore = value[0]
+    //         return total + (giocatore.quotazione || 0)
+    //     }, 0)
+    // }
     return (
         <div className="space-y-8">
             <h1 className="text-3xl font-bold text-gray-800">Competizioni</h1>
@@ -45,7 +57,7 @@ export default function Competizioni() {
                             <div className="mt-1">
                                 <div className="flex justify-between items-center text-sm font-semibold mb-1">
                                     <span className="text-gray-600">Avanzamento</span>
-                                    <span className="text-sky-800">{comp.avanzamento}%</span>
+                                    <span className="text-sky-800">{calcAvanzamento(comp)}%</span>
                                 </div>
                                 
                                 {/* Traccia di sfondo */}
@@ -53,7 +65,7 @@ export default function Competizioni() {
                                     {/* Barra di riempimento dinamica */}
                                     <div 
                                         className="bg-sky-600 h-2.5 rounded-full transition-all duration-500 ease-out"
-                                        style={{ width: `${Math.min(100, Math.max(0, comp.avanzamento))}%` }}
+                                        style={{ width: `${Math.min(100, Math.max(0, calcAvanzamento(comp)))}%` }}
                                     />
                                 </div>
                             </div>
