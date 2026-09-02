@@ -92,9 +92,11 @@ export default function PreliminariCE() {
                     return (
                     <div
                         key={squadra.id || index}
-                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 rounded-2xl shadow shadow-sky-950 transition-all duration-200 hover:bg-sky-50/50 group ${
-                        isPrimo ? 'bg-amber-50/40' : ''
-                        }`}
+                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 rounded-2xl shadow shadow-sky-950 transition-all duration-200 hover:bg-sky-50/50 group 
+                            ${isPrimo ? 'bg-sky-200/40' : ''}
+                            ${isTerzo ? 'bg-amber-200/40' : ''}
+                            ${isQuinto ? 'bg-lime-200/40' : ''}
+                        `}
                         style={{borderLeftColor: squadra.border, borderRightColor: squadra.border}}
                     >
                         <div className='flex items-center justify-between'>
@@ -183,9 +185,11 @@ export default function PreliminariCE() {
                     return (
                     <div
                         key={squadra.id || index}
-                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 rounded-2xl shadow shadow-sky-950 transition-all duration-200 hover:bg-sky-50/50 group ${
-                        isPrimo ? 'bg-amber-50/40' : ''
-                        }`}
+                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 rounded-2xl shadow shadow-sky-950 transition-all duration-200 hover:bg-sky-50/50 group 
+                            ${isPrimo ? 'bg-sky-200/40' : ''}
+                            ${isTerzo ? 'bg-amber-200/40' : ''}
+                            ${isQuinto ? 'bg-lime-200/40' : ''}
+                        `}
                         style={{borderLeftColor: squadra.border, borderRightColor: squadra.border}}
                     >
                         <div className='flex items-center justify-between'>
@@ -275,9 +279,11 @@ export default function PreliminariCE() {
                     return (
                     <div
                         key={squadra.id || index}
-                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 rounded-2xl shadow shadow-sky-950 transition-all duration-200 hover:bg-sky-50/50 group ${
-                        isPrimo ? 'bg-amber-50/40' : ''
-                        }`}
+                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 rounded-2xl shadow shadow-sky-950 transition-all duration-200 hover:bg-sky-50/50 group 
+                            ${isPrimo ? 'bg-sky-200/40' : ''}
+                            ${isTerzo ? 'bg-amber-200/40' : ''}
+                            ${isQuinto ? 'bg-lime-200/40' : ''}
+                        `}
                         style={{borderLeftColor: squadra.border, borderRightColor: squadra.border}}
                     >
                         <div className='flex items-center justify-between'>
@@ -368,9 +374,11 @@ export default function PreliminariCE() {
                     return (
                     <div
                         key={squadra.id || index}
-                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 rounded-2xl shadow shadow-sky-950 transition-all duration-200 hover:bg-sky-50/50 group ${
-                        isPrimo ? 'bg-amber-50/40' : ''
-                        }`}
+                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 rounded-2xl shadow shadow-sky-950 transition-all duration-200 hover:bg-sky-50/50 group 
+                            ${isPrimo ? 'bg-sky-200/40' : ''}
+                            ${isTerzo ? 'bg-amber-200/40' : ''}
+                            ${isQuinto ? 'bg-lime-200/40' : ''}
+                        `}
                         style={{borderLeftColor: squadra.border, borderRightColor: squadra.border}}
                     >
                         <div className='flex items-center justify-between'>
