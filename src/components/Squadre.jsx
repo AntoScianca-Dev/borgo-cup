@@ -37,7 +37,7 @@ export default function Squadre() {
         return squadre.map(squad => {
             const rosa = roseData.rose.find(r => r.id === squad.id)
             if (!rosa) return squad
-            
+
             const rosaEnriched = [{
                 ...Object.entries(rosa.rosa[0]).reduce((acc, [key, value]) => {
                     acc[key] = [enrichGiocatore(value[0])]
@@ -58,7 +58,6 @@ export default function Squadre() {
     const openModal = (squad, type) => {
         // Trova la rosa per questa squadra
         const rosa = roseData.rose.find(r => r.id === squad.id)
-        
         // Arricchisci la rosa con dati da calciatori
         const squadEnriched = {
             ...squad,

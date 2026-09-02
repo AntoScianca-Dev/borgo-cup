@@ -1,6 +1,5 @@
-// import { useState } from 'react'
 import squadreData from '../assets/data/classifiche.json'
-import headerS from '../assets/image/header_campionato.png'
+import headerS from '../assets/image/header_survivor.png'
 import { Link } from 'react-router-dom'
 
 export default function Survivor() {
@@ -27,9 +26,9 @@ export default function Survivor() {
                         backgroundSize: 'cover', 
                         backgroundPosition: 'center' 
                     }}>
-                        <span className='flex gap-0.5 items-center justify-center '>
+                        <span className='flex gap-0.5 items-center justify-center text-sky-900 text-shadow-2xs text-shadow-sky-50'>
                             <div className='w-20 h-20 flex items-center justify-center object-center m-0 overflow-hidden'>
-                                <img src={`../images/survivor.png`} className='object-contain w-15 h-15 rounded-full' alt="Logo squid game" />
+                                <img src={`../images/survivor.png`} className='object-contain w-15 h-15' alt="Logo survivor game" />
                             </div>
                             <span >
                                 {`${serieObj.nome}`}
@@ -43,30 +42,16 @@ export default function Survivor() {
             <div className="rounded-2x overflow-hidden">
                 
                 {/* Banner testata tabella */}
-                <div className="bg-linear-to-r from-pink-800 via-pink-700 mb-2 to-pink-800 px-6 py-4 text-amber-50 rounded-2xl grid">
+                <div className="bg-linear-to-r from-lime-800 via-lime-700 mb-2 to-lime-800 px-6 py-4 text-amber-50 rounded-2xl grid">
                     <div className='flex justify-between items-center'>
                         <div className="font-semibold text-sm tracking-wider uppercase">Squadra</div>
                         <div className="font-semibold text-sm tracking-wider uppercase">Punti</div>
-                    </div>
-                    <div className='flex justify-evenly'>
-                        <div className="font-bold text-center">STEP 1</div>
-                        <div className="font-bold text-center">STEP 2</div>
-                        <div className="font-light text-center">STEP 3</div>
-                        <div className="font-light text-center">STEP 4</div>
-                        <div className="font-light text-center">STEP 5</div>
-                    </div>
-                    <div className='flex justify-evenly'>
-                        <div className="font-bold text-sm px-4 text-center">70</div>
-                        <div className="font-bold text-sm px-4 text-center">73</div>
-                        <div className="font-light text-sm px-4 text-center">75</div>
-                        <div className="font-light text-sm px-4 text-center">78</div>
-                        <div className="font-light text-sm px-4 text-center">80</div>
                     </div>
                 </div>
 
                 {/* Lista Squadre attive */}
                 <div className="grid gap-4 mb-4 p-1">
-                {partecipantiRaw.filter((pfiltri) => pfiltri.attivo == "SI")
+                {partecipantiRaw.filter((pfiltri) => pfiltri.stato == "attivo")
                     .sort((a, b) => b.punteggio - a.punteggio)
                     .map((squadra, index) => {
                     const posizione = index + 1
@@ -107,15 +92,6 @@ export default function Survivor() {
                                     {(squadra.punteggio || 0).toFixed(1)}
                                 </span>
                             </div>
-                        </div>
-
-                        {/* Punteggio */}
-                        <div className='flex justify-evenly pt-0.5'>
-                            <div className={`font-medium ${squadra.step1>=70 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step1 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step2>=73 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step2 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step3>75 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step3 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step4>78 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step4 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step5>80 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step5 || 0).toFixed(1)}</div>
                         </div>
                     </div>
                     )

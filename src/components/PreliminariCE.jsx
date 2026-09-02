@@ -1,7 +1,6 @@
-// import { useState } from 'react'
 import squadreData from '../assets/data/classifiche.json'
 import competizioniData from '../assets/data/competizioni.json'
-import headerC from '../assets/image/header_campionato.png'
+import headerC from '../assets/image/header_preliminariCE.png'
 import { Link } from 'react-router-dom'
 
 export default function PreliminariCE() {
@@ -26,8 +25,6 @@ export default function PreliminariCE() {
         (item) => item.id === 10
     )
 
-    const icon = competizioniObj.icon
-
     const giornata = competizioniObj.giornata
     // const giornata = 1
     return (
@@ -35,17 +32,21 @@ export default function PreliminariCE() {
             {/* Header Schermata */}
             <div className="text-center space-y-2 text-sky-50">
                 <Link to='/competizioni'>
-                    <h1 className="text-4xl tracking-tight flex items-center justify-center gap-3 py-6 rounded-tl-4xl rounded-br-4xl font-medium mb-2"
+                    <h1 className="text-4xl tracking-tight flex flex-col px-2 items-center justify-center gap-3 py-6 rounded-tl-4xl rounded-br-4xl font-medium mb-2"
                     style={{ 
                         backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${headerC})`, 
                         backgroundSize: 'cover', 
-                        backgroundPosition: 'center' 
+                        backgroundPosition: 'bottom' 
                     }}>
                         <span className='flex gap-4 items-center justify-center'>
-                            <div className='w-20 h-20 flex items-center justify-center object-center m-0 overflow-hidden'>
-                                {icon}
+                            <div className='grid grid-cols-2 items-center justify-center object-center m-0 overflow-hidden gap-1'>
+                                <img src={`../images/champions.png`} className='object-contain col-1 w-10 h-8 rounded-full' alt="Logo squid game" />
+                                <img src={`../images/europaLeague.png`} className='object-contain col-2  w-10 h-10 rounded-full' alt="Logo squid game" />
+                                <div className="bg-amber-50 rounded-full col-span-2 w-8 mx-auto">
+                                    <img src={`../images/conference.png`} className='object-contain  mx-auto w-8 h-8 rounded-full' alt="Logo squid game" />
+                                </div>
                             </div>
-                            <span className=''>
+                            <span className='text-3xl text-sky-50 font-bold'>
                                 Preliminari Coppe Europee
                             </span>
                         </span>
@@ -84,9 +85,9 @@ export default function PreliminariCE() {
                 <div className="grid gap-4 mb-4 p-1">
                 {classificaOrdinataA.map((squadra, index) => {
                     const posizione = index + 1
-                    const isPrimo = posizione === 1
-                    const isSecondo = posizione === 2
-                    const isTerzo = posizione === 3
+                    const isPrimo = posizione === 1 || posizione ===2
+                    const isTerzo = posizione === 3 || posizione === 4
+                    const isQuinto = posizione === 5 || posizione === 6
 
                     return (
                     <div
@@ -102,33 +103,20 @@ export default function PreliminariCE() {
                                 {/* Numero / Medaglia Posizione */}
                                 <div className="w-9 h-9 flex items-center justify-center font-bold text-lg rounded-full shrink-0">
                                     {isPrimo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-400 to-yellow-300 text-amber-950 flex items-center justify-center shadow-md shadow-amber-300/50">
-                                        1
-                                    </span>
-                                    )}
-                                    {isSecondo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-gray-300 to-gray-100 text-gray-800 flex items-center justify-center shadow-md border border-gray-300">
-                                        2
-                                    </span>
+                                        <img src={`../images/champions.png`} className='object-contain col-1 w-10 h-8 rounded-full' alt="Logo squid game" />
                                     )}
                                     {isTerzo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-700 to-amber-600 text-amber-50 flex items-center justify-center shadow-md">
-                                        3
-                                    </span>
+                                        <img src={`../images/europaLeague.png`} className='object-contain col-2  w-10 h-10 rounded-full' alt="Logo squid game" />
                                     )}
-                                    {!isPrimo && !isSecondo && !isTerzo && (
-                                    <span className="text-sky-950 font-medium text-base shadow shadow-sky-950 w-9 h-9 flex items-center justify-center rounded-full">
-                                        {posizione}
-                                    </span>
+                                    {isQuinto && (
+                                        <img src={`../images/conference.png`} className='object-contain  mx-auto w-8 h-8 rounded-full' alt="Logo squid game" />
                                     )}
                                 </div>
 
                                 {/* Dettagli Squadra */}
                                 <div className="flex items-center gap-3">
                                     <span   
-                                    className={`font-bold text-lg transition-colors group-hover:text-sky-700 ${
-                                        isPrimo ? 'text-amber-900 text-xl' : 'text-gray-800'
-                                    }`}
+                                    className={`font-bold text-lg transition-colors group-hover:text-sky-700 text-gray-800`}
                                     >
                                         {squadra.nome}
                                     </span>
@@ -138,11 +126,8 @@ export default function PreliminariCE() {
                             {/* Punteggio */}
                             <div className="flex items-center">
                                 <span
-                                    className={`text-xl font-black px-4 py-1.5 rounded-xl ${
-                                    isPrimo
-                                        ? 'bg-amber-400/20 text-amber-900 border border-amber-300/50'
-                                        : 'bg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900'
-                                    }`}
+                                    className="text-xl font-black px-4 py-1.5 rounded-xl
+                                    bg-sky-100 text-sky-950 group-hover:bg-sky-200 group-hover:text-sky-900"
                                 >
                                     {(squadra.punteggio || 0)}
                                 </span>
@@ -162,8 +147,6 @@ export default function PreliminariCE() {
                     )
                 })}
                 </div>
-
-
             </div>
 
 
@@ -193,9 +176,9 @@ export default function PreliminariCE() {
                 <div className="grid gap-4 mb-4 p-1">
                 {classificaOrdinataB.map((squadra, index) => {
                     const posizione = index + 1
-                    const isPrimo = posizione === 1
-                    const isSecondo = posizione === 2
-                    const isTerzo = posizione === 3
+                    const isPrimo = posizione === 1 || posizione ===2
+                    const isTerzo = posizione === 3 || posizione === 4
+                    const isQuinto = posizione === 5 || posizione === 6
 
                     return (
                     <div
@@ -211,24 +194,13 @@ export default function PreliminariCE() {
                                 {/* Numero / Medaglia Posizione */}
                                 <div className="w-9 h-9 flex items-center justify-center font-bold text-lg rounded-full shrink-0">
                                     {isPrimo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-400 to-yellow-300 text-amber-950 flex items-center justify-center shadow-md shadow-amber-300/50">
-                                        1
-                                    </span>
-                                    )}
-                                    {isSecondo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-gray-300 to-gray-100 text-gray-800 flex items-center justify-center shadow-md border border-gray-300">
-                                        2
-                                    </span>
+                                        <img src={`../images/champions.png`} className='object-contain col-1 w-10 h-8 rounded-full' alt="Logo squid game" />
                                     )}
                                     {isTerzo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-700 to-amber-600 text-amber-50 flex items-center justify-center shadow-md">
-                                        3
-                                    </span>
+                                        <img src={`../images/europaLeague.png`} className='object-contain col-2  w-10 h-10 rounded-full' alt="Logo squid game" />
                                     )}
-                                    {!isPrimo && !isSecondo && !isTerzo && (
-                                    <span className="text-sky-950 font-medium text-base shadow shadow-sky-950 w-9 h-9 flex items-center justify-center rounded-full">
-                                        {posizione}
-                                    </span>
+                                    {isQuinto && (
+                                        <img src={`../images/conference.png`} className='object-contain  mx-auto w-8 h-8 rounded-full' alt="Logo squid game" />
                                     )}
                                 </div>
 
@@ -247,11 +219,8 @@ export default function PreliminariCE() {
                             {/* Punteggio */}
                             <div className="flex items-center">
                                 <span
-                                    className={`text-xl font-black px-4 py-1.5 rounded-xl ${
-                                    isPrimo
-                                        ? 'bg-amber-400/20 text-amber-900 border border-amber-300/50'
-                                        : 'bg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900'
-                                    }`}
+                                    className="text-xl font-black px-4 py-1.5 rounded-xl
+                                    bg-sky-100 text-sky-950 group-hover:bg-sky-200 group-hover:text-sky-900"
                                 >
                                     {(squadra.punteggio || 0)}
                                 </span>
@@ -299,9 +268,9 @@ export default function PreliminariCE() {
                 <div className="grid gap-4 mb-4 p-1">
                 {classificaOrdinataC.map((squadra, index) => {
                     const posizione = index + 1
-                    const isPrimo = posizione === 1
-                    const isSecondo = posizione === 2
-                    const isTerzo = posizione === 3
+                    const isPrimo = posizione === 1 || posizione ===2
+                    const isTerzo = posizione === 3 || posizione === 4
+                    const isQuinto = posizione === 5 || posizione === 6
 
                     return (
                     <div
@@ -317,24 +286,13 @@ export default function PreliminariCE() {
                                 {/* Numero / Medaglia Posizione */}
                                 <div className="w-9 h-9 flex items-center justify-center font-bold text-lg rounded-full shrink-0">
                                     {isPrimo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-400 to-yellow-300 text-amber-950 flex items-center justify-center shadow-md shadow-amber-300/50">
-                                        1
-                                    </span>
-                                    )}
-                                    {isSecondo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-gray-300 to-gray-100 text-gray-800 flex items-center justify-center shadow-md border border-gray-300">
-                                        2
-                                    </span>
+                                        <img src={`../images/champions.png`} className='object-contain col-1 w-10 h-8 rounded-full' alt="Logo squid game" />
                                     )}
                                     {isTerzo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-700 to-amber-600 text-amber-50 flex items-center justify-center shadow-md">
-                                        3
-                                    </span>
+                                        <img src={`../images/europaLeague.png`} className='object-contain col-2  w-10 h-10 rounded-full' alt="Logo squid game" />
                                     )}
-                                    {!isPrimo && !isSecondo && !isTerzo && (
-                                    <span className="text-sky-950 font-medium text-base shadow shadow-sky-950 w-9 h-9 flex items-center justify-center rounded-full">
-                                        {posizione}
-                                    </span>
+                                    {isQuinto && (
+                                        <img src={`../images/conference.png`} className='object-contain  mx-auto w-8 h-8 rounded-full' alt="Logo squid game" />
                                     )}
                                 </div>
 
@@ -353,11 +311,8 @@ export default function PreliminariCE() {
                             {/* Punteggio */}
                             <div className="flex items-center">
                                 <span
-                                    className={`text-xl font-black px-4 py-1.5 rounded-xl ${
-                                    isPrimo
-                                        ? 'bg-amber-400/20 text-amber-900 border border-amber-300/50'
-                                        : 'bg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900'
-                                    }`}
+                                    className="text-xl font-black px-4 py-1.5 rounded-xl
+                                    bg-sky-100 text-sky-950 group-hover:bg-sky-200 group-hover:text-sky-900"
                                 >
                                     {(squadra.punteggio || 0)}
                                 </span>
@@ -406,9 +361,9 @@ export default function PreliminariCE() {
                 <div className="grid gap-4 mb-4 p-1">
                 {classificaOrdinataD.map((squadra, index) => {
                     const posizione = index + 1
-                    const isPrimo = posizione === 1
-                    const isSecondo = posizione === 2
-                    const isTerzo = posizione === 3
+                    const isPrimo = posizione === 1 || posizione ===2
+                    const isTerzo = posizione === 3 || posizione === 4
+                    const isQuinto = posizione === 5 || posizione === 6
 
                     return (
                     <div
@@ -424,24 +379,13 @@ export default function PreliminariCE() {
                                 {/* Numero / Medaglia Posizione */}
                                 <div className="w-9 h-9 flex items-center justify-center font-bold text-lg rounded-full shrink-0">
                                     {isPrimo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-400 to-yellow-300 text-amber-950 flex items-center justify-center shadow-md shadow-amber-300/50">
-                                        1
-                                    </span>
-                                    )}
-                                    {isSecondo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-gray-300 to-gray-100 text-gray-800 flex items-center justify-center shadow-md border border-gray-300">
-                                        2
-                                    </span>
+                                        <img src={`../images/champions.png`} className='object-contain col-1 w-10 h-8 rounded-full' alt="Logo squid game" />
                                     )}
                                     {isTerzo && (
-                                    <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-700 to-amber-600 text-amber-50 flex items-center justify-center shadow-md">
-                                        3
-                                    </span>
+                                        <img src={`../images/europaLeague.png`} className='object-contain col-2  w-10 h-10 rounded-full' alt="Logo squid game" />
                                     )}
-                                    {!isPrimo && !isSecondo && !isTerzo && (
-                                    <span className="text-sky-950 font-medium text-base shadow shadow-sky-950 w-9 h-9 flex items-center justify-center rounded-full">
-                                        {posizione}
-                                    </span>
+                                    {isQuinto && (
+                                        <img src={`../images/conference.png`} className='object-contain  mx-auto w-8 h-8 rounded-full' alt="Logo squid game" />
                                     )}
                                 </div>
 
@@ -460,11 +404,8 @@ export default function PreliminariCE() {
                             {/* Punteggio */}
                             <div className="flex items-center">
                                 <span
-                                    className={`text-xl font-black px-4 py-1.5 rounded-xl ${
-                                    isPrimo
-                                        ? 'bg-amber-400/20 text-amber-900 border border-amber-300/50'
-                                        : 'bg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900'
-                                    }`}
+                                    className="text-xl font-black px-4 py-1.5 rounded-xl
+                                    bg-sky-100 text-sky-950 group-hover:bg-sky-200 group-hover:text-sky-900"
                                 >
                                     {(squadra.punteggio || 0)}
                                 </span>
