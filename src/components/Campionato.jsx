@@ -109,17 +109,17 @@ export default function Classifica({ giornata }) {
 
                         {/* Indicatore Trend (Variazione) */}
                         <div className="w-5 flex justify-center">
-                            {squadra.variazione > 0 && (
+                            {(squadra.variazione-squadra.posizione) > 0 && (
                             <span className="text-emerald-500 flex items-center text-xs font-bold">
                                 <ArrowUpIcon className="w-3.5 h-3.5" />
                             </span>
                             )}
-                            {squadra.variazione < 0 && (
+                            {(squadra.variazione-squadra.posizione) < 0 && (
                             <span className="text-red-500 flex items-center text-xs font-bold">
                                 <ArrowDownIcon className="w-3.5 h-3.5" />
                             </span>
                             )}
-                            {(!squadra.variazione || squadra.variazione === 0) && (
+                            {(!(squadra.variazione-squadra.posizione) || (squadra.variazione-squadra.posizione) === 0) && (
                             <MinusIcon className="w-3.5 h-3.5 text-gray-300" />
                             )}
                         </div>

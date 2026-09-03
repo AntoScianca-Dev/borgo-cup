@@ -212,199 +212,199 @@
         {
             "id": 7,
             "nome": "Survivor Cup",
-            "partecipanti": [
-                {
-                    "id": 1,
-                    "nome": "FC Carmine",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#652D8E"
-                },
-                {
-                    "id": 2,
-                    "nome": "FC Santo Stefano",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#F78A8A"
-                },
-                {
-                    "id": 3,
-                    "nome": "Spera Ebbasta",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#5D2A82"
-                },
-                {
-                    "id": 4,
-                    "nome": "Banana83",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#FAD7D7"
-                },
-                {
-                    "id": 5,
-                    "nome": "Longobarda united",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#EC7074"
-                },
-                {
-                    "id": 6,
-                    "nome": "San Marino",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#ACE2F9"
-                },
-                {
-                    "id": 7,
-                    "nome": "A.C. Marchigiana",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#E9262E"
-                },
-                {
-                    "id": 8,
-                    "nome": "TenenteRagno",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#990B5A"
-                },
-                {
-                    "id": 9,
-                    "nome": "Hertha Vernello VII - La maturazione",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#773448"
-                },
-                {
-                    "id": 10,
-                    "nome": "sam PDOR",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#0B22F4"
-                },
-                {
-                    "id": 11,
-                    "nome": "Squarta Praga",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#550808"
-                },
-                {
-                    "id": 12,
-                    "nome": "Amala fc",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#E9484E"
-                },
-                {
-                    "id": 13,
-                    "nome": "SenzaNome",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,            
-                    "border": "#393C3D"
-                },
-                {
-                    "id": 14,
-                    "nome": "G.s.11",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#5CADA7"
-                },
-                {
-                    "id": 15,
-                    "nome": "all in - quae intus",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#6A3394"
-                },
-                {
-                    "id": 16,
-                    "nome": "Zanzibar",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#FA0F1E"
-                },
-                {
-                    "id": 17,
-                    "nome": "FC TORETTO",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#F92734"
-                },
-                {
-                    "id": 18,
-                    "nome": "Sgherza s  Fc",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#683092"
-                },
-                {
-                    "id": 19,
-                    "nome": "AG13 FC",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#1DA6E0"
-                },
-                {
-                    "id": 20,
-                    "nome": "REVOLUTION",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#901F1F"
-                },
-                {
-                    "id": 21,
-                    "nome": "VeroMat29",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#2AF4F3"
-                },
-                {
-                    "id": 22,
-                    "nome": "DG Team",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#3C3D3D"
-                },
-                {
-                    "id": 23,
-                    "nome": "HAPPY MILF FC",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#CD0A16"
-                },
-                {
-                    "id": 24,
-                    "nome": "MESSI MALE FC",
-                    "stato": "attivo",
-                    "totale": 0.0,
-                    "punteggio": 0.0,
-                    "border": "#10499E"
-                }
+            "partecipanti":[
+                    {
+                        "id": 1,
+                        "nome": "FC Carmine",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#652D8E"
+                    },
+                    {
+                        "id": 2,
+                        "nome": "FC Santo Stefano",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#F78A8A"
+                    },
+                    {
+                        "id": 3,
+                        "nome": "Spera Ebbasta",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#5D2A82"
+                    },
+                    {
+                        "id": 4,
+                        "nome": "Banana83",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#FAD7D7"
+                    },
+                    {
+                        "id": 5,
+                        "nome": "Longobarda united",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#EC7074"
+                    },
+                    {
+                        "id": 6,
+                        "nome": "San Marino",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#ACE2F9"
+                    },
+                    {
+                        "id": 7,
+                        "nome": "A.C. Marchigiana",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#E9262E"
+                    },
+                    {
+                        "id": 8,
+                        "nome": "TenenteRagno",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#990B5A"
+                    },
+                    {
+                        "id": 9,
+                        "nome": "Hertha Vernello VII - La maturazione",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#773448"
+                    },
+                    {
+                        "id": 10,
+                        "nome": "sam PDOR",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#0B22F4"
+                    },
+                    {
+                        "id": 11,
+                        "nome": "Squarta Praga",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#550808"
+                    },
+                    {
+                        "id": 12,
+                        "nome": "Amala fc",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#E9484E"
+                    },
+                    {
+                        "id": 13,
+                        "nome": "SenzaNome",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,            
+                        "border": "#393C3D"
+                    },
+                    {
+                        "id": 14,
+                        "nome": "G.s.11",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#5CADA7"
+                    },
+                    {
+                        "id": 15,
+                        "nome": "all in - quae intus",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#6A3394"
+                    },
+                    {
+                        "id": 16,
+                        "nome": "Zanzibar",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#FA0F1E"
+                    },
+                    {
+                        "id": 17,
+                        "nome": "FC TORETTO",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#F92734"
+                    },
+                    {
+                        "id": 18,
+                        "nome": "Sgherza s  Fc",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#683092"
+                    },
+                    {
+                        "id": 19,
+                        "nome": "AG13 FC",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#1DA6E0"
+                    },
+                    {
+                        "id": 20,
+                        "nome": "REVOLUTION",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#901F1F"
+                    },
+                    {
+                        "id": 21,
+                        "nome": "VeroMat29",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#2AF4F3"
+                    },
+                    {
+                        "id": 22,
+                        "nome": "DG Team",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#3C3D3D"
+                    },
+                    {
+                        "id": 23,
+                        "nome": "HAPPY MILF FC",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#CD0A16"
+                    },
+                    {
+                        "id": 24,
+                        "nome": "MESSI MALE FC",
+                        "stato": "attivo",
+                        "totale": 0.0,
+                        "punteggio": 0.0,
+                        "border": "#10499E"
+                    }
             ]
         },
         {

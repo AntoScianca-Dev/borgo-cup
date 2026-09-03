@@ -128,8 +128,11 @@ export default function PreliminariCE() {
                             {/* Punteggio */}
                             <div className="flex items-center">
                                 <span
-                                    className="text-xl font-black px-4 py-1.5 rounded-xl
-                                    bg-sky-100 text-sky-950 group-hover:bg-sky-200 group-hover:text-sky-900"
+                                    className={`text-xl font-black px-4 py-1.5 rounded-xl text-sky-950 
+                                        ${isPrimo ? 'bg-sky-200 text-sky-950' : ''}
+                                        ${isTerzo ? 'bg-amber-200 text-amber-950' : ''}
+                                        ${isQuinto ? 'bg-lime-200 text-lime-950' : ''}
+                                    `}
                                 >
                                     {(squadra.punteggio || 0)}
                                 </span>
@@ -223,8 +226,11 @@ export default function PreliminariCE() {
                             {/* Punteggio */}
                             <div className="flex items-center">
                                 <span
-                                    className="text-xl font-black px-4 py-1.5 rounded-xl
-                                    bg-sky-100 text-sky-950 group-hover:bg-sky-200 group-hover:text-sky-900"
+                                    className={`text-xl font-black px-4 py-1.5 rounded-xl text-sky-950 
+                                        ${isPrimo ? 'bg-sky-200 text-sky-950' : ''}
+                                        ${isTerzo ? 'bg-amber-200 text-amber-950' : ''}
+                                        ${isQuinto ? 'bg-lime-200 text-lime-950' : ''}
+                                    `}
                                 >
                                     {(squadra.punteggio || 0)}
                                 </span>
@@ -317,8 +323,11 @@ export default function PreliminariCE() {
                             {/* Punteggio */}
                             <div className="flex items-center">
                                 <span
-                                    className="text-xl font-black px-4 py-1.5 rounded-xl
-                                    bg-sky-100 text-sky-950 group-hover:bg-sky-200 group-hover:text-sky-900"
+                                    className={`text-xl font-black px-4 py-1.5 rounded-xl text-sky-950 
+                                        ${isPrimo ? 'bg-sky-200 text-sky-950' : ''}
+                                        ${isTerzo ? 'bg-amber-200 text-amber-950' : ''}
+                                        ${isQuinto ? 'bg-lime-200 text-lime-950' : ''}
+                                    `}
                                 >
                                     {(squadra.punteggio || 0)}
                                 </span>
@@ -412,8 +421,11 @@ export default function PreliminariCE() {
                             {/* Punteggio */}
                             <div className="flex items-center">
                                 <span
-                                    className="text-xl font-black px-4 py-1.5 rounded-xl
-                                    bg-sky-100 text-sky-950 group-hover:bg-sky-200 group-hover:text-sky-900"
+                                    className={`text-xl font-black px-4 py-1.5 rounded-xl text-sky-950 
+                                        ${isPrimo ? 'bg-sky-200 text-sky-950' : ''}
+                                        ${isTerzo ? 'bg-amber-200 text-amber-950' : ''}
+                                        ${isQuinto ? 'bg-lime-200 text-lime-950' : ''}
+                                    `}
                                 >
                                     {(squadra.punteggio || 0)}
                                 </span>
