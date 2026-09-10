@@ -98,8 +98,14 @@ export default function Squadre() {
                 className="bg-sky-50 rounded-lg shadow shadow-sky-600 p-6 border-l-8 w-80 mx-auto"
                 style={{borderLeftColor: squad.border}}
                 >
-
-                    <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">{squad.nome}</h2>
+                    <div className="flex items-center justify-between">
+                        <div className="w-15 h-15 rounded-r-full flex items-center justify-center object-left m-0 overflow-hidden"
+                        style={{backgroundColor: squad.border}}
+                        >
+                            <img src={`../images/logos/${squad.id}.png`} alt={`Logo ${squad.nome}`}  className='object-rigth w-40'/>
+                        </div>
+                        <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">{squad.nome}</h2>
+                    </div>
                     
                     <div className="flex flex-col gap-0.5 text-gray-700 text-xl">
                         <div className='grid gap-0.5'>

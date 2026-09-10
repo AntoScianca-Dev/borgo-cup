@@ -106,7 +106,7 @@ export default function Survivor() {
                 
                 {/* Lista Squadre eliminate */}
                 <div className="grid gap-4 mb-4 p-1">
-                {partecipantiRaw.filter((pfiltri) => pfiltri.attivo == "NO")
+                {partecipantiRaw.filter((pfiltri) => pfiltri.stato == "eliminato")
                     .sort((a, b) => b.punteggio - a.punteggio)
                     .map((squadra, index) => {
 
@@ -143,18 +143,9 @@ export default function Survivor() {
                                 <span
                                     className={`text-xl font-black px-4 py-1.5 rounded-xlbg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900`}
                                 >
-                                    {(squadra.step1 || 0).toFixed(1)}
+                                    {(squadra.punteggio || 0).toFixed(1)}
                                 </span>
                             </div>
-                        </div>
-
-                        {/* Punteggio */}
-                        <div className='flex justify-evenly pt-0.5'>
-                            <div className={`font-medium ${squadra.step1>70 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step1 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step2>73 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step2 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step3>75 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step3 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step4>78 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step4 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step5>80 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step5 || 0).toFixed(1)}</div>
                         </div>
                     </div>
                     )

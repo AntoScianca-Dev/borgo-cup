@@ -7,7 +7,7 @@
             "fine": "38' gironata di serie A",
             "avanzamento": 2.6,
             "totale": 38,
-            "giornata": 2,
+            "giornata": 3,
             "img": "/images/campionato.png",
             "link": "/campionato",
             "squadre": 24
@@ -68,7 +68,7 @@
             "fine": "29' giornata di serie A",
             "avanzamento": 0,
             "totale": 14,
-            "giornata": 0,
+            "giornata": 1,
             "img": "/images/survivor.png",
             "link": "/survivor",
             "squadre": 24
@@ -86,7 +86,7 @@
             "fine":"38' gironata di serie A",
             "avanzamento": 2.6,
             "totale": 38,
-            "giornata": 2,
+            "giornata": 3,
             "icon":  "🔝",
             "link": "/punteggio",
             "squadre": 24
@@ -99,7 +99,7 @@
             "fine":"7' giornata di serie A",
             "avanzamento": 0,
             "totale": 5,
-            "giornata": 0,
+            "giornata": 1,
             "icon": "🌍",
             "link": "/preliminari",
             "squadre": 24
@@ -151,7 +151,7 @@
             "fine": "5' giornata di serie A",
             "avanzamento": 20.0,
             "totale": 5,
-            "giornata": 2,
+            "giornata": 3,
             "img": "/images/squid.png",
             "link": "/squidGame1",
             "squadre": 24
@@ -203,7 +203,7 @@
             "fine": "35' giornata di serie A",
             "avanzamento": 2.8,
             "totale": 35,
-            "giornata": 2,
+            "giornata": 3,
             "img": "/images/serieA.png",
             "link": "/serieA",
             "squadre": 8
@@ -216,7 +216,7 @@
             "fine": "35' giornata di serie A",
             "avanzamento": 2.8,
             "totale": 35,
-            "giornata": 2,
+            "giornata": 3,
             "img": "/images/serieB.png",
             "link": "/serieB",
             "squadre": 8
@@ -229,7 +229,7 @@
             "fine": "35' giornata di serie A",
             "avanzamento": 2.8,
             "totale": 35,
-            "giornata": 2,
+            "giornata": 3,
             "img": "/images/serieC.png",
             "link": "/serieC",
             "squadre": 8

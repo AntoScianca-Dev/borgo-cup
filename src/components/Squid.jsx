@@ -51,14 +51,14 @@ export default function Squid({ id }) {
                     <div className='flex justify-evenly'>
                         <div className="font-bold text-center">STEP 1</div>
                         <div className="font-bold text-center">STEP 2</div>
-                        <div className="font-light text-center">STEP 3</div>
+                        <div className="font-bold text-center">STEP 3</div>
                         <div className="font-light text-center">STEP 4</div>
                         <div className="font-light text-center">STEP 5</div>
                     </div>
                     <div className='flex justify-evenly'>
                         <div className="font-bold text-sm px-4 text-center">70</div>
                         <div className="font-bold text-sm px-4 text-center">73</div>
-                        <div className="font-light text-sm px-4 text-center">75</div>
+                        <div className="font-bold text-sm px-4 text-center">75</div>
                         <div className="font-light text-sm px-4 text-center">78</div>
                         <div className="font-light text-sm px-4 text-center">80</div>
                     </div>
@@ -113,9 +113,9 @@ export default function Squid({ id }) {
                         <div className='flex justify-evenly pt-0.5'>
                             <div className={`font-medium ${squadra.step1>=70 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step1 || 0).toFixed(1)}</div>
                             <div className={`font-medium ${squadra.step2>=73 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step2 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step3>75 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step3 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step4>78 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step4 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step5>80 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step5 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step3>=75 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step3 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step4>=78 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step4 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step5>=80 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step5 || 0).toFixed(1)}</div>
                         </div>
                     </div>
                     )
@@ -174,11 +174,11 @@ export default function Squid({ id }) {
 
                         {/* Punteggio */}
                         <div className='flex justify-evenly pt-0.5'>
-                            <div className={`font-medium ${squadra.step1>70 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step1 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step2>73 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step2 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step3>75 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step3 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step4>78 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step4 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step5>80 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step5 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step1>=70 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step1 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step2>=73 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step2 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step3>=75 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step3 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step4>=78 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step4 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step5>=80 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step5 || 0).toFixed(1)}</div>
                         </div>
                     </div>
                     )
