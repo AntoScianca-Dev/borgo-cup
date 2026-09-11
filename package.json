@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "update-calciatori": "python scripts/update_calciatori.py"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.10",

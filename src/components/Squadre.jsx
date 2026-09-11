@@ -20,7 +20,8 @@ export default function Squadre() {
         return {
             ...giocatore,
             quotazione: calciatore?.quotazione || 0,
-            variazione: (calciatore?.quotazione || 0) - (parseInt(giocatore.costo) || 0)
+            variazione: (calciatore?.quotazione || 0) - (parseInt(giocatore.costo) || 0),
+            stato: calciatore?.stato || ""
         }
     }
 

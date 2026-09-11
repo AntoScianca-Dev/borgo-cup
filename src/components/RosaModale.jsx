@@ -82,7 +82,13 @@ export default function RosaModale({ isOpen, onClose, squad }) {
                         <div className="divide-y divide-gray-100">
                           {lista.map((g, idx) => (
                             <div key={idx} className="flex justify-between gap-1 items-center py-1.5 px-2 text-sm hover:bg-gray-50 rounded">
-                              <span className="font-medium w-40 text-gray-800">{g.nome}</span>
+                              <span className="font-medium w-40 text-gray-800">{g.nome}
+                                {g.stato === 'svincolato' && (
+                                  <span className="text-red-600 font-bold text-base leading-none" title="Calciatore svincolato / fuori lista">
+                                    *
+                                  </span>
+                                )}
+                              </span>
                               <div className='w-12 text-right'>{g.costo}</div>
                               <div className='w-12 text-right text-sky-700 font-semibold'>{g.quotazione}</div>
                               <div className={`w-10 text-right font-bold ${
