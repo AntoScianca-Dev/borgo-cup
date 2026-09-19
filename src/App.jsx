@@ -17,7 +17,7 @@ import Survivor from './components/Survivor'
 import CoppaItalia from './components/CoppaItalia'
 
 export default function App() {
-  const giornataA =  3
+  const giornataA =  4
 
   return (
     <Router>

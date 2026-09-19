@@ -7,7 +7,7 @@
             "fine": "38' gironata di serie A",
             "avanzamento": 2.6,
             "totale": 38,
-            "giornata": 3,
+            "giornata": 4,
             "img": "/images/campionato.png",
             "link": "/campionato",
             "squadre": 24
@@ -86,7 +86,7 @@
             "fine":"38' gironata di serie A",
             "avanzamento": 2.6,
             "totale": 38,
-            "giornata": 3,
+            "giornata": 4,
             "icon":  "🔝",
             "link": "/punteggio",
             "squadre": 24
@@ -99,7 +99,7 @@
             "fine":"7' giornata di serie A",
             "avanzamento": 0,
             "totale": 5,
-            "giornata": 1,
+            "giornata": 2,
             "icon": "🌍",
             "link": "/preliminari",
             "squadre": 24
@@ -203,7 +203,7 @@
             "fine": "35' giornata di serie A",
             "avanzamento": 2.8,
             "totale": 35,
-            "giornata": 3,
+            "giornata": 4,
             "img": "/images/serieA.png",
             "link": "/serieA",
             "squadre": 8
@@ -216,7 +216,7 @@
             "fine": "35' giornata di serie A",
             "avanzamento": 2.8,
             "totale": 35,
-            "giornata": 3,
+            "giornata": 4,
             "img": "/images/serieB.png",
             "link": "/serieB",
             "squadre": 8
@@ -229,7 +229,7 @@
             "fine": "35' giornata di serie A",
             "avanzamento": 2.8,
             "totale": 35,
-            "giornata": 3,
+            "giornata": 4,
             "img": "/images/serieC.png",
             "link": "/serieC",
             "squadre": 8

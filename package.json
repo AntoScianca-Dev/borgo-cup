@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "update-calciatori": "python scripts/update_calciatori.py"
+    "update-calciatori": "python scripts/update_calciatori.py",
+    "update_classifiche": "python scripts/update_classifiche.py"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.10",
