@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import squadreData from '../assets/data/classifiche.json'
+import competizioniData from '../assets/data/competizioni.json'
 import headerS from '../assets/image/header_squid.png'
 import { Link } from 'react-router-dom'
 
@@ -9,6 +10,10 @@ export default function Squid({ id }) {
     const serieObj = squadreData.classifiche.find(
         (item) => item.id === id 
     )
+
+    const giornataInCorso = competizioniData.competizioni.find(
+        (item) => item.id === id
+    ).giornata
 
     // 2. Prendi l'array dei partecipanti (con fallback ad array vuoto)
     const partecipantiRaw = serieObj?.partecipanti || []
@@ -49,18 +54,18 @@ export default function Squid({ id }) {
                         <div className="font-semibold text-sm tracking-wider uppercase">Punti</div>
                     </div>
                     <div className='flex justify-evenly'>
-                        <div className="font-bold text-center">STEP 1</div>
-                        <div className="font-bold text-center">STEP 2</div>
-                        <div className="font-bold text-center">STEP 3</div>
-                        <div className="font-light text-center">STEP 4</div>
-                        <div className="font-light text-center">STEP 5</div>
+                        <div className={`${giornataInCorso>=1 ? 'font-bold' : 'font-light'} text-center`}>STEP 1</div>
+                        <div className={`${giornataInCorso>=2 ? 'font-bold' : 'font-light'} text-center`}>STEP 2</div>
+                        <div className={`${giornataInCorso>=3 ? 'font-bold' : 'font-light'} text-center`}>STEP 3</div>
+                        <div className={`${giornataInCorso>=4 ? 'font-bold' : 'font-light'} text-center`}>STEP 4</div>
+                        <div className={`${giornataInCorso>=5 ? 'font-bold' : 'font-light'} text-center`}>STEP 5</div>
                     </div>
                     <div className='flex justify-evenly'>
-                        <div className="font-bold text-sm px-4 text-center">70</div>
-                        <div className="font-bold text-sm px-4 text-center">73</div>
-                        <div className="font-bold text-sm px-4 text-center">75</div>
-                        <div className="font-light text-sm px-4 text-center">78</div>
-                        <div className="font-light text-sm px-4 text-center">80</div>
+                        <div className={`${giornataInCorso>=1 ? 'font-bold' : 'font-light'} text-center`}>≥70</div>
+                        <div className={`${giornataInCorso>=2 ? 'font-bold' : 'font-light'} text-center`}>≥73</div>
+                        <div className={`${giornataInCorso>=3 ? 'font-bold' : 'font-light'} text-center`}>≥75</div>
+                        <div className={`${giornataInCorso>=4 ? 'font-bold' : 'font-light'} text-center`}>≥78</div>
+                        <div className={`${giornataInCorso>=5 ? 'font-bold' : 'font-light'} text-center`}>≥80</div>
                     </div>
                 </div>
 
@@ -111,11 +116,11 @@ export default function Squid({ id }) {
 
                         {/* Punteggio */}
                         <div className='flex justify-evenly pt-0.5'>
-                            <div className={`font-medium ${squadra.step1>=70 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step1 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step2>=73 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step2 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step3>=75 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step3 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step4>=78 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step4 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step5>=80 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step5 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step1>=70 ? "bg-lime-100" : "bg-amber-100" }  px-4 text-center rounded-full`}>{(squadra.step1 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step2>=73 ? "bg-lime-100" : "bg-amber-100" }  px-4 text-center rounded-full`}>{(squadra.step2 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step3>=75 ? "bg-lime-100" : "bg-amber-100" }  px-4 text-center rounded-full`}>{(squadra.step3 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step4>=78 ? "bg-lime-100" : "bg-amber-100" }  px-4 text-center rounded-full`}>{(squadra.step4 || 0).toFixed(1)}</div>
+                            <div className={`font-medium ${squadra.step5>=80 ? "bg-lime-100" : "bg-amber-100" }  px-4 text-center rounded-full`}>{(squadra.step5 || 0).toFixed(1)}</div>
                         </div>
                     </div>
                     )
@@ -131,7 +136,22 @@ export default function Squid({ id }) {
                 {/* Lista Squadre eliminate */}
                 <div className="grid gap-4 mb-4 p-1">
                 {partecipantiRaw.filter((pfiltri) => pfiltri.attivo == "NO")
-                    .sort((a, b) => b.punteggio - a.punteggio)
+                    .sort((a, b) => {
+                        const puntiA =  (a.step1 || 0) +
+                                        (a.step2 || 0) * 10 +
+                                        (a.step3 || 0) * 100 +
+                                        (a.step4 || 0) * 1000 +
+                                        (a.step5 || 0) * 10000;
+
+                        const puntiB =  (b.step1 || 0) +
+                                        (b.step2 || 0) * 10 +
+                                        (b.step3 || 0) * 100 +
+                                        (b.step4 || 0) * 1000 +
+                                        (b.step5 || 0) * 10000;
+
+                        return puntiB-puntiA
+                    }
+                    )
                     .map((squadra, index) => {
 
                     return (
@@ -167,7 +187,7 @@ export default function Squid({ id }) {
                                 <span
                                     className={`text-xl font-black px-4 py-1.5 rounded-xlbg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900`}
                                 >
-                                    {(squadra.step1 || 0).toFixed(1)}
+                                    {(squadra.punteggio || 0).toFixed(1)}
                                 </span>
                             </div>
                         </div>

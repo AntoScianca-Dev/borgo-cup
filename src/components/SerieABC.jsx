@@ -1,14 +1,19 @@
 // import { useState } from 'react'
 import squadreData from '../assets/data/classifiche.json'
+import competizioniData from '../assets/data/competizioni.json'
 import headerC from '../assets/image/header_campionato.png'
 import { Link } from 'react-router-dom'
 
-export default function SerieABC({ id, giornata }) {
+export default function SerieABC({ id }) {
 
     // 1. Estrai la classifica del "Serie" (id: 1)
     const serieObj = squadreData.classifiche.find(
         (item) => item.id === id 
     )
+
+    const giornataInCorso = competizioniData.competizioni.find(
+        (item) => item.id === id
+    ).giornata
 
     // 2. Prendi l'array dei partecipanti (con fallback ad array vuoto)
     const partecipantiRaw = serieObj?.partecipanti || []
@@ -40,7 +45,7 @@ export default function SerieABC({ id, giornata }) {
             </Link>
             <div className="flex items-center justify-evenly px-10">
                 <p className="text-sky-900 font-medium uppercase text-2xl">
-                    {giornata}' giornata
+                    {giornataInCorso}' giornata
                 </p>
             </div>
         </div>

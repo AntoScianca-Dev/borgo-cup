@@ -1,14 +1,19 @@
 // import { useState } from 'react'
 import squadreData from '../assets/data/classifiche.json'
+import competizioniData from '../assets/data/competizioni.json'
 import { ArrowUpIcon, ArrowDownIcon, MinusIcon } from '@heroicons/react/24/solid'
 import headerC from '../assets/image/header_campionato.png'
 import { Link } from 'react-router-dom'
 
-export default function Classifica({ giornata }) {
+export default function Classifica() {
     // 1. Estrai la classifica del "Campionato" (id: 1)
     const campionatoObj = squadreData.classifiche.find(
-        (item) => item.nome === 'Campionato' // oppure item.id === 1
+        (item) => item.id === 1
     )
+
+    const giornataInCorso = competizioniData.competizioni.find(
+        (item) => item.id === 1
+    ).giornata
 
     // 2. Prendi l'array dei partecipanti (con fallback ad array vuoto)
     const partecipantiRaw = campionatoObj?.partecipanti || []
@@ -39,7 +44,7 @@ export default function Classifica({ giornata }) {
             </Link>
             <div className="flex items-center justify-evenly px-10">
                 <p className="text-sky-900 font-medium uppercase text-2xl">
-                        {giornata}' giornata
+                        {giornataInCorso}' giornata
                 </p>
             </div>
         </div>

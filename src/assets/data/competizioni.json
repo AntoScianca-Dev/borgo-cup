@@ -1,4 +1,8 @@
 {   "competizioni" : [
+        {   
+            "id": 0,
+            "giornataA": 4
+        },
         {
             "id": 1,
             "nome": "Campionato",
@@ -151,7 +155,7 @@
             "fine": "5' giornata di serie A",
             "avanzamento": 20.0,
             "totale": 5,
-            "giornata": 3,
+            "giornata": 4,
             "img": "/images/squid.png",
             "link": "/squidGame1",
             "squadre": 24

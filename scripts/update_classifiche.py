@@ -220,20 +220,20 @@ def aggiorna_squid_game_cup(comp):
     for p in partecipanti:
         stato_attuale = str(p.get("attivo", "")).upper()
         if stato_attuale not in ["SI", "ATTIVO", "TRUE"]:
-            continue
-
-        print(f"\n>> Partecipante: {p['nome']}")
-        punteggio = input_float(f"  Inserisci punteggio per {chiave_step}: ")
-        
-        p[chiave_step] = punteggio
-        p["punteggio"] = punteggio
-
-        if punteggio >= soglia:
-            p["attivo"] = "SI"
-            print(f"  ✅ SUPERATO ({punteggio} >= {soglia}) -> Stato: SI")
+            p["punteggio"]=0
         else:
-            p["attivo"] = "NO"
-            print(f"  ❌ ELIMINATO ({punteggio} < {soglia}) -> Stato: NO")
+            print(f"\n>> Partecipante: {p['nome']}")
+            punteggio = input_float(f"  Inserisci punteggio per {chiave_step}: ")
+            
+            p[chiave_step] = punteggio
+            p["punteggio"] = punteggio
+
+            if punteggio >= soglia:
+                p["attivo"] = "SI"
+                print(f"  ✅ SUPERATO ({punteggio} >= {soglia}) -> Stato: SI")
+            else:
+                p["attivo"] = "NO"
+                print(f"  ❌ ELIMINATO ({punteggio} < {soglia}) -> Stato: NO")
 
 # -------------------------------------------------------------
 # MAIN CLI
@@ -283,7 +283,8 @@ def main():
             aggiorna_punteggio_top(comp_scelta, squadre)
         elif nome_comp in ["Serie A", "Serie B", "Serie C", "Preliminari Coppe Europee"]:
             aggiorna_girone_standard(comp_scelta)
-        elif nome_comp == "Squid Game Cup 1":
+        elif nome_comp[:14] == "Squid Game Cup":
+            print(nome_comp[:14])
             aggiorna_squid_game_cup(comp_scelta)
         else:
             print(f"\n⚠️ Nessuna regola specifica trovata per '{nome_comp}'.")
