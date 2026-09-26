@@ -162,6 +162,7 @@ def aggiorna_survivor_cup(comp, data_comp):
         punteggio_giornata = input_float("  Inserisci punteggio di giornata: ")
         p["punteggio"] = punteggio_giornata
         p["totale"] = round(p.get("totale", 0) + punteggio_giornata, 2)
+        p["totale2"] = round(p.get("totale2", 0) + (punteggio_giornata*giornata), 2)
 
 def aggiorna_punteggio_top(comp, squadre, data_comp):
     print(f"\n--- Aggiornamento: {comp['nome']} ---")
@@ -234,7 +235,7 @@ def aggiorna_girone_standard(comp, data_comp):
 
     # Salva ordinando per la nuova posizione
     comp["partecipanti"] = sorted(partecipanti, key=lambda x: x.get("posizione", 999))
-    
+
 def aggiorna_preliminari_coppe_europee(comp, data_comp):
     """
     Specifica per Preliminari Coppe Europee:

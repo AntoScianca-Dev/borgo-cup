@@ -204,7 +204,89 @@
         },
         {
             "id": 5,
-            "nome": "Coppa Italia"
+            "nome": "Coppa Italia",
+            "partecipanti": [
+                {
+                    "id": "quarti",
+                    "nome": "Quarti di Finale",
+                    "giornataLega": 12,
+                    "partite": [
+                        {
+                        "id": "q1",
+                        "squadraCasa": { "nome": "Argentina", "codice": "AUU", "logo": "/logos/arg.png" },
+                        "squadraOspite": { "nome": "Corea del Sud", "codice": "KOR", "logo": "/logos/kor.png" },
+                        "golCasa": 0,
+                        "golOspite": 1,
+                        "conclusa": true
+                        },
+                        {
+                        "id": "q2",
+                        "squadraCasa": { "nome": "Italia", "codice": "IUU", "logo": "/logos/ita.png" },
+                        "squadraOspite": { "nome": "Cina", "codice": "CHN", "logo": "/logos/chn.png" },
+                        "golCasa": 1,
+                        "golOspite": 1,
+                        "rigoriCasa": 5,
+                        "rigoriOspite": 4,
+                        "conclusa": true
+                        },
+                        {
+                        "id": "q3",
+                        "squadraCasa": { "nome": "Brasile", "codice": "BRA", "logo": "/logos/bra.png" },
+                        "squadraOspite": { "nome": "USA", "codice": "UUU", "logo": "/logos/usa.png" },
+                        "golCasa": 1,
+                        "golOspite": 1,
+                        "rigoriCasa": 5,
+                        "rigoriOspite": 4,
+                        "conclusa": true
+                        },
+                        {
+                        "id": "q4",
+                        "squadraCasa": { "nome": "Spagna", "codice": "SUU", "logo": "/logos/esp.png" },
+                        "squadraOspite": { "nome": "Portogallo", "codice": "PUU", "logo": "/logos/por.png" },
+                        "golCasa": 2,
+                        "golOspite": 0,
+                        "conclusa": true
+                        }
+                    ]
+                    },
+                    {
+                    "id": "semifinali",
+                    "nome": "Semifinali",
+                    "giornataLega": 18,
+                    "partite": [
+                        {
+                        "id": "s1",
+                        "squadraCasa": { "nome": "Corea del Sud", "codice": "KOR", "logo": "/logos/kor.png" },
+                        "squadraOspite": { "nome": "Italia", "codice": "IUU", "logo": "/logos/ita.png" },
+                        "golCasa": 1,
+                        "golOspite": 3,
+                        "conclusa": true
+                        },
+                        {
+                        "id": "s2",
+                        "squadraCasa": { "nome": "Brasile", "codice": "BRA", "logo": "/logos/bra.png" },
+                        "squadraOspite": { "nome": "Spagna", "codice": "SUU", "logo": "/logos/esp.png" },
+                        "golCasa": 0,
+                        "golOspite": 1,
+                        "conclusa": true
+                        }
+                    ]
+                    },
+                    {
+                    "id": "finale",
+                    "nome": "Finale",
+                    "giornataLega": 25,
+                    "partite": [
+                        {
+                        "id": "f1",
+                        "squadraCasa": { "nome": "Italia", "codice": "IUU", "logo": "/logos/ita.png" },
+                        "squadraOspite": { "nome": "Spagna", "codice": "SUU", "logo": "/logos/esp.png" },
+                        "orario": "15:00",
+                        "conclusa": false
+                        }
+                    ]
+                    }
+            ]
         },
         {
             "id": 6,
@@ -219,6 +301,7 @@
                     "nome": "FC Carmine",
                     "stato": "attivo",
                     "totale": 152.5,
+                    "totale2": 223.0,
                     "punteggio": 70.5,
                     "border": "#652D8E"
                 },
@@ -227,6 +310,7 @@
                     "nome": "FC Santo Stefano",
                     "stato": "attivo",
                     "totale": 148.0,
+                    "totale2": 218.5,
                     "punteggio": 70.5,
                     "border": "#F78A8A"
                 },
@@ -235,6 +319,7 @@
                     "nome": "Spera Ebbasta",
                     "stato": "attivo",
                     "totale": 153.5,
+                    "totale2": 228.5,
                     "punteggio": 75.0,
                     "border": "#5D2A82"
                 },
@@ -243,6 +328,7 @@
                     "nome": "Banana83",
                     "stato": "eliminato",
                     "totale": 66.5,
+                    "totale2": 66.5,
                     "punteggio": 66.5,
                     "border": "#FAD7D7"
                 },
@@ -251,6 +337,7 @@
                     "nome": "Longobarda united",
                     "stato": "attivo",
                     "totale": 161.0,
+                    "totale2": 238.0,
                     "punteggio": 77.0,
                     "border": "#EC7074"
                 },
@@ -259,6 +346,7 @@
                     "nome": "San Marino",
                     "stato": "eliminato",
                     "totale": 68.5,
+                    "totale2": 68.5,
                     "punteggio": 68.5,
                     "border": "#ACE2F9"
                 },
@@ -267,6 +355,7 @@
                     "nome": "A.C. Marchigiana",
                     "stato": "attivo",
                     "totale": 158.5,
+                    "totale2": 235.5,
                     "punteggio": 77.0,
                     "border": "#E9262E"
                 },
@@ -275,6 +364,7 @@
                     "nome": "TenenteRagno",
                     "stato": "attivo",
                     "totale": 151.0,
+                    "totale2": 223.5,
                     "punteggio": 72.5,
                     "border": "#990B5A"
                 },
@@ -283,6 +373,7 @@
                     "nome": "Hertha Vernello VII - La maturazione",
                     "stato": "attivo",
                     "totale": 146.5,
+                    "totale2": 218.0,
                     "punteggio": 71.5,
                     "border": "#773448"
                 },
@@ -291,6 +382,7 @@
                     "nome": "sam PDOR",
                     "stato": "attivo",
                     "totale": 149.5,
+                    "totale2": 228.0,
                     "punteggio": 78.5,
                     "border": "#0B22F4"
                 },
@@ -299,6 +391,7 @@
                     "nome": "Squarta Praga",
                     "stato": "attivo",
                     "totale": 160.0,
+                    "totale2": 244.5,
                     "punteggio": 84.5,
                     "border": "#550808"
                 },
@@ -307,6 +400,7 @@
                     "nome": "Amala fc",
                     "stato": "attivo",
                     "totale": 151.5,
+                    "totale2": 227.5,
                     "punteggio": 76.0,
                     "border": "#E9484E"
                 },
@@ -315,6 +409,7 @@
                     "nome": "SenzaNome",
                     "stato": "attivo",
                     "totale": 167.5,
+                    "totale2": 253.0,
                     "punteggio": 85.5,
                     "border": "#393C3D"
                 },
@@ -323,6 +418,7 @@
                     "nome": "G.s.11",
                     "stato": "attivo",
                     "totale": 142.0,
+                    "totale2": 214.5,
                     "punteggio": 72.5,
                     "border": "#5CADA7"
                 },
@@ -331,6 +427,7 @@
                     "nome": "all in - quae intus",
                     "stato": "attivo",
                     "totale": 149.0,
+                    "totale2": 229.0,
                     "punteggio": 80.0,
                     "border": "#6A3394"
                 },
@@ -339,6 +436,7 @@
                     "nome": "Zanzibar",
                     "stato": "attivo",
                     "totale": 149.0,
+                    "totale2": 225.5,
                     "punteggio": 76.5,
                     "border": "#FA0F1E"
                 },
@@ -347,6 +445,7 @@
                     "nome": "FC TORETTO",
                     "stato": "attivo",
                     "totale": 146.5,
+                    "totale2": 219.5,
                     "punteggio": 73.0,
                     "border": "#F92734"
                 },
@@ -355,6 +454,7 @@
                     "nome": "Sgherza s  Fc",
                     "stato": "attivo",
                     "totale": 164.0,
+                    "totale2": 241.5,
                     "punteggio": 77.5,
                     "border": "#683092"
                 },
@@ -363,6 +463,7 @@
                     "nome": "AG13 FC",
                     "stato": "eliminato",
                     "totale": 137.5,
+                    "totale2": 203.5,
                     "punteggio": 66.0,
                     "border": "#1DA6E0"
                 },
@@ -371,6 +472,7 @@
                     "nome": "REVOLUTION",
                     "stato": "attivo",
                     "totale": 154.5,
+                    "totale2": 228.0,
                     "punteggio": 73.5,
                     "border": "#901F1F"
                 },
@@ -379,6 +481,7 @@
                     "nome": "VeroMat29",
                     "stato": "attivo",
                     "totale": 152.0,
+                    "totale2": 234.5,
                     "punteggio": 82.5,
                     "border": "#2AF4F3"
                 },
@@ -387,6 +490,7 @@
                     "nome": "DG Team",
                     "stato": "attivo",
                     "totale": 158.5,
+                    "totale2": 241.0,
                     "punteggio": 82.5,
                     "border": "#3C3D3D"
                 },
@@ -395,6 +499,7 @@
                     "nome": "HAPPY MILF FC",
                     "stato": "eliminato",
                     "totale": 137.0,
+                    "totale2": 205.0,
                     "punteggio": 68.0,
                     "border": "#CD0A16"
                 },
@@ -403,6 +508,7 @@
                     "nome": "MESSI MALE FC",
                     "stato": "attivo",
                     "totale": 163.5,
+                    "totale2": 245.5,
                     "punteggio": 82.0,
                     "border": "#10499E"
                 }
