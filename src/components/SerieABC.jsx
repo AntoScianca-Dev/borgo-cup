@@ -2,6 +2,7 @@
 import squadreData from '../assets/data/classifiche.json'
 import competizioniData from '../assets/data/competizioni.json'
 import headerC from '../assets/image/header_campionato.png'
+import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom'
 
 export default function SerieABC({ id }) {
@@ -76,6 +77,8 @@ export default function SerieABC({ id }) {
                 const isPrimo = posizione === 1
                 const isSecondo = posizione === 2
                 const isTerzo = posizione === 3
+                const isRed = (posizione === 6 || posizione === 7 || posizione === 8) && serieObj.nome!='Serie C'
+                const isGreen = (posizione === 1 || posizione === 2 || posizione === 3) && serieObj.nome!='Serie A'
 
                 return (
                 <div
@@ -93,22 +96,38 @@ export default function SerieABC({ id }) {
                                 {isPrimo && (
                                 <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-400 to-yellow-300 text-amber-950 flex items-center justify-center shadow-md shadow-amber-300/50">
                                     1
+                                    {isGreen &&(
+                                        <ArrowUpIcon className="w-3.5 h-3.5" />
+                                    )}
                                 </span>
                                 )}
                                 {isSecondo && (
                                 <span className="w-9 h-9 rounded-full bg-linear-to-tr from-gray-300 to-gray-100 text-gray-800 flex items-center justify-center shadow-md border border-gray-300">
                                     2
+                                    {isGreen &&(
+                                        <ArrowUpIcon className="w-3.5 h-3.5" />
+                                    )}
                                 </span>
                                 )}
                                 {isTerzo && (
                                 <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-700 to-amber-600 text-amber-50 flex items-center justify-center shadow-md">
                                     3
+                                    {isGreen &&(
+                                        <ArrowUpIcon className="w-3.5 h-3.5" />
+                                    )}
                                 </span>
                                 )}
-                                {!isPrimo && !isSecondo && !isTerzo && (
-                                <span className="text-sky-950 font-medium text-base shadow shadow-sky-950 w-9 h-9 flex items-center justify-center rounded-full">
+                                
+                                {isRed && (
+                                <span className="w-9 h-9 rounded-full bg-linear-to-tr from-pink-700 to-pink-600 text-amber-50 flex items-center justify-center shadow-md">
                                     {posizione}
+                                    <ArrowDownIcon className="w-3.5 h-3.5" />
                                 </span>
+                                )}
+                                {!isPrimo && !isSecondo && !isTerzo && !isRed &&(
+                                    <span className="text-sky-950 font-medium text-base shadow shadow-sky-950 w-9 h-9 flex items-center justify-center rounded-full">
+                                        {posizione}
+                                    </span>
                                 )}
                             </div>
 

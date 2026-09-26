@@ -107,7 +107,7 @@ export default function Survivor() {
                 {/* Lista Squadre eliminate */}
                 <div className="grid gap-4 mb-4 p-1">
                 {partecipantiRaw.filter((pfiltri) => pfiltri.stato == "eliminato")
-                    .sort((a, b) => b.punteggio - a.punteggio)
+                    .sort((a, b) => b.totale - a.totale)
                     .map((squadra, index) => {
 
                     return (

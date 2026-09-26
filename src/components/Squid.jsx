@@ -18,8 +18,16 @@ export default function Squid({ id }) {
     // 2. Prendi l'array dei partecipanti (con fallback ad array vuoto)
     const partecipantiRaw = serieObj?.partecipanti || []
 
-    // 3. Ordina i partecipanti per posizione crescente (1°, 2°, 3°, ...)
-    // const classificaOrdinata = [...partecipantiRaw].sort((a, b) => b.punteggio - a.punteggio)
+    // 3. Estrai la squadra vincitrice (quella attiva con punteggio massimo)
+    const isCompetizioneTerminata = competizioniData.competizioni.find(
+        (item) => item.id === id
+    ).stato === 'Terminata'
+
+    const vincitore = isCompetizioneTerminata 
+        ? partecipantiRaw
+            .filter((p) => p.attivo === "SI")
+            .sort((a, b) => b.punteggio - a.punteggio)[0]
+        : null
     
     return (
         <div className="max-w-4xl mx-auto space-y-6">
@@ -43,6 +51,46 @@ export default function Squid({ id }) {
                     </h1>
                 </Link>
             </div>
+
+            {/* CARD VINCITORE */}
+            {vincitore && (
+                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-pink-900 via-purple-950 to-slate-900 p-6 text-white shadow-2xl shadow-pink-600/30 border-2 border-pink-500/80 my-4">
+                    {/* Effetto bagliore di sfondo */}
+                    <div className="absolute -top-10 -right-10 w-40 h-40 bg-pink-500/30 rounded-full blur-2xl pointer-events-none" />
+                    
+                    <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                        
+                        {/* Sinistra: Badge + Nome */}
+                        <div className="flex items-center gap-4">
+                            <div className="text-4xl sm:text-5xl shrink-0 filter drop-shadow-[0_0_10px_rgba(244,63,94,0.6)]">
+                                👑
+                            </div>
+                            <div>
+                                <span className="text-xs font-black uppercase tracking-widest text-pink-400 bg-pink-950/90 border border-pink-500/50 px-3 py-1 rounded-full shadow-sm">
+                                    VINCITORE SQUID GAME
+                                </span>
+                                <h2 
+                                    className="text-3xl sm:text-4xl font-black tracking-tight mt-1 border-l-4 pl-3"
+                                    style={{ borderColor: vincitore.border || '#ec4899' }}
+                                >
+                                    {vincitore.nome}
+                                </h2>
+                            </div>
+                        </div>
+
+                        {/* Destra: Punteggio Immediato */}
+                        <div className="bg-black/40 backdrop-blur-md border border-pink-500/40 px-6 py-2.5 rounded-2xl shrink-0 shadow-inner">
+                            <span className="block text-[10px] font-bold tracking-widest text-pink-300 uppercase">
+                                Punti
+                            </span>
+                            <span className="text-3xl sm:text-4xl font-black text-lime-400">
+                                {(vincitore.punteggio || 0).toFixed(1)}
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            )}
 
             {/* Scheda Tabella */}
             <div className="rounded-2x overflow-hidden">
