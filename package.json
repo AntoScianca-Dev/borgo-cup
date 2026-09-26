@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "update-calciatori": "python scripts/update_calciatori.py",
+    "update_calciatori": "python scripts/update_calciatori.py",
     "update_classifiche": "python scripts/update_classifiche.py"
   },
   "dependencies": {

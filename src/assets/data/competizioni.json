@@ -1,7 +1,9 @@
-{   "competizioni" : [
-        {   
+{
+    "competizioni": [
+        {
             "id": 0,
-            "giornataA": 4
+            "stato": "None",
+            "giornataA": 5
         },
         {
             "id": 1,
@@ -9,9 +11,9 @@
             "stato": "Attivo",
             "inizio": "1' giornata di serie A",
             "fine": "38' gironata di serie A",
-            "avanzamento": 2.6,
+            "avanzamento": 13.2,
             "totale": 38,
-            "giornata": 4,
+            "giornata": 5,
             "img": "/images/campionato.png",
             "link": "/campionato",
             "squadre": 24
@@ -70,9 +72,9 @@
             "stato": "Attivo",
             "inizio": "3' giornata di serie A",
             "fine": "29' giornata di serie A",
-            "avanzamento": 0,
+            "avanzamento": 14.3,
             "totale": 14,
-            "giornata": 1,
+            "giornata": 2,
             "img": "/images/survivor.png",
             "link": "/survivor",
             "squadre": 24
@@ -86,12 +88,12 @@
             "id": 9,
             "nome": "Punteggio Più Alto di Giornata",
             "stato": "Attivo",
-            "inizio":"1' giornata di serie A",
-            "fine":"38' gironata di serie A",
-            "avanzamento": 2.6,
+            "inizio": "1' giornata di serie A",
+            "fine": "38' gironata di serie A",
+            "avanzamento": 13.2,
             "totale": 38,
-            "giornata": 4,
-            "icon":  "🔝",
+            "giornata": 5,
+            "icon": "🔝",
             "link": "/punteggio",
             "squadre": 24
         },
@@ -100,10 +102,10 @@
             "nome": "Preliminari Coppe Europee",
             "stato": "Attivo",
             "inizio": "3' giornata di serie A",
-            "fine":"7' giornata di serie A",
-            "avanzamento": 0,
+            "fine": "7' giornata di serie A",
+            "avanzamento": 60.0,
             "totale": 5,
-            "giornata": 2,
+            "giornata": 3,
             "icon": "🌍",
             "link": "/preliminari",
             "squadre": 24
@@ -150,12 +152,12 @@
         {
             "id": 14,
             "nome": "Squid Game Cup 1'",
-            "stato": "Attivo",
+            "stato": "Terminata",
             "inizio": "1' giornata di serie A",
             "fine": "5' giornata di serie A",
-            "avanzamento": 20.0,
+            "avanzamento": 100.0,
             "totale": 5,
-            "giornata": 4,
+            "giornata": 5,
             "img": "/images/squid.png",
             "link": "/squidGame1",
             "squadre": 24
@@ -205,9 +207,9 @@
             "stato": "Attivo",
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 2.8,
+            "avanzamento": 14.3,
             "totale": 35,
-            "giornata": 4,
+            "giornata": 5,
             "img": "/images/serieA.png",
             "link": "/serieA",
             "squadre": 8
@@ -218,9 +220,9 @@
             "stato": "Attivo",
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 2.8,
+            "avanzamento": 14.3,
             "totale": 35,
-            "giornata": 4,
+            "giornata": 5,
             "img": "/images/serieB.png",
             "link": "/serieB",
             "squadre": 8
@@ -231,9 +233,9 @@
             "stato": "Attivo",
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 2.8,
+            "avanzamento": 14.3,
             "totale": 35,
-            "giornata": 4,
+            "giornata": 5,
             "img": "/images/serieC.png",
             "link": "/serieC",
             "squadre": 8
