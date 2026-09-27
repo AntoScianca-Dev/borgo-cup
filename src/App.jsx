@@ -15,6 +15,7 @@ import Squid from './components/Squid'
 import PreliminariCE from './components/PreliminariCE'
 import Survivor from './components/Survivor'
 import CoppaItalia from './components/CoppaItalia'
+import AdminMercato from './components/AdminMercato'
 
 export default function App() {
 
@@ -38,6 +39,7 @@ export default function App() {
             <Route path='/competizioni/preliminari' element={<PreliminariCE/> } />
             <Route path='/competizioni/survivor' element={<Survivor /> } />
             <Route path='/competizioni/coppaIta' element={<CoppaItalia /> } />
+            <Route path='/admin-mercato' element={<AdminMercato /> } />
           </Routes>
         </main>
         <Footer/>

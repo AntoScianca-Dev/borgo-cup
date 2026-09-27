@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "update_calciatori": "python scripts/update_calciatori.py",
-    "update_classifiche": "python scripts/update_classifiche.py"
+    "update_classifiche": "python scripts/update_classifiche.py",
+    "update_rose": "python scripts/update_rose.py"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.10",
