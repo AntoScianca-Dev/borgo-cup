@@ -1,5 +1,6 @@
 import { ShieldExclamationIcon } from '@heroicons/react/24/solid'
 import competizioniData from '../assets/data/competizioni.json'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
     const currentYear = new Date().getFullYear()
@@ -16,7 +17,9 @@ export default function Footer() {
                     <span>Dati aggiornati alla <strong>{giornataInCorso}ª Giornata</strong> di Serie A</span>
                 </div>
                 <div className="shadow shadow-amber-50 px-4 py-2 rounded-2xl" >
-                    <ShieldExclamationIcon className='w-10 h-10 mx-auto'/> 
+                    <Link to={'/admin-mercato'}>
+                        <ShieldExclamationIcon className='w-10 h-10 mx-auto'/> 
+                    </Link>
                     <span className='font-bold'>
                         I dati presenti su questo sito costituiscono un riepilogo a scopo informativo e potrebbero presentare lievi differenze rispetto ai dati ufficiali dell'app Leghe Fantacalcio, dovute a errori di battitura, arrotondamenti o tempistiche di sincronizzazione. <br/> L'app ufficiale Leghe Fantacalcio rimane l'unica fonte autorevole e ufficiale dei dati. <br/> In caso di discrepanze, fare sempre riferimento ai dati ufficiali.
                     </span>
