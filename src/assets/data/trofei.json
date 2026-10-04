@@ -1,15 +1,380 @@
 {
-  "trofei": [
-    {
-      "id": 1,
-      "palmares": [
-        { "stagione": "2025/26", "competizione": "Campionato", "titolo": "Campione", "posizione": 1 },
-        { "stagione": "2025/26", "competizione": "Coppa", "titolo": "Finalista", "posizione": 2 }
-      ]
-    },
-    {
-      "id": 2,
-      "palmares": []
-    }
-  ]
+    "trofei": [
+        {
+        "id": 1,
+        "palmares": [
+            {   
+                "stagione": "2021/22",
+                "idComp": 5,  
+                "competizione": "Coppa Italia"
+            },
+            {   
+                "stagione": "2019/20",
+                "idComp": 11,
+                "competizione": "Champions League"
+            },
+            {   
+                "stagione": "2022/23",
+                "idComp": 24,
+                "competizione": "Mitropa Cup"
+            },
+            {   
+                "stagione": "2021/22",
+                "idComp": 6,
+                "competizione": "Supercoppa Italiana"
+            },
+            {   
+                "stagione": "2024/25",
+                "idComp": 6,
+                "competizione": "Supercoppa Italiana"
+            },
+            {   
+                "stagione": "2021/22",
+                "idComp": 18,
+                "competizione": "Serie A"
+            },
+            {   
+                "stagione": "2024/25",
+                "idComp": 18,
+                "competizione": "Serie A"
+            }
+        ]
+        },
+        {
+        "id": 2,
+        "palmares": [
+            {   
+                "stagione": "2021/22",
+                "idComp": 1,  
+                "competizione": "Campionato"
+            },
+            {   
+                "stagione": "2025/26",
+                "idComp": 12,
+                "competizione": "Europa League"
+            },
+            {   
+                "stagione": "2020/21",
+                "idComp": 24,
+                "competizione": "Mitropa Cup"
+            },
+            {   
+                "stagione": "2025/26",
+                "idComp": 4,
+                "competizione": "Supercoppa Europea"
+            },
+            {   
+                "stagione": "2021/22",
+                "idComp": 19,
+                "competizione": "Serie B"
+            },
+            {   
+                "stagione": "2025/26",
+                "idComp": 8,
+                "competizione": "Squid Game Cup"
+            }
+        ]
+        },
+        {
+        "id": 3,
+        "palmares": [
+            {   
+                "stagione": "2025/26",
+                "idComp": 1,  
+                "competizione": "Campionato"
+            },
+            {   
+                "stagione": "2023/24",
+                "idComp": 24,
+                "competizione": "Mitropa Cup"
+            },
+            {   
+                "stagione": "2025/26",
+                "idComp": 18,
+                "competizione": "Serie A"
+            },
+            {   
+                "stagione": "2025/26",
+                "idComp": 8,
+                "competizione": "Squid Game Cup"
+            }
+        ]
+        },
+        {
+        "id": 4,
+        "palmares": [
+            {   
+                "stagione": "2020/21",
+                "idComp": 12,
+                "competizione": "Europa League"
+            },
+            {   
+                "stagione": "2020/21",
+                "idComp": 4,
+                "competizione": "Supercoppa Europea"
+            }
+        ]
+        },
+        {
+        "id": 5,
+        "palmares": [
+            {   
+                "stagione": "2023/24",
+                "idComp": 1,  
+                "competizione": "Campionato"
+            },
+            {   
+                "stagione": "2023/24",
+                "idComp": 6,
+                "competizione": "Supercoppa Italiana"
+            }
+        ]
+        },
+        {
+        "id": 6,
+        "palmares": []
+        },
+        {
+        "id": 7,
+        "palmares": []
+        },
+        {
+        "id": 8,
+        "palmares": [
+            {   
+                "stagione": "2024/25",
+                "idComp": 1,  
+                "competizione": "Campionato"
+            },
+            {   
+                "stagione": "2020/21",
+                "idComp": 1,  
+                "competizione": "Campionato"
+            },
+            {   
+                "stagione": "2019/20",
+                "idComp": 1,  
+                "competizione": "Campionato"
+            },
+            {   
+                "stagione": "2019/20",
+                "idComp": 5,  
+                "competizione": "Coppa Italia" 
+            },
+            {   
+                "stagione": "2020/21",
+                "idComp": 5,  
+                "competizione": "Coppa Italia"
+            },
+            {   
+                "stagione": "2022/23",
+                "idComp": 18,
+                "competizione": "Serie A"
+            }
+        ]
+        },
+        {
+        "id": 9,
+        "palmares": [
+            {   
+                "stagione": "2024/25",
+                "idComp": 12,
+                "competizione": "Europa League"
+            }
+        ]
+        },
+        {
+        "id": 10,
+        "palmares": [
+            {   
+                "stagione": "2021/22",
+                "idComp": 24,
+                "competizione": "Mitropa Cup"
+            }
+        ]
+        },
+        {
+        "id": 11,
+        "palmares": [
+            {   
+                "stagione": "2022/23",
+                "idComp": 5,  
+                "competizione": "Coppa Italia"
+            },
+            {   
+                "stagione": "2020/21",
+                "idComp": 11,
+                "competizione": "Champions League"
+            }
+        ]
+        },
+        {
+        "id": 12,
+        "palmares": [
+            {   
+                "stagione": "2021/22",
+                "idComp": 11,
+                "competizione": "Champions League"
+            },
+            {   
+                "stagione": "2025/26",
+                "idComp": 13,
+                "competizione": "Conference League"
+            },
+            {   
+                "stagione": "2021/22",
+                "idComp": 4,
+                "competizione": "Supercoppa Europea"
+            }
+        ]
+        },
+        {
+        "id": 13,
+        "palmares": [
+            {   
+                "stagione": "2024/25",
+                "idComp": 5,  
+                "competizione": "Coppa Italia"
+            },
+            {   
+                "stagione": "2023/24",
+                "idComp": 11,
+                "competizione": "Champions League"
+            },
+            {   
+                "stagione": "2022/23",
+                "idComp": 12,
+                "competizione": "Europa League"
+            },
+            {   
+                "stagione": "2022/23",
+                "idComp": 4,
+                "competizione": "Supercoppa Europea"
+            },
+            {   
+                "stagione": "2023/24",
+                "idComp": 4,
+                "competizione": "Supercoppa Europea"
+            },
+            {   
+                "stagione": "2022/23",
+                "idComp": 19,
+                "competizione": "Serie B"
+            }
+        ]
+        },
+        {
+        "id": 14,
+        "palmares": [
+            {   
+                "stagione": "2023/24",
+                "idComp": 12,
+                "competizione": "Europa League"
+            }
+        ]
+        },
+        {
+        "id": 15,
+        "palmares": [
+            {   
+                "stagione": "2024/25",
+                "idComp": 11,
+                "competizione": "Champions League"
+            },
+            {   
+                "stagione": "2024/25",
+                "idComp": 4,
+                "competizione": "Supercoppa Europea"
+            }
+        ]
+        },
+        {
+        "id": 16,
+        "palmares": [
+            {   
+                "stagione": "2025/26",
+                "idComp": 19,
+                "competizione": "Serie B"
+            }
+        ]
+        },
+        {
+        "id": 17,
+        "palmares": [
+            {   
+                "stagione": "2025/26",
+                "idComp": 5,  
+                "competizione": "Coppa Italia"
+            },
+            {   
+                "stagione": "2025/26",
+                "idComp": 6,
+                "competizione": "Supercoppa Italiana"
+            },
+            {   
+                "stagione": "2024/25",
+                "idComp": 19,
+                "competizione": "Serie B"
+            }
+        ]
+        },
+        {
+        "id": 18,
+        "palmares": [
+            {   
+                "stagione": "2024/25",
+                "idComp": 13,
+                "competizione": "Conference League"
+            }
+        ]
+        },
+        {
+        "id": 19,
+        "palmares": [
+            {   
+                "stagione": "2025/26",
+                "idComp": 8,
+                "competizione": "Squid Game Cup"
+            }
+        ]
+        },
+        {
+        "id": 20,
+        "palmares": [
+            {   
+                "stagione": "2025/26",
+                "idComp": 11,
+                "competizione": "Champions League"
+            }
+        ]
+        },
+        {
+        "id": 21,
+        "palmares": []
+        },
+        {
+        "id": 22,
+        "palmares": [
+            {   
+                "stagione": "2026/27",
+                "idComp": 8,
+                "competizione": "Squid Game Cup"
+            }
+        ]
+        },
+        {
+        "id": 23,
+        "palmares": [
+            {   
+                "stagione": "2025/26",
+                "idComp": 7,
+                "competizione": "Survivor Cup"
+            }
+        ]
+        },
+        {
+        "id": 24,
+        "palmares": []
+        }
+    ]
 }

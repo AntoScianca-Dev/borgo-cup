@@ -1,154 +1,165 @@
-import { useState } from 'react'
-import competizioniData from '../assets/data/competizioni.json'
+import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import competizioniData from '../assets/data/competizioni.json'
 
-export default function Competizioni() {
-    // Gestione dell'import del JSON (default export)
-    const competizioni = competizioniData.competizioni || competizioniData
+const STATI = {
+    Attivo: {
+        pill: 'bg-green-100 text-green-800 border-green-400',
+        accent: 'border-green-500',
+        bar: 'bg-green-500',
+        dot: 'bg-green-500',
+        attivo: 'bg-green-100 text-green-900 border-green-500',
+    },
+    'In attesa': {
+        pill: 'bg-yellow-100 text-yellow-800 border-yellow-400',
+        accent: 'border-yellow-400',
+        bar: 'bg-yellow-400',
+        dot: 'bg-yellow-400',
+        attivo: 'bg-yellow-100 text-yellow-900 border-yellow-500',
+    },
+    Terminata: {
+        pill: 'bg-red-100 text-red-800 border-red-400',
+        accent: 'border-red-400',
+        bar: 'bg-red-500',
+        dot: 'bg-red-500',
+        attivo: 'bg-red-100 text-red-900 border-red-500',
+    },
+}
 
-    // Stato per il filtro attivo (null o 'Tutti' significa nessun filtro applicato)
-    const [selectedFilter, setSelectedFilter] = useState(null)
+const STATO_DEFAULT = {
+    pill: 'bg-gray-100 text-gray-700 border-gray-300',
+    accent: 'border-gray-300',
+    bar: 'bg-gray-400',
+    dot: 'bg-gray-400',
+}
 
-    const statusStyles = {
-        Attivo: 'bg-green-200 text-green-900 border-green-500',
-        'In attesa': 'bg-yellow-200 text-yellow-900 border-yellow-500',
-        Terminata: 'bg-red-200 text-red-900 border-red-500',
-    }
+const FILTRI = Object.keys(STATI)
 
-    const borderStyle = {
-        Attivo: 'border-green-500',
-        'In attesa': 'border-yellow-500',
-        Terminata: 'border-red-500',
-    }
+const calcAvanzamento = (comp) => {
+    if (!comp.totale) return 0
+    return Math.min(100, Math.max(0, (comp.giornata * 100) / comp.totale))
+}
 
-
-    const calcAvanzamento = (competizioni) => {
-        return ((competizioni.giornata * 100) / competizioni.totale).toFixed(1)
-    }
-
-    // Lista competizioni valide (escludendo "None")
-    const competizioniValide = competizioni.filter((comp) => comp.stato !== 'None')
-
-    // Se un filtro è selezionato mostra solo quelle, altrimenti mostra tutte
-    const competizioniFiltrate = selectedFilter
-        ? competizioniValide.filter((comp) => comp.stato === selectedFilter)
-        : competizioniValide
-
-    // Gestione del click sugli opzioni di filtro
-    const handleFilterClick = (status) => {
-        // Se si clicca sul filtro già attivo, si deseleziona (torna a null = tutti)
-        if (selectedFilter === status) {
-            setSelectedFilter(null)
-        } else {
-            setSelectedFilter(status)
-        }
-    }
-
-    const filterOptions = ['Attivo', 'In attesa', 'Terminata']
+function CompetizioneCard({ comp }) {
+    const stile = STATI[comp.stato] ?? STATO_DEFAULT
+    const perc = calcAvanzamento(comp)
+    const consultabile = comp.stato === 'Attivo' || comp.stato === 'Terminata'
 
     return (
-        <div className="space-y-8">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <h1 className="text-3xl font-bold text-gray-800">Competizioni</h1>
+        <article
+            className={`group min-w-0 flex flex-col gap-4 bg-white rounded-2xl border-t-8 ${stile.accent} shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-5`}
+        >
+            <div className="flex items-start justify-between gap-3">
+                <h2 className="text-xl font-extrabold text-gray-900 leading-tight">{comp.nome}</h2>
+                <span className={`shrink-0 text-xs font-bold px-3 py-1 rounded-full border ${stile.pill}`}>
+                    {comp.stato}
+                </span>
+            </div>
 
-                {/* Pulsanti Filtro Rapido Toggle con statusStyles */}
-                <div className="flex flex-wrap justify-evenly">
-                    {filterOptions.map((status) => {
-                        const count = competizioniValide.filter((c) => c.stato === status).length
-                        const isActive = selectedFilter === status
+            <p className="text-sm text-gray-600">
+                <span className="font-bold text-sky-800 text-base">{comp.squadre}</span> squadre partecipanti
+            </p>
+
+            <div className="grid grid-cols-2 gap-3">
+                <div className="bg-sky-50 rounded-xl p-3">
+                    <p className="text-[11px] uppercase tracking-wide font-semibold text-sky-600">Inizio</p>
+                    <p className="text-sm font-bold text-gray-800">{comp.inizio}</p>
+                </div>
+                {comp.fine !== undefined && (
+                    <div className="bg-sky-50 rounded-xl p-3">
+                        <p className="text-[11px] uppercase tracking-wide font-semibold text-sky-600">Fine</p>
+                        <p className="text-sm font-bold text-gray-800">{comp.fine}</p>
+                    </div>
+                )}
+            </div>
+
+            {comp.avanzamento !== undefined && (
+                <div>
+                    <div className="flex justify-between items-center text-xs font-semibold mb-1">
+                        <span className="text-gray-500 uppercase tracking-wide">Avanzamento</span>
+                        <span className="text-sky-800">{perc.toFixed(1)}%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                        <div
+                            className={`${stile.bar} h-2.5 rounded-full transition-all duration-500 ease-out`}
+                            style={{ width: `${perc}%` }}
+                        />
+                    </div>
+                </div>
+            )}
+
+            <div className="mt-auto">
+                {consultabile ? (
+                    <Link
+                        to={`/competizioni${comp.link}`}
+                        className="block w-full bg-sky-700 text-white text-center font-semibold py-2 rounded-xl hover:bg-sky-800 active:scale-95 transition"
+                    >
+                        Vedi classifica
+                    </Link>
+                ) : (
+                    <p className="text-center text-sm text-gray-400 font-medium py-2">Non ancora iniziata</p>
+                )}
+            </div>
+        </article>
+    )
+}
+
+export default function Competizioni() {
+    const competizioni = competizioniData.competizioni || competizioniData
+    const [selectedFilter, setSelectedFilter] = useState(null)
+
+    const valide = useMemo(
+        () => competizioni.filter((c) => c.stato !== 'None'),
+        [competizioni]
+    )
+
+    const filtrate = useMemo(
+        () =>
+            valide
+                .filter((c) => !selectedFilter || c.stato === selectedFilter)
+                .sort((a, b) => a.nome.localeCompare(b.nome)),
+        [valide, selectedFilter]
+    )
+
+    const toggleFilter = (stato) => setSelectedFilter((prev) => (prev === stato ? null : stato))
+
+    return (
+        <div className="max-w-5xl mx-auto space-y-8 px-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <h1 className="text-3xl font-extrabold text-sky-900">Competizioni</h1>
+
+                <div className="flex flex-wrap gap-2">
+                    {FILTRI.map((stato) => {
+                        const count = valide.filter((c) => c.stato === stato).length
+                        const isActive = selectedFilter === stato
 
                         return (
                             <button
-                                key={status}
-                                onClick={() => handleFilterClick(status)}
-                                className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 flex items-evenly gap-1.5 border ${
+                                key={stato}
+                                onClick={() => toggleFilter(stato)}
+                                aria-pressed={isActive}
+                                className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold border-2 transition-all duration-200 cursor-pointer ${
                                     isActive
-                                        ? `${statusStyles[status]} shadow-md scale-105 border-2`
-                                        : `${borderStyle[status]} border-2 bg-white text-gray-600 hover:bg-gray-100 border-gray-200`
+                                        ? `${STATI[stato].attivo} shadow-md scale-105`
+                                        : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
                                 }`}
                             >
-                                <span>{status}</span>
-                                <span
-                                    className={`text-xs px-2 py-0.5 rounded-full ${
-                                        isActive
-                                            ? 'bg-black/10 text-current'
-                                            : 'bg-gray-200 text-gray-700'
-                                    }`}
-                                >
-                                    {count}
-                                </span>
+                                <span className={`w-2 h-2 rounded-full ${STATI[stato].dot}`} />
+                                <span>{stato}</span>
+                                <span className="text-xs px-2 py-0.5 rounded-full bg-black/10">{count}</span>
                             </button>
                         )
                     })}
                 </div>
             </div>
 
-            {/* Griglia Competizioni */}
-            <div className="grid md:grid-cols-2 gap-6">
-                {competizioniFiltrate
-                    .sort((a, b) => a.nome.localeCompare(b.nome))
-                    .map((comp) => (
-                        <div
-                            key={comp.id}
-                            className="bg-sky-50 rounded-lg shadow shadow-sky-600 p-6 border-l-6 border-sky-600"
-                        >
-                            <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">{comp.nome}</h2>
-
-                            <div className="flex flex-col gap-2 text-gray-700">
-                                <div>
-                                    <span className="font-semibold">Squadre partecipanti:</span> {comp.squadre}
-                                </div>
-                                <div className="flex flex-col">
-                                    <span className="font-semibold">Inizio competizione:</span>
-                                    <span className="pl-4">{comp.inizio}</span>
-                                </div>
-                                {comp.fine !== undefined && (
-                                    <div className="flex flex-col">
-                                        <span className="font-semibold">Fine competizione:</span>
-                                        <span className="pl-4">{comp.fine}</span>
-                                    </div>
-                                )}
-
-                                {comp.avanzamento !== undefined && (
-                                    <div className="mt-1">
-                                        <div className="flex justify-between items-center text-sm font-semibold mb-1">
-                                            <span className="text-gray-600">Avanzamento</span>
-                                            <span className="text-sky-800">{calcAvanzamento(comp)}%</span>
-                                        </div>
-
-                                        <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
-                                            <div
-                                                className="bg-sky-600 h-2.5 rounded-full transition-all duration-500 ease-out"
-                                                style={{ width: `${Math.min(100, Math.max(0, calcAvanzamento(comp)))}%` }}
-                                            />
-                                        </div>
-                                    </div>
-                                )}
-                            </div>
-
-                            <div className="flex justify-between items-center mt-4 font-semibold text-sky-900">
-                                {statusStyles[comp.stato] && (
-                                    <span className={`w-30 rounded-full px-3 py-1.5 text-center ${statusStyles[comp.stato]}`}>
-                                        {comp.stato}
-                                    </span>
-                                )}
-
-                                {comp.stato === 'Attivo' || comp.stato === 'Terminata' ? (
-                                    <Link
-                                        to={`/competizioni${comp.link}`}
-                                        className="w-30 bg-sky-700 text-white px-4 py-1.5 rounded-full hover:bg-sky-800 transition text-center"
-                                    >
-                                        Info
-                                    </Link>
-                                ) : (
-                                    <div className="w-30" />
-                                )}
-                            </div>
-                        </div>
-                    ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {filtrate.map((comp) => (
+                    <CompetizioneCard key={comp.id} comp={comp} />
+                ))}
             </div>
 
-            {competizioniFiltrate.length === 0 && (
+            {filtrate.length === 0 && (
                 <div className="text-center py-12 text-gray-500 font-medium">
                     Nessuna competizione trovata per questo stato.
                 </div>

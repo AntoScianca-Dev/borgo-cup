@@ -1,157 +1,103 @@
+import { useMemo } from 'react'
+import { Link } from 'react-router-dom'
 import squadreData from '../assets/data/classifiche.json'
 import headerS from '../assets/image/header_survivor.png'
-import { Link } from 'react-router-dom'
+
+const COMPETIZIONE_ID = 7
+
+function SquadraRow({ squadra, posizione, eliminata = false }) {
+    const accento = eliminata ? 'border-pink-500' : 'border-lime-500'
+
+    return (
+        <div
+            className={`group min-w-0 bg-white rounded-2xl border-l-8 ${accento} shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 p-3 ${
+                eliminata ? 'opacity-90' : ''
+            }`}
+        >
+            <div className="flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3 min-w-0">
+                    <span className="w-9 h-9 shrink-0 flex items-center justify-center rounded-full bg-gray-50 shadow-inner text-base font-bold text-gray-700">
+                        {eliminata ? '❌' : posizione}
+                    </span>
+                    <span
+                        className="truncate font-bold text-lg text-gray-800 border-l-8 rounded-2xl pl-2"
+                        style={{ borderColor: squadra.border }}
+                    >
+                        {squadra.nome}
+                    </span>
+                </div>
+                <span className="text-2xl font-black text-sky-950 tabular-nums">
+                    {(squadra.punteggio || 0).toFixed(1)}
+                </span>
+            </div>
+        </div>
+    )
+}
 
 export default function Survivor() {
+    const serie = squadreData.classifiche.find((c) => c.id === COMPETIZIONE_ID)
 
-    // 1. Estrai la classifica del "Serie" (id: 1)
-    const serieObj = squadreData.classifiche.find(
-        (item) => item.id === 7
-    )
+    const { attivi, eliminati } = useMemo(() => {
+        const partecipanti = serie?.partecipanti ?? []
+        return {
+            attivi: partecipanti
+                .filter((p) => p.stato === 'attivo')
+                .sort((a, b) => b.punteggio - a.punteggio),
+            eliminati: partecipanti
+                .filter((p) => p.stato === 'eliminato')
+                .sort((a, b) => b.totale2 - a.totale2),
+        }
+    }, [serie])
 
-    // 2. Prendi l'array dei partecipanti (con fallback ad array vuoto)
-    const partecipantiRaw = serieObj?.partecipanti || []
+    if (!serie) return null
 
-    // 3. Ordina i partecipanti per posizione crescente (1°, 2°, 3°, ...)
-    // const classificaOrdinata = [...partecipantiRaw].sort((a, b) => b.punteggio - a.punteggio)
-    
     return (
-        <div className="max-w-4xl mx-auto space-y-6">
-            {/* Header Schermata */}
-            <div className="text-center space-y-2 text-sky-50">
-                <Link to='/competizioni'>
-                    <h1 className="text-4xl tracking-tight flex items-center justify-center gap-3 py-6 rounded-tl-4xl rounded-br-4xl font-medium mb-2"
-                    style={{ 
-                        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${headerS})`, 
-                        backgroundSize: 'cover', 
-                        backgroundPosition: 'center' 
-                    }}>
-                        <span className='flex gap-0.5 items-center justify-center text-sky-900 text-shadow-2xs text-shadow-sky-50'>
-                            <div className='w-20 h-20 flex items-center justify-center object-center m-0 overflow-hidden'>
-                                <img src={`../images/survivor.png`} className='object-contain w-15 h-15' alt="Logo survivor game" />
-                            </div>
-                            <span >
-                                {`${serieObj.nome}`}
-                            </span>
-                        </span>
-                    </h1>
-                </Link>
+        <div className="max-w-4xl mx-auto space-y-6 px-3">
+            {/* Header */}
+            <Link to="/competizioni" className="block">
+                <h1
+                    className="py-6 rounded-tl-4xl rounded-br-4xl text-4xl font-medium tracking-tight shadow-lg"
+                    style={{
+                        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${headerS})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                >
+                    <span className="flex items-center justify-center gap-2 text-sky-900 text-shadow-2xs text-shadow-sky-50">
+                        <img src="../images/survivor.png" alt="Logo Survivor" className="w-16 h-16 object-contain" />
+                        <span>{serie.nome}</span>
+                    </span>
+                </h1>
+            </Link>
+
+            {/* Intestazione tabella */}
+            <div className="bg-linear-to-r from-lime-800 via-lime-700 to-lime-800 text-amber-50 rounded-2xl px-5 py-3 shadow-md flex justify-between items-center text-sm font-semibold uppercase tracking-wider">
+                <span>Squadra</span>
+                <span>Punti</span>
             </div>
 
-            {/* Scheda Tabella */}
-            <div className="rounded-2x overflow-hidden">
-                
-                {/* Banner testata tabella */}
-                <div className="bg-linear-to-r from-lime-800 via-lime-700 mb-2 to-lime-800 px-6 py-4 text-amber-50 rounded-2xl grid">
-                    <div className='flex justify-between items-center'>
-                        <div className="font-semibold text-sm tracking-wider uppercase">Squadra</div>
-                        <div className="font-semibold text-sm tracking-wider uppercase">Punti</div>
-                    </div>
-                </div>
-
-                {/* Lista Squadre attive */}
-                <div className="grid gap-4 mb-4 p-1">
-                {partecipantiRaw.filter((pfiltri) => pfiltri.stato == "attivo")
-                    .sort((a, b) => b.punteggio - a.punteggio)
-                    .map((squadra, index) => {
-                    const posizione = index + 1
-
-                    return (
-                    <div
-                        key={squadra.id || index}
-                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 border-lime-600 border-y rounded-2xl shadow shadow-lime-800 transition-all duration-200 hover:bg-sky-50/50 group `}
-                        // style={{borderLeftColor: squadra.border, borderRightColor: squadra.border}}
-                    >
-                        <div className='flex items-center justify-between'>
-                            {/* Posizione + Badge + Nome */}
-                            <div className="flex items-center gap-1.5">
-                                {/* Numero / Medaglia Posizione */}
-                                <div className="w-9 h-9 flex items-center justify-center font-bold text-lg rounded-full shrink-0">
-                                    <span className="text-lime-800 font-medium text-base shadow shadow-lime-800 w-9 h-9 flex items-center justify-center rounded-full"
-                                    >
-                                        {posizione}
-                                    </span>
-                                </div>
-
-                                {/* Dettagli Squadra */}
-                                <div className="flex items-center gap-3">
-                                    <span   
-                                    className={`font-bold text-lg transition-colors group-hover:text-sky-700 text-gray-800 border-l-8 rounded-2xl pl-2`}
-                                    style={{borderColor: squadra.border}}
-                                    >
-                                        {squadra.nome}
-                                    </span>
-                                </div>
-                            </div>
-
-                            {/* Punteggio */}
-                            <div className="flex items-center">
-                                <span
-                                    className={`text-xl font-black px-4 py-1.5 rounded-xlbg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900`}
-                                >
-                                    {(squadra.punteggio || 0).toFixed(1)}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    )
-                })}
-                </div>
-
-                <div className='flex text-2xl items-center justify-evenly pt-4 pb-2'>
-                    <span>➖❌➖</span>
-                    <span>ELIMINATI</span>
-                    <span>➖❌➖</span>
-                </div>
-                
-                {/* Lista Squadre eliminate */}
-                <div className="grid gap-4 mb-4 p-1">
-                {partecipantiRaw.filter((pfiltri) => pfiltri.stato == "eliminato")
-                    .sort((a, b) => b.totale2 - a.totale2)
-                    .map((squadra, index) => {
-
-                    return (
-                    <div
-                        key={squadra.id || index}
-                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 border-pink-600 border-y rounded-2xl shadow shadow-pink-800 transition-all duration-200 hover:bg-sky-50/50 group `}
-                        // style={{borderLeftColor: squadra.border, borderRightColor: squadra.border}}
-                    >
-                        <div className='flex items-center justify-between'>
-                            {/* Posizione + Badge + Nome */}
-                            <div className="flex items-center gap-1.5">
-                                {/* Numero / Medaglia Posizione */}
-                                <div className="w-9 h-9 flex items-center justify-center font-bold text-lg rounded-full shrink-0">
-                                    <span className="text-pink-800 font-medium text-base shadow shadow-pink-800 w-9 h-9 flex items-center justify-center rounded-full"
-                                    >
-                                        ❌
-                                    </span>
-                                </div>
-
-                                {/* Dettagli Squadra */}
-                                <div className="flex items-center gap-3">
-                                    <span   
-                                    className={`font-bold text-lg transition-colors group-hover:text-sky-700 text-gray-800 border-l-8 rounded-2xl pl-2`}
-                                    style={{borderColor: squadra.border}}
-                                    >
-                                        {squadra.nome}
-                                    </span>
-                                </div>
-                            </div>
-
-                            {/* Punteggio */}
-                            <div className="flex items-center">
-                                <span
-                                    className={`text-xl font-black px-4 py-1.5 rounded-xlbg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900`}
-                                >
-                                    {(squadra.punteggio || 0).toFixed(1)}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    )
-                })}
-                </div>
+            {/* Attivi */}
+            <div className="grid grid-cols-1 gap-3">
+                {attivi.map((s, i) => (
+                    <SquadraRow key={s.id} squadra={s} posizione={i + 1} />
+                ))}
             </div>
+
+            {/* Eliminati */}
+            {eliminati.length > 0 && (
+                <>
+                    <div className="flex items-center gap-3 pt-2">
+                        <div className="flex-1 h-px bg-pink-300" />
+                        <span className="text-sm font-black tracking-widest text-pink-700">❌ ELIMINATI ❌</span>
+                        <div className="flex-1 h-px bg-pink-300" />
+                    </div>
+                    <div className="grid grid-cols-1 gap-3 pb-4">
+                        {eliminati.map((s) => (
+                            <SquadraRow key={s.id} squadra={s} eliminata />
+                        ))}
+                    </div>
+                </>
+            )}
         </div>
     )
 }

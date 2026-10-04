@@ -1,260 +1,189 @@
-// import { useState } from 'react'
+import { useMemo } from 'react'
+import { Link } from 'react-router-dom'
 import squadreData from '../assets/data/classifiche.json'
 import competizioniData from '../assets/data/competizioni.json'
 import headerS from '../assets/image/header_squid.png'
-import { Link } from 'react-router-dom'
+
+// Unica fonte di verità per gli step
+const STEPS = [
+    { key: 'step1', soglia: 70 },
+    { key: 'step2', soglia: 73 },
+    { key: 'step3', soglia: 75 },
+    { key: 'step4', soglia: 78 },
+    { key: 'step5', soglia: 80 },
+]
+
+// Eliminati: chi è arrivato più lontano sta più in alto (si confronta dall'ultimo step)
+const confrontaEliminati = (a, b) => {
+    for (let i = STEPS.length - 1; i >= 0; i--) {
+        const k = STEPS[i].key
+        const diff = (b[k] || 0) - (a[k] || 0)
+        if (diff !== 0) return diff
+    }
+    return 0
+}
+
+function StepPills({ squadra, eliminata }) {
+    return (
+        <div className="grid grid-cols-5 gap-1.5 mt-3">
+            {STEPS.map(({ key, soglia }) => {
+                const valore = squadra[key] || 0
+                const stile = !valore
+                    ? 'bg-gray-100 text-gray-400'
+                    : valore >= soglia
+                    ? 'bg-lime-100 text-lime-800'
+                    : eliminata
+                    ? 'bg-pink-100 text-pink-800'
+                    : 'bg-amber-100 text-amber-800'
+                return (
+                    <div key={key} className={`text-center text-xs sm:text-sm font-semibold rounded-full py-1 ${stile}`}>
+                        {valore ? valore.toFixed(1) : '–'}
+                    </div>
+                )
+            })}
+        </div>
+    )
+}
+
+function SquadraRow({ squadra, posizione, eliminata = false }) {
+    const accento = eliminata ? 'border-pink-500' : 'border-lime-500'
+
+    return (
+        <div className={`group min-w-0 bg-white rounded-2xl border-l-8 ${accento} shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 p-3`}>
+            <div className="flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3 min-w-0">
+                    <span className="w-9 h-9 shrink-0 flex items-center justify-center rounded-full bg-gray-50 shadow-inner text-base font-bold text-gray-700">
+                        {eliminata ? '❌' : posizione}
+                    </span>
+                    <span
+                        className="truncate font-bold text-lg text-gray-800 border-l-8 rounded-2xl pl-2"
+                        style={{ borderColor: squadra.border }}
+                    >
+                        {squadra.nome}
+                    </span>
+                </div>
+                <span className="text-2xl font-black text-sky-950 tabular-nums">
+                    {(squadra.punteggio || 0).toFixed(1)}
+                </span>
+            </div>
+            <StepPills squadra={squadra} eliminata={eliminata} />
+        </div>
+    )
+}
 
 export default function Squid({ id }) {
+    const serie = squadreData.classifiche.find((c) => c.id === id)
+    const competizione = competizioniData.competizioni.find((c) => c.id === id)
 
-    // 1. Estrai la classifica del "Serie" (id: 1)
-    const serieObj = squadreData.classifiche.find(
-        (item) => item.id === id 
-    )
+    const { attivi, eliminati } = useMemo(() => {
+        const partecipanti = serie?.partecipanti ?? []
+        return {
+            attivi: partecipanti
+                .filter((p) => p.attivo === 'SI')
+                .sort((a, b) => b.punteggio - a.punteggio),
+            eliminati: partecipanti.filter((p) => p.attivo === 'NO').sort(confrontaEliminati),
+        }
+    }, [serie])
 
-    const giornataInCorso = competizioniData.competizioni.find(
-        (item) => item.id === id
-    ).giornata
+    if (!serie || !competizione) return null
 
-    // 2. Prendi l'array dei partecipanti (con fallback ad array vuoto)
-    const partecipantiRaw = serieObj?.partecipanti || []
+    const giornata = competizione.giornata
+    const vincitore = competizione.stato === 'Terminata' ? attivi[0] : null
 
-    // 3. Estrai la squadra vincitrice (quella attiva con punteggio massimo)
-    const isCompetizioneTerminata = competizioniData.competizioni.find(
-        (item) => item.id === id
-    ).stato === 'Terminata'
-
-    const vincitore = isCompetizioneTerminata 
-        ? partecipantiRaw
-            .filter((p) => p.attivo === "SI")
-            .sort((a, b) => b.punteggio - a.punteggio)[0]
-        : null
-    
     return (
         <div className="max-w-4xl mx-auto space-y-6">
-            {/* Header Schermata */}
-            <div className="text-center space-y-2 text-sky-50">
-                <Link to='/competizioni'>
-                    <h1 className="text-4xl tracking-tight flex items-center justify-center gap-3 py-6 rounded-tl-4xl rounded-br-4xl font-medium mb-2"
-                    style={{ 
-                        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${headerS})`, 
-                        backgroundSize: 'cover', 
-                        backgroundPosition: 'center' 
-                    }}>
-                        <span className='flex gap-0.5 items-center justify-center flex-col'>
-                            <div className='w-20 h-20 flex items-center justify-center object-center m-0 overflow-hidden'>
-                                <img src={`../images/squid.png`} className='object-contain w-15 h-15 rounded-full' alt="Logo squid game" />
-                            </div>
-                            <span >
-                                {`${serieObj.nome}`}
-                            </span>
-                        </span>
-                    </h1>
-                </Link>
-            </div>
+            {/* Header */}
+            <Link to="/competizioni" className="block">
+                <h1
+                    className="py-6 rounded-tl-4xl rounded-br-4xl text-sky-50 text-4xl font-medium tracking-tight shadow-lg"
+                    style={{
+                        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.35), rgba(131, 24, 67, 0.35)), url(${headerS})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                >
+                    <span className="flex flex-col items-center gap-1">
+                        <img src="../images/squid.png" alt="Logo Squid Game" className="w-16 h-16 object-contain rounded-full" />
+                        <span className="drop-shadow">{serie.nome}</span>
+                    </span>
+                </h1>
+            </Link>
 
-            {/* CARD VINCITORE */}
+            {/* Vincitore */}
             {vincitore && (
-                <div className="relative overflow-hidden rounded-3xl p-6 text-white shadow-2xl shadow-pink-600/30 border-2 border-pink-500/80 my-4"
-                    style={{ 
-                        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${headerS})`, 
-                        backgroundSize: 'cover', 
-                        backgroundPosition: 'center' 
-                    }}>
-                    <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-                        
-                        {/* Sinistra: Badge + Nome */}
-                        <div className="flex-col items-center gap-4">
-                            <span className="font-black uppercase tracking-widest text-pink-400 bg-pink-950/90 border border-pink-500/50 px-3 py-1 rounded-full shadow-sm">
-                                VINCITORE
-                            </span>
-                            <div className="flex justify-evenly w-80">
-                                <div className="text-4xl sm:text-5xl shrink-0 filter drop-shadow-[0_0_10px_rgba(244,63,94,0.6)]">
-                                    👑
-                                    <img src={`../images/logos/${vincitore.id}.png`} alt={`Logo ${vincitore.nome}`}  className='object-rigth w-15 absolute rounded-2xl'/>
-                                </div>
-                                <div className='grid gap-1.5'>
-                                    <h2 
-                                        className="text-3xl sm:text-4xl font-black tracking-tight mt-1"
-                                    >
-                                        {vincitore.nome}
-                                    </h2>
-                                    <div className="bg-black/40 backdrop-blur-md border border-pink-500/40 px-6 py-2.5 rounded-2xl shrink-0 shadow-inner">
-                                        <span className="block text-[10px] font-bold tracking-widest text-pink-300 uppercase">
-                                            Punti
-                                        </span>
-                                        <span className="text-3xl sm:text-4xl font-black text-lime-400">
-                                            {(vincitore.punteggio || 0).toFixed(1)}
-                                        </span>
-                                    </div>
-                                </div>
+                <div
+                    className="relative overflow-hidden rounded-3xl p-6 text-white border border-pink-500/60 shadow-2xl shadow-pink-600/30"
+                    style={{
+                        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.55), rgba(131, 24, 67, 0.55)), url(${headerS})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                >
+                    <div className="flex flex-wrap items-center justify-center sm:justify-between gap-4">
+                        <div className="flex items-center gap-4 min-w-0">
+                            <div className="relative shrink-0 pt-4">
+                                <span className="absolute top-0 left-1/2 -translate-x-1/2 text-3xl drop-shadow">👑</span>
+                                <img
+                                    src={`../images/logos/${vincitore.id}.png`}
+                                    alt={`Logo ${vincitore.nome}`}
+                                    className="w-20 h-20 rounded-2xl object-contain bg-white/90 p-1 ring-4 ring-pink-400/70"
+                                />
+                            </div>
+                            <div className="min-w-0">
+                                <span className="inline-block text-[11px] font-black uppercase tracking-widest text-pink-300 bg-pink-950/80 border border-pink-500/50 px-3 py-0.5 rounded-full">
+                                    Vincitore
+                                </span>
+                                <h2 className="text-3xl font-black tracking-tight truncate mt-1">{vincitore.nome}</h2>
                             </div>
                         </div>
-
+                        <div className="text-center bg-black/40 border border-pink-500/40 px-5 py-2 rounded-2xl">
+                            <span className="block text-[10px] font-bold tracking-widest text-pink-300 uppercase">Punti</span>
+                            <span className="text-3xl font-black text-lime-400">
+                                {(vincitore.punteggio || 0).toFixed(1)}
+                            </span>
+                        </div>
                     </div>
                 </div>
             )}
 
-            {/* Scheda Tabella */}
-            <div className="rounded-2x overflow-hidden">
-                
-                {/* Banner testata tabella */}
-                <div className="bg-linear-to-r from-pink-800 via-pink-700 mb-2 to-pink-800 px-6 py-4 text-amber-50 rounded-2xl grid">
-                    <div className='flex justify-between items-center'>
-                        <div className="font-semibold text-sm tracking-wider uppercase">Squadra</div>
-                        <div className="font-semibold text-sm tracking-wider uppercase">Punti</div>
-                    </div>
-                    <div className='flex justify-evenly'>
-                        <div className={`${giornataInCorso>=1 ? 'font-bold' : 'font-light'} text-center`}>STEP 1</div>
-                        <div className={`${giornataInCorso>=2 ? 'font-bold' : 'font-light'} text-center`}>STEP 2</div>
-                        <div className={`${giornataInCorso>=3 ? 'font-bold' : 'font-light'} text-center`}>STEP 3</div>
-                        <div className={`${giornataInCorso>=4 ? 'font-bold' : 'font-light'} text-center`}>STEP 4</div>
-                        <div className={`${giornataInCorso>=5 ? 'font-bold' : 'font-light'} text-center`}>STEP 5</div>
-                    </div>
-                    <div className='flex justify-evenly'>
-                        <div className={`${giornataInCorso>=1 ? 'font-bold' : 'font-light'} text-center`}>≥70</div>
-                        <div className={`${giornataInCorso>=2 ? 'font-bold' : 'font-light'} text-center`}>≥73</div>
-                        <div className={`${giornataInCorso>=3 ? 'font-bold' : 'font-light'} text-center`}>≥75</div>
-                        <div className={`${giornataInCorso>=4 ? 'font-bold' : 'font-light'} text-center`}>≥78</div>
-                        <div className={`${giornataInCorso>=5 ? 'font-bold' : 'font-light'} text-center`}>≥80</div>
-                    </div>
+            {/* Legenda step */}
+            <div className="bg-linear-to-r from-pink-800 via-pink-700 to-pink-800 text-amber-50 rounded-2xl px-4 py-3 shadow-md">
+                <div className="flex justify-between text-sm font-semibold uppercase tracking-wider">
+                    <span>Squadra</span>
+                    <span>Punti</span>
                 </div>
-
-                {/* Lista Squadre attive */}
-                <div className="grid gap-4 mb-4 p-1">
-                {partecipantiRaw.filter((pfiltri) => pfiltri.attivo == "SI")
-                    .sort((a, b) => b.punteggio - a.punteggio)
-                    .map((squadra, index) => {
-                    const posizione = index + 1
-
-                    return (
-                    <div
-                        key={squadra.id || index}
-                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 border-lime-600 border-y rounded-2xl shadow shadow-lime-800 transition-all duration-200 hover:bg-sky-50/50 group `}
-                        // style={{borderLeftColor: squadra.border, borderRightColor: squadra.border}}
-                    >
-                        <div className='flex items-center justify-between'>
-                            {/* Posizione + Badge + Nome */}
-                            <div className="flex items-center gap-1.5">
-                                {/* Numero / Medaglia Posizione */}
-                                <div className="w-9 h-9 flex items-center justify-center font-bold text-lg rounded-full shrink-0">
-                                    <span className="text-lime-800 font-medium text-base shadow shadow-lime-800 w-9 h-9 flex items-center justify-center rounded-full"
-                                    >
-                                        {posizione}
-                                    </span>
-                                </div>
-
-                                {/* Dettagli Squadra */}
-                                <div className="flex items-center gap-3">
-                                    <span   
-                                    className={`font-bold text-lg transition-colors group-hover:text-sky-700 text-gray-800 border-l-8 rounded-2xl pl-2`}
-                                    style={{borderColor: squadra.border}}
-                                    >
-                                        {squadra.nome}
-                                    </span>
-                                </div>
-                            </div>
-
-                            {/* Punteggio */}
-                            <div className="flex items-center">
-                                <span
-                                    className={`text-xl font-black px-4 py-1.5 rounded-xlbg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900`}
-                                >
-                                    {(squadra.punteggio || 0).toFixed(1)}
-                                </span>
-                            </div>
+                <div className="grid grid-cols-5 gap-1.5 mt-2 text-center">
+                    {STEPS.map(({ key, soglia }, i) => (
+                        <div key={key} className={i < giornata ? 'font-bold' : 'font-light opacity-70'}>
+                            <p className="text-xs sm:text-sm">STEP {i + 1}</p>
+                            <p className="text-xs">≥{soglia}</p>
                         </div>
-
-                        {/* Punteggio */}
-                        <div className='flex justify-evenly pt-0.5'>
-                            <div className={`font-medium ${squadra.step1>=70 ? "bg-lime-100" : "bg-amber-100" }  px-4 text-center rounded-full`}>{(squadra.step1 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step2>=73 ? "bg-lime-100" : "bg-amber-100" }  px-4 text-center rounded-full`}>{(squadra.step2 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step3>=75 ? "bg-lime-100" : "bg-amber-100" }  px-4 text-center rounded-full`}>{(squadra.step3 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step4>=78 ? "bg-lime-100" : "bg-amber-100" }  px-4 text-center rounded-full`}>{(squadra.step4 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step5>=80 ? "bg-lime-100" : "bg-amber-100" }  px-4 text-center rounded-full`}>{(squadra.step5 || 0).toFixed(1)}</div>
-                        </div>
-                    </div>
-                    )
-                })}
-                </div>
-
-                <div className='flex text-2xl items-center justify-evenly pt-4 pb-2'>
-                    <span>➖❌➖</span>
-                    <span>ELIMINATI</span>
-                    <span>➖❌➖</span>
-                </div>
-                
-                {/* Lista Squadre eliminate */}
-                <div className="grid gap-4 mb-4 p-1">
-                {partecipantiRaw.filter((pfiltri) => pfiltri.attivo == "NO")
-                    .sort((a, b) => {
-                        const puntiA =  (a.step1 || 0) +
-                                        (a.step2 || 0) * 10 +
-                                        (a.step3 || 0) * 100 +
-                                        (a.step4 || 0) * 1000 +
-                                        (a.step5 || 0) * 10000;
-
-                        const puntiB =  (b.step1 || 0) +
-                                        (b.step2 || 0) * 10 +
-                                        (b.step3 || 0) * 100 +
-                                        (b.step4 || 0) * 1000 +
-                                        (b.step5 || 0) * 10000;
-
-                        return puntiB-puntiA
-                    }
-                    )
-                    .map((squadra, index) => {
-
-                    return (
-                    <div
-                        key={squadra.id || index}
-                        className={`flex flex-col px-2 py-2 border-l-8 border-r-2 border-pink-600 border-y rounded-2xl shadow shadow-pink-800 transition-all duration-200 hover:bg-sky-50/50 group `}
-                        // style={{borderLeftColor: squadra.border, borderRightColor: squadra.border}}
-                    >
-                        <div className='flex items-center justify-between'>
-                            {/* Posizione + Badge + Nome */}
-                            <div className="flex items-center gap-1.5">
-                                {/* Numero / Medaglia Posizione */}
-                                <div className="w-9 h-9 flex items-center justify-center font-bold text-lg rounded-full shrink-0">
-                                    <span className="text-pink-800 font-medium text-base shadow shadow-pink-800 w-9 h-9 flex items-center justify-center rounded-full"
-                                    >
-                                        ❌
-                                    </span>
-                                </div>
-
-                                {/* Dettagli Squadra */}
-                                <div className="flex items-center gap-3">
-                                    <span   
-                                    className={`font-bold text-lg transition-colors group-hover:text-sky-700 text-gray-800 border-l-8 rounded-2xl pl-2`}
-                                    style={{borderColor: squadra.border}}
-                                    >
-                                        {squadra.nome}
-                                    </span>
-                                </div>
-                            </div>
-
-                            {/* Punteggio */}
-                            <div className="flex items-center">
-                                <span
-                                    className={`text-xl font-black px-4 py-1.5 rounded-xlbg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900`}
-                                >
-                                    {(squadra.punteggio || 0).toFixed(1)}
-                                </span>
-                            </div>
-                        </div>
-
-                        {/* Punteggio */}
-                        <div className='flex justify-evenly pt-0.5'>
-                            <div className={`font-medium ${squadra.step1>=70 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step1 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step2>=73 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step2 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step3>=75 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step3 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step4>=78 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step4 || 0).toFixed(1)}</div>
-                            <div className={`font-medium ${squadra.step5>=80 ? "bg-lime-100" : "bg-pink-100" }  px-4 text-center rounded-full`}>{(squadra.step5 || 0).toFixed(1)}</div>
-                        </div>
-                    </div>
-                    )
-                })}
+                    ))}
                 </div>
             </div>
+
+            {/* Attivi */}
+            <div className="grid grid-cols-1 gap-3">
+                {attivi.map((s, i) => (
+                    <SquadraRow key={s.id} squadra={s} posizione={i + 1} />
+                ))}
+            </div>
+
+            {/* Separatore eliminati */}
+            {eliminati.length > 0 && (
+                <>
+                    <div className="flex items-center gap-3 pt-2">
+                        <div className="flex-1 h-px bg-pink-300" />
+                        <span className="text-sm font-black tracking-widest text-pink-700">❌ ELIMINATI ❌</span>
+                        <div className="flex-1 h-px bg-pink-300" />
+                    </div>
+                    <div className="grid grid-cols-1 gap-3 pb-4">
+                        {eliminati.map((s) => (
+                            <SquadraRow key={s.id} squadra={s} eliminata />
+                        ))}
+                    </div>
+                </>
+            )}
         </div>
     )
 }

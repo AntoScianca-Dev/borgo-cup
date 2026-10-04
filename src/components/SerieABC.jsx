@@ -1,187 +1,148 @@
-// import { useState } from 'react'
+import { useMemo } from 'react'
+import { Link } from 'react-router-dom'
+import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/24/solid'
 import squadreData from '../assets/data/classifiche.json'
 import competizioniData from '../assets/data/competizioni.json'
 import headerC from '../assets/image/header_campionato.png'
-import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/24/solid'
-import { Link } from 'react-router-dom'
+
+const STATS = [
+    { key: 'giocate', label: 'G' },
+    { key: 'vinte', label: 'V' },
+    { key: 'pari', label: 'N' },
+    { key: 'perso', label: 'P' },
+    { key: 'gf', label: 'GF' },
+    { key: 'gs', label: 'GS' },
+]
+
+const MEDAGLIE = {
+    1: 'from-amber-400 to-yellow-300 text-amber-950 shadow-amber-300/60',
+    2: 'from-gray-300 to-gray-100 text-gray-800 shadow-gray-300/60',
+    3: 'from-amber-700 to-amber-600 text-amber-50 shadow-amber-700/40',
+}
+
+// Zone in base al campionato: 'promozione' | 'retrocessione' | null
+const getZona = (posizione, nomeCampionato) => {
+    if (posizione <= 3 && nomeCampionato !== 'Serie A') return 'promozione'
+    if (posizione >= 6 && posizione <= 8 && nomeCampionato !== 'Serie C') return 'retrocessione'
+    return null
+}
+
+function PosizioneBadge({ posizione, zona }) {
+    const stile = zona === 'retrocessione'
+        ? 'from-pink-700 to-pink-500 text-white shadow-pink-400/50'
+        : MEDAGLIE[posizione] ?? 'from-sky-50 to-white text-sky-950 shadow-sky-200'
+
+    return (
+        <span className="relative shrink-0">
+            <span className={`w-10 h-10 flex items-center justify-center rounded-full bg-linear-to-tr font-black text-lg shadow-md ${stile}`}>
+                {posizione}
+            </span>
+            {zona && (
+                <span
+                    className={`absolute -top-1 -right-1 w-4.5 h-4.5 flex items-center justify-center rounded-full text-white ring-2 ring-white ${
+                        zona === 'promozione' ? 'bg-emerald-500' : 'bg-pink-600'
+                    }`}
+                >
+                    {zona === 'promozione'
+                        ? <ArrowUpIcon className="w-3 h-3" />
+                        : <ArrowDownIcon className="w-3 h-3" />}
+                </span>
+            )}
+        </span>
+    )
+}
+
+function SquadraRow({ squadra, posizione, nomeCampionato }) {
+    const zona = getZona(posizione, nomeCampionato)
+    const isPrimo = posizione === 1
+
+    return (
+        <div
+            className={`group min-w-0 rounded-2xl border-l-8 border-r-2 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 p-3 ${
+                isPrimo ? 'bg-amber-50' : 'bg-white'
+            }`}
+            style={{ borderLeftColor: squadra.border, borderRightColor: squadra.border }}
+        >
+            <div className="flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3 min-w-0">
+                    <PosizioneBadge posizione={posizione} zona={zona} />
+                    <span className={`truncate font-bold group-hover:text-sky-700 transition-colors ${
+                        isPrimo ? 'text-xl text-amber-900' : 'text-lg text-gray-800'
+                    }`}>
+                        {squadra.nome}
+                    </span>
+                </div>
+                <span className={`text-2xl font-black tabular-nums px-3 py-1 rounded-xl ${
+                    isPrimo ? 'bg-amber-400/25 text-amber-900' : 'bg-gray-100 text-sky-950'
+                }`}>
+                    {squadra.punteggio || 0}
+                </span>
+            </div>
+
+            <div className="grid grid-cols-6 gap-1.5 mt-3">
+                {STATS.map(({ key, label }) => (
+                    <div key={key} className="bg-sky-50 rounded-xl py-1 text-center">
+                        <p className="text-[10px] font-semibold uppercase tracking-wide text-sky-600">{label}</p>
+                        <p className="text-sm font-bold text-gray-800">{squadra[key] ?? 0}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
 
 export default function SerieABC({ id }) {
+    const serie = squadreData.classifiche.find((c) => c.id === id)
+    const competizione = competizioniData.competizioni.find((c) => c.id === id)
 
-    // 1. Estrai la classifica del "Serie" (id: 1)
-    const serieObj = squadreData.classifiche.find(
-        (item) => item.id === id 
+    const classifica = useMemo(
+        () => [...(serie?.partecipanti ?? [])].sort((a, b) => a.posizione - b.posizione),
+        [serie]
     )
 
-    const giornataInCorso = competizioniData.competizioni.find(
-        (item) => item.id === id
-    ).giornata
+    if (!serie || !competizione) return null
 
-    // 2. Prendi l'array dei partecipanti (con fallback ad array vuoto)
-    const partecipantiRaw = serieObj?.partecipanti || []
+    const imgsrc = serie.nome.replaceAll(' ', '').replace('S', 's').concat('.png')
 
-    // 3. Ordina i partecipanti per posizione crescente (1°, 2°, 3°, ...)
-    const classificaOrdinata = [...partecipantiRaw].sort((a, b) => a.posizione - b.posizione)
-    const imgsrc = serieObj.nome.replaceAll(' ', '').replace('S','s').concat('.png');
-    
     return (
-        <div className="max-w-4xl mx-auto space-y-6">
-        {/* Header Schermata */}
-        <div className="text-center space-y-2 text-sky-50">
-            <Link to='/competizioni'>
-                <h1 className="text-4xl tracking-tight flex items-center justify-center gap-3 py-6 rounded-tl-4xl rounded-br-4xl font-medium mb-2"
-                style={{ 
-                    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${headerC})`, 
-                    backgroundSize: 'cover', 
-                    backgroundPosition: 'center' 
-                }}>
-                    <span className='flex gap-4 items-center justify-center'>
-                        <div className='w-20 h-20 flex items-center justify-center object-center m-0 overflow-hidden'>
-                            <img src={`../images/${imgsrc}`} className='object-contain w-15 h-15 rounded-full' alt="Logo campionato" />
-                        </div>
-                        <span className=''>
-                            Classifica <br/>{`${serieObj.nome}`}
+        <div className="max-w-4xl mx-auto space-y-6 px-3">
+            {/* Header */}
+            <Link to="/competizioni" className="block">
+                <h1
+                    className="py-6 rounded-tl-4xl rounded-br-4xl text-sky-50 text-4xl font-medium tracking-tight shadow-lg"
+                    style={{
+                        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${headerC})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                >
+                    <span className="flex items-center justify-center gap-4">
+                        <img src={`../images/${imgsrc}`} alt="Logo campionato" className="w-16 h-16 object-contain rounded-full" />
+                        <span className="drop-shadow">
+                            Classifica <br />{serie.nome}
                         </span>
                     </span>
                 </h1>
             </Link>
-            <div className="flex items-center justify-evenly px-10">
-                <p className="text-sky-900 font-medium uppercase text-2xl">
-                    {giornataInCorso}' giornata
-                </p>
-            </div>
-        </div>
 
-        {/* Scheda Tabella */}
-        <div className="rounded-2x overflow-hidden">
-            
-            {/* Banner testata tabella */}
-            <div className="bg-linear-to-r from-sky-950 via-sky-800 mb-2 to-sky-950 px-6 py-4 text-amber-50 rounded-2xl grid gap-2">
-                <div className='flex justify-between items-center'>
-                    <div className="font-semibold text-sm tracking-wider uppercase">Squadra</div>
-                    <div className="font-semibold text-sm tracking-wider uppercase">Punti</div>
-                </div>
-                <div className='flex justify-evenly'>
-                    <div className="font-semibold text-sm px-4 text-center">G</div>
-                    <div className="font-semibold text-sm px-4 text-center">V</div>
-                    <div className="font-semibold text-sm px-4 text-center">N</div>
-                    <div className="font-semibold text-sm px-4 text-center">P</div>
-                    <div className="font-semibold text-sm px-4 text-center">Gf</div>
-                    <div className="font-semibold text-sm px-4 text-center">Gs</div>
-                </div>
+            <div className="flex justify-center">
+                <span className="bg-sky-900 text-sky-50 text-sm font-bold uppercase tracking-widest px-5 py-1.5 rounded-full shadow">
+                    {competizione.giornata}ª giornata
+                </span>
             </div>
 
-            {/* Lista Squadre */}
-            <div className="grid gap-4 mb-4 p-1">
-            {classificaOrdinata.map((squadra, index) => {
-                const posizione = index + 1
-                const isPrimo = posizione === 1
-                const isSecondo = posizione === 2
-                const isTerzo = posizione === 3
-                const isRed = (posizione === 6 || posizione === 7 || posizione === 8) && serieObj.nome!='Serie C'
-                const isGreen = (posizione === 1 || posizione === 2 || posizione === 3) && serieObj.nome!='Serie A'
-
-                return (
-                <div
-                    key={squadra.id || index}
-                    className={`flex flex-col px-2 py-2 border-l-8 border-r-2 rounded-2xl shadow shadow-sky-950 transition-all duration-200 hover:bg-sky-50/50 group ${
-                    isPrimo ? 'bg-amber-50/40' : ''
-                    }`}
-                    style={{borderLeftColor: squadra.border, borderRightColor: squadra.border}}
-                >
-                    <div className='flex items-center justify-between'>
-                        {/* Posizione + Badge + Nome */}
-                        <div className="flex items-center gap-1.5">
-                            {/* Numero / Medaglia Posizione */}
-                            <div className="w-9 h-9 flex items-center justify-center font-bold text-lg rounded-full shrink-0">
-                                {isPrimo && (
-                                <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-400 to-yellow-300 text-amber-950 flex items-center justify-center shadow-md shadow-amber-300/50">
-                                    1
-                                    {isGreen &&(
-                                        <ArrowUpIcon className="w-3.5 h-3.5" />
-                                    )}
-                                </span>
-                                )}
-                                {isSecondo && (
-                                <span className="w-9 h-9 rounded-full bg-linear-to-tr from-gray-300 to-gray-100 text-gray-800 flex items-center justify-center shadow-md border border-gray-300">
-                                    2
-                                    {isGreen &&(
-                                        <ArrowUpIcon className="w-3.5 h-3.5" />
-                                    )}
-                                </span>
-                                )}
-                                {isTerzo && (
-                                <span className="w-9 h-9 rounded-full bg-linear-to-tr from-amber-700 to-amber-600 text-amber-50 flex items-center justify-center shadow-md">
-                                    3
-                                    {isGreen &&(
-                                        <ArrowUpIcon className="w-3.5 h-3.5" />
-                                    )}
-                                </span>
-                                )}
-                                
-                                {isRed && (
-                                <span className="w-9 h-9 rounded-full bg-linear-to-tr from-pink-700 to-pink-600 text-amber-50 flex items-center justify-center shadow-md">
-                                    {posizione}
-                                    <ArrowDownIcon className="w-3.5 h-3.5" />
-                                </span>
-                                )}
-                                {!isPrimo && !isSecondo && !isTerzo && !isRed &&(
-                                    <span className="text-sky-950 font-medium text-base shadow shadow-sky-950 w-9 h-9 flex items-center justify-center rounded-full">
-                                        {posizione}
-                                    </span>
-                                )}
-                            </div>
-
-                            {/* Dettagli Squadra */}
-                            <div className="flex items-center gap-3">
-                                <span   
-                                className={`font-bold text-lg transition-colors group-hover:text-sky-700 ${
-                                    isPrimo ? 'text-amber-900 text-xl' : 'text-gray-800'
-                                }`}
-                                >
-                                    {squadra.nome}
-                                </span>
-                            </div>
-                        </div>
-
-                        {/* Punteggio */}
-                        <div className="flex items-center">
-                            <span
-                                className={`text-xl font-black px-4 py-1.5 rounded-xl ${
-                                isPrimo
-                                    ? 'bg-amber-400/20 text-amber-900 border border-amber-300/50'
-                                    : 'bg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900'
-                                }`}
-                            >
-                                {(squadra.punteggio || 0)}
-                            </span>
-                        </div>
-                    </div>
-
-                    {/* Punteggio */}
-                    <div className='flex justify-evenly pt-0.5'>
-                        <div className="font-medium bg-sky-100 px-4 text-center rounded-full">{squadra.giocate}</div>
-                        <div className="font-medium bg-sky-100 px-4 text-center rounded-full">{squadra.vinte}</div>
-                        <div className="font-medium bg-sky-100 px-4 text-center rounded-full">{squadra.pari}</div>
-                        <div className="font-medium bg-sky-100 px-4 text-center rounded-full">{squadra.perso}</div>
-                        <div className="font-medium bg-sky-100 px-4 text-center rounded-full">{squadra.gf}</div>
-                        <div className="font-medium bg-sky-100 px-4 text-center rounded-full">{squadra.gs}</div>
-                    </div>
-                    {/* <div className="flex items-center"> */}
-                        {/* <span
-                            className={`text-xl font-black px-4 py-1.5 rounded-xl ${
-                            isPrimo
-                                ? 'bg-amber-400/20 text-amber-900 border border-amber-300/50'
-                                : 'bg-gray-100 text-sky-950 group-hover:bg-sky-100 group-hover:text-sky-900'
-                            }`}
-                        >
-                            {(squadra.punteggio || 0)}
-                        </span> */}
-                    {/* </div> */}
-                </div>
-                )
-            })}
+            {/* Intestazione */}
+            <div className="bg-linear-to-r from-sky-950 via-sky-800 to-sky-950 text-amber-50 rounded-2xl px-5 py-3 shadow-md flex justify-between items-center text-sm font-semibold uppercase tracking-wider">
+                <span>Squadra</span>
+                <span>Punti</span>
             </div>
-        </div>
+
+            {/* Classifica */}
+            <div className="grid grid-cols-1 gap-3 pb-4">
+                {classifica.map((s, i) => (
+                    <SquadraRow key={s.id ?? i} squadra={s} posizione={i + 1} nomeCampionato={serie.nome} />
+                ))}
+            </div>
         </div>
     )
 }

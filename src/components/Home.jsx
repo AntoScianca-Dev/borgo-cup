@@ -1,44 +1,83 @@
+import { useMemo } from 'react'
 import Card from './Card'
 import competizioniData from '../assets/data/competizioni.json'
 
+const EDIZIONE = '9ª Edizione'
+const STAGIONE = 'Stagione 2026/2027'
+
+const MENU = [
+    {
+        title: 'Tutte le Competizioni',
+        description: 'Consulta archivio, gironi, calendari e classifiche complete.',
+        icon: '🏆',
+        link: '/competizioni',
+    },
+    {
+        title: 'Squadre e Rose',
+        description: 'Scopri i club partecipanti, gli elenchi dei giocatori e i dettagli dei team.',
+        icon: '👥',
+        link: '/squadre',
+    },
+    {
+        title: 'Regolamento',
+        description: 'Leggi le norme ufficiali, il sistema di punteggio e le linee guida della lega.',
+        icon: '📋',
+        link: '/regolamento',
+    },
+]
+
+function SectionTitle({ children, badge }) {
+    return (
+        <div className="flex items-center gap-3 mb-6">
+            <div className="flex-1 h-px bg-linear-to-r from-transparent to-sky-200" />
+            <h2 className="flex items-center gap-2 text-sm sm:text-base font-extrabold uppercase tracking-widest text-sky-800">
+                {children}
+                {badge !== undefined && (
+                    <span className="bg-sky-800 text-white text-xs font-bold rounded-full px-2 py-0.5">{badge}</span>
+                )}
+            </h2>
+            <div className="flex-1 h-px bg-linear-to-l from-transparent to-sky-200" />
+        </div>
+    )
+}
+
 export default function Home() {
-    // Gestione dell'import del JSON
     const competizioni = competizioniData.competizioni || competizioniData
 
-    // Imposta la giornata attualmente in corso nella lega
-    const GIORNATA_CORRENTE = competizioniData.competizioni.find(
-        (item) => item.id === 0
-    ).giornataA
+    const giornataCorrente = competizioni.find((c) => c.id === 0)?.giornataA
+    const prossimaGiornata = giornataCorrente != null ? giornataCorrente + 1 : null
 
-    const PROSSIMA_GIORNATA = GIORNATA_CORRENTE + 1
+    const attive = useMemo(() => competizioni.filter((c) => c.stato === 'Attivo'), [competizioni])
 
-    // Competizioni che partono la giornata seguente
-    const inPartenza = competizioni.filter(
-        (comp) => comp.gInizio === PROSSIMA_GIORNATA
+    const inPartenza = useMemo(
+        () => (prossimaGiornata ? competizioni.filter((c) => c.gInizio === prossimaGiornata) : []),
+        [competizioni, prossimaGiornata]
     )
 
     return (
-        <div className="space-y-8 max-w-6xl mx-auto px-4">
-            {/* Header */}
-            <div className="text-center">
-                <h1 className="text-6xl font-extrabold text-sky-800 mb-2">
+        <div className="space-y-12 max-w-6xl mx-auto px-4 pb-8">
+            {/* Hero */}
+            <header className="text-center pt-4 space-y-3">
+                <h1 className="text-5xl pb-5 sm:text-6xl font-black tracking-tight bg-linear-to-r from-sky-900 via-sky-700 to-sky-900 bg-clip-text text-transparent">
                     Borgo Cup
                 </h1>
-                <p className="text-lg text-gray-600">
-                    9ª Edizione - Stagione 2026/2027
-                </p>
-            </div>
-
-            {/* Sezione 1: Competizioni Attive */}
-            <section>
-                <div className="text-xl text-center font-semibold rounded-full bg-emerald-100 text-emerald-800 p-3 mb-6 w-80 mx-auto shadow-sm">
-                    <h2>Competizioni in corso</h2>
+                <div className="flex flex-wrap items-center justify-center gap-2 text-sm font-semibold">
+                    <span className="bg-sky-100 text-sky-800 px-3 py-1 rounded-full">{EDIZIONE}</span>
+                    <span className="bg-sky-100 text-sky-800 px-3 py-1 rounded-full">{STAGIONE}</span>
+                    {giornataCorrente != null && (
+                        <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">
+                            Giornata {giornataCorrente}
+                        </span>
+                    )}
                 </div>
+            </header>
 
-                <div className="grid md:grid-cols-3 gap-6">
-                    {competizioni
-                        .filter((comp) => comp.stato === "Attivo")
-                        .map((comp) => (
+            {/* In corso */}
+            {attive.length > 0 && (
+                <section>
+                    <SectionTitle badge={attive.length}>Competizioni in corso</SectionTitle>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        {attive.map((comp) => (
                             <Card
                                 key={comp.id}
                                 title={comp.nome}
@@ -47,60 +86,40 @@ export default function Home() {
                                 link={`/competizioni${comp.link}`}
                             />
                         ))}
-                </div>
-            </section>
-
-            {/* Sezione: In partenza la prossima giornata */}
-            {inPartenza.length > 0 && (
-                <section className="bg-amber-50 w-70 mx-auto border border-amber-200 rounded-2xl p-4 sm:p-6 shadow-sm">
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-                        <span className="mx-auto font-semibold uppercase tracking-wider bg-amber-200/80 text-amber-900 px-3 py-1 rounded-full w-fit">
-                            <h2 className="font-bold text-amber-900">
-                                Inizio alla Giornata {PROSSIMA_GIORNATA}
-                            </h2>
-                        </span>
                     </div>
+                </section>
+            )}
 
-                    {/* Bottoni su singola riga */}
-                    <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-none">
+            {/* In partenza */}
+            {inPartenza.length > 0 && (
+                <section className="bg-linear-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-3xl p-5 sm:p-6 shadow-sm max-w-2xl mx-auto">
+                    <p className="text-center text-xs font-bold uppercase tracking-widest text-amber-700 mb-1">
+                        Prossimamente
+                    </p>
+                    <h2 className="text-center text-xl font-extrabold text-amber-950 mb-4">
+                        Al via con la Giornata {prossimaGiornata}
+                    </h2>
+                    <div className="flex flex-wrap justify-center gap-3">
                         {inPartenza.map((comp) => (
-                            <div
+                            <span
                                 key={comp.id}
-                                className="inline-flex items-center gap-2 bg-white hover:bg-amber-100/60 text-amber-950 font-semibold px-4 py-2.5 rounded-xl border border-amber-300 shadow-sm transition-all duration-200 shrink-0 hover:scale-[1.02] active:scale-95"
+                                className="inline-flex items-center gap-2 bg-white text-amber-950 font-semibold px-4 py-2 rounded-full border border-amber-300 shadow-sm"
                             >
                                 {comp.icon && <span>{comp.icon}</span>}
-                                <span>{comp.nome}</span>
-                            </div>
+                                {comp.nome}
+                            </span>
                         ))}
                     </div>
                 </section>
             )}
 
-            {/* Sezione 2: Link Rapidi / Sezioni Principali */}
+            {/* Menu */}
             <section>
-                <div className="text-xl text-center font-semibold rounded-full bg-emerald-100 text-emerald-800 p-3 mb-6 w-80 mx-auto shadow-sm">
-                    <h2>Menu Principale</h2>
-                </div>
-
-                <div className="grid md:grid-cols-3 gap-6">
-                    <Card
-                        title="Tutte le Competizioni"
-                        description="Consulta archivio, gironi, calendari e classifiche complete."
-                        icon="🏆"
-                        link="/competizioni"
-                    />
-                    <Card
-                        title="Squadre e Rose"
-                        description="Scopri i club partecipanti, gli elenchi dei giocatori e i dettagli dei team."
-                        icon="👥"
-                        link="/squadre"
-                    />
-                    <Card
-                        title="Regolamento"
-                        description="Leggi le norme ufficiali, il sistema di punteggio e le linee guida della lega."
-                        icon="📋"
-                        link="/regolamento"
-                    />
+                <SectionTitle>Menu Principale</SectionTitle>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    {MENU.map((voce) => (
+                        <Card key={voce.link} {...voce} />
+                    ))}
                 </div>
             </section>
         </div>
