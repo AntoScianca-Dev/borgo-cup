@@ -1,0 +1,15 @@
+{
+  "trofei": [
+    {
+      "id": 1,
+      "palmares": [
+        { "stagione": "2025/26", "competizione": "Campionato", "titolo": "Campione", "posizione": 1 },
+        { "stagione": "2025/26", "competizione": "Coppa", "titolo": "Finalista", "posizione": 2 }
+      ]
+    },
+    {
+      "id": 2,
+      "palmares": []
+    }
+  ]
+}
