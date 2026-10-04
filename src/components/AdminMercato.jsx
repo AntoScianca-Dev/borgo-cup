@@ -615,7 +615,7 @@ export default function AdminMercato() {
                                     Borgo Cup • Report {SESSIONS.at(0).nome}
                                 </span>
                                 <div className="flex justify-center items-center">
-                                    <img src={`/public/images/logos/${squadraSelezionata.id}.png`} className='w-15 h-15 p-2' alt={`Logo ${squadraSelezionata.nome}`} />
+                                    <img src={`/images/logos/${squadraSelezionata.id}.png`} className='w-15 h-15 p-2' alt={`Logo ${squadraSelezionata.nome}`} />
                                     <h2 className="text-2xl font-black text-white">
                                         {squadraSelezionata.nome}
                                     </h2>
