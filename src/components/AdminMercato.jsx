@@ -22,7 +22,7 @@ const getRoleBadge = (ruoloCodice) => {
     const colorClass = found ? found.color : 'bg-gray-200 text-gray-800 border-gray-400'
 
     return (
-        <span className={`inline-flex items-center justify-center px-1.5 py-0.5 border rounded text-[10px] font-black uppercase ${colorClass}`}>
+        <span className={`inline-flex items-center justify-center px-1.5 py-0.5 border rounded w-6 h-6 font-black uppercase ${colorClass}`}>
         {codeUpper}
         </span>
     )
@@ -32,7 +32,7 @@ const SESSIONS = [
     {
         id: 1,
         nome: '1ª Sessione di Mercato',
-        start: new Date('2026-09-26T00:01:00'),
+        start: new Date('2026-10-06T00:01:00'),
         end: new Date('2026-10-08T23:59:59'),
     },
     {
@@ -382,8 +382,10 @@ export default function AdminMercato() {
                             <h2 className="text-xl pb-1.5 sm:text-2xl font-black">
                                 Riepilogo Operazioni: <br /> {squadraSelezionata.nome}
                             </h2>
-                            <p className="text-sky-200">
-                                💠 {SESSIONS.at(0).nome} <br /> 
+                            <p className={`${sessionsWithStatus.filter(s => s.status=='Attiva').length>0 ? "text-sky-200" : "text-yellow-200"}`}>
+                                💠 {sessionsWithStatus.filter(s => s.status=='Attiva').length>0?
+                                    sessionsWithStatus.filter(s => s.status=='Attiva').map(p => p.nome) :
+                                    "Sessione Mercato di prova"} <br /> 
                                 💠 Cambi registrati: {cambi.length}/7
                             </p>
                         </div>
@@ -607,12 +609,14 @@ export default function AdminMercato() {
                         <div
                         ref={exportRef}
                         style={{ width: '650px' }}
-                        className="p-6 bg-slate-950 text-white rounded-3xl space-y-5 font-sans"
+                        className="p-6 bg-slate-950 text-white space-y-5 font-sans"
                         >
                             {/* Header Card */}
                             <div className="flex flex-col justify-between items-center border-b border-slate-700 pb-2">
                                 <span className="text-xl uppercase font-bold tracking-widest text-sky-400">
-                                    Borgo Cup • Report {SESSIONS.at(0).nome}
+                                    Borgo Cup • Report {sessionsWithStatus.filter(s => s.status=='Attiva').length>0?
+                                    sessionsWithStatus.filter(s => s.status=='Attiva').map(p => p.nome) :
+                                    "Sessione Mercato di prova"}
                                 </span>
                                 <div className="flex justify-center items-center">
                                     <img src={`/images/logos/${squadraSelezionata.id}.png`} className='w-15 h-15 p-2' alt={`Logo ${squadraSelezionata.nome}`} />
