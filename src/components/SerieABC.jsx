@@ -4,6 +4,8 @@ import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/24/solid'
 import squadreData from '../assets/data/classifiche.json'
 import competizioniData from '../assets/data/competizioni.json'
 import headerC from '../assets/image/header_campionato.png'
+import ToggleVista from './ToggleVista'
+import useVistaCompatta from '../hooks/useVistaCompatta'
 
 const STATS = [
     { key: 'giocate', label: 'G' },
@@ -52,15 +54,15 @@ function PosizioneBadge({ posizione, zona }) {
     )
 }
 
-function SquadraRow({ squadra, posizione, nomeCampionato }) {
+function SquadraRow({ squadra, posizione, nomeCampionato, compatta }) {
     const zona = getZona(posizione, nomeCampionato)
     const isPrimo = posizione === 1
 
     return (
         <div
-            className={`group min-w-0 rounded-2xl border-l-8 border-r-2 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 p-3 ${
-                isPrimo ? 'bg-amber-50' : 'bg-white'
-            }`}
+            className={`group min-w-0 rounded-2xl border-l-8 border-r-2 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 ${
+                compatta ? 'p-2' : 'p-3'
+            } ${isPrimo ? 'bg-amber-50' : 'bg-white'}`}
             style={{ borderLeftColor: squadra.border, borderRightColor: squadra.border }}
         >
             <div className="flex items-center justify-between gap-3">
@@ -79,14 +81,16 @@ function SquadraRow({ squadra, posizione, nomeCampionato }) {
                 </span>
             </div>
 
-            <div className="grid grid-cols-6 gap-1.5 mt-3">
-                {STATS.map(({ key, label }) => (
-                    <div key={key} className="bg-sky-50 rounded-xl py-1 text-center">
-                        <p className="text-[10px] font-semibold uppercase tracking-wide text-sky-600">{label}</p>
-                        <p className="text-sm font-bold text-gray-800">{squadra[key] ?? 0}</p>
-                    </div>
-                ))}
-            </div>
+            {!compatta && (
+                <div className="grid grid-cols-6 gap-1.5 mt-3">
+                    {STATS.map(({ key, label }) => (
+                        <div key={key} className="bg-sky-50 rounded-xl py-1 text-center">
+                            <p className="text-[10px] font-semibold uppercase tracking-wide text-sky-600">{label}</p>
+                            <p className="text-sm font-bold text-gray-800">{squadra[key] ?? 0}</p>
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
     )
 }
@@ -94,6 +98,7 @@ function SquadraRow({ squadra, posizione, nomeCampionato }) {
 export default function SerieABC({ id }) {
     const serie = squadreData.classifiche.find((c) => c.id === id)
     const competizione = competizioniData.competizioni.find((c) => c.id === id)
+    const [compatta, setCompatta] = useVistaCompatta()
 
     const classifica = useMemo(
         () => [...(serie?.partecipanti ?? [])].sort((a, b) => a.posizione - b.posizione),
@@ -131,6 +136,8 @@ export default function SerieABC({ id }) {
                 </span>
             </div>
 
+            <ToggleVista compatta={compatta} onChange={setCompatta} />
+
             {/* Intestazione */}
             <div className="bg-linear-to-r from-sky-950 via-sky-800 to-sky-950 text-amber-50 rounded-2xl px-5 py-3 shadow-md flex justify-between items-center text-sm font-semibold uppercase tracking-wider">
                 <span>Squadra</span>
@@ -138,9 +145,15 @@ export default function SerieABC({ id }) {
             </div>
 
             {/* Classifica */}
-            <div className="grid grid-cols-1 gap-3 pb-4">
+            <div className={`grid grid-cols-1 pb-4 ${compatta ? 'gap-2' : 'gap-3'}`}>
                 {classifica.map((s, i) => (
-                    <SquadraRow key={s.id ?? i} squadra={s} posizione={i + 1} nomeCampionato={serie.nome} />
+                    <SquadraRow
+                        key={s.id ?? i}
+                        squadra={s}
+                        posizione={i + 1}
+                        nomeCampionato={serie.nome}
+                        compatta={compatta}
+                    />
                 ))}
             </div>
         </div>

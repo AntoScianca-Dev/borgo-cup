@@ -15,33 +15,35 @@ const BADGE = {
     5: 'from-sky-700 to-sky-600 text-sky-50 shadow-sky-500/40',
 }
 
-function PosizioneBadge({ posizione }) {
+function PosizioneBadge({ posizione, delta }) {
     const stile = BADGE[posizione] ?? 'from-gray-50 to-white text-gray-500 shadow-gray-200'
-    return (
-        <span className={`w-10 h-10 shrink-0 flex items-center justify-center rounded-full bg-linear-to-tr font-black text-lg shadow-md ${stile}`}>
-            {posizione}
-        </span>
-    )
-}
 
-function Trend({ delta }) {
-    if (delta > 0) {
-        return (
-            <span className="flex items-center text-emerald-500 text-xs font-bold w-8">
-                <ArrowUpIcon className="w-3.5 h-3.5" />{delta}
-            </span>
-        )
-    }
-    if (delta < 0) {
-        return (
-            <span className="flex items-center text-red-500 text-xs font-bold w-8">
-                <ArrowDownIcon className="w-3.5 h-3.5" />{Math.abs(delta)}
-            </span>
-        )
-    }
     return (
-        <span className="flex items-center w-8">
-            <MinusIcon className="w-3.5 h-3.5 text-gray-300" />
+        <span className="relative shrink-0">
+            <span className={`w-10 h-10 flex items-center justify-center rounded-full bg-linear-to-tr font-black text-lg shadow-md ${stile}`}>
+                {posizione}
+            </span>
+            {delta>0 && (
+                <span
+                    className={`absolute -top-1 -right-3 w-8 h-3.5 text-[12px] flex items-center justify-center text-white rounded-full shadow-md shadow-gray-200 bg-emerald-500`}
+                >
+                    <ArrowUpIcon className="w-3 h-3" />{delta}
+                </span>
+            )}
+            {delta<0 && (
+                <span
+                    className={`absolute -top-1 -right-3 w-8 h-3.5 text-[12px] flex items-center justify-center rounded-full text-white shadow-md shadow-gray-200 bg-red-500`}
+                >
+                    <ArrowDownIcon className="w-3 h-3" />{Math.abs(delta)}
+                </span>
+            )}
+            {delta==0 && (
+                <span
+                    className={`absolute -top-1 -right-3 w-8 h-3.5 text-[12px] flex items-center justify-center rounded-full text-white shadow-md shadow-gray-200 bg-gray-300`}
+                >
+                    <MinusIcon className="w-3 h-3" />
+                </span>
+            )}
         </span>
     )
 }
@@ -59,16 +61,15 @@ function SquadraRow({ squadra, posizione }) {
             style={{ borderLeftColor: squadra.border, borderRightColor: squadra.border }}
         >
             <div className="flex items-center gap-2 min-w-0">
-                <PosizioneBadge posizione={posizione} />
-                <Trend delta={delta} />
-                <span className={`truncate font-bold group-hover:text-sky-700 transition-colors ${
+                <PosizioneBadge posizione={posizione} delta={delta}/>
+                <span className={`truncate pl-1 font-bold group-hover:text-sky-700 transition-colors ${
                     isPrimo ? 'text-xl text-amber-900' : 'text-lg text-gray-800'
                 }`}>
                     {squadra.nome}
                 </span>
             </div>
 
-            <span className={`text-2xl font-black tabular-nums px-3 py-1 rounded-xl ${
+            <span className={`text-xl font-black tabular-nums px-3 py-1 rounded-xl ${
                 isPrimo ? 'bg-amber-400/25 text-amber-900' : 'bg-gray-100 text-sky-950'
             }`}>
                 {(squadra.punteggio || 0).toFixed(1)}

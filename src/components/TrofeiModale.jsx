@@ -60,10 +60,10 @@ export default function TrofeiModale({ isOpen, onClose, squad }) {
                             enter="ease-out duration-300" enterFrom="opacity-0 translate-y-4 scale-95" enterTo="opacity-100 translate-y-0 scale-100"
                             leave="ease-in duration-200" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95"
                         >
-                            <DialogPanel className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
+                            <DialogPanel className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden  pb-4">
                                 {/* Header: bacheca */}
                                 <div
-                                    className="relative z-10 px-5 pt-5 bg-gradient-to-b from-indigo-950 via-slate-900 to-slate-800 border-t-8"
+                                    className="relative z-10 px-5 pt-5 bg-linear-to-b from-indigo-950 via-slate-900 to-slate-800 border-t-8"
                                     style={{ borderTopColor: squad.border }}
                                 >
                                     <button
@@ -101,7 +101,7 @@ export default function TrofeiModale({ isOpen, onClose, squad }) {
                                         ))}
                                     </div>
 
-                                    <div className="h-2.5 -mx-5 bg-gradient-to-b from-slate-200/70 to-slate-400/20 border-t border-white/40 shadow-[0_8px_12px_rgba(0,0,0,0.5)]" />
+                                    <div className="h-2.5 -mx-5 bg-linear-to-b from-slate-200/70 to-slate-400/20 border-t border-white/40 shadow-[0_8px_12px_rgba(0,0,0,0.5)]" />
                                 </div>
 
                                 {/* Tabella */}

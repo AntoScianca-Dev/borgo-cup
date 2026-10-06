@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import squadreData from '../assets/data/classifiche.json'
 import competizioniData from '../assets/data/competizioni.json'
 import headerC from '../assets/image/header_preliminariCE.png'
+import ToggleVista from './ToggleVista'
+import useVistaCompatta from '../hooks/useVistaCompatta'
 
 const COMPETIZIONE_ID = 10
 const GIRONI = ['A', 'B', 'C', 'D']
@@ -24,14 +26,14 @@ const STATS = [
 
 const getZona = (posizione) => ZONE.find((z) => posizione >= z.da && posizione <= z.a)
 
-function SquadraRow({ squadra, posizione }) {
+function SquadraRow({ squadra, posizione, compatta }) {
     const zona = getZona(posizione)
 
     return (
         <div
-            className={`group min-w-0 rounded-2xl border-l-8 border-r-2 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 p-3 ${
-                zona?.riga ?? 'bg-white'
-            }`}
+            className={`group min-w-0 rounded-2xl border-l-8 border-r-2 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 ${
+                compatta ? 'p-2' : 'p-3'
+            } ${zona?.riga ?? 'bg-white'}`}
             style={{ borderLeftColor: squadra.border, borderRightColor: squadra.border }}
         >
             <div className="flex items-center justify-between gap-3">
@@ -52,28 +54,30 @@ function SquadraRow({ squadra, posizione }) {
                 </span>
             </div>
 
-            <div className="grid grid-cols-6 gap-1.5 mt-3">
-                {STATS.map(({ key, label }) => (
-                    <div key={key} className="bg-white/80 rounded-xl py-1 text-center">
-                        <p className="text-[10px] font-semibold uppercase tracking-wide text-sky-600">{label}</p>
-                        <p className="text-sm font-bold text-gray-800">{squadra[key] ?? 0}</p>
-                    </div>
-                ))}
-            </div>
+            {!compatta && (
+                <div className="grid grid-cols-6 gap-1.5 mt-3">
+                    {STATS.map(({ key, label }) => (
+                        <div key={key} className="bg-white/80 rounded-xl py-1 text-center">
+                            <p className="text-[10px] font-semibold uppercase tracking-wide text-sky-600">{label}</p>
+                            <p className="text-sm font-bold text-gray-800">{squadra[key] ?? 0}</p>
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
     )
 }
 
-function Girone({ nome, squadre }) {
+function Girone({ nome, squadre, compatta }) {
     return (
         <section className="space-y-3">
             <div className="bg-linear-to-r from-sky-950 via-sky-800 to-sky-950 text-amber-50 rounded-2xl px-5 py-3 shadow-md flex justify-between items-center">
                 <h2 className="text-2xl font-extrabold tracking-wide">GIRONE {nome}</h2>
                 <span className="text-sm font-semibold uppercase tracking-wider">Punti</span>
             </div>
-            <div className="grid grid-cols-1 gap-3">
+            <div className={`grid grid-cols-1 ${compatta ? 'gap-2' : 'gap-3'}`}>
                 {squadre.map((s, i) => (
-                    <SquadraRow key={s.id ?? i} squadra={s} posizione={i + 1} />
+                    <SquadraRow key={s.id ?? i} squadra={s} posizione={i + 1} compatta={compatta} />
                 ))}
             </div>
         </section>
@@ -83,6 +87,7 @@ function Girone({ nome, squadre }) {
 export default function PreliminariCE() {
     const preliminari = squadreData.classifiche.find((c) => c.id === COMPETIZIONE_ID)
     const competizione = competizioniData.competizioni.find((c) => c.id === COMPETIZIONE_ID)
+    const [compatta, setCompatta] = useVistaCompatta()
 
     const gironi = useMemo(() => {
         const partecipanti = preliminari?.partecipanti ?? []
@@ -134,10 +139,12 @@ export default function PreliminariCE() {
                     </span>
                 ))}
             </div>
+            
+            <ToggleVista compatta={compatta} onChange={setCompatta} />
 
-            {/* Gironi */}
+            {/* GIRONI */}
             {gironi.map((g) => (
-                <Girone key={g.nome} nome={g.nome} squadre={g.squadre} />
+                <Girone key={g.nome} nome={g.nome} squadre={g.squadre} compatta={compatta} />
             ))}
         </div>
     )

@@ -26,7 +26,7 @@
                     "variazione": 3,
                     "posizione": 3,
                     "punteggio": 401.0,
-                    "border": "#683092"
+                    "border": "#0B0FFF"
                 },
                 {
                     "id": 17,
@@ -456,7 +456,7 @@
                     "totale": 164.0,
                     "totale2": 241.5,
                     "punteggio": 77.5,
-                    "border": "#683092"
+                    "border": "#0B0FFF"
                 },
                 {
                     "id": 19,
@@ -679,7 +679,7 @@
                 {
                     "id": 18,
                     "nome": "Sgherza s  Fc",
-                    "border": "#683092",
+                    "border": "#0B0FFF",
                     "girone": "B",
                     "posizione": 3,
                     "giocate": 3,
@@ -1125,7 +1125,7 @@
                 {
                     "id": 18,
                     "nome": "Sgherza s  Fc",
-                    "border": "#683092",
+                    "border": "#0B0FFF",
                     "punteggio": 77.0,
                     "step1": 75.9,
                     "step2": 80.5,
@@ -1227,7 +1227,7 @@
                 {
                     "id": 18,
                     "nome": "Sgherza s  Fc",
-                    "border": "#683092",
+                    "border": "#0B0FFF",
                     "posizione": 1,
                     "giocate": 5,
                     "vinte": 3,

@@ -145,11 +145,11 @@ export default function Top11Modale({ isOpen, onClose, squad }) {
                                                 {giocatori.map((g, idx) => (
                                                     <div key={idx} className="flex flex-col items-center gap-1 w-18">
                                                         <div
-                                                            className={`w-11 h-11 rounded-full ${r.bg} ring-2 ring-white shadow-lg flex items-center justify-center text-xs font-black text-white`}
+                                                            className={`w-8 h-8 rounded-full ${r.bg} ring-2 ring-white shadow-lg flex items-center justify-center text-xs font-black text-white`}
                                                         >
                                                             {g.quotazione || 0}
                                                         </div>
-                                                        <span className="max-w-full truncate text-[11px] font-bold text-white bg-black/50 rounded-md px-1.5 py-0.5">
+                                                        <span className="max-w-full truncate text-[10px] font-bold text-white bg-black/50 rounded-md px-1.5 py-0.5">
                                                             {g.nome}
                                                         </span>
                                                     </div>
