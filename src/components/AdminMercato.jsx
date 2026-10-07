@@ -1,5 +1,6 @@
 import { useState, useMemo, useRef } from 'react'
 import { toPng } from 'html-to-image'
+import SelezionaGiocatoreModale from './SelezionaGiocatoreModale'
 
 // Importazione dati JSON
 import squadreData from '../assets/data/squadre.json'
@@ -15,6 +16,7 @@ const RUOLI_CONFIG = [
 ]
 
 const RUOLO_ORDER = { P: 1, D: 2, C: 3, A: 4 }
+const MAX_CAMBI = 7
 
 const getRoleBadge = (ruoloCodice) => {
     const codeUpper = (ruoloCodice || '').toUpperCase()
@@ -49,6 +51,8 @@ const SESSIONS = [
     },
 ]
 
+const getQuot = (p) => Number(p?.quotazione ?? p?.quotazioneAttuale ?? 0)
+
 export default function AdminMercato() {
     const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD
 
@@ -65,9 +69,14 @@ export default function AdminMercato() {
     const [selectedSquadraId, setSelectedSquadraId] = useState('')
     const [cambi, setCambi] = useState([])
 
+    // Modale di selezione: null | { mode: 'vendita' } | { mode: 'acquisto', cambioId }
+    const [picker, setPicker] = useState(null)
+
     const squadre = useMemo(() => {
-        if (Array.isArray(squadreData)) return squadreData
-        return squadreData?.squadre || squadreData?.data || []
+        const lista = Array.isArray(squadreData)
+            ? squadreData
+            : squadreData?.squadre || squadreData?.data || []
+        return [...lista].sort((a, b) => a.nome.localeCompare(b.nome))
     }, [])
 
     const tuttiCalciatori = useMemo(() => {
@@ -102,6 +111,11 @@ export default function AdminMercato() {
         return { ...session, status, color }
         })
     }, [])
+
+    const sessioniAttive = useMemo(
+        () => sessionsWithStatus.filter((s) => s.status === 'Attiva'),
+        [sessionsWithStatus]
+    )
 
     const handleLogin = (e) => {
         e.preventDefault()
@@ -144,7 +158,7 @@ export default function AdminMercato() {
             const infoAnagrafica = calciatoriMap.get(String(g.id)) || {}
             const ruolo = (infoAnagrafica.ruolo || slotKey.charAt(0)).toUpperCase()
             const quotazioneAttuale = infoAnagrafica.quotazione ?? g.costo ?? 0
-            const squadraA = infoAnagrafica.squadraA 
+            const squadraA = infoAnagrafica.squadraA
 
             listaGiocatori.push({
                 id: g.id,
@@ -172,31 +186,65 @@ export default function AdminMercato() {
         return cambi.map((c) => c.venduto?.id).filter(Boolean)
     }, [cambi])
 
+    // --- Azioni sui cambi ---
     const handleAddVendita = (player) => {
-        if (cambi.length >= 7) {
-        alert('Hai raggiunto il limite massimo di 7 cambi!')
-        return
-        }
-
-        setCambi([
-        ...cambi,
-        {
-            id: Date.now(),
-            venduto: player,
-            acquistato: null,
-        },
-        ])
+        if (cambi.length >= MAX_CAMBI) return
+        setCambi((prev) => [...prev, { id: Date.now(), venduto: player, acquistato: null }])
     }
 
     const handleRemoveCambio = (cambioId) => {
-        setCambi(cambi.filter((c) => c.id !== cambioId))
+        setCambi((prev) => prev.filter((c) => c.id !== cambioId))
     }
 
     const handleSelectAcquisto = (cambioId, player) => {
-        setCambi(
-        cambi.map((c) => (c.id === cambioId ? { ...c, acquistato: player } : c))
+        setCambi((prev) =>
+            prev.map((c) => (c.id === cambioId ? { ...c, acquistato: player } : c))
         )
     }
+
+    // --- Dati per la modale di selezione ---
+    const closePicker = () => setPicker(null)
+
+    const pickerData = useMemo(() => {
+        if (!picker) return null
+
+        if (picker.mode === 'vendita') {
+            return {
+                titolo: 'Scegli chi vendere',
+                sottotitolo: 'Rosa attuale',
+                showRuolo: true,
+                giocatori: rosaSquadra.filter((p) => !idGiocatoriInVendita.includes(p.id)),
+                onSelect: handleAddVendita,
+            }
+        }
+
+        const cambio = cambi.find((c) => c.id === picker.cambioId)
+        if (!cambio) return null
+
+        const idRosa = rosaSquadra.map((p) => p.id)
+        const idAcquistati = cambi
+            .filter((c) => c.id !== cambio.id)
+            .map((c) => c.acquistato?.id)
+            .filter(Boolean)
+
+        return {
+            titolo: `Scegli l'acquisto`,
+            sottotitolo: `Ruolo: ${cambio.venduto.ruolo} · al posto di ${cambio.venduto.nome}`,
+            showRuolo: false,
+            giocatori: tuttiCalciatori
+                .filter(
+                    (c) =>
+                        (c.ruolo || '').toUpperCase() === cambio.venduto.ruolo &&
+                        !idRosa.includes(c.id) &&
+                        !idAcquistati.includes(c.id) &&
+                        c.id !== cambio.venduto.id &&
+                        c.stato !== 'svincolato'
+                )
+                .map((c) => ({ ...c, ruolo: (c.ruolo || '').toUpperCase() })),
+            onSelect: (p) => handleSelectAcquisto(cambio.id, p),
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [picker, cambi, rosaSquadra, tuttiCalciatori, idGiocatoriInVendita])
 
     // Totali Economici
     const creditiResidui = squadraSelezionata?.creditiResidui || 0
@@ -261,343 +309,303 @@ export default function AdminMercato() {
         }
     }
 
+    // ============================ LOGIN ============================
     if (!isAuthenticated) {
         return (
         <div className="max-w-md mx-auto my-8 px-4">
-            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
-            <h2 className="text-xl sm:text-2xl font-bold text-sky-900 text-center mb-6">
-                🔒 Accesso Area Admin
-            </h2>
+            <div className="bg-amber-50 rounded-2xl overflow-hidden border border-gray-100 shadow-md">
+                <div className="h-20 bg-linear-to-br from-sky-800 to-sky-600" />
+                <div className="px-6 pb-6 -mt-10">
+                    <div className="w-20 h-20 rounded-full bg-amber-50 shadow-md border-l-4 border-t-4 border-amber-800 flex items-center justify-center text-3xl">
+                        🔒
+                    </div>
+                    <h2 className="mt-3 text-xl font-extrabold text-gray-900 leading-tight">Area Admin</h2>
+                    <p className="text-sm text-gray-500 mt-0.5 mb-5">Inserisci la password per gestire il mercato.</p>
 
-            <form onSubmit={handleLogin} className="space-y-4">
-                <div>
-                <label className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">
-                    Password Admin
-                </label>
-                <input
-                    type="password"
-                    value={passwordInput}
-                    onChange={(e) => setPasswordInput(e.target.value)}
-                    className="w-full px-4 py-2.5 border rounded-xl focus:ring-2 focus:ring-sky-500 text-sm"
-                    placeholder="••••••••"
-                />
-                {passwordError && (
-                    <p className="text-red-500 text-xs mt-1">Password errata!</p>
-                )}
+                    <form onSubmit={handleLogin} className="space-y-4">
+                        <div>
+                            <label className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">
+                                Password
+                            </label>
+                            <input
+                                type="password"
+                                value={passwordInput}
+                                onChange={(e) => setPasswordInput(e.target.value)}
+                                className="w-full px-4 py-2.5 border border-gray-200 bg-white rounded-xl focus:ring-2 focus:ring-sky-500 focus:outline-none text-sm"
+                                placeholder="••••••••"
+                            />
+                            {passwordError && (
+                                <p className="text-red-500 text-xs mt-1">Password errata!</p>
+                            )}
+                        </div>
+
+                        <button
+                            type="submit"
+                            className="w-full bg-sky-700 hover:bg-sky-800 text-white font-semibold py-2.5 rounded-xl active:scale-95 transition text-sm cursor-pointer"
+                        >
+                            Accedi
+                        </button>
+                    </form>
                 </div>
-
-                <button
-                type="submit"
-                className="w-full bg-sky-700 hover:bg-sky-800 text-white font-bold py-2.5 rounded-xl transition text-sm"
-                >
-                Accedi
-                </button>
-            </form>
             </div>
         </div>
         )
     }
 
+    // ============================ PANNELLO ============================
     return (
-        <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-6">
-            {/* Header Admin */}
-            <div className="flex justify-between items-center bg-sky-900 text-white p-4 sm:p-6 rounded-2xl shadow-md">
-                <div>
-                    <h1 className="text-lg sm:text-2xl font-bold">Gestione Mercato</h1>
-                    <p className="text-[11px] sm:text-xs text-sky-200">Pannello di Controllo Lega</p>
-                </div>
+        <div className="space-y-8">
+            {/* Banner (stesso stile della pagina Squadre) */}
+            <div className="relative text-4xl h-20 tracking-tight flex items-center justify-center py-6 rounded-tl-4xl rounded-br-4xl font-extrabold text-sky-50 text-shadow-2xs text-shadow-sky-950 bg-linear-to-br from-sky-800 to-sky-950">
                 <button
-                onClick={handleLogout}
-                className="bg-sky-800 hover:bg-sky-700 text-xs font-semibold px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg transition"
+                    onClick={handleLogout}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/15 hover:bg-white/25 text-sm font-semibold px-4 py-2 rounded-xl active:scale-95 transition cursor-pointer text-shadow-none"
                 >
-                Esci
+                    Esci
                 </button>
             </div>
+            <h1 className="text-4xl font-medium text-center py-0 mt-0 text-sky-800">Gestione Mercato</h1>
 
-            {/* Stato Sessioni */}
-            <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-200">
-                <h2 className="text-base sm:text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
-                    <span>📅</span> Sessioni di Mercato
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {/* Sessioni */}
+            <div className="grid sm:grid-cols-3 gap-6">
                 {sessionsWithStatus.map((s) => (
                     <div
-                    key={s.id}
-                    className={`p-3 rounded-xl border ${s.color} space-y-1 text-xs`}
+                        key={s.id}
+                        className="w-full max-w-80 mx-auto bg-amber-50 rounded-2xl overflow-hidden border border-gray-100 shadow-md"
                     >
-                        <div className="flex justify-between items-center mb-1">
-                            <span className="font-bold">{s.nome}</span>
+                        <div className={`px-5 py-3 border-b ${s.color} flex justify-between items-center`}>
+                            <span className="font-bold text-sm">{s.nome}</span>
                             <span className="text-[10px] px-2 py-0.5 rounded-full border bg-white/70">
-                            {s.status}
+                                {s.status}
                             </span>
                         </div>
-                        <p className="opacity-80">Inizio: {s.start.toLocaleString('it-IT')}</p>
-                        <p className="opacity-80">Fine: {s.end.toLocaleString('it-IT')}</p>
+                        <div className="px-5 py-3 text-xs text-gray-600 space-y-0.5">
+                            <p>Inizio: {s.start.toLocaleString('it-IT')}</p>
+                            <p>Fine: {s.end.toLocaleString('it-IT')}</p>
+                        </div>
                     </div>
                 ))}
-                </div>
             </div>
 
             {/* Selezione Squadra */}
-            <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-200 space-y-3">
-                <label className="block font-bold text-gray-800 text-base sm:text-lg">
-                1. Seleziona la Squadra
+            <div className="max-w-xl mx-auto bg-amber-50 rounded-2xl border border-gray-100 shadow-md p-5 space-y-3">
+                <label htmlFor="selectSquadra" className="block font-extrabold text-gray-900 text-lg">
+                    Seleziona la squadra
                 </label>
                 <select
-                value={selectedSquadraId}
-                onChange={(e) => {
-                    setSelectedSquadraId(e.target.value)
-                    setCambi([])
-                }}
-                className="w-full sm:w-80 px-3 py-2.5 border rounded-xl font-semibold text-gray-700 text-sm focus:ring-2 focus:ring-sky-500"
+                    id="selectSquadra"
+                    value={selectedSquadraId}
+                    onChange={(e) => {
+                        setSelectedSquadraId(e.target.value)
+                        setCambi([])
+                    }}
+                    className="w-full px-3 py-2.5 bg-white border border-gray-200 rounded-xl font-semibold text-gray-700 text-sm focus:ring-2 focus:ring-sky-500 focus:outline-none"
                 >
-                <option value="">-- Scegli la squadra --</option>
-                {squadre.map((sq) => (
-                    <option key={sq.id} value={sq.id}>
-                    {sq.nome}
-                    </option>
-                ))}
+                    <option value="">-- Scegli la squadra --</option>
+                    {squadre.map((sq) => (
+                        <option key={sq.id} value={sq.id}>
+                            {sq.nome}
+                        </option>
+                    ))}
                 </select>
             </div>
 
             {squadraSelezionata && (
                 <div className="space-y-6">
-                    {/* Pulsante di Esportazione */}
-                    <div className="flex justify-end items-center">
-                        <button
-                        onClick={handleDownloadImage}
-                        disabled={isExporting || cambi.length === 0}
-                        className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md transition-all ${
-                            isExporting || cambi.length === 0
-                            ? 'bg-gray-300 text-gray-500 cursor-not-allowed shadow-none'
-                            : 'bg-emerald-600 hover:bg-emerald-700 text-white hover:shadow-lg active:scale-95'
-                        }`}
-                        >
-                            <span>{isExporting ? '⏳ Generazione...' : '📷 Scarica Card Grafica'}</span>
-                        </button>
-                    </div>
+                    {/* Scheda squadra (come le card di Squadre) */}
+                    <div className="bg-amber-50 rounded-2xl overflow-hidden border border-gray-100 shadow-md">
+                        <div
+                            className="h-20"
+                            style={{ background: `linear-gradient(135deg, ${squadraSelezionata.border}, ${squadraSelezionata.border}99)` }}
+                        />
+                        <div className="px-5 pb-5 -mt-10">
+                            <div className="flex flex-wrap items-end justify-between gap-3">
+                                <div className="w-20 h-20 rounded-full bg-amber-50 shadow-md border-l-4 border-t-4 border-amber-800 flex items-center justify-center overflow-hidden">
+                                    <img
+                                        src={`/images/logos/${squadraSelezionata.id}.png`}
+                                        alt={`Logo ${squadraSelezionata.nome}`}
+                                        className="w-14 h-14 object-contain"
+                                    />
+                                </div>
+                                <button
+                                    onClick={handleDownloadImage}
+                                    disabled={isExporting || cambi.length === 0}
+                                    className={`px-5 py-2 rounded-xl text-sm font-semibold transition ${
+                                        isExporting || cambi.length === 0
+                                            ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                                            : 'bg-emerald-600 hover:bg-emerald-700 text-white active:scale-95 cursor-pointer'
+                                    }`}
+                                >
+                                    {isExporting ? '⏳ Generazione...' : '📷 Scarica card'}
+                                </button>
+                            </div>
 
-                    <div className='bg-sky-900 text-white p-4 rounded-xl flex justify-between items-center shadow-sm'>
-                        <div>
-                            <h2 className="text-xl pb-1.5 sm:text-2xl font-black">
-                                Riepilogo Operazioni: <br /> {squadraSelezionata.nome}
+                            <h2 className="mt-3 text-xl font-extrabold text-gray-900 leading-tight">
+                                {squadraSelezionata.nome}
                             </h2>
-                            <p className={`${sessionsWithStatus.filter(s => s.status=='Attiva').length>0 ? "text-sky-200" : "text-yellow-200"}`}>
-                                💠 {sessionsWithStatus.filter(s => s.status=='Attiva').length>0?
-                                    sessionsWithStatus.filter(s => s.status=='Attiva').map(p => p.nome) :
-                                    "Sessione Mercato di prova"} <br /> 
-                                💠 Cambi registrati: {cambi.length}/7
+                            <p className={`text-sm mt-0.5 ${sessioniAttive.length > 0 ? 'text-gray-500' : 'text-amber-700 font-semibold'}`}>
+                                {sessioniAttive.length > 0
+                                    ? sessioniAttive.map((s) => s.nome).join(', ')
+                                    : 'Sessione mercato di prova'}
                             </p>
+
+                            <div className="grid grid-cols-3 gap-3 mt-4">
+                                <div className="bg-sky-50 rounded-xl p-3 text-center">
+                                    <p className="text-[11px] uppercase tracking-wide font-semibold text-sky-600">Cambi</p>
+                                    <p className="text-lg font-black text-gray-800">
+                                        {cambi.length}<span className="text-xs font-semibold text-gray-500">/{MAX_CAMBI}</span>
+                                    </p>
+                                </div>
+                                <div className="bg-emerald-50 rounded-xl p-3 text-center">
+                                    <p className="text-[11px] uppercase tracking-wide font-semibold text-emerald-600">Crediti residui</p>
+                                    <p className="text-lg font-black text-gray-800">
+                                        {creditiResidui} <span className="text-xs font-semibold text-gray-500">fc</span>
+                                    </p>
+                                </div>
+                                <div className={`${isBilancioInRosso ? 'bg-red-50' : 'bg-amber-100'} rounded-xl p-3 text-center`}>
+                                    <p className={`text-[11px] uppercase tracking-wide font-semibold ${isBilancioInRosso ? 'text-red-600' : 'text-amber-700'}`}>Saldo finale</p>
+                                    <p className={`text-lg font-black ${isBilancioInRosso ? 'text-red-600' : 'text-gray-800'}`}>
+                                        {saldoFinale} <span className="text-xs font-semibold text-gray-500">fc</span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    {/* INTERFACCIA OPERATIVA DI EDITING (Interattiva per l'Utente) */}
-                    <div className="grid lg:grid-cols-3 gap-6">
-                        <div className="lg:col-span-2 space-y-6">
-                            {/* Selezione Calciatore da Vendere */}
-                            <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-200 space-y-3">
-                                <h3 className="font-bold text-gray-800 text-sm sm:text-base">
-                                Vendi Calciatori dalla Rosa
-                                </h3>
-                                <div className="flex flex-col sm:flex-row gap-2">
-                                    <select
-                                        id="selectVendita"
-                                        className="flex-1 px-3 py-2 border rounded-xl text-xs sm:text-sm"
-                                        defaultValue=""
-                                    >
-                                        <option value="" disabled>
-                                        -- Seleziona un giocatore da vendere --
-                                        </option>
-                                        {rosaSquadra
-                                        .filter((p) => !idGiocatoriInVendita.includes(p.id))
-                                        .map((p) => (
-                                            <option key={`${p.slot}-${p.id}`} value={p.id}>
-                                            [{p.ruolo}] {p.nome} | {p.squadraA.slice(0,3).toUpperCase()} | {p.quotazioneAttuale} cr.
-                                            </option>
-                                        ))}
-                                    </select>
-                                    <button
-                                        onClick={() => {
-                                        const el = document.getElementById('selectVendita')
-                                        const selectedPlayer = rosaSquadra.find(
-                                            (p) => String(p.id) === el.value
-                                        )
-                                        if (selectedPlayer) {
-                                            handleAddVendita(selectedPlayer)
-                                            el.value = ''
-                                        }
-                                        }}
-                                        className="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition w-full sm:w-auto"
-                                    >
-                                        + Vendi
-                                    </button>
+                    {/* INTERFACCIA OPERATIVA DI EDITING */}
+                    <div className="grid lg:grid-cols-3 gap-6 items-start">
+                        <div className="lg:col-span-2 space-y-4">
+                            {/* Aggiungi vendita */}
+                            <button
+                                onClick={() => setPicker({ mode: 'vendita' })}
+                                disabled={cambi.length >= MAX_CAMBI}
+                                className={`w-full py-3 rounded-xl text-sm font-semibold transition ${
+                                    cambi.length >= MAX_CAMBI
+                                        ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                                        : 'bg-sky-700 text-white hover:bg-sky-800 active:scale-95 cursor-pointer'
+                                }`}
+                            >
+                                {cambi.length >= MAX_CAMBI
+                                    ? `Limite di ${MAX_CAMBI} cambi raggiunto`
+                                    : '+ Aggiungi un cambio'}
+                            </button>
+
+                            {cambi.length === 0 && (
+                                <div className="text-center py-10 bg-amber-50 rounded-2xl border border-dashed border-amber-300 text-gray-500 text-sm">
+                                    Nessun cambio registrato. Parti scegliendo il calciatore da vendere.
                                 </div>
-                            </div>
+                            )}
 
-                            {/* Lista dei Cambi in Corso */}
-                            <div className="space-y-4">
-                                {cambi.length === 0 && (
-                                <div className="text-center py-8 bg-white rounded-2xl border border-dashed text-gray-400 text-xs sm:text-sm">
-                                    Nessun giocatore selezionato per la vendita.
-                                </div>
-                                )}
-
-                                {cambi.map((cambio, index) => {
-                                const idGiocatoriInRosa = rosaSquadra.map((p) => p.id)
-                                const idAcquistatiAttualmente = cambi
-                                    .map((c) => c.acquistato?.id)
-                                    .filter(Boolean)
-
-                                const opzioniAcquisto = tuttiCalciatori
-                                    .filter((c) => {
-                                    const ruoloCalciatore = (c.ruolo || '').toUpperCase()
-                                    return (
-                                        ruoloCalciatore === cambio.venduto.ruolo &&
-                                        !idGiocatoriInRosa.includes(c.id) &&
-                                        !idAcquistatiAttualmente.includes(c.id) &&
-                                        c.id !== cambio.venduto.id &&
-                                        c.stato !== 'svincolato'
-                                    )
-                                    })
-                                    .sort((a, b) => {
-                                    const quotA = a.quotazione ?? a.quotazioneAttuale ?? 0
-                                    const quotB = b.quotazione ?? b.quotazioneAttuale ?? 0
-                                    return quotB - quotA
-                                    })
-
-                                return (
-                                    <div
+                            {cambi.map((cambio, index) => (
+                                <div
                                     key={cambio.id}
-                                    className="bg-white p-4 sm:p-5 rounded-2xl shadow-sm border border-gray-200 space-y-3"
-                                    >
-                                        <div className="flex justify-between items-center border-b pb-2">
-                                            <div className="flex items-center gap-2">
-                                                <span className="font-bold text-xs bg-sky-100 text-sky-800 px-2 py-0.5 rounded-md">
-                                                    Cambio #{index + 1}
-                                                </span>
-                                                {getRoleBadge(cambio.venduto.ruolo)}
-                                            </div>
-                                            <button
+                                    className="bg-amber-50 rounded-2xl border border-gray-100 shadow-md overflow-hidden"
+                                >
+                                    <div className="flex justify-between items-center px-4 py-2.5 bg-sky-100 border-b border-sky-200">
+                                        <div className="flex items-center gap-2">
+                                            <span className="font-bold text-sm text-sky-900">Cambio {index + 1}</span>
+                                            {getRoleBadge(cambio.venduto.ruolo)}
+                                        </div>
+                                        <button
                                             onClick={() => handleRemoveCambio(cambio.id)}
-                                            className="text-red-500 hover:text-red-700 text-xs font-bold"
-                                            >
+                                            className="text-red-600 hover:text-red-800 text-xs font-bold cursor-pointer"
+                                        >
                                             ✕ Annulla
-                                            </button>
+                                        </button>
+                                    </div>
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-3">
+                                        {/* VENDITA */}
+                                        <div className="bg-red-50 rounded-xl border border-red-100 p-3 space-y-2">
+                                            <p className="text-[11px] uppercase tracking-wide font-semibold text-red-600 text-center">Vendita</p>
+                                            <div className="p-2.5 bg-white rounded-lg border border-red-200 space-y-0.5">
+                                                <p className="font-extrabold text-gray-900 text-lg leading-tight">
+                                                    {cambio.venduto.nome}
+                                                </p>
+                                                <p className="text-xs text-gray-500">
+                                                    {(cambio.venduto.squadraA || '').slice(0, 3).toUpperCase()}
+                                                    {cambio.venduto.squadraA ? ' · ' : ''}
+                                                    Incasso <span className="font-bold text-green-700">+{cambio.venduto.quotazioneAttuale} cr.</span>
+                                                </p>
+                                            </div>
                                         </div>
 
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                            {/* VENDITA */}
-                                            <div className="bg-red-50/60 p-1.5 rounded-xl border border-red-100 space-y-1">
-                                                <div className="text-xs font-bold text-red-600 uppercase tracking-wider text-center">
-                                                    VENDITA
-                                                </div>
-                                                <div className="p-2 bg-white/80 rounded-lg border border-red-200 mt-1 space-y-0.5">
-                                                    <div className="flex items-center">
-                                                        <span className='w-8'>
-                                                            {getRoleBadge(cambio.venduto.ruolo)}
-                                                        </span>
-                                                        <p className="font-bold text-gray-800 text-xl">
-                                                        {cambio.venduto.nome}
-                                                        </p>
-                                                    </div>
-                                                    <p className="text-xs text-gray-500">
-                                                    💠 Incasso Vendita:{' '}
-                                                    <span className="font-bold text-red-700">
-                                                        +{cambio.venduto.quotazioneAttuale} cr.
-                                                    </span>
-                                                    </p>
-                                                </div>
-                                            </div>
+                                        {/* ACQUISTO */}
+                                        <div className="bg-emerald-50 rounded-xl border border-emerald-100 p-3 space-y-2">
+                                            <p className="text-[11px] uppercase tracking-wide font-semibold text-emerald-600 text-center">Acquisto</p>
 
-                                            {/* ACQUISTO */}
-                                            <div className="bg-green-50/60 p-3 rounded-xl border border-green-100 space-y-2">
-                                                <div className="text-xs font-bold text-green-600 uppercase text-center">
-                                                    ACQUISTO
-                                                </div>
-                                                <select
-                                                    value={cambio.acquistato?.id || ''}
-                                                    onChange={(e) => {
-                                                    const player = tuttiCalciatori.find(
-                                                        (p) => String(p.id) === e.target.value
-                                                    )
-                                                    handleSelectAcquisto(cambio.id, player || null)
-                                                    }}
-                                                    className="w-full p-2 border rounded-lg text-xs font-medium bg-white"
-                                                >
-                                                    <option value="">
-                                                    -- Seleziona Acquisto ({cambio.venduto.ruolo}) --
-                                                    </option>
-                                                    {opzioniAcquisto.map((p) => {
-                                                        const costoAcquisto =
-                                                        p.quotazione || p.quotazioneAttuale || 0
-                                                        const squadra = p.squadraA ? p.squadraA.slice(0, 3).toUpperCase() : ''
-                                                        const padding = 30 - p.nome.length > 0 ? 30 - p.nome.length : 10
-                                                        return (
-                                                        <option key={p.id} value={p.id}>
-                                                            {p.nome.padEnd(padding, '\u00A0')} | {squadra} | {costoAcquisto} cr.
-                                                        </option>
-                                                        )
-                                                    })}
-                                                </select>
-                                            
-                                                {/* VISUALIZZAZIONE GIOCATORE SCELTO */}
-                                                {cambio.acquistato ? (
-                                                <div className="p-2 bg-white/80 rounded-lg border border-green-200 mt-1 space-y-0.5">
-                                                    <div className="flex items-center">
-                                                        <span className='w-8'>
-                                                            {getRoleBadge(cambio.venduto.ruolo)}
-                                                        </span>
-                                                        <p className="font-bold text-xl text-gray-900">
+                                            {cambio.acquistato ? (
+                                                <div className="p-2.5 bg-white rounded-lg border border-emerald-200 space-y-0.5">
+                                                    <p className="font-extrabold text-gray-900 text-lg leading-tight">
                                                         {cambio.acquistato.nome}
-                                                        </p>
-                                                    </div>
-                                                    <p className="text-[11px] text-gray-600">
-                                                    💠 Costo Acquisto:{' '}
-                                                    <span className="font-bold text-green-700">
-                                                        -
-                                                        {cambio.acquistato.quotazione ||
-                                                        cambio.acquistato.quotazioneAttuale ||
-                                                        0}{' '}
-                                                        cr.
-                                                    </span>
+                                                    </p>
+                                                    <p className="text-xs text-gray-500">
+                                                        {(cambio.acquistato.squadraA || '').slice(0, 3).toUpperCase()}
+                                                        {cambio.acquistato.squadraA ? ' · ' : ''}
+                                                        Costo <span className="font-bold text-red-600">-{getQuot(cambio.acquistato)} cr.</span>
                                                     </p>
                                                 </div>
-                                                ) : (
-                                                <p className="text-[11px] text-gray-400 italic">
+                                            ) : (
+                                                <p className="text-xs text-gray-400 italic text-center py-3">
                                                     Nessun calciatore ancora selezionato
                                                 </p>
-                                                )}
-                                            </div>
+                                            )}
+
+                                            <button
+                                                onClick={() => setPicker({ mode: 'acquisto', cambioId: cambio.id })}
+                                                className="w-full bg-emerald-600 text-white py-2 rounded-xl text-sm font-semibold hover:bg-emerald-700 active:scale-95 transition cursor-pointer"
+                                            >
+                                                {cambio.acquistato ? 'Cambia acquisto' : `Scegli acquisto (${cambio.venduto.ruolo})`}
+                                            </button>
                                         </div>
                                     </div>
-                                )
-                                })}
-                            </div>
+                                </div>
+                            ))}
                         </div>
 
                         {/* Riepilogo Economico */}
-                        <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-200 h-fit space-y-3 text-xl sm:text-sm">
-                            <h3 className="font-bold text-gray-800 border-b pb-2 text-base">
-                                Bilancio In Tempo Reale
-                            </h3>
-                            <div className="flex justify-between">
-                                <span>Residuo Iniziale:</span>
-                                <span className="font-bold">{creditiResidui} cr.</span>
+                        <div className="bg-amber-50 rounded-2xl border border-gray-100 shadow-md overflow-hidden lg:sticky lg:top-4">
+                            <div className="px-5 py-3 bg-sky-100 border-b border-sky-200">
+                                <h3 className="font-extrabold text-sky-900">Bilancio in tempo reale</h3>
                             </div>
-                            <div className="flex justify-between text-green-700">
-                                <span>Incasso Vendite:</span>
-                                <span className="font-bold">+{totaleVendite} cr.</span>
-                            </div>
-                            <div className="flex justify-between text-red-600">
-                                <span>Costo Acquisti:</span>
-                                <span className="font-bold">-{totaleAcquisti} cr.</span>
-                            </div>
-                            <div className="flex justify-between font-bold border-t pt-2 text-sky-900 text-xl">
-                                <span>Saldo Finale:</span>
-                                <span>{saldoFinale} cr.</span>
+                            <div className="p-5 space-y-3 text-sm">
+                                <div className="flex justify-between text-gray-700">
+                                    <span>Residuo iniziale</span>
+                                    <span className="font-bold">{creditiResidui} cr.</span>
+                                </div>
+                                <div className="flex justify-between text-green-700">
+                                    <span>Incasso vendite</span>
+                                    <span className="font-bold">+{totaleVendite} cr.</span>
+                                </div>
+                                <div className="flex justify-between text-red-600">
+                                    <span>Costo acquisti</span>
+                                    <span className="font-bold">-{totaleAcquisti} cr.</span>
+                                </div>
+                                <div className={`flex justify-between font-black border-t border-amber-200 pt-3 text-lg ${isBilancioInRosso ? 'text-red-600' : 'text-sky-900'}`}>
+                                    <span>Saldo finale</span>
+                                    <span>{saldoFinale} cr.</span>
+                                </div>
+                                {isBilancioInRosso && (
+                                    <p className="text-xs text-red-600 font-semibold bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+                                        Gli acquisti superano i crediti disponibili.
+                                    </p>
+                                )}
                             </div>
                         </div>
                     </div>
+
+                    {/* Modale di selezione giocatore (vendita e acquisto) */}
+                    <SelezionaGiocatoreModale
+                        isOpen={!!pickerData}
+                        onClose={closePicker}
+                        onSelect={pickerData?.onSelect || (() => {})}
+                        giocatori={pickerData?.giocatori || []}
+                        titolo={pickerData?.titolo || ''}
+                        sottotitolo={pickerData?.sottotitolo}
+                        showRuolo={pickerData?.showRuolo}
+                        renderRuolo={getRoleBadge}
+                        colore={squadraSelezionata.border}
+                    />
 
                     {/* 
                         ====================================================================

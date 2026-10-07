@@ -8,7 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "update_calciatori": "python scripts/update_calciatori.py",
+    "update_calciatori_noselezioni": "python scripts/update_calciatori.py --no-selezioni",
+    "update_calciatori_selezioni": "python scripts/update_calciatori.py --selezioni",
+    "update_calciatori" : "python scripts/update_calciatori.py",
     "update_classifiche": "python scripts/update_classifiche.py",
     "update_rose": "python scripts/update_rose.py"
   },
