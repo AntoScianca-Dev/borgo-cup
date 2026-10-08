@@ -53,7 +53,7 @@
             "avanzamento": 0,
             "totale": 9,
             "giornata": 0,
-            "img": "images/coppa_Italia.png",
+            "img": "/images/coppa_Italia.png",
             "link": "/coppaIta",
             "squadre": 24
         },

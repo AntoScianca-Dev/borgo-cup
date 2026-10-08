@@ -251,7 +251,7 @@ function Calendario({ intro, blocchi }) {
                     )}
                     <Fasce neutra righe={b.righe} />
                     {b.spareggio && (
-                        <div className="flex items-center justify-between gap-3 rounded-xl border border-dashed border-sky-400 px-4 py-2 text-sm text-sky-900">
+                        <div className="flex items-center justify-between gap-3 rounded-xl border border-dashed border-sky-400 px-4 py-2 text-[0.8rem] text-sky-900">
                             <span>Eventuale spareggio</span>
                             <span className="font-bold">{b.spareggio}</span>
                         </div>
@@ -281,7 +281,7 @@ function SquadreSerie({ nome, squadre }) {
 
 function Campionato() {
     return (
-        <Blocco titolo="Campionato" icona="🏆">
+        <Blocco titolo="Campionato" id={1} >
             <Testo>
                 <Ev>La competizione avrà inizio a partire dalla 1ª giornata di Serie A</Ev> e terminerà all'ultima
                 giornata di Serie A. Sarà strutturata a <Ev>somma punti totale</Ev> e senza scontri diretti.
@@ -343,7 +343,7 @@ function CoppeEuropee() {
                                 {posizioniGirone(i + 1).map((p) => (
                                     <span
                                         key={p}
-                                        className="w-11 h-11 flex items-center justify-center rounded-full bg-sky-100 text-sky-900 font-bold"
+                                        className="w-8 h-8 flex items-center justify-center rounded-full bg-sky-100 text-sky-900 font-bold"
                                     >
                                         {p}°
                                     </span>
@@ -367,7 +367,7 @@ function CoppeEuropee() {
                 </Testo>
             </Blocco>
 
-            <Blocco titolo="Champions League" icona="⭐">
+            <Blocco titolo="Champions League" id={11}>
                 <Testo>
                     <Ev>La competizione avrà inizio a partire dalla 9ª giornata di Serie A</Ev> (weekend del 28.10.2026);
                     alla stessa parteciperanno le prime 2 squadre classificate dei 4 gironi della fase preliminare delle
@@ -390,7 +390,7 @@ function CoppeEuropee() {
                 </Testo>
             </Blocco>
 
-            <Blocco titolo="Europa League" icona="🥈">
+            <Blocco titolo="Europa League" id={12}>
                 <Testo>
                     <Ev>La competizione avrà inizio a partire dalla 9ª giornata di Serie A</Ev> (weekend del 28.10.2026);
                     alla stessa parteciperanno le terze e quarte squadre classificate dei 4 gironi della fase
@@ -415,7 +415,7 @@ function CoppeEuropee() {
                 </Testo>
             </Blocco>
 
-            <Blocco titolo="Conference League" icona="🥉">
+            <Blocco titolo="Conference League" id={13}>
                 <Testo>
                     <Ev>La competizione avrà inizio a partire dalla 9ª giornata di Serie A</Ev> (weekend del 28.10.2026);
                     alla stessa parteciperanno le quinte e seste squadre classificate dei 4 gironi della fase
@@ -484,7 +484,7 @@ function CoppeEuropee() {
 
 function SupercoppaEuropea() {
     return (
-        <Blocco titolo="Supercoppa Europea" icona="🏅">
+        <Blocco titolo="Supercoppa Europea" id={4}>
             <Testo>
                 La competizione sarà disputata tra{' '}
                 <Ev>le due squadre vincitrici di Champions League e Europa League, in gara secca di sola andata</Ev> nel
@@ -501,7 +501,7 @@ function SupercoppaEuropea() {
 function CoppaItalia() {
     return (
         <>
-            <Blocco titolo="Coppa Italia" icona="🇮🇹">
+            <Blocco titolo="Coppa Italia" id={5}>
                 <Testo>
                     <Ev>La competizione avrà inizio a partire dalla 8ª giornata di Serie A</Ev> (weekend del 25.10.2026).
                     La competizione sarà strutturata con{' '}
@@ -537,7 +537,7 @@ function CoppaItalia() {
 
 function SupercoppaItaliana() {
     return (
-        <Blocco titolo="Supercoppa Italiana" icona="🏅">
+        <Blocco titolo="Supercoppa Italiana" id={6}>
             <Testo>
                 La competizione sarà disputata tra <Ev>le due squadre vincitrici di Serie A e Coppa Italia,</Ev> in{' '}
                 <Ev>gara secca di sola andata</Ev> nel weekend del <Ev>23.05.2026,</Ev> in concomitanza con la{' '}
@@ -557,7 +557,7 @@ function SupercoppaItaliana() {
 
 function SurvivorCup() {
     return (
-        <Blocco titolo="Survivor Cup" icona="🪖">
+        <Blocco titolo="Survivor Cup" id={7}>
             <Testo>
                 <Ev>La competizione avrà inizio a partire dalla 3ª giornata di Serie A</Ev> (weekend del 06.09.2026) e
                 si disputerà a weekend alterni; <Ev>alla stessa parteciperanno tutte le 24 squadre</Ev> iscritte alla
@@ -591,7 +591,7 @@ function SurvivorCup() {
 
 function SquidGameCup() {
     return (
-        <Blocco titolo="Squid Game Cup" icona="🦑">
+        <Blocco titolo="Squid Game Cup" id={14}>
             <Testo>La competizione sarà suddivisa in 4 parti:</Testo>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -635,7 +635,7 @@ function SquidGameCup() {
 
 function PunteggioPiuAlto() {
     return (
-        <Blocco titolo="Punteggio Più Alto di Giornata" icona="🔥">
+        <Blocco titolo="Punteggio Più Alto di Giornata" icona="🔝">
             <Testo>
                 La competizione sarà disputata da ciascuna delle 24 squadre partecipanti alla lega. Si aggiudicherà il
                 premio{' '}
