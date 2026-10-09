@@ -5,6 +5,7 @@ import {
     Transition, TransitionChild,
 } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
+import { useRef } from 'react'
 
 const MEDAGLIE = ['🥇', '🥈', '🥉']
 const squadreLabel = (n) => `${n} ${n === 1 ? 'squadra' : 'squadre'}`
@@ -151,6 +152,8 @@ function SquadraCard({ squadra, posizione, valore, etichetta, soglia }) {
 }
 
 export default function StatisticheModale({ isOpen, onClose, stats }) {
+    const scrollRef = useRef(null)
+
     return (
         <Transition show={isOpen}>
             <Dialog as="div" className="relative z-50" onClose={onClose}>
@@ -179,12 +182,9 @@ export default function StatisticheModale({ isOpen, onClose, stats }) {
                                     </button>
                                     <p className="text-[11px] font-semibold uppercase tracking-widest opacity-80">Borgo Cup</p>
                                     <DialogTitle className="pr-10 text-2xl font-extrabold drop-shadow">Statistiche selezioni</DialogTitle>
-                                    <p className="mt-1 text-xs opacity-80">
-                                        Quante squadre hanno in rosa ciascun calciatore ({stats.nSquadre} squadre).
-                                    </p>
                                 </div>
 
-                                <TabGroup>
+                                <TabGroup onChange={() => scrollRef.current?.scrollTo({ top: 0 })}>
                                     <TabList className="mx-4 mt-4 grid grid-cols-2 gap-1 rounded-tl-2xl rounded-br-2xl bg-sky-100 p-1 shadow-inner">
                                         {['Giocatori', 'Squadre'].map((t) => (
                                             <Tab
@@ -199,96 +199,97 @@ export default function StatisticheModale({ isOpen, onClose, stats }) {
                                             </Tab>
                                         ))}
                                     </TabList>
-
-                                    <TabPanels className="relative z-0 max-h-[60vh] overflow-y-auto p-4">
-                                        <TabPanel className="space-y-5 focus:outline-none">
-                                            <Sezione titolo="Più selezionati" sottotitolo="A pari selezioni, prima la quotazione più alta.">
-                                                <ul className="space-y-2">
-                                                    {stats.piuSelezionati.map((g, i) => (
-                                                        <RigaGiocatore key={g.id} giocatore={g} posizione={i} />
-                                                    ))}
-                                                </ul>
-                                            </Sezione>
-                                            <Sezione
-                                                titolo="Meno selezionati"
-                                                sottotitolo="Scelti da almeno una squadra, con la quotazione più alta."
-                                            >
-                                                <ul className="space-y-2">
-                                                    {stats.menoSelezionati.map((g, i) => (
-                                                        <RigaGiocatore key={g.id} giocatore={g} posizione={i} mostraSquadre />
-                                                    ))}
-                                                </ul>
-                                            </Sezione>
-                                        </TabPanel>
-
-                                        <TabPanel className="space-y-5 focus:outline-none">
-                                            <Sezione
-                                                titolo="Squadre più originali"
-                                                sottotitolo="Più giocatori scelti da poche squadre."
-                                            >
-                                                <ul className="space-y-2">
-                                                    {stats.piuOriginali.map((s, i) => (
-                                                        <SquadraCard
-                                                            key={s.id}
-                                                            squadra={s}
-                                                            posizione={i}
-                                                            valore={s.originalita}
-                                                            etichetta="Originalità"
-                                                            soglia={stats.soglia}
-                                                        />
-                                                    ))}
-                                                </ul>
-                                            </Sezione>
-                                            <Sezione
-                                                titolo="Squadre più simili alle altre"
-                                                sottotitolo="Più giocatori scelti da molte squadre."
-                                            >
-                                                <ul className="space-y-2">
-                                                    {stats.piuSimili.map((s, i) => (
-                                                        <SquadraCard
-                                                            key={s.id}
-                                                            squadra={s}
-                                                            posizione={i}
-                                                            valore={100 - s.originalita}
-                                                            etichetta="Somiglianza"
-                                                            soglia={stats.soglia}
-                                                        />
-                                                    ))}
-                                                </ul>
-                                            </Sezione>
-
-                                            <Disclosure as="div" className="overflow-hidden rounded-2xl border border-sky-100 bg-white shadow-sm">
-                                                <DisclosureButton className="group flex w-full cursor-pointer items-center justify-between p-3 text-left font-bold text-sky-900">
-                                                    Classifica completa
-                                                    <ChevronDownIcon className="h-5 w-5 transition-transform group-data-open:rotate-180" />
-                                                </DisclosureButton>
-                                                <DisclosurePanel className="space-y-3 px-3 pb-3">
-                                                    {/* Legenda delle fasce, una volta sola */}
-                                                    <div className="flex flex-wrap gap-x-3 gap-y-1 text-[11px] font-semibold text-gray-600">
-                                                        {definisciFasce(stats.soglia, stats.nSquadre).map((f) => (
-                                                            <span key={f.label} className="flex items-center gap-1">
-                                                                <span className={`h-2 w-2 rounded-full ${f.colore}`} />
-                                                                {f.label}
-                                                            </span>
+                                    <div ref={scrollRef} className="relative z-0 max-h-[60vh] overflow-y-auto p-4">
+                                        <TabPanels>
+                                            <TabPanel className="space-y-5 focus:outline-none">
+                                                <Sezione titolo="Più selezionati" sottotitolo="A pari selezioni, prima la quotazione più alta.">
+                                                    <ul className="space-y-2">
+                                                        {stats.piuSelezionati.map((g, i) => (
+                                                            <RigaGiocatore key={g.id} giocatore={g} posizione={i} />
                                                         ))}
-                                                    </div>
+                                                    </ul>
+                                                </Sezione>
+                                                <Sezione
+                                                    titolo="Meno selezionati"
+                                                    sottotitolo="Scelti da almeno una squadra, con la quotazione più alta."
+                                                >
+                                                    <ul className="space-y-2">
+                                                        {stats.menoSelezionati.map((g, i) => (
+                                                            <RigaGiocatore key={g.id} giocatore={g} posizione={i} mostraSquadre />
+                                                        ))}
+                                                    </ul>
+                                                </Sezione>
+                                            </TabPanel>
 
-                                                    {stats.classificaSquadre.map((s, i) => (
-                                                        <div key={s.id} className="space-y-1">
-                                                            <div className="flex items-center gap-2 text-sm">
-                                                                <span className="w-6 text-right tabular-nums text-gray-400">{i + 1}</span>
-                                                                <span className="min-w-0 flex-1 truncate font-semibold text-gray-800">{s.nome}</span>
-                                                                <span className="text-xs font-bold tabular-nums text-sky-800">{Math.round(s.originalita)}%</span>
-                                                            </div>
-                                                            <div className="pl-8">
-                                                                <Fasce compatta distribuzione={s.distribuzione} soglia={stats.soglia} />
-                                                            </div>
+                                            <TabPanel className="space-y-5 focus:outline-none">
+                                                <Sezione
+                                                    titolo="Squadre più originali"
+                                                    sottotitolo="Più giocatori scelti da poche squadre."
+                                                >
+                                                    <ul className="space-y-2">
+                                                        {stats.piuOriginali.map((s, i) => (
+                                                            <SquadraCard
+                                                                key={s.id}
+                                                                squadra={s}
+                                                                posizione={i}
+                                                                valore={s.originalita}
+                                                                etichetta="Originalità"
+                                                                soglia={stats.soglia}
+                                                            />
+                                                        ))}
+                                                    </ul>
+                                                </Sezione>
+                                                <Sezione
+                                                    titolo="Squadre più simili alle altre"
+                                                    sottotitolo="Più giocatori scelti da molte squadre."
+                                                >
+                                                    <ul className="space-y-2">
+                                                        {stats.piuSimili.map((s, i) => (
+                                                            <SquadraCard
+                                                                key={s.id}
+                                                                squadra={s}
+                                                                posizione={i}
+                                                                valore={100 - s.originalita}
+                                                                etichetta="Somiglianza"
+                                                                soglia={stats.soglia}
+                                                            />
+                                                        ))}
+                                                    </ul>
+                                                </Sezione>
+
+                                                <Disclosure as="div" className="overflow-hidden rounded-2xl border border-sky-100 bg-white shadow-sm">
+                                                    <DisclosureButton className="group flex w-full cursor-pointer items-center justify-between p-3 text-left font-bold text-sky-900">
+                                                        Classifica completa
+                                                        <ChevronDownIcon className="h-5 w-5 transition-transform group-data-open:rotate-180" />
+                                                    </DisclosureButton>
+                                                    <DisclosurePanel className="space-y-3 px-3 pb-3">
+                                                        {/* Legenda delle fasce, una volta sola */}
+                                                        <div className="flex flex-wrap gap-x-3 gap-y-1 text-[11px] font-semibold text-gray-600">
+                                                            {definisciFasce(stats.soglia, stats.nSquadre).map((f) => (
+                                                                <span key={f.label} className="flex items-center gap-1">
+                                                                    <span className={`h-2 w-2 rounded-full ${f.colore}`} />
+                                                                    {f.label}
+                                                                </span>
+                                                            ))}
                                                         </div>
-                                                    ))}
-                                                </DisclosurePanel>
-                                            </Disclosure>
-                                        </TabPanel>
-                                    </TabPanels>
+
+                                                        {stats.classificaSquadre.map((s, i) => (
+                                                            <div key={s.id} className="space-y-1">
+                                                                <div className="flex items-center gap-2 text-sm">
+                                                                    <span className="w-6 text-right tabular-nums text-gray-400">{i + 1}</span>
+                                                                    <span className="min-w-0 flex-1 truncate font-semibold text-gray-800">{s.nome}</span>
+                                                                    <span className="text-xs font-bold tabular-nums text-sky-800">{Math.round(s.originalita)}%</span>
+                                                                </div>
+                                                                <div className="pl-8">
+                                                                    <Fasce compatta distribuzione={s.distribuzione} soglia={stats.soglia} />
+                                                                </div>
+                                                            </div>
+                                                        ))}
+                                                    </DisclosurePanel>
+                                                </Disclosure>
+                                            </TabPanel>
+                                        </TabPanels>
+                                    </div>
                                 </TabGroup>
                             </DialogPanel>
                         </TransitionChild>
