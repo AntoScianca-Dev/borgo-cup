@@ -16,6 +16,7 @@ import PreliminariCE from './components/PreliminariCE'
 import Survivor from './components/Survivor'
 import CoppaItalia from './components/CoppaItalia'
 import AdminMercato from './components/AdminMercato'
+import ScrollTopButton from './components/ScrollTopButton'
 
 export default function App() {
 
@@ -24,6 +25,7 @@ export default function App() {
       <div className="min-h-screen flex flex-col bg-gray-50">
         <Navbar />
         <ScrollToTop/>
+        <ScrollTopButton/>
         <main className="container mx-auto px-4 py-8 flex-1">
           <Routes>
             <Route path="/" element={<Home />} />

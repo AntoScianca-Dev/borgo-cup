@@ -27,51 +27,51 @@
           ],
           "d1": [
             {
-              "id": 7268,
-              "nome": "Rodriguez Ju.",
-              "costo": 3
-            }
-          ],
-          "d2": [
-            {
               "id": 7238,
               "nome": "Kouadio",
               "costo": 3
             }
           ],
-          "d3": [
+          "d2": [
             {
               "id": 7235,
               "nome": "Troilo",
               "costo": 3
             }
           ],
+          "d3": [
+            {
+              "id": 6638,
+              "nome": "Marin R.",
+              "costo": 2
+            }
+          ],
           "d4": [
             {
-              "id": 7175,
-              "nome": "Joao Mario",
-              "costo": 3
+              "id": 5620,
+              "nome": "Tavares N.",
+              "costo": 9
             }
           ],
           "d5": [
+            {
+              "id": 5022,
+              "nome": "Pavlovic",
+              "costo": 13
+            }
+          ],
+          "d6": [
             {
               "id": 4159,
               "nome": "Akanji",
               "costo": 16
             }
           ],
-          "d6": [
-            {
-              "id": 2728,
-              "nome": "Pellegrini Lu.",
-              "costo": 2
-            }
-          ],
           "d7": [
             {
-              "id": 1852,
-              "nome": "Spinazzola",
-              "costo": 8
+              "id": 2788,
+              "nome": "Bremer",
+              "costo": 17
             }
           ],
           "d8": [
@@ -83,86 +83,86 @@
           ],
           "c1": [
             {
+              "id": 7472,
+              "nome": "Calò",
+              "costo": 11
+            }
+          ],
+          "c2": [
+            {
               "id": 7456,
               "nome": "El Azzouzi A.",
               "costo": 1
             }
           ],
-          "c2": [
+          "c3": [
             {
               "id": 7126,
               "nome": "Baturina",
               "costo": 19
             }
           ],
-          "c3": [
+          "c4": [
             {
               "id": 6680,
               "nome": "Karlstrom",
               "costo": 6
             }
           ],
-          "c4": [
+          "c5": [
+            {
+              "id": 6252,
+              "nome": "Folorunsho",
+              "costo": 3
+            }
+          ],
+          "c6": [
             {
               "id": 5457,
               "nome": "Maleh",
               "costo": 2
             }
           ],
-          "c5": [
+          "c7": [
             {
               "id": 2848,
               "nome": "Frattesi",
               "costo": 7
             }
           ],
-          "c6": [
+          "c8": [
             {
               "id": 2194,
               "nome": "Calhanoglu",
               "costo": 27
             }
           ],
-          "c7": [
-            {
-              "id": 2167,
-              "nome": "Orsolini",
-              "costo": 26
-            }
-          ],
-          "c8": [
-            {
-              "id": 779,
-              "nome": "Cristante",
-              "costo": 8
-            }
-          ],
           "a1": [
+            {
+              "id": 7561,
+              "nome": "Lontani",
+              "costo": 6
+            }
+          ],
+          "a2": [
             {
               "id": 7523,
               "nome": "Varela G.",
               "costo": 3
             }
           ],
-          "a2": [
+          "a3": [
             {
               "id": 5951,
               "nome": "Kolo Muani",
               "costo": 26
             }
           ],
-          "a3": [
+          "a4": [
             {
               "id": 5585,
               "nome": "Malen",
               "costo": 34
-            }
-          ],
-          "a4": [
-            {
-              "id": 4923,
-              "nome": "Colombo",
-              "costo": 11
             }
           ],
           "a5": [
@@ -216,44 +216,44 @@
           ],
           "d2": [
             {
+              "id": 7268,
+              "nome": "Rodriguez Ju.",
+              "costo": 6
+            }
+          ],
+          "d3": [
+            {
               "id": 6985,
               "nome": "Candè",
               "costo": 3
             }
           ],
-          "d3": [
+          "d4": [
             {
               "id": 6821,
               "nome": "Hainaut",
               "costo": 3
             }
           ],
-          "d4": [
+          "d5": [
             {
               "id": 6485,
               "nome": "Kristensen T.",
               "costo": 7
             }
           ],
-          "d5": [
-            {
-              "id": 6189,
-              "nome": "Missori",
-              "costo": 1
-            }
-          ],
           "d6": [
             {
-              "id": 5022,
-              "nome": "Pavlovic",
-              "costo": 14
+              "id": 5877,
+              "nome": "Carlos Augusto",
+              "costo": 10
             }
           ],
           "d7": [
             {
-              "id": 4998,
-              "nome": "Molina N.",
-              "costo": 18
+              "id": 2788,
+              "nome": "Bremer",
+              "costo": 17
             }
           ],
           "d8": [
@@ -265,23 +265,23 @@
           ],
           "c1": [
             {
-              "id": 6875,
-              "nome": "Paz N.",
-              "costo": 30
+              "id": 7126,
+              "nome": "Baturina",
+              "costo": 21
             }
           ],
           "c2": [
             {
-              "id": 6191,
-              "nome": "Belahyane",
-              "costo": 1
+              "id": 6677,
+              "nome": "Adzic",
+              "costo": 11
             }
           ],
           "c3": [
             {
-              "id": 5800,
-              "nome": "Gudmundsson A.",
-              "costo": 13
+              "id": 6191,
+              "nome": "Belahyane",
+              "costo": 1
             }
           ],
           "c4": [
@@ -335,9 +335,9 @@
           ],
           "a3": [
             {
-              "id": 6397,
-              "nome": "Ramos G.",
-              "costo": 27
+              "id": 6669,
+              "nome": "Bonny",
+              "costo": 8
             }
           ],
           "a4": [
@@ -356,9 +356,9 @@
           ],
           "a6": [
             {
-              "id": 4896,
-              "nome": "Maldini",
-              "costo": 5
+              "id": 2764,
+              "nome": "Martinez L.",
+              "costo": 36
             }
           ]
         }
@@ -412,15 +412,15 @@
           ],
           "d4": [
             {
-              "id": 6039,
-              "nome": "Cabal",
-              "costo": 1
+              "id": 5641,
+              "nome": "Chalobah T.",
+              "costo": 9
             }
           ],
           "d5": [
             {
-              "id": 5641,
-              "nome": "Chalobah T.",
+              "id": 5620,
+              "nome": "Tavares N.",
               "costo": 9
             }
           ],
@@ -433,51 +433,51 @@
           ],
           "d7": [
             {
+              "id": 4433,
+              "nome": "Zortea",
+              "costo": 6
+            }
+          ],
+          "d8": [
+            {
               "id": 2788,
               "nome": "Bremer",
               "costo": 15
             }
           ],
-          "d8": [
+          "c1": [
             {
-              "id": 254,
-              "nome": "Dimarco",
-              "costo": 32
+              "id": 7625,
+              "nome": "Goncalves P.",
+              "costo": 11
             }
           ],
-          "c1": [
+          "c2": [
             {
               "id": 7535,
               "nome": "Fitz-Jim",
               "costo": 4
             }
           ],
-          "c2": [
+          "c3": [
             {
               "id": 7436,
               "nome": "Alajbegovic",
               "costo": 12
             }
           ],
-          "c3": [
+          "c4": [
             {
               "id": 7126,
               "nome": "Baturina",
               "costo": 19
             }
           ],
-          "c4": [
+          "c5": [
             {
               "id": 6895,
               "nome": "Dominguez B.",
               "costo": 3
-            }
-          ],
-          "c5": [
-            {
-              "id": 6015,
-              "nome": "Berisha M.",
-              "costo": 5
             }
           ],
           "c6": [
@@ -496,9 +496,9 @@
           ],
           "c8": [
             {
-              "id": 2194,
-              "nome": "Calhanoglu",
-              "costo": 27
+              "id": 2423,
+              "nome": "Pulisic",
+              "costo": 25
             }
           ],
           "a1": [
@@ -517,30 +517,30 @@
           ],
           "a3": [
             {
-              "id": 6572,
-              "nome": "Castro S.",
-              "costo": 14
-            }
-          ],
-          "a4": [
-            {
               "id": 6397,
               "nome": "Ramos G.",
               "costo": 27
             }
           ],
+          "a4": [
+            {
+              "id": 6215,
+              "nome": "Lucca",
+              "costo": 3
+            }
+          ],
           "a5": [
             {
-              "id": 5951,
-              "nome": "Kolo Muani",
-              "costo": 26
+              "id": 5585,
+              "nome": "Malen",
+              "costo": 37
             }
           ],
           "a6": [
             {
-              "id": 4871,
-              "nome": "Thuram",
-              "costo": 29
+              "id": 2764,
+              "nome": "Martinez L.",
+              "costo": 36
             }
           ]
         }
@@ -629,23 +629,23 @@
           ],
           "c1": [
             {
-              "id": 6908,
-              "nome": "Atta",
-              "costo": 17
-            }
-          ],
-          "c2": [
-            {
               "id": 6503,
               "nome": "Stankovic A.",
               "costo": 3
             }
           ],
-          "c3": [
+          "c2": [
             {
               "id": 5823,
               "nome": "Baldanzi",
               "costo": 11
+            }
+          ],
+          "c3": [
+            {
+              "id": 5800,
+              "nome": "Gudmundsson A.",
+              "costo": 13
             }
           ],
           "c4": [
@@ -664,8 +664,8 @@
           ],
           "c6": [
             {
-              "id": 5119,
-              "nome": "Samardzic",
+              "id": 2848,
+              "nome": "Frattesi",
               "costo": 12
             }
           ],
@@ -825,9 +825,9 @@
           ],
           "c3": [
             {
-              "id": 5800,
-              "nome": "Gudmundsson A.",
-              "costo": 13
+              "id": 6884,
+              "nome": "Conceicao",
+              "costo": 14
             }
           ],
           "c4": [
@@ -839,23 +839,23 @@
           ],
           "c5": [
             {
-              "id": 5119,
-              "nome": "Samardzic",
-              "costo": 12
-            }
-          ],
-          "c6": [
-            {
               "id": 4777,
               "nome": "McTominay",
               "costo": 28
             }
           ],
-          "c7": [
+          "c6": [
             {
               "id": 2848,
               "nome": "Frattesi",
               "costo": 7
+            }
+          ],
+          "c7": [
+            {
+              "id": 2379,
+              "nome": "Rabiot",
+              "costo": 24
             }
           ],
           "c8": [
@@ -874,9 +874,9 @@
           ],
           "a2": [
             {
-              "id": 6397,
-              "nome": "Ramos G.",
-              "costo": 27
+              "id": 5995,
+              "nome": "De Ketelaere",
+              "costo": 15
             }
           ],
           "a3": [
@@ -916,16 +916,16 @@
         {
           "p1": [
             {
-              "id": 7301,
-              "nome": "Tornqvist",
-              "costo": 1
+              "id": 6966,
+              "nome": "Butez",
+              "costo": 16
             }
           ],
           "p2": [
             {
-              "id": 6966,
-              "nome": "Butez",
-              "costo": 16
+              "id": 6344,
+              "nome": "Sanchez Ro.",
+              "costo": 8
             }
           ],
           "p3": [
@@ -944,44 +944,44 @@
           ],
           "d2": [
             {
+              "id": 7131,
+              "nome": "Floriani Mussolini",
+              "costo": 3
+            }
+          ],
+          "d3": [
+            {
               "id": 6766,
               "nome": "Kelly L.",
               "costo": 5
             }
           ],
-          "d3": [
+          "d4": [
             {
               "id": 6495,
               "nome": "Comuzzo",
               "costo": 6
             }
           ],
-          "d4": [
+          "d5": [
             {
               "id": 5365,
               "nome": "Dragusin",
               "costo": 8
             }
           ],
-          "d5": [
+          "d6": [
             {
               "id": 4657,
               "nome": "Celik",
               "costo": 8
             }
           ],
-          "d6": [
+          "d7": [
             {
               "id": 4409,
               "nome": "Rrahmani",
               "costo": 14
-            }
-          ],
-          "d7": [
-            {
-              "id": 4375,
-              "nome": "Terzic",
-              "costo": 4
             }
           ],
           "d8": [
@@ -993,23 +993,23 @@
           ],
           "c1": [
             {
-              "id": 7464,
-              "nome": "Oulai",
-              "costo": 6
-            }
-          ],
-          "c2": [
-            {
               "id": 7436,
               "nome": "Alajbegovic",
               "costo": 12
             }
           ],
-          "c3": [
+          "c2": [
             {
               "id": 7078,
               "nome": "Mastantuono",
               "costo": 12
+            }
+          ],
+          "c3": [
+            {
+              "id": 7036,
+              "nome": "Bakola",
+              "costo": 8
             }
           ],
           "c4": [
@@ -1021,30 +1021,30 @@
           ],
           "c5": [
             {
-              "id": 6844,
-              "nome": "Rowe",
-              "costo": 11
-            }
-          ],
-          "c6": [
-            {
               "id": 6677,
               "nome": "Adzic",
               "costo": 5
             }
           ],
-          "c7": [
+          "c6": [
             {
               "id": 5761,
               "nome": "Zhegrova",
               "costo": 6
             }
           ],
+          "c7": [
+            {
+              "id": 4911,
+              "nome": "Douglas Luiz",
+              "costo": 4
+            }
+          ],
           "c8": [
             {
-              "id": 2766,
-              "nome": "Zaniolo",
-              "costo": 18
+              "id": 4856,
+              "nome": "Chukwueze",
+              "costo": 10
             }
           ],
           "a1": [
@@ -1056,9 +1056,9 @@
           ],
           "a2": [
             {
-              "id": 7351,
-              "nome": "Santos A.",
-              "costo": 14
+              "id": 7120,
+              "nome": "Lang",
+              "costo": 4
             }
           ],
           "a3": [
@@ -1070,23 +1070,23 @@
           ],
           "a4": [
             {
-              "id": 5882,
-              "nome": "Mota",
-              "costo": 5
-            }
-          ],
-          "a5": [
-            {
               "id": 5585,
               "nome": "Malen",
               "costo": 34
             }
           ],
-          "a6": [
+          "a5": [
             {
               "id": 2832,
               "nome": "Boga",
               "costo": 6
+            }
+          ],
+          "a6": [
+            {
+              "id": 2764,
+              "nome": "Martinez L.",
+              "costo": 36
             }
           ]
         }
@@ -1098,9 +1098,9 @@
         {
           "p1": [
             {
-              "id": 5116,
-              "nome": "Martinez Jo.",
-              "costo": 17
+              "id": 5841,
+              "nome": "Svilar",
+              "costo": 19
             }
           ],
           "p2": [
@@ -1112,44 +1112,44 @@
           ],
           "p3": [
             {
-              "id": 1926,
-              "nome": "Di Gennaro",
+              "id": 610,
+              "nome": "Gollini",
               "costo": 1
             }
           ],
           "d1": [
-            {
-              "id": 7414,
-              "nome": "Kaiki",
-              "costo": 7
-            }
-          ],
-          "d2": [
             {
               "id": 7181,
               "nome": "Wesley",
               "costo": 17
             }
           ],
-          "d3": [
+          "d2": [
             {
               "id": 6821,
               "nome": "Hainaut",
               "costo": 3
             }
           ],
-          "d4": [
+          "d3": [
             {
               "id": 6660,
               "nome": "Marcandalli",
               "costo": 6
             }
           ],
-          "d5": [
+          "d4": [
             {
               "id": 6039,
               "nome": "Cabal",
               "costo": 1
+            }
+          ],
+          "d5": [
+            {
+              "id": 5620,
+              "nome": "Tavares N.",
+              "costo": 9
             }
           ],
           "d6": [
@@ -1175,9 +1175,9 @@
           ],
           "c1": [
             {
-              "id": 6884,
-              "nome": "Conceicao",
-              "costo": 12
+              "id": 6844,
+              "nome": "Rowe",
+              "costo": 9
             }
           ],
           "c2": [
@@ -1217,16 +1217,16 @@
           ],
           "c7": [
             {
-              "id": 5559,
-              "nome": "Da Cunha",
-              "costo": 18
+              "id": 2194,
+              "nome": "Calhanoglu",
+              "costo": 27
             }
           ],
           "c8": [
             {
-              "id": 2194,
-              "nome": "Calhanoglu",
-              "costo": 27
+              "id": 632,
+              "nome": "Zaccagni",
+              "costo": 18
             }
           ],
           "a1": [
@@ -1238,16 +1238,16 @@
           ],
           "a2": [
             {
-              "id": 6204,
-              "nome": "Kvernadze",
-              "costo": 4
+              "id": 6967,
+              "nome": "Diao",
+              "costo": 14
             }
           ],
           "a3": [
             {
-              "id": 5951,
-              "nome": "Kolo Muani",
-              "costo": 26
+              "id": 6204,
+              "nome": "Kvernadze",
+              "costo": 4
             }
           ],
           "a4": [
@@ -1259,9 +1259,9 @@
           ],
           "a5": [
             {
-              "id": 4871,
-              "nome": "Thuram",
-              "costo": 29
+              "id": 2764,
+              "nome": "Martinez L.",
+              "costo": 36
             }
           ],
           "a6": [
@@ -1308,44 +1308,44 @@
           ],
           "d2": [
             {
-              "id": 6893,
-              "nome": "Kempf",
-              "costo": 5
-            }
-          ],
-          "d3": [
-            {
               "id": 6869,
               "nome": "Ramon",
               "costo": 10
             }
           ],
-          "d4": [
+          "d3": [
             {
               "id": 6821,
               "nome": "Hainaut",
               "costo": 3
             }
           ],
+          "d4": [
+            {
+              "id": 6809,
+              "nome": "Marianucci",
+              "costo": 1
+            }
+          ],
           "d5": [
+            {
+              "id": 6638,
+              "nome": "Marin R.",
+              "costo": 2
+            }
+          ],
+          "d6": [
             {
               "id": 6217,
               "nome": "Bisseck",
               "costo": 11
             }
           ],
-          "d6": [
-            {
-              "id": 6189,
-              "nome": "Missori",
-              "costo": 1
-            }
-          ],
           "d7": [
             {
-              "id": 6039,
-              "nome": "Cabal",
-              "costo": 1
+              "id": 4433,
+              "nome": "Zortea",
+              "costo": 6
             }
           ],
           "d8": [
@@ -1364,23 +1364,23 @@
           ],
           "c2": [
             {
+              "id": 6844,
+              "nome": "Rowe",
+              "costo": 9
+            }
+          ],
+          "c3": [
+            {
               "id": 6503,
               "nome": "Stankovic A.",
               "costo": 3
             }
           ],
-          "c3": [
+          "c4": [
             {
               "id": 6294,
               "nome": "Ndour",
               "costo": 8
-            }
-          ],
-          "c4": [
-            {
-              "id": 6246,
-              "nome": "Lipani",
-              "costo": 2
             }
           ],
           "c5": [
@@ -1392,9 +1392,9 @@
           ],
           "c6": [
             {
-              "id": 4856,
-              "nome": "Chukwueze",
-              "costo": 6
+              "id": 2848,
+              "nome": "Frattesi",
+              "costo": 12
             }
           ],
           "c7": [
@@ -1413,23 +1413,23 @@
           ],
           "a1": [
             {
-              "id": 7561,
-              "nome": "Lontani",
+              "id": 7627,
+              "nome": "Enem",
               "costo": 1
             }
           ],
           "a2": [
             {
-              "id": 7523,
-              "nome": "Varela G.",
-              "costo": 3
+              "id": 7561,
+              "nome": "Lontani",
+              "costo": 1
             }
           ],
           "a3": [
             {
-              "id": 5951,
-              "nome": "Kolo Muani",
-              "costo": 26
+              "id": 7017,
+              "nome": "Douvikas",
+              "costo": 22
             }
           ],
           "a4": [
@@ -1462,9 +1462,9 @@
         {
           "p1": [
             {
-              "id": 7545,
-              "nome": "Vismara",
-              "costo": 1
+              "id": 6662,
+              "nome": "Corvi",
+              "costo": 4
             }
           ],
           "p2": [
@@ -1483,44 +1483,44 @@
           ],
           "d1": [
             {
-              "id": 7294,
-              "nome": "Valdepenas",
-              "costo": 6
-            }
-          ],
-          "d2": [
-            {
               "id": 7235,
               "nome": "Troilo",
               "costo": 3
             }
           ],
-          "d3": [
+          "d2": [
             {
               "id": 7219,
               "nome": "Bernasconi",
               "costo": 6
             }
           ],
+          "d3": [
+            {
+              "id": 7012,
+              "nome": "Provstgaard",
+              "costo": 5
+            }
+          ],
           "d4": [
             {
-              "id": 6320,
-              "nome": "Doekhi",
-              "costo": 7
+              "id": 6638,
+              "nome": "Marin R.",
+              "costo": 2
             }
           ],
           "d5": [
             {
-              "id": 6189,
-              "nome": "Missori",
-              "costo": 1
+              "id": 5750,
+              "nome": "Ostigard",
+              "costo": 11
             }
           ],
           "d6": [
             {
-              "id": 5750,
-              "nome": "Ostigard",
-              "costo": 11
+              "id": 5365,
+              "nome": "Dragusin",
+              "costo": 8
             }
           ],
           "d7": [
@@ -1560,30 +1560,30 @@
           ],
           "c4": [
             {
+              "id": 6274,
+              "nome": "Diouf",
+              "costo": 11
+            }
+          ],
+          "c5": [
+            {
               "id": 5687,
               "nome": "Vlasic",
               "costo": 14
             }
           ],
-          "c5": [
+          "c6": [
             {
               "id": 5559,
               "nome": "Da Cunha",
               "costo": 18
             }
           ],
-          "c6": [
-            {
-              "id": 5422,
-              "nome": "Zalewski",
-              "costo": 6
-            }
-          ],
           "c7": [
             {
-              "id": 4777,
-              "nome": "McTominay",
-              "costo": 28
+              "id": 5119,
+              "nome": "Samardzic",
+              "costo": 14
             }
           ],
           "c8": [
@@ -1602,9 +1602,9 @@
           ],
           "a2": [
             {
-              "id": 6981,
-              "nome": "Vaz",
-              "costo": 1
+              "id": 7161,
+              "nome": "Bayo V.",
+              "costo": 2
             }
           ],
           "a3": [
@@ -1672,16 +1672,16 @@
           ],
           "d2": [
             {
-              "id": 7219,
-              "nome": "Bernasconi",
-              "costo": 6
+              "id": 7131,
+              "nome": "Floriani Mussolini",
+              "costo": 3
             }
           ],
           "d3": [
             {
-              "id": 7175,
-              "nome": "Joao Mario",
-              "costo": 3
+              "id": 6638,
+              "nome": "Marin R.",
+              "costo": 2
             }
           ],
           "d4": [
@@ -1721,23 +1721,23 @@
           ],
           "c1": [
             {
+              "id": 7575,
+              "nome": "Mout",
+              "costo": 1
+            }
+          ],
+          "c2": [
+            {
               "id": 7535,
               "nome": "Fitz-Jim",
               "costo": 4
             }
           ],
-          "c2": [
-            {
-              "id": 7436,
-              "nome": "Alajbegovic",
-              "costo": 12
-            }
-          ],
           "c3": [
             {
-              "id": 6815,
-              "nome": "Fadera",
-              "costo": 2
+              "id": 7126,
+              "nome": "Baturina",
+              "costo": 21
             }
           ],
           "c4": [
@@ -1756,16 +1756,16 @@
           ],
           "c6": [
             {
-              "id": 4777,
-              "nome": "McTominay",
-              "costo": 28
+              "id": 4179,
+              "nome": "Gonzalez N.",
+              "costo": 13
             }
           ],
           "c7": [
             {
-              "id": 2766,
-              "nome": "Zaniolo",
-              "costo": 18
+              "id": 2848,
+              "nome": "Frattesi",
+              "costo": 12
             }
           ],
           "c8": [
@@ -1784,30 +1784,30 @@
           ],
           "a2": [
             {
+              "id": 7071,
+              "nome": "Esposito F.P.",
+              "costo": 18
+            }
+          ],
+          "a3": [
+            {
               "id": 6215,
               "nome": "Lucca",
               "costo": 3
             }
           ],
-          "a3": [
+          "a4": [
             {
               "id": 5951,
               "nome": "Kolo Muani",
               "costo": 26
             }
           ],
-          "a4": [
+          "a5": [
             {
               "id": 5585,
               "nome": "Malen",
               "costo": 34
-            }
-          ],
-          "a5": [
-            {
-              "id": 4923,
-              "nome": "Colombo",
-              "costo": 11
             }
           ],
           "a6": [
@@ -1861,30 +1861,30 @@
           ],
           "d3": [
             {
+              "id": 7181,
+              "nome": "Wesley",
+              "costo": 18
+            }
+          ],
+          "d4": [
+            {
               "id": 6039,
               "nome": "Cabal",
               "costo": 1
             }
           ],
-          "d4": [
+          "d5": [
             {
               "id": 5307,
               "nome": "Valenti",
               "costo": 4
             }
           ],
-          "d5": [
+          "d6": [
             {
               "id": 4263,
               "nome": "Kabasele",
               "costo": 4
-            }
-          ],
-          "d6": [
-            {
-              "id": 2816,
-              "nome": "Di Lorenzo",
-              "costo": 12
             }
           ],
           "d7": [
@@ -1903,30 +1903,30 @@
           ],
           "c1": [
             {
+              "id": 7575,
+              "nome": "Mout",
+              "costo": 1
+            }
+          ],
+          "c2": [
+            {
               "id": 6903,
               "nome": "Hasa",
               "costo": 2
             }
           ],
-          "c2": [
+          "c3": [
             {
               "id": 6884,
               "nome": "Conceicao",
               "costo": 12
             }
           ],
-          "c3": [
+          "c4": [
             {
               "id": 6875,
               "nome": "Paz N.",
               "costo": 30
-            }
-          ],
-          "c4": [
-            {
-              "id": 5800,
-              "nome": "Gudmundsson A.",
-              "costo": 13
             }
           ],
           "c5": [
@@ -1938,16 +1938,16 @@
           ],
           "c6": [
             {
-              "id": 4911,
-              "nome": "Douglas Luiz",
-              "costo": 4
+              "id": 4179,
+              "nome": "Gonzalez N.",
+              "costo": 13
             }
           ],
           "c7": [
             {
-              "id": 4777,
-              "nome": "McTominay",
-              "costo": 28
+              "id": 2848,
+              "nome": "Frattesi",
+              "costo": 12
             }
           ],
           "c8": [
@@ -1959,8 +1959,8 @@
           ],
           "a1": [
             {
-              "id": 6981,
-              "nome": "Vaz",
+              "id": 7627,
+              "nome": "Enem",
               "costo": 1
             }
           ],
@@ -1973,9 +1973,9 @@
           ],
           "a3": [
             {
-              "id": 5951,
-              "nome": "Kolo Muani",
-              "costo": 26
+              "id": 5585,
+              "nome": "Malen",
+              "costo": 37
             }
           ],
           "a4": [
@@ -1987,9 +1987,9 @@
           ],
           "a5": [
             {
-              "id": 4371,
-              "nome": "Raspadori",
-              "costo": 13
+              "id": 4359,
+              "nome": "Piccoli",
+              "costo": 9
             }
           ],
           "a6": [
@@ -2029,16 +2029,16 @@
           ],
           "d1": [
             {
-              "id": 7476,
-              "nome": "Bakoune",
-              "costo": 1
+              "id": 7181,
+              "nome": "Wesley",
+              "costo": 17
             }
           ],
           "d2": [
             {
-              "id": 7181,
-              "nome": "Wesley",
-              "costo": 17
+              "id": 7131,
+              "nome": "Floriani Mussolini",
+              "costo": 3
             }
           ],
           "d3": [
@@ -2057,9 +2057,9 @@
           ],
           "d5": [
             {
-              "id": 6426,
-              "nome": "Pedersen",
-              "costo": 5
+              "id": 6638,
+              "nome": "Marin R.",
+              "costo": 2
             }
           ],
           "d6": [
@@ -2085,44 +2085,44 @@
           ],
           "c1": [
             {
-              "id": 7436,
-              "nome": "Alajbegovic",
-              "costo": 12
-            }
-          ],
-          "c2": [
-            {
               "id": 7078,
               "nome": "Mastantuono",
               "costo": 12
             }
           ],
-          "c3": [
+          "c2": [
             {
               "id": 6875,
               "nome": "Paz N.",
               "costo": 30
             }
           ],
-          "c4": [
+          "c3": [
             {
               "id": 6592,
               "nome": "Forson O.",
               "costo": 1
             }
           ],
-          "c5": [
+          "c4": [
             {
               "id": 6503,
               "nome": "Stankovic A.",
               "costo": 3
             }
           ],
+          "c5": [
+            {
+              "id": 4199,
+              "nome": "Loftus-Cheek",
+              "costo": 4
+            }
+          ],
           "c6": [
             {
-              "id": 6274,
-              "nome": "Diouf",
-              "costo": 8
+              "id": 2848,
+              "nome": "Frattesi",
+              "costo": 12
             }
           ],
           "c7": [
@@ -2141,9 +2141,9 @@
           ],
           "a1": [
             {
-              "id": 7249,
-              "nome": "Buksa",
-              "costo": 2
+              "id": 7523,
+              "nome": "Varela G.",
+              "costo": 10
             }
           ],
           "a2": [
@@ -2155,23 +2155,23 @@
           ],
           "a3": [
             {
-              "id": 6397,
-              "nome": "Ramos G.",
-              "costo": 27
+              "id": 6215,
+              "nome": "Lucca",
+              "costo": 3
             }
           ],
           "a4": [
             {
-              "id": 4896,
-              "nome": "Maldini",
-              "costo": 5
+              "id": 5585,
+              "nome": "Malen",
+              "costo": 37
             }
           ],
           "a5": [
             {
-              "id": 4371,
-              "nome": "Raspadori",
-              "costo": 13
+              "id": 4896,
+              "nome": "Maldini",
+              "costo": 5
             }
           ],
           "a6": [
@@ -2211,16 +2211,16 @@
           ],
           "d1": [
             {
-              "id": 7181,
-              "nome": "Wesley",
-              "costo": 17
+              "id": 7573,
+              "nome": "Cinquegrano",
+              "costo": 5
             }
           ],
           "d2": [
             {
-              "id": 7175,
-              "nome": "Joao Mario",
-              "costo": 3
+              "id": 7181,
+              "nome": "Wesley",
+              "costo": 17
             }
           ],
           "d3": [
@@ -2267,16 +2267,16 @@
           ],
           "c1": [
             {
-              "id": 6884,
-              "nome": "Conceicao",
-              "costo": 12
+              "id": 7535,
+              "nome": "Fitz-Jim",
+              "costo": 6
             }
           ],
           "c2": [
             {
-              "id": 6844,
-              "nome": "Rowe",
-              "costo": 11
+              "id": 6884,
+              "nome": "Conceicao",
+              "costo": 12
             }
           ],
           "c3": [
@@ -2295,16 +2295,16 @@
           ],
           "c5": [
             {
-              "id": 5119,
-              "nome": "Samardzic",
-              "costo": 12
+              "id": 6372,
+              "nome": "Moreira",
+              "costo": 15
             }
           ],
           "c6": [
             {
-              "id": 4777,
-              "nome": "McTominay",
-              "costo": 28
+              "id": 5119,
+              "nome": "Samardzic",
+              "costo": 12
             }
           ],
           "c7": [
@@ -2323,16 +2323,16 @@
           ],
           "a1": [
             {
-              "id": 7561,
-              "nome": "Lontani",
-              "costo": 1
+              "id": 6831,
+              "nome": "Neres",
+              "costo": 6
             }
           ],
           "a2": [
             {
-              "id": 6831,
-              "nome": "Neres",
-              "costo": 6
+              "id": 6822,
+              "nome": "Ekhator",
+              "costo": 2
             }
           ],
           "a3": [
@@ -2344,9 +2344,9 @@
           ],
           "a4": [
             {
-              "id": 5951,
-              "nome": "Kolo Muani",
-              "costo": 26
+              "id": 5585,
+              "nome": "Malen",
+              "costo": 37
             }
           ],
           "a5": [
@@ -2393,30 +2393,30 @@
           ],
           "d1": [
             {
+              "id": 7181,
+              "nome": "Wesley",
+              "costo": 18
+            }
+          ],
+          "d2": [
+            {
               "id": 6217,
               "nome": "Bisseck",
               "costo": 11
             }
           ],
-          "d2": [
+          "d3": [
             {
               "id": 6189,
               "nome": "Missori",
               "costo": 1
             }
           ],
-          "d3": [
+          "d4": [
             {
               "id": 6042,
               "nome": "Lucumì",
               "costo": 8
-            }
-          ],
-          "d4": [
-            {
-              "id": 4998,
-              "nome": "Molina N.",
-              "costo": 18
             }
           ],
           "d5": [
@@ -2449,58 +2449,58 @@
           ],
           "c1": [
             {
+              "id": 7572,
+              "nome": "Comotto",
+              "costo": 5
+            }
+          ],
+          "c2": [
+            {
+              "id": 7556,
+              "nome": "Mora",
+              "costo": 20
+            }
+          ],
+          "c3": [
+            {
+              "id": 7126,
+              "nome": "Baturina",
+              "costo": 21
+            }
+          ],
+          "c4": [
+            {
               "id": 7078,
               "nome": "Mastantuono",
               "costo": 12
             }
           ],
-          "c2": [
-            {
-              "id": 6908,
-              "nome": "Atta",
-              "costo": 17
-            }
-          ],
-          "c3": [
+          "c5": [
             {
               "id": 6410,
               "nome": "Kaba",
               "costo": 1
             }
           ],
-          "c4": [
+          "c6": [
             {
               "id": 6212,
               "nome": "Zarraga",
               "costo": 1
             }
           ],
-          "c5": [
+          "c7": [
             {
               "id": 6191,
               "nome": "Belahyane",
               "costo": 1
             }
           ],
-          "c6": [
-            {
-              "id": 5559,
-              "nome": "Da Cunha",
-              "costo": 18
-            }
-          ],
-          "c7": [
+          "c8": [
             {
               "id": 4856,
               "nome": "Chukwueze",
               "costo": 6
-            }
-          ],
-          "c8": [
-            {
-              "id": 2379,
-              "nome": "Rabiot",
-              "costo": 22
             }
           ],
           "a1": [
@@ -2512,37 +2512,37 @@
           ],
           "a2": [
             {
-              "id": 6397,
-              "nome": "Ramos G.",
-              "costo": 27
-            }
-          ],
-          "a3": [
-            {
-              "id": 5951,
-              "nome": "Kolo Muani",
-              "costo": 26
-            }
-          ],
-          "a4": [
-            {
-              "id": 5637,
-              "nome": "Davis K.",
-              "costo": 19
-            }
-          ],
-          "a5": [
-            {
               "id": 5585,
               "nome": "Malen",
               "costo": 34
             }
           ],
-          "a6": [
+          "a3": [
+            {
+              "id": 5436,
+              "nome": "Raimondo",
+              "costo": 12
+            }
+          ],
+          "a4": [
             {
               "id": 4923,
               "nome": "Colombo",
               "costo": 11
+            }
+          ],
+          "a5": [
+            {
+              "id": 4871,
+              "nome": "Thuram",
+              "costo": 31
+            }
+          ],
+          "a6": [
+            {
+              "id": 2764,
+              "nome": "Martinez L.",
+              "costo": 36
             }
           ]
         }
@@ -2575,58 +2575,58 @@
           ],
           "d1": [
             {
+              "id": 6892,
+              "nome": "Schingtienne",
+              "costo": 2
+            }
+          ],
+          "d2": [
+            {
               "id": 6531,
               "nome": "Jimenez A.",
               "costo": 8
             }
           ],
-          "d2": [
+          "d3": [
             {
               "id": 6042,
               "nome": "Lucumì",
               "costo": 8
             }
           ],
-          "d3": [
+          "d4": [
             {
               "id": 5877,
               "nome": "Carlos Augusto",
               "costo": 7
             }
           ],
-          "d4": [
+          "d5": [
             {
               "id": 5833,
               "nome": "Gila",
               "costo": 12
             }
           ],
-          "d5": [
+          "d6": [
             {
               "id": 5520,
               "nome": "Cambiaso",
               "costo": 9
             }
           ],
-          "d6": [
+          "d7": [
             {
               "id": 2816,
               "nome": "Di Lorenzo",
               "costo": 12
             }
           ],
-          "d7": [
+          "d8": [
             {
               "id": 2788,
               "nome": "Bremer",
               "costo": 15
-            }
-          ],
-          "d8": [
-            {
-              "id": 2728,
-              "nome": "Pellegrini Lu.",
-              "costo": 2
             }
           ],
           "c1": [
@@ -2652,23 +2652,23 @@
           ],
           "c4": [
             {
-              "id": 6903,
-              "nome": "Hasa",
-              "costo": 2
-            }
-          ],
-          "c5": [
-            {
               "id": 6884,
               "nome": "Conceicao",
               "costo": 12
             }
           ],
+          "c5": [
+            {
+              "id": 4911,
+              "nome": "Douglas Luiz",
+              "costo": 4
+            }
+          ],
           "c6": [
             {
-              "id": 5800,
-              "nome": "Gudmundsson A.",
-              "costo": 13
+              "id": 2848,
+              "nome": "Frattesi",
+              "costo": 12
             }
           ],
           "c7": [
@@ -2687,44 +2687,44 @@
           ],
           "a1": [
             {
+              "id": 7120,
+              "nome": "Lang",
+              "costo": 4
+            }
+          ],
+          "a2": [
+            {
+              "id": 7071,
+              "nome": "Esposito F.P.",
+              "costo": 18
+            }
+          ],
+          "a3": [
+            {
+              "id": 7017,
+              "nome": "Douvikas",
+              "costo": 22
+            }
+          ],
+          "a4": [
+            {
               "id": 6831,
               "nome": "Neres",
               "costo": 6
             }
           ],
-          "a2": [
+          "a5": [
             {
               "id": 6572,
               "nome": "Castro S.",
               "costo": 14
             }
           ],
-          "a3": [
-            {
-              "id": 6215,
-              "nome": "Lucca",
-              "costo": 3
-            }
-          ],
-          "a4": [
-            {
-              "id": 5951,
-              "nome": "Kolo Muani",
-              "costo": 26
-            }
-          ],
-          "a5": [
+          "a6": [
             {
               "id": 5585,
               "nome": "Malen",
               "costo": 34
-            }
-          ],
-          "a6": [
-            {
-              "id": 2097,
-              "nome": "Kean",
-              "costo": 25
             }
           ]
         }
@@ -2778,37 +2778,37 @@
           ],
           "d4": [
             {
-              "id": 6814,
-              "nome": "Norton-Cuffy",
-              "costo": 8
-            }
-          ],
-          "d5": [
-            {
               "id": 6238,
               "nome": "Oyono A.",
               "costo": 5
             }
           ],
-          "d6": [
+          "d5": [
             {
-              "id": 5982,
-              "nome": "Spence",
-              "costo": 12
+              "id": 5641,
+              "nome": "Chalobah T.",
+              "costo": 9
             }
           ],
-          "d7": [
+          "d6": [
             {
               "id": 5526,
               "nome": "Scalvini",
               "costo": 10
             }
           ],
-          "d8": [
+          "d7": [
             {
               "id": 4994,
               "nome": "Vojvoda",
               "costo": 8
+            }
+          ],
+          "d8": [
+            {
+              "id": 254,
+              "nome": "Dimarco",
+              "costo": 29
             }
           ],
           "c1": [
@@ -2820,9 +2820,9 @@
           ],
           "c2": [
             {
-              "id": 6884,
-              "nome": "Conceicao",
-              "costo": 12
+              "id": 7078,
+              "nome": "Mastantuono",
+              "costo": 14
             }
           ],
           "c3": [
@@ -2834,30 +2834,30 @@
           ],
           "c4": [
             {
-              "id": 6592,
-              "nome": "Forson O.",
-              "costo": 1
-            }
-          ],
-          "c5": [
-            {
               "id": 6372,
               "nome": "Moreira",
               "costo": 12
             }
           ],
+          "c5": [
+            {
+              "id": 6252,
+              "nome": "Folorunsho",
+              "costo": 3
+            }
+          ],
           "c6": [
             {
-              "id": 5800,
-              "nome": "Gudmundsson A.",
-              "costo": 13
+              "id": 6191,
+              "nome": "Belahyane",
+              "costo": 5
             }
           ],
           "c7": [
             {
-              "id": 2766,
-              "nome": "Zaniolo",
-              "costo": 18
+              "id": 2848,
+              "nome": "Frattesi",
+              "costo": 12
             }
           ],
           "c8": [
@@ -2876,16 +2876,16 @@
           ],
           "a2": [
             {
-              "id": 6397,
-              "nome": "Ramos G.",
-              "costo": 27
+              "id": 7523,
+              "nome": "Varela G.",
+              "costo": 10
             }
           ],
           "a3": [
             {
-              "id": 5637,
-              "nome": "Davis K.",
-              "costo": 19
+              "id": 6397,
+              "nome": "Ramos G.",
+              "costo": 27
             }
           ],
           "a4": [
@@ -2939,43 +2939,43 @@
           ],
           "d1": [
             {
-              "id": 7268,
-              "nome": "Rodriguez Ju.",
-              "costo": 3
-            }
-          ],
-          "d2": [
-            {
               "id": 7238,
               "nome": "Kouadio",
               "costo": 3
             }
           ],
-          "d3": [
+          "d2": [
             {
               "id": 6956,
               "nome": "Solet",
               "costo": 13
             }
           ],
-          "d4": [
-            {
-              "id": 6809,
-              "nome": "Marianucci",
-              "costo": 1
-            }
-          ],
-          "d5": [
+          "d3": [
             {
               "id": 6039,
               "nome": "Cabal",
               "costo": 1
             }
           ],
-          "d6": [
+          "d4": [
+            {
+              "id": 5982,
+              "nome": "Spence",
+              "costo": 10
+            }
+          ],
+          "d5": [
             {
               "id": 5641,
               "nome": "Chalobah T.",
+              "costo": 9
+            }
+          ],
+          "d6": [
+            {
+              "id": 5620,
+              "nome": "Tavares N.",
               "costo": 9
             }
           ],
@@ -3002,9 +3002,9 @@
           ],
           "c2": [
             {
-              "id": 7477,
-              "nome": "Colombo L.",
-              "costo": 3
+              "id": 7472,
+              "nome": "Calò",
+              "costo": 11
             }
           ],
           "c3": [
@@ -3016,9 +3016,9 @@
           ],
           "c4": [
             {
-              "id": 6592,
-              "nome": "Forson O.",
-              "costo": 1
+              "id": 6618,
+              "nome": "Cissè A.",
+              "costo": 6
             }
           ],
           "c5": [
@@ -3030,9 +3030,9 @@
           ],
           "c6": [
             {
-              "id": 4777,
-              "nome": "McTominay",
-              "costo": 28
+              "id": 6252,
+              "nome": "Folorunsho",
+              "costo": 3
             }
           ],
           "c7": [
@@ -3051,44 +3051,44 @@
           ],
           "a1": [
             {
-              "id": 7561,
-              "nome": "Lontani",
+              "id": 7622,
+              "nome": "Robinho Junior",
               "costo": 1
             }
           ],
           "a2": [
-            {
-              "id": 7484,
-              "nome": "Adams A.",
-              "costo": 12
-            }
-          ],
-          "a3": [
             {
               "id": 7161,
               "nome": "Bayo V.",
               "costo": 1
             }
           ],
-          "a4": [
+          "a3": [
             {
               "id": 6397,
               "nome": "Ramos G.",
               "costo": 27
             }
           ],
-          "a5": [
+          "a4": [
             {
               "id": 5585,
               "nome": "Malen",
               "costo": 34
             }
           ],
-          "a6": [
+          "a5": [
             {
               "id": 2764,
               "nome": "Martinez L.",
               "costo": 35
+            }
+          ],
+          "a6": [
+            {
+              "id": 2061,
+              "nome": "Simeone",
+              "costo": 13
             }
           ]
         }
@@ -3100,37 +3100,37 @@
         {
           "p1": [
             {
-              "id": 5320,
-              "nome": "Paleari",
-              "costo": 1
-            }
-          ],
-          "p2": [
-            {
               "id": 2170,
               "nome": "Milinkovic-Savic V.",
               "costo": 5
             }
           ],
-          "p3": [
+          "p2": [
             {
               "id": 572,
               "nome": "Meret",
               "costo": 11
             }
           ],
-          "d1": [
+          "p3": [
             {
-              "id": 7470,
-              "nome": "Oyono J.",
+              "id": 283,
+              "nome": "Neto",
               "costo": 1
             }
           ],
-          "d2": [
+          "d1": [
             {
               "id": 7268,
               "nome": "Rodriguez Ju.",
               "costo": 3
+            }
+          ],
+          "d2": [
+            {
+              "id": 6892,
+              "nome": "Schingtienne",
+              "costo": 2
             }
           ],
           "d3": [
@@ -3142,16 +3142,16 @@
           ],
           "d4": [
             {
-              "id": 6727,
-              "nome": "Couto",
-              "costo": 8
+              "id": 6039,
+              "nome": "Cabal",
+              "costo": 1
             }
           ],
           "d5": [
             {
-              "id": 6039,
-              "nome": "Cabal",
-              "costo": 1
+              "id": 5982,
+              "nome": "Spence",
+              "costo": 10
             }
           ],
           "d6": [
@@ -3177,9 +3177,9 @@
           ],
           "c1": [
             {
-              "id": 7456,
-              "nome": "El Azzouzi A.",
-              "costo": 1
+              "id": 7078,
+              "nome": "Mastantuono",
+              "costo": 14
             }
           ],
           "c2": [
@@ -3191,30 +3191,30 @@
           ],
           "c3": [
             {
+              "id": 6212,
+              "nome": "Zarraga",
+              "costo": 1
+            }
+          ],
+          "c4": [
+            {
+              "id": 5872,
+              "nome": "Helgason",
+              "costo": 2
+            }
+          ],
+          "c5": [
+            {
               "id": 4777,
               "nome": "McTominay",
               "costo": 28
             }
           ],
-          "c4": [
-            {
-              "id": 4199,
-              "nome": "Loftus-Cheek",
-              "costo": 4
-            }
-          ],
-          "c5": [
+          "c6": [
             {
               "id": 2848,
               "nome": "Frattesi",
               "costo": 7
-            }
-          ],
-          "c6": [
-            {
-              "id": 2766,
-              "nome": "Zaniolo",
-              "costo": 18
             }
           ],
           "c7": [
@@ -3233,9 +3233,9 @@
           ],
           "a1": [
             {
-              "id": 7158,
-              "nome": "Moro L.",
-              "costo": 1
+              "id": 7647,
+              "nome": "Esteban",
+              "costo": 2
             }
           ],
           "a2": [
@@ -3296,58 +3296,58 @@
           ],
           "p3": [
             {
-              "id": 2809,
-              "nome": "Vigorito",
-              "costo": 1
+              "id": 2170,
+              "nome": "Milinkovic-Savic V.",
+              "costo": 7
             }
           ],
           "d1": [
-            {
-              "id": 7294,
-              "nome": "Valdepenas",
-              "costo": 6
-            }
-          ],
-          "d2": [
             {
               "id": 7238,
               "nome": "Kouadio",
               "costo": 3
             }
           ],
-          "d3": [
+          "d2": [
             {
               "id": 6925,
               "nome": "Palma",
               "costo": 2
             }
           ],
-          "d4": [
+          "d3": [
             {
               "id": 6638,
               "nome": "Marin R.",
               "costo": 2
             }
           ],
-          "d5": [
+          "d4": [
             {
               "id": 6039,
               "nome": "Cabal",
               "costo": 1
             }
           ],
-          "d6": [
+          "d5": [
             {
               "id": 5641,
               "nome": "Chalobah T.",
               "costo": 9
             }
           ],
-          "d7": [
+          "d6": [
             {
               "id": 4998,
               "nome": "Molina N.",
               "costo": 18
+            }
+          ],
+          "d7": [
+            {
+              "id": 4705,
+              "nome": "Balerdi",
+              "costo": 8
             }
           ],
           "d8": [
@@ -3359,51 +3359,51 @@
           ],
           "c1": [
             {
-              "id": 7209,
-              "nome": "Sorensen O.",
-              "costo": 3
-            }
-          ],
-          "c2": [
-            {
               "id": 7126,
               "nome": "Baturina",
               "costo": 19
             }
           ],
-          "c3": [
+          "c2": [
             {
               "id": 7078,
               "nome": "Mastantuono",
               "costo": 12
             }
           ],
-          "c4": [
+          "c3": [
             {
               "id": 6190,
               "nome": "Pisilli",
               "costo": 5
             }
           ],
-          "c5": [
+          "c4": [
             {
-              "id": 5687,
-              "nome": "Vlasic",
-              "costo": 14
+              "id": 5850,
+              "nome": "Lovric",
+              "costo": 1
             }
           ],
-          "c6": [
+          "c5": [
             {
               "id": 5007,
               "nome": "Ilic",
               "costo": 1
             }
           ],
+          "c6": [
+            {
+              "id": 4179,
+              "nome": "Gonzalez N.",
+              "costo": 13
+            }
+          ],
           "c7": [
             {
-              "id": 4777,
-              "nome": "McTominay",
-              "costo": 28
+              "id": 2848,
+              "nome": "Frattesi",
+              "costo": 12
             }
           ],
           "c8": [
@@ -3415,30 +3415,30 @@
           ],
           "a1": [
             {
-              "id": 7561,
-              "nome": "Lontani",
+              "id": 7627,
+              "nome": "Enem",
               "costo": 1
             }
           ],
           "a2": [
             {
-              "id": 7342,
-              "nome": "Elphege",
-              "costo": 3
+              "id": 7561,
+              "nome": "Lontani",
+              "costo": 1
             }
           ],
           "a3": [
             {
-              "id": 6435,
-              "nome": "Krstovic",
-              "costo": 18
+              "id": 6397,
+              "nome": "Ramos G.",
+              "costo": 27
             }
           ],
           "a4": [
             {
-              "id": 6397,
-              "nome": "Ramos G.",
-              "costo": 27
+              "id": 5951,
+              "nome": "Kolo Muani",
+              "costo": 23
             }
           ],
           "a5": [
@@ -3513,30 +3513,30 @@
           ],
           "d5": [
             {
+              "id": 5620,
+              "nome": "Tavares N.",
+              "costo": 9
+            }
+          ],
+          "d6": [
+            {
               "id": 5307,
               "nome": "Valenti",
               "costo": 4
             }
           ],
-          "d6": [
-            {
-              "id": 4998,
-              "nome": "Molina N.",
-              "costo": 18
-            }
-          ],
           "d7": [
             {
-              "id": 2816,
-              "nome": "Di Lorenzo",
-              "costo": 12
+              "id": 4887,
+              "nome": "Bellanova",
+              "costo": 5
             }
           ],
           "d8": [
             {
-              "id": 254,
-              "nome": "Dimarco",
-              "costo": 32
+              "id": 2816,
+              "nome": "Di Lorenzo",
+              "costo": 12
             }
           ],
           "c1": [
@@ -3555,44 +3555,44 @@
           ],
           "c3": [
             {
+              "id": 6875,
+              "nome": "Paz N.",
+              "costo": 29
+            }
+          ],
+          "c4": [
+            {
               "id": 6212,
               "nome": "Zarraga",
               "costo": 1
             }
           ],
-          "c4": [
-            {
-              "id": 6191,
-              "nome": "Belahyane",
-              "costo": 1
-            }
-          ],
           "c5": [
             {
-              "id": 5800,
-              "nome": "Gudmundsson A.",
+              "id": 4179,
+              "nome": "Gonzalez N.",
               "costo": 13
             }
           ],
           "c6": [
             {
-              "id": 5687,
-              "nome": "Vlasic",
-              "costo": 14
+              "id": 2423,
+              "nome": "Pulisic",
+              "costo": 25
             }
           ],
           "c7": [
             {
-              "id": 2194,
-              "nome": "Calhanoglu",
-              "costo": 27
+              "id": 2167,
+              "nome": "Orsolini",
+              "costo": 26
             }
           ],
           "c8": [
             {
-              "id": 2167,
-              "nome": "Orsolini",
-              "costo": 26
+              "id": 152,
+              "nome": "Zielinski",
+              "costo": 13
             }
           ],
           "a1": [
@@ -3625,16 +3625,16 @@
           ],
           "a5": [
             {
-              "id": 2764,
-              "nome": "Martinez L.",
-              "costo": 35
+              "id": 4871,
+              "nome": "Thuram",
+              "costo": 31
             }
           ],
           "a6": [
             {
-              "id": 2097,
-              "nome": "Kean",
-              "costo": 25
+              "id": 2764,
+              "nome": "Martinez L.",
+              "costo": 35
             }
           ]
         }
@@ -3695,92 +3695,92 @@
           ],
           "d5": [
             {
-              "id": 6426,
-              "nome": "Pedersen",
-              "costo": 5
-            }
-          ],
-          "d6": [
-            {
               "id": 6039,
               "nome": "Cabal",
               "costo": 1
             }
           ],
-          "d7": [
+          "d6": [
             {
               "id": 5750,
               "nome": "Ostigard",
               "costo": 11
             }
           ],
-          "d8": [
+          "d7": [
             {
               "id": 4998,
               "nome": "Molina N.",
               "costo": 18
             }
           ],
+          "d8": [
+            {
+              "id": 4263,
+              "nome": "Kabasele",
+              "costo": 3
+            }
+          ],
           "c1": [
             {
-              "id": 6908,
-              "nome": "Atta",
-              "costo": 17
+              "id": 7126,
+              "nome": "Baturina",
+              "costo": 21
             }
           ],
           "c2": [
+            {
+              "id": 7078,
+              "nome": "Mastantuono",
+              "costo": 14
+            }
+          ],
+          "c3": [
             {
               "id": 6410,
               "nome": "Kaba",
               "costo": 1
             }
           ],
-          "c3": [
+          "c4": [
             {
               "id": 6372,
               "nome": "Moreira",
               "costo": 12
             }
           ],
-          "c4": [
+          "c5": [
             {
               "id": 6212,
               "nome": "Zarraga",
               "costo": 1
             }
           ],
-          "c5": [
-            {
-              "id": 5559,
-              "nome": "Da Cunha",
-              "costo": 18
-            }
-          ],
           "c6": [
-            {
-              "id": 5507,
-              "nome": "Busio",
-              "costo": 5
-            }
-          ],
-          "c7": [
-            {
-              "id": 2766,
-              "nome": "Zaniolo",
-              "costo": 18
-            }
-          ],
-          "c8": [
             {
               "id": 2194,
               "nome": "Calhanoglu",
               "costo": 27
             }
           ],
+          "c7": [
+            {
+              "id": 536,
+              "nome": "Politano",
+              "costo": 11
+            }
+          ],
+          "c8": [
+            {
+              "id": 184,
+              "nome": "Bernardeschi",
+              "costo": 12
+            }
+          ],
           "a1": [
             {
-              "id": 7561,
-              "nome": "Lontani",
+              "id": 7627,
+              "nome": "Enem",
               "costo": 1
             }
           ],
@@ -3793,16 +3793,16 @@
           ],
           "a3": [
             {
-              "id": 6434,
-              "nome": "Yildiz",
-              "costo": 23
+              "id": 6397,
+              "nome": "Ramos G.",
+              "costo": 27
             }
           ],
           "a4": [
             {
-              "id": 6397,
-              "nome": "Ramos G.",
-              "costo": 27
+              "id": 5951,
+              "nome": "Kolo Muani",
+              "costo": 23
             }
           ],
           "a5": [
@@ -3849,37 +3849,37 @@
           ],
           "d1": [
             {
+              "id": 7485,
+              "nome": "Mangas",
+              "costo": 10
+            }
+          ],
+          "d2": [
+            {
               "id": 7238,
               "nome": "Kouadio",
               "costo": 3
             }
           ],
-          "d2": [
+          "d3": [
             {
-              "id": 7175,
-              "nome": "Joao Mario",
+              "id": 7131,
+              "nome": "Floriani Mussolini",
               "costo": 3
             }
           ],
-          "d3": [
+          "d4": [
             {
               "id": 6681,
               "nome": "Sagrado",
               "costo": 2
             }
           ],
-          "d4": [
-            {
-              "id": 6426,
-              "nome": "Pedersen",
-              "costo": 5
-            }
-          ],
           "d5": [
             {
-              "id": 6189,
-              "nome": "Missori",
-              "costo": 1
+              "id": 6638,
+              "nome": "Marin R.",
+              "costo": 2
             }
           ],
           "d6": [
@@ -3933,23 +3933,23 @@
           ],
           "c5": [
             {
-              "id": 6207,
-              "nome": "Almqvist",
-              "costo": 4
+              "id": 6372,
+              "nome": "Moreira",
+              "costo": 15
             }
           ],
           "c6": [
             {
-              "id": 5800,
-              "nome": "Gudmundsson A.",
-              "costo": 13
+              "id": 6252,
+              "nome": "Folorunsho",
+              "costo": 3
             }
           ],
           "c7": [
             {
-              "id": 5687,
-              "nome": "Vlasic",
-              "costo": 14
+              "id": 5007,
+              "nome": "Ilic",
+              "costo": 4
             }
           ],
           "c8": [
@@ -3961,23 +3961,23 @@
           ],
           "a1": [
             {
-              "id": 7017,
-              "nome": "Douvikas",
-              "costo": 20
-            }
-          ],
-          "a2": [
-            {
               "id": 7001,
               "nome": "N'Dri",
               "costo": 3
             }
           ],
-          "a3": [
+          "a2": [
             {
               "id": 6669,
               "nome": "Bonny",
               "costo": 7
+            }
+          ],
+          "a3": [
+            {
+              "id": 6397,
+              "nome": "Ramos G.",
+              "costo": 25
             }
           ],
           "a4": [
@@ -4031,58 +4031,58 @@
           ],
           "d1": [
             {
+              "id": 7599,
+              "nome": "Lulli",
+              "costo": 3
+            }
+          ],
+          "d2": [
+            {
+              "id": 7410,
+              "nome": "Viery",
+              "costo": 5
+            }
+          ],
+          "d3": [
+            {
               "id": 7294,
               "nome": "Valdepenas",
               "costo": 6
             }
           ],
-          "d2": [
+          "d4": [
             {
               "id": 7181,
               "nome": "Wesley",
               "costo": 17
             }
           ],
-          "d3": [
+          "d5": [
             {
               "id": 6638,
               "nome": "Marin R.",
               "costo": 2
             }
           ],
-          "d4": [
-            {
-              "id": 6189,
-              "nome": "Missori",
-              "costo": 1
-            }
-          ],
-          "d5": [
+          "d6": [
             {
               "id": 5877,
               "nome": "Carlos Augusto",
               "costo": 7
             }
           ],
-          "d6": [
+          "d7": [
             {
               "id": 5022,
               "nome": "Pavlovic",
               "costo": 14
             }
           ],
-          "d7": [
+          "d8": [
             {
               "id": 4994,
               "nome": "Vojvoda",
               "costo": 8
-            }
-          ],
-          "d8": [
-            {
-              "id": 254,
-              "nome": "Dimarco",
-              "costo": 32
             }
           ],
           "c1": [
@@ -4115,16 +4115,16 @@
           ],
           "c5": [
             {
-              "id": 6010,
-              "nome": "Fazzini",
-              "costo": 7
+              "id": 6372,
+              "nome": "Moreira",
+              "costo": 15
             }
           ],
           "c6": [
             {
-              "id": 5559,
-              "nome": "Da Cunha",
-              "costo": 18
+              "id": 6010,
+              "nome": "Fazzini",
+              "costo": 7
             }
           ],
           "c7": [
@@ -4136,44 +4136,44 @@
           ],
           "c8": [
             {
-              "id": 5119,
-              "nome": "Samardzic",
+              "id": 2848,
+              "nome": "Frattesi",
               "costo": 12
             }
           ],
           "a1": [
-            {
-              "id": 7351,
-              "nome": "Santos A.",
-              "costo": 14
-            }
-          ],
-          "a2": [
             {
               "id": 7071,
               "nome": "Esposito F.P.",
               "costo": 16
             }
           ],
+          "a2": [
+            {
+              "id": 6572,
+              "nome": "Castro S.",
+              "costo": 13
+            }
+          ],
           "a3": [
             {
-              "id": 6831,
-              "nome": "Neres",
-              "costo": 6
+              "id": 6204,
+              "nome": "Kvernadze",
+              "costo": 11
             }
           ],
           "a4": [
             {
-              "id": 6435,
-              "nome": "Krstovic",
-              "costo": 18
+              "id": 5585,
+              "nome": "Malen",
+              "costo": 34
             }
           ],
           "a5": [
             {
-              "id": 5585,
-              "nome": "Malen",
-              "costo": 34
+              "id": 2764,
+              "nome": "Martinez L.",
+              "costo": 36
             }
           ],
           "a6": [
@@ -4220,29 +4220,29 @@
           ],
           "d2": [
             {
-              "id": 7260,
-              "nome": "Ziolkowski",
-              "costo": 1
+              "id": 6892,
+              "nome": "Schingtienne",
+              "costo": 2
             }
           ],
           "d3": [
-            {
-              "id": 7219,
-              "nome": "Bernasconi",
-              "costo": 6
-            }
-          ],
-          "d4": [
             {
               "id": 6039,
               "nome": "Cabal",
               "costo": 1
             }
           ],
-          "d5": [
+          "d4": [
             {
               "id": 5641,
               "nome": "Chalobah T.",
+              "costo": 9
+            }
+          ],
+          "d5": [
+            {
+              "id": 5620,
+              "nome": "Tavares N.",
               "costo": 9
             }
           ],
@@ -4269,51 +4269,51 @@
           ],
           "c1": [
             {
+              "id": 7575,
+              "nome": "Mout",
+              "costo": 1
+            }
+          ],
+          "c2": [
+            {
               "id": 7536,
               "nome": "Diallo O.",
               "costo": 3
             }
           ],
-          "c2": [
+          "c3": [
             {
-              "id": 6980,
-              "nome": "Venturino",
-              "costo": 2
+              "id": 7078,
+              "nome": "Mastantuono",
+              "costo": 14
             }
           ],
-          "c3": [
+          "c4": [
             {
               "id": 6884,
               "nome": "Conceicao",
               "costo": 12
             }
           ],
-          "c4": [
+          "c5": [
             {
               "id": 6875,
               "nome": "Paz N.",
               "costo": 30
             }
           ],
-          "c5": [
+          "c6": [
             {
               "id": 6592,
               "nome": "Forson O.",
               "costo": 1
             }
           ],
-          "c6": [
+          "c7": [
             {
               "id": 2848,
               "nome": "Frattesi",
               "costo": 7
-            }
-          ],
-          "c7": [
-            {
-              "id": 2766,
-              "nome": "Zaniolo",
-              "costo": 18
             }
           ],
           "c8": [
@@ -4327,42 +4327,42 @@
             {
               "id": 7561,
               "nome": "Lontani",
-              "costo": 1
+              "costo": 6
             }
           ],
           "a2": [
             {
-              "id": 7374,
-              "nome": "Mendy P.",
-              "costo": 4
+              "id": 7161,
+              "nome": "Bayo V.",
+              "costo": 2
             }
           ],
           "a3": [
+            {
+              "id": 6204,
+              "nome": "Kvernadze",
+              "costo": 11
+            }
+          ],
+          "a4": [
             {
               "id": 5951,
               "nome": "Kolo Muani",
               "costo": 26
             }
           ],
-          "a4": [
+          "a5": [
             {
               "id": 5585,
               "nome": "Malen",
               "costo": 34
             }
           ],
-          "a5": [
+          "a6": [
             {
               "id": 2764,
               "nome": "Martinez L.",
               "costo": 35
-            }
-          ],
-          "a6": [
-            {
-              "id": 2061,
-              "nome": "Simeone",
-              "costo": 15
             }
           ]
         }

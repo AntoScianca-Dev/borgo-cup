@@ -6,11 +6,13 @@ import RosaModale from './RosaModale'
 import Top11Modale from './Top11Modale'
 import TrofeiModale from './TrofeiModale'
 import headerS from '../assets/image/header_squadre.png'
+import StatisticheModale from './StatisticheModale'
+import { calcolaStatistiche } from '../hooks/statistiche'
 
 export default function Squadre() {
     const squadre = squadreData.squadre || squadreData
 
-    const [activeModal, setActiveModal] = useState(null) // 'rosa' | 'top11' | 'trofei' | null
+    const [activeModal, setActiveModal] = useState(null) // 'rosa' | 'top11' | 'trofei' | 'stat' | null
     const [selectedSquad, setSelectedSquad] = useState(null)
 
     // Helper per arricchire i giocatori con dati da calciatori
@@ -57,6 +59,11 @@ export default function Squadre() {
         })
     })
 
+    const stats = useMemo(
+    () => calcolaStatistiche({ calciatori: calciatoriData.calciatori, rose: roseData.rose, squadre }),
+    [squadre]
+)
+
     const openModal = (squad, type) => {
         if (type === 'trofei') {
             setSelectedSquad(squad)
@@ -101,6 +108,15 @@ export default function Squadre() {
                 
             </div>
             <h1 className='text-4xl font-medium text-center py-0 mt-0 text-sky-800'>Squadre</h1>
+
+            <div className="flex justify-center">
+                <button
+                    onClick={() => setActiveModal('stat')}
+                    className="flex items-center gap-2 rounded-full bg-sky-700 px-5 py-2 text-sm font-bold text-white shadow-md transition hover:bg-sky-800 active:scale-95 cursor-pointer"
+                >
+                    📊 Statistiche selezione calciatori
+                </button>
+            </div>
 
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {squadreOrdinate.map((squad) => (
@@ -191,6 +207,8 @@ export default function Squadre() {
                 onClose={closeModal}
                 squad={selectedSquad}
             />
+
+            <StatisticheModale isOpen={activeModal === 'stat'} onClose={closeModal} stats={stats} />
         </div>
     )
 }
