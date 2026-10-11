@@ -29,6 +29,7 @@ export default function RosaModale({ isOpen, onClose, squad }) {
     if (!squad) return null
 
     const variazioneTot = totali.quotazione - totali.costo
+    const haMercato = tuttiGiocatori.some((g) => g.statoM > 0)
 
     return (
         <Transition show={isOpen}>
@@ -101,10 +102,20 @@ export default function RosaModale({ isOpen, onClose, squad }) {
                                                 <div className="divide-y divide-gray-100">
                                                     {lista.map((g, idx) => (
                                                         <div key={idx} className={`${GRID} px-3 py-2 text-sm hover:bg-white transition`}>
-                                                            <span className="font-semibold text-gray-800 truncate">
-                                                                {g.nome}
-                                                                {g.stato === 'svincolato' && (
-                                                                    <span className="text-red-600 font-bold ml-0.5" title="Calciatore svincolato / fuori lista">*</span>
+                                                            <span className="flex min-w-0 items-center gap-1.5">
+                                                                <span className="truncate font-semibold text-gray-800">
+                                                                    {g.nome}
+                                                                    {g.stato === 'svincolato' && (
+                                                                        <span className="ml-0.5 font-bold text-red-600" title="Calciatore svincolato / fuori lista">*</span>
+                                                                    )}
+                                                                </span>
+                                                                {g.statoM > 0 && (
+                                                                    <span
+                                                                        title={`Acquistato nella ${g.statoM}ª sessione di mercato`}
+                                                                        className="shrink-0 rounded-full bg-emerald-100 px-1.5 py-0.5 text-[10px] font-black text-emerald-800"
+                                                                    >
+                                                                        M{g.statoM}
+                                                                    </span>
                                                                 )}
                                                             </span>
                                                             <span className="text-right text-gray-600">{g.costo}</span>
@@ -125,6 +136,28 @@ export default function RosaModale({ isOpen, onClose, squad }) {
                                         )
                                     })}
                                 </div>
+
+                                {/* LEGENDA */}
+                                {haMercato && (
+                                    <div className="flex py-4 px-4 gap-2 flex-wrap">
+                                        <p className="text-xs text-gray-500">
+                                            <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 font-black text-emerald-800">M1</span>{' '}
+                                            acquistato nella 1ª sessione di mercato
+                                        </p>
+                                        <p className="text-xs text-gray-500">
+                                            <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 font-black text-emerald-800">M2</span>{' '}
+                                            acquistato nella 2ª sessione di mercato
+                                        </p>
+                                        <p className="text-xs text-gray-500">
+                                            <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 font-black text-emerald-800">M3</span>{' '}
+                                            acquistato nella 3ª sessione di mercato
+                                        </p>
+                                        <p className="text-xs text-gray-500">
+                                            <span className="ml-0.5 font-bold text-red-600" title="Calciatore svincolato / fuori lista">*</span>{' '}
+                                            Calciatore svincolato / fuori lista
+                                        </p>                            
+                                    </div>
+                                )}
                             </DialogPanel>
                         </TransitionChild>
                     </div>

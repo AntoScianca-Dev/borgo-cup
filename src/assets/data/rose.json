@@ -43,21 +43,24 @@
             {
               "id": 6638,
               "nome": "Marin R.",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "d4": [
             {
               "id": 5620,
               "nome": "Tavares N.",
-              "costo": 9
+              "costo": 9,
+              "statoM": 1
             }
           ],
           "d5": [
             {
               "id": 5022,
               "nome": "Pavlovic",
-              "costo": 13
+              "costo": 13,
+              "statoM": 1
             }
           ],
           "d6": [
@@ -71,7 +74,8 @@
             {
               "id": 2788,
               "nome": "Bremer",
-              "costo": 17
+              "costo": 17,
+              "statoM": 1
             }
           ],
           "d8": [
@@ -85,7 +89,8 @@
             {
               "id": 7472,
               "nome": "Calò",
-              "costo": 11
+              "costo": 11,
+              "statoM": 1
             }
           ],
           "c2": [
@@ -113,7 +118,8 @@
             {
               "id": 6252,
               "nome": "Folorunsho",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "c6": [
@@ -141,7 +147,8 @@
             {
               "id": 7561,
               "nome": "Lontani",
-              "costo": 6
+              "costo": 6,
+              "statoM": 1
             }
           ],
           "a2": [
@@ -218,7 +225,8 @@
             {
               "id": 7268,
               "nome": "Rodriguez Ju.",
-              "costo": 6
+              "costo": 6,
+              "statoM": 1
             }
           ],
           "d3": [
@@ -246,14 +254,16 @@
             {
               "id": 5877,
               "nome": "Carlos Augusto",
-              "costo": 10
+              "costo": 10,
+              "statoM": 1
             }
           ],
           "d7": [
             {
               "id": 2788,
               "nome": "Bremer",
-              "costo": 17
+              "costo": 17,
+              "statoM": 1
             }
           ],
           "d8": [
@@ -267,14 +277,16 @@
             {
               "id": 7126,
               "nome": "Baturina",
-              "costo": 21
+              "costo": 21,
+              "statoM": 1
             }
           ],
           "c2": [
             {
               "id": 6677,
               "nome": "Adzic",
-              "costo": 11
+              "costo": 11,
+              "statoM": 1
             }
           ],
           "c3": [
@@ -337,7 +349,8 @@
             {
               "id": 6669,
               "nome": "Bonny",
-              "costo": 8
+              "costo": 8,
+              "statoM": 1
             }
           ],
           "a4": [
@@ -358,7 +371,8 @@
             {
               "id": 2764,
               "nome": "Martinez L.",
-              "costo": 36
+              "costo": 36,
+              "statoM": 1
             }
           ]
         }
@@ -421,7 +435,8 @@
             {
               "id": 5620,
               "nome": "Tavares N.",
-              "costo": 9
+              "costo": 9,
+              "statoM": 1
             }
           ],
           "d6": [
@@ -435,7 +450,8 @@
             {
               "id": 4433,
               "nome": "Zortea",
-              "costo": 6
+              "costo": 6,
+              "statoM": 1
             }
           ],
           "d8": [
@@ -449,7 +465,8 @@
             {
               "id": 7625,
               "nome": "Goncalves P.",
-              "costo": 11
+              "costo": 11,
+              "statoM": 1
             }
           ],
           "c2": [
@@ -498,7 +515,8 @@
             {
               "id": 2423,
               "nome": "Pulisic",
-              "costo": 25
+              "costo": 25,
+              "statoM": 1
             }
           ],
           "a1": [
@@ -526,21 +544,24 @@
             {
               "id": 6215,
               "nome": "Lucca",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "a5": [
             {
               "id": 5585,
               "nome": "Malen",
-              "costo": 37
+              "costo": 37,
+              "statoM": 1
             }
           ],
           "a6": [
             {
               "id": 2764,
               "nome": "Martinez L.",
-              "costo": 36
+              "costo": 36,
+              "statoM": 1
             }
           ]
         }
@@ -645,7 +666,8 @@
             {
               "id": 5800,
               "nome": "Gudmundsson A.",
-              "costo": 13
+              "costo": 13,
+              "statoM": 1
             }
           ],
           "c4": [
@@ -666,7 +688,8 @@
             {
               "id": 2848,
               "nome": "Frattesi",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "c7": [
@@ -827,7 +850,8 @@
             {
               "id": 6884,
               "nome": "Conceicao",
-              "costo": 14
+              "costo": 14,
+              "statoM": 1
             }
           ],
           "c4": [
@@ -855,7 +879,8 @@
             {
               "id": 2379,
               "nome": "Rabiot",
-              "costo": 24
+              "costo": 24,
+              "statoM": 1
             }
           ],
           "c8": [
@@ -876,7 +901,8 @@
             {
               "id": 5995,
               "nome": "De Ketelaere",
-              "costo": 15
+              "costo": 15,
+              "statoM": 1
             }
           ],
           "a3": [
@@ -925,7 +951,8 @@
             {
               "id": 6344,
               "nome": "Sanchez Ro.",
-              "costo": 8
+              "costo": 8,
+              "statoM": 1
             }
           ],
           "p3": [
@@ -946,7 +973,8 @@
             {
               "id": 7131,
               "nome": "Floriani Mussolini",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "d3": [
@@ -1009,7 +1037,8 @@
             {
               "id": 7036,
               "nome": "Bakola",
-              "costo": 8
+              "costo": 8,
+              "statoM": 1
             }
           ],
           "c4": [
@@ -1037,14 +1066,16 @@
             {
               "id": 4911,
               "nome": "Douglas Luiz",
-              "costo": 4
+              "costo": 4,
+              "statoM": 1
             }
           ],
           "c8": [
             {
               "id": 4856,
               "nome": "Chukwueze",
-              "costo": 10
+              "costo": 10,
+              "statoM": 1
             }
           ],
           "a1": [
@@ -1058,7 +1089,8 @@
             {
               "id": 7120,
               "nome": "Lang",
-              "costo": 4
+              "costo": 4,
+              "statoM": 1
             }
           ],
           "a3": [
@@ -1086,7 +1118,8 @@
             {
               "id": 2764,
               "nome": "Martinez L.",
-              "costo": 36
+              "costo": 36,
+              "statoM": 1
             }
           ]
         }
@@ -1100,7 +1133,8 @@
             {
               "id": 5841,
               "nome": "Svilar",
-              "costo": 19
+              "costo": 19,
+              "statoM": 1
             }
           ],
           "p2": [
@@ -1114,7 +1148,8 @@
             {
               "id": 610,
               "nome": "Gollini",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "d1": [
@@ -1149,7 +1184,8 @@
             {
               "id": 5620,
               "nome": "Tavares N.",
-              "costo": 9
+              "costo": 9,
+              "statoM": 1
             }
           ],
           "d6": [
@@ -1177,7 +1213,8 @@
             {
               "id": 6844,
               "nome": "Rowe",
-              "costo": 9
+              "costo": 9,
+              "statoM": 1
             }
           ],
           "c2": [
@@ -1226,7 +1263,8 @@
             {
               "id": 632,
               "nome": "Zaccagni",
-              "costo": 18
+              "costo": 18,
+              "statoM": 1
             }
           ],
           "a1": [
@@ -1240,7 +1278,8 @@
             {
               "id": 6967,
               "nome": "Diao",
-              "costo": 14
+              "costo": 14,
+              "statoM": 1
             }
           ],
           "a3": [
@@ -1261,7 +1300,8 @@
             {
               "id": 2764,
               "nome": "Martinez L.",
-              "costo": 36
+              "costo": 36,
+              "statoM": 1
             }
           ],
           "a6": [
@@ -1324,14 +1364,16 @@
             {
               "id": 6809,
               "nome": "Marianucci",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "d5": [
             {
               "id": 6638,
               "nome": "Marin R.",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "d6": [
@@ -1345,7 +1387,8 @@
             {
               "id": 4433,
               "nome": "Zortea",
-              "costo": 6
+              "costo": 6,
+              "statoM": 1
             }
           ],
           "d8": [
@@ -1366,7 +1409,8 @@
             {
               "id": 6844,
               "nome": "Rowe",
-              "costo": 9
+              "costo": 9,
+              "statoM": 1
             }
           ],
           "c3": [
@@ -1394,7 +1438,8 @@
             {
               "id": 2848,
               "nome": "Frattesi",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "c7": [
@@ -1415,7 +1460,8 @@
             {
               "id": 7627,
               "nome": "Enem",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "a2": [
@@ -1429,7 +1475,8 @@
             {
               "id": 7017,
               "nome": "Douvikas",
-              "costo": 22
+              "costo": 22,
+              "statoM": 1
             }
           ],
           "a4": [
@@ -1464,7 +1511,8 @@
             {
               "id": 6662,
               "nome": "Corvi",
-              "costo": 4
+              "costo": 4,
+              "statoM": 1
             }
           ],
           "p2": [
@@ -1499,14 +1547,16 @@
             {
               "id": 7012,
               "nome": "Provstgaard",
-              "costo": 5
+              "costo": 5,
+              "statoM": 1
             }
           ],
           "d4": [
             {
               "id": 6638,
               "nome": "Marin R.",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "d5": [
@@ -1520,7 +1570,8 @@
             {
               "id": 5365,
               "nome": "Dragusin",
-              "costo": 8
+              "costo": 8,
+              "statoM": 1
             }
           ],
           "d7": [
@@ -1562,7 +1613,8 @@
             {
               "id": 6274,
               "nome": "Diouf",
-              "costo": 11
+              "costo": 11,
+              "statoM": 1
             }
           ],
           "c5": [
@@ -1583,7 +1635,8 @@
             {
               "id": 5119,
               "nome": "Samardzic",
-              "costo": 14
+              "costo": 14,
+              "statoM": 1
             }
           ],
           "c8": [
@@ -1604,7 +1657,8 @@
             {
               "id": 7161,
               "nome": "Bayo V.",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "a3": [
@@ -1674,14 +1728,16 @@
             {
               "id": 7131,
               "nome": "Floriani Mussolini",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "d3": [
             {
               "id": 6638,
               "nome": "Marin R.",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "d4": [
@@ -1723,7 +1779,8 @@
             {
               "id": 7575,
               "nome": "Mout",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "c2": [
@@ -1737,7 +1794,8 @@
             {
               "id": 7126,
               "nome": "Baturina",
-              "costo": 21
+              "costo": 21,
+              "statoM": 1
             }
           ],
           "c4": [
@@ -1758,14 +1816,16 @@
             {
               "id": 4179,
               "nome": "Gonzalez N.",
-              "costo": 13
+              "costo": 13,
+              "statoM": 1
             }
           ],
           "c7": [
             {
               "id": 2848,
               "nome": "Frattesi",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "c8": [
@@ -1786,7 +1846,8 @@
             {
               "id": 7071,
               "nome": "Esposito F.P.",
-              "costo": 18
+              "costo": 18,
+              "statoM": 1
             }
           ],
           "a3": [
@@ -1863,7 +1924,8 @@
             {
               "id": 7181,
               "nome": "Wesley",
-              "costo": 18
+              "costo": 18,
+              "statoM": 1
             }
           ],
           "d4": [
@@ -1905,7 +1967,8 @@
             {
               "id": 7575,
               "nome": "Mout",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "c2": [
@@ -1940,14 +2003,16 @@
             {
               "id": 4179,
               "nome": "Gonzalez N.",
-              "costo": 13
+              "costo": 13,
+              "statoM": 1
             }
           ],
           "c7": [
             {
               "id": 2848,
               "nome": "Frattesi",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "c8": [
@@ -1961,7 +2026,8 @@
             {
               "id": 7627,
               "nome": "Enem",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "a2": [
@@ -1975,7 +2041,8 @@
             {
               "id": 5585,
               "nome": "Malen",
-              "costo": 37
+              "costo": 37,
+              "statoM": 1
             }
           ],
           "a4": [
@@ -1989,7 +2056,8 @@
             {
               "id": 4359,
               "nome": "Piccoli",
-              "costo": 9
+              "costo": 9,
+              "statoM": 1
             }
           ],
           "a6": [
@@ -2038,7 +2106,8 @@
             {
               "id": 7131,
               "nome": "Floriani Mussolini",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "d3": [
@@ -2059,7 +2128,8 @@
             {
               "id": 6638,
               "nome": "Marin R.",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "d6": [
@@ -2115,14 +2185,16 @@
             {
               "id": 4199,
               "nome": "Loftus-Cheek",
-              "costo": 4
+              "costo": 4,
+              "statoM": 1
             }
           ],
           "c6": [
             {
               "id": 2848,
               "nome": "Frattesi",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "c7": [
@@ -2143,7 +2215,8 @@
             {
               "id": 7523,
               "nome": "Varela G.",
-              "costo": 10
+              "costo": 10,
+              "statoM": 1
             }
           ],
           "a2": [
@@ -2157,14 +2230,16 @@
             {
               "id": 6215,
               "nome": "Lucca",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "a4": [
             {
               "id": 5585,
               "nome": "Malen",
-              "costo": 37
+              "costo": 37,
+              "statoM": 1
             }
           ],
           "a5": [
@@ -2213,7 +2288,8 @@
             {
               "id": 7573,
               "nome": "Cinquegrano",
-              "costo": 5
+              "costo": 5,
+              "statoM": 1
             }
           ],
           "d2": [
@@ -2269,7 +2345,8 @@
             {
               "id": 7535,
               "nome": "Fitz-Jim",
-              "costo": 6
+              "costo": 6,
+              "statoM": 1
             }
           ],
           "c2": [
@@ -2297,7 +2374,8 @@
             {
               "id": 6372,
               "nome": "Moreira",
-              "costo": 15
+              "costo": 15,
+              "statoM": 1
             }
           ],
           "c6": [
@@ -2332,7 +2410,8 @@
             {
               "id": 6822,
               "nome": "Ekhator",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "a3": [
@@ -2346,7 +2425,8 @@
             {
               "id": 5585,
               "nome": "Malen",
-              "costo": 37
+              "costo": 37,
+              "statoM": 1
             }
           ],
           "a5": [
@@ -2395,7 +2475,8 @@
             {
               "id": 7181,
               "nome": "Wesley",
-              "costo": 18
+              "costo": 18,
+              "statoM": 1
             }
           ],
           "d2": [
@@ -2451,21 +2532,24 @@
             {
               "id": 7572,
               "nome": "Comotto",
-              "costo": 5
+              "costo": 5,
+              "statoM": 1
             }
           ],
           "c2": [
             {
               "id": 7556,
               "nome": "Mora",
-              "costo": 20
+              "costo": 20,
+              "statoM": 1
             }
           ],
           "c3": [
             {
               "id": 7126,
               "nome": "Baturina",
-              "costo": 21
+              "costo": 21,
+              "statoM": 1
             }
           ],
           "c4": [
@@ -2521,7 +2605,8 @@
             {
               "id": 5436,
               "nome": "Raimondo",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "a4": [
@@ -2535,14 +2620,16 @@
             {
               "id": 4871,
               "nome": "Thuram",
-              "costo": 31
+              "costo": 31,
+              "statoM": 1
             }
           ],
           "a6": [
             {
               "id": 2764,
               "nome": "Martinez L.",
-              "costo": 36
+              "costo": 36,
+              "statoM": 1
             }
           ]
         }
@@ -2577,7 +2664,8 @@
             {
               "id": 6892,
               "nome": "Schingtienne",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "d2": [
@@ -2661,14 +2749,16 @@
             {
               "id": 4911,
               "nome": "Douglas Luiz",
-              "costo": 4
+              "costo": 4,
+              "statoM": 1
             }
           ],
           "c6": [
             {
               "id": 2848,
               "nome": "Frattesi",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "c7": [
@@ -2689,21 +2779,24 @@
             {
               "id": 7120,
               "nome": "Lang",
-              "costo": 4
+              "costo": 4,
+              "statoM": 1
             }
           ],
           "a2": [
             {
               "id": 7071,
               "nome": "Esposito F.P.",
-              "costo": 18
+              "costo": 18,
+              "statoM": 1
             }
           ],
           "a3": [
             {
               "id": 7017,
               "nome": "Douvikas",
-              "costo": 22
+              "costo": 22,
+              "statoM": 1
             }
           ],
           "a4": [
@@ -2787,7 +2880,8 @@
             {
               "id": 5641,
               "nome": "Chalobah T.",
-              "costo": 9
+              "costo": 9,
+              "statoM": 1
             }
           ],
           "d6": [
@@ -2808,7 +2902,8 @@
             {
               "id": 254,
               "nome": "Dimarco",
-              "costo": 29
+              "costo": 29,
+              "statoM": 1
             }
           ],
           "c1": [
@@ -2822,7 +2917,8 @@
             {
               "id": 7078,
               "nome": "Mastantuono",
-              "costo": 14
+              "costo": 14,
+              "statoM": 1
             }
           ],
           "c3": [
@@ -2843,21 +2939,24 @@
             {
               "id": 6252,
               "nome": "Folorunsho",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "c6": [
             {
               "id": 6191,
               "nome": "Belahyane",
-              "costo": 5
+              "costo": 5,
+              "statoM": 1
             }
           ],
           "c7": [
             {
               "id": 2848,
               "nome": "Frattesi",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "c8": [
@@ -2878,7 +2977,8 @@
             {
               "id": 7523,
               "nome": "Varela G.",
-              "costo": 10
+              "costo": 10,
+              "statoM": 1
             }
           ],
           "a3": [
@@ -2962,7 +3062,8 @@
             {
               "id": 5982,
               "nome": "Spence",
-              "costo": 10
+              "costo": 10,
+              "statoM": 1
             }
           ],
           "d5": [
@@ -2976,7 +3077,8 @@
             {
               "id": 5620,
               "nome": "Tavares N.",
-              "costo": 9
+              "costo": 9,
+              "statoM": 1
             }
           ],
           "d7": [
@@ -3004,7 +3106,8 @@
             {
               "id": 7472,
               "nome": "Calò",
-              "costo": 11
+              "costo": 11,
+              "statoM": 1
             }
           ],
           "c3": [
@@ -3018,7 +3121,8 @@
             {
               "id": 6618,
               "nome": "Cissè A.",
-              "costo": 6
+              "costo": 6,
+              "statoM": 1
             }
           ],
           "c5": [
@@ -3032,7 +3136,8 @@
             {
               "id": 6252,
               "nome": "Folorunsho",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "c7": [
@@ -3053,7 +3158,8 @@
             {
               "id": 7622,
               "nome": "Robinho Junior",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "a2": [
@@ -3088,7 +3194,8 @@
             {
               "id": 2061,
               "nome": "Simeone",
-              "costo": 13
+              "costo": 13,
+              "statoM": 1
             }
           ]
         }
@@ -3116,7 +3223,8 @@
             {
               "id": 283,
               "nome": "Neto",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "d1": [
@@ -3130,7 +3238,8 @@
             {
               "id": 6892,
               "nome": "Schingtienne",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "d3": [
@@ -3151,7 +3260,8 @@
             {
               "id": 5982,
               "nome": "Spence",
-              "costo": 10
+              "costo": 10,
+              "statoM": 1
             }
           ],
           "d6": [
@@ -3179,7 +3289,8 @@
             {
               "id": 7078,
               "nome": "Mastantuono",
-              "costo": 14
+              "costo": 14,
+              "statoM": 1
             }
           ],
           "c2": [
@@ -3193,14 +3304,16 @@
             {
               "id": 6212,
               "nome": "Zarraga",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "c4": [
             {
               "id": 5872,
               "nome": "Helgason",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "c5": [
@@ -3235,7 +3348,8 @@
             {
               "id": 7647,
               "nome": "Esteban",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "a2": [
@@ -3298,7 +3412,8 @@
             {
               "id": 2170,
               "nome": "Milinkovic-Savic V.",
-              "costo": 7
+              "costo": 7,
+              "statoM": 1
             }
           ],
           "d1": [
@@ -3347,7 +3462,8 @@
             {
               "id": 4705,
               "nome": "Balerdi",
-              "costo": 8
+              "costo": 8,
+              "statoM": 1
             }
           ],
           "d8": [
@@ -3382,7 +3498,8 @@
             {
               "id": 5850,
               "nome": "Lovric",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "c5": [
@@ -3396,14 +3513,16 @@
             {
               "id": 4179,
               "nome": "Gonzalez N.",
-              "costo": 13
+              "costo": 13,
+              "statoM": 1
             }
           ],
           "c7": [
             {
               "id": 2848,
               "nome": "Frattesi",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "c8": [
@@ -3417,7 +3536,8 @@
             {
               "id": 7627,
               "nome": "Enem",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "a2": [
@@ -3438,7 +3558,8 @@
             {
               "id": 5951,
               "nome": "Kolo Muani",
-              "costo": 23
+              "costo": 23,
+              "statoM": 1
             }
           ],
           "a5": [
@@ -3515,7 +3636,8 @@
             {
               "id": 5620,
               "nome": "Tavares N.",
-              "costo": 9
+              "costo": 9,
+              "statoM": 1
             }
           ],
           "d6": [
@@ -3529,7 +3651,8 @@
             {
               "id": 4887,
               "nome": "Bellanova",
-              "costo": 5
+              "costo": 5,
+              "statoM": 1
             }
           ],
           "d8": [
@@ -3557,7 +3680,8 @@
             {
               "id": 6875,
               "nome": "Paz N.",
-              "costo": 29
+              "costo": 29,
+              "statoM": 1
             }
           ],
           "c4": [
@@ -3571,14 +3695,16 @@
             {
               "id": 4179,
               "nome": "Gonzalez N.",
-              "costo": 13
+              "costo": 13,
+              "statoM": 1
             }
           ],
           "c6": [
             {
               "id": 2423,
               "nome": "Pulisic",
-              "costo": 25
+              "costo": 25,
+              "statoM": 1
             }
           ],
           "c7": [
@@ -3592,7 +3718,8 @@
             {
               "id": 152,
               "nome": "Zielinski",
-              "costo": 13
+              "costo": 13,
+              "statoM": 1
             }
           ],
           "a1": [
@@ -3627,7 +3754,8 @@
             {
               "id": 4871,
               "nome": "Thuram",
-              "costo": 31
+              "costo": 31,
+              "statoM": 1
             }
           ],
           "a6": [
@@ -3718,21 +3846,24 @@
             {
               "id": 4263,
               "nome": "Kabasele",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "c1": [
             {
               "id": 7126,
               "nome": "Baturina",
-              "costo": 21
+              "costo": 21,
+              "statoM": 1
             }
           ],
           "c2": [
             {
               "id": 7078,
               "nome": "Mastantuono",
-              "costo": 14
+              "costo": 14,
+              "statoM": 1
             }
           ],
           "c3": [
@@ -3767,21 +3898,24 @@
             {
               "id": 536,
               "nome": "Politano",
-              "costo": 11
+              "costo": 11,
+              "statoM": 1
             }
           ],
           "c8": [
             {
               "id": 184,
               "nome": "Bernardeschi",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "a1": [
             {
               "id": 7627,
               "nome": "Enem",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "a2": [
@@ -3802,7 +3936,8 @@
             {
               "id": 5951,
               "nome": "Kolo Muani",
-              "costo": 23
+              "costo": 23,
+              "statoM": 1
             }
           ],
           "a5": [
@@ -3851,7 +3986,8 @@
             {
               "id": 7485,
               "nome": "Mangas",
-              "costo": 10
+              "costo": 10,
+              "statoM": 1
             }
           ],
           "d2": [
@@ -3865,7 +4001,8 @@
             {
               "id": 7131,
               "nome": "Floriani Mussolini",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "d4": [
@@ -3879,7 +4016,8 @@
             {
               "id": 6638,
               "nome": "Marin R.",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "d6": [
@@ -3935,21 +4073,24 @@
             {
               "id": 6372,
               "nome": "Moreira",
-              "costo": 15
+              "costo": 15,
+              "statoM": 1
             }
           ],
           "c6": [
             {
               "id": 6252,
               "nome": "Folorunsho",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "c7": [
             {
               "id": 5007,
               "nome": "Ilic",
-              "costo": 4
+              "costo": 4,
+              "statoM": 1
             }
           ],
           "c8": [
@@ -3977,7 +4118,8 @@
             {
               "id": 6397,
               "nome": "Ramos G.",
-              "costo": 25
+              "costo": 25,
+              "statoM": 1
             }
           ],
           "a4": [
@@ -4033,14 +4175,16 @@
             {
               "id": 7599,
               "nome": "Lulli",
-              "costo": 3
+              "costo": 3,
+              "statoM": 1
             }
           ],
           "d2": [
             {
               "id": 7410,
               "nome": "Viery",
-              "costo": 5
+              "costo": 5,
+              "statoM": 1
             }
           ],
           "d3": [
@@ -4117,7 +4261,8 @@
             {
               "id": 6372,
               "nome": "Moreira",
-              "costo": 15
+              "costo": 15,
+              "statoM": 1
             }
           ],
           "c6": [
@@ -4138,7 +4283,8 @@
             {
               "id": 2848,
               "nome": "Frattesi",
-              "costo": 12
+              "costo": 12,
+              "statoM": 1
             }
           ],
           "a1": [
@@ -4152,14 +4298,16 @@
             {
               "id": 6572,
               "nome": "Castro S.",
-              "costo": 13
+              "costo": 13,
+              "statoM": 1
             }
           ],
           "a3": [
             {
               "id": 6204,
               "nome": "Kvernadze",
-              "costo": 11
+              "costo": 11,
+              "statoM": 1
             }
           ],
           "a4": [
@@ -4173,7 +4321,8 @@
             {
               "id": 2764,
               "nome": "Martinez L.",
-              "costo": 36
+              "costo": 36,
+              "statoM": 1
             }
           ],
           "a6": [
@@ -4222,7 +4371,8 @@
             {
               "id": 6892,
               "nome": "Schingtienne",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "d3": [
@@ -4243,7 +4393,8 @@
             {
               "id": 5620,
               "nome": "Tavares N.",
-              "costo": 9
+              "costo": 9,
+              "statoM": 1
             }
           ],
           "d6": [
@@ -4271,7 +4422,8 @@
             {
               "id": 7575,
               "nome": "Mout",
-              "costo": 1
+              "costo": 1,
+              "statoM": 1
             }
           ],
           "c2": [
@@ -4285,7 +4437,8 @@
             {
               "id": 7078,
               "nome": "Mastantuono",
-              "costo": 14
+              "costo": 14,
+              "statoM": 1
             }
           ],
           "c4": [
@@ -4334,14 +4487,16 @@
             {
               "id": 7161,
               "nome": "Bayo V.",
-              "costo": 2
+              "costo": 2,
+              "statoM": 1
             }
           ],
           "a3": [
             {
               "id": 6204,
               "nome": "Kvernadze",
-              "costo": 11
+              "costo": 11,
+              "statoM": 1
             }
           ],
           "a4": [
