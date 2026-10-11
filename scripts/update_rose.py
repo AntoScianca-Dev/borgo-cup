@@ -5,7 +5,7 @@ import argparse
 from collections import Counter
 
 # Nomi dei file di input e output
-CSV_FILE = "scripts/borgo-cup_rosters.csv"
+CSV_FILE = "scripts/borgo-cup_rostersM1.csv"
 SQUADRE_FILE = "src/assets/data/squadre.json"
 CALCIATORI_FILE = "src/assets/data/calciatori.json"
 ROSE_OUTPUT_FILE = "src/assets/data/rose.json"
@@ -13,18 +13,17 @@ ROSE_OUTPUT_FILE = "src/assets/data/rose.json"
 LIMITE_CAMBI = 7
 
 def mappa_giocatori(rose_data):
-    """{id squadra: {id giocatore: statoM}} da un rose.json."""
-    return {
-        s["id"]: {
-            g["id"]: g.get("statoM", 0)
-            for rosa in s.get("rosa", [])
-            for lista in rosa.values()
-            if isinstance(lista, list)
-            for g in lista
-        }
-        for s in rose_data.get("rose", [])
-    }
-
+    """{id squadra: {id giocatore: giocatore + 'ruolo'}} da un rose.json."""
+    risultato = {}
+    for s in rose_data.get("rose", []):
+        giocatori = {}
+        for rosa in s.get("rosa", []):
+            for slot, lista in rosa.items():
+                if isinstance(lista, list):
+                    for g in lista:
+                        giocatori[g["id"]] = {**g, "ruolo": slot[0]}
+        risultato[s["id"]] = giocatori
+    return risultato
 def carica_json(filepath):
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"File non trovato: {filepath}")
@@ -49,8 +48,11 @@ def main():
     args = parser.parse_args()
 
     # Prima di sovrascrivere: gli statoM già assegnati vanno conservati
-    corrente = mappa_giocatori(carica_json(ROSE_OUTPUT_FILE)) if os.path.exists(ROSE_OUTPUT_FILE) else {}
+    corrente_data = carica_json(ROSE_OUTPUT_FILE) if os.path.exists(ROSE_OUTPUT_FILE) else {}
+    corrente = mappa_giocatori(corrente_data)
     base = mappa_giocatori(carica_json(args.precedente)) if args.precedente else corrente
+    # Cessioni già registrate: vanno conservate a ogni rigenerazione
+    svincolati_storici = {s["id"]: s.get("svincolati", []) for s in corrente_data.get("rose", [])}
     acquisti = Counter()
     senza_storico = set()
 
@@ -154,7 +156,7 @@ def main():
                 "costo": costo,
             }
 
-            stato_m = corrente.get(id_squadra, {}).get(giocatore["id"], 0)
+            stato_m = corrente.get(id_squadra, {}).get(giocatore["id"], {}).get("statoM", 0)
             if stato_m:
                 giocatore["statoM"] = stato_m  # già acquistato in una sessione precedente
             elif args.sessione:
@@ -165,6 +167,22 @@ def main():
                     acquisti[id_squadra] += 1
 
             rose_builder[id_squadra][ruolo_raw].append(giocatore)
+    
+    # Cessioni: chi era nella rosa di confronto e ora non c'è più
+    cessioni = Counter()
+    nuovi_svincolati = {}
+    if args.sessione:
+        for id_squadra, ruoli_dict in rose_builder.items():
+            presenti = {g["id"] for lista in ruoli_dict.values() for g in lista}
+            gia_registrati = {(s["id"], s["svincolatoM"]) for s in svincolati_storici.get(id_squadra, [])}
+            usciti = [
+                {"id": pid, "nome": g["nome"], "ruolo": g["ruolo"], "costo": g["costo"], "svincolatoM": args.sessione}
+                for pid, g in base.get(id_squadra, {}).items()
+                if pid not in presenti and (pid, args.sessione) not in gia_registrati
+            ]
+            if usciti:
+                nuovi_svincolati[id_squadra] = usciti
+                cessioni[id_squadra] = len(usciti)
 
     # 3. Costruzione della struttura finale rose.json (p1, p2, d1, d2...)
     rose_final_list = []
@@ -178,7 +196,11 @@ def main():
                     slot_key = f"{ruolo}{idx}"
                     rosa_obj[slot_key] = [giocatore]
 
-        rose_final_list.append({"id": id_squadra, "rosa": [rosa_obj]})
+        voce = {"id": id_squadra, "rosa": [rosa_obj]}
+        svincolati = svincolati_storici.get(id_squadra, []) + nuovi_svincolati.get(id_squadra, [])
+        if svincolati:
+            voce["svincolati"] = svincolati
+        rose_final_list.append(voce)
 
     # Ordina le squadre per ID
     rose_final_list.sort(key=lambda x: x["id"])
@@ -186,14 +208,15 @@ def main():
     output_data = {"rose": rose_final_list}
 
     if args.sessione:
-        for id_squadra, n in sorted(acquisti.items()):
-            avviso = f"  ⚠️ oltre il limite di {LIMITE_CAMBI} cambi" if n > LIMITE_CAMBI else ""
-            print(f"Squadra {id_squadra}: {n} acquisti{avviso}")
-        if senza_storico:
-            print(f"⚠️ Squadre senza rosa precedente (non marcate): {sorted(senza_storico)}")
-        if not acquisti:
-            print("⚠️ Nessun acquisto rilevato: il file precedente è quello giusto?")
-        print(f"Totale acquisti sessione {args.sessione}: {sum(acquisti.values())}")
+        for id_squadra in sorted(set(acquisti) | set(cessioni)):
+            a, c = acquisti[id_squadra], cessioni[id_squadra]
+            note = []
+            if a > LIMITE_CAMBI:
+                note.append(f"oltre il limite di {LIMITE_CAMBI} cambi")
+            if a != c:
+                note.append("acquisti e cessioni non coincidono")
+            avviso = f"  ⚠️ {', '.join(note)}" if note else ""
+            print(f"Squadra {id_squadra}: {a} acquisti, {c} cessioni{avviso}")
 
     if args.dry_run:
         print("🔍 Simulazione: nulla salvato.")

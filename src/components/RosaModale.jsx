@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
-import { Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from '@headlessui/react'
+import { Dialog, DialogPanel, DialogTitle, Disclosure, DisclosureButton, DisclosurePanel, Transition, TransitionChild } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/24/solid'
 
 const RUOLI = [
     { titolo: 'Portieri', codice: 'p', accent: 'border-amber-400', head: 'bg-amber-100 text-amber-900' },
@@ -10,6 +11,7 @@ const RUOLI = [
 
 // Stessa griglia per intestazione e righe: nome flessibile + 3 colonne numeriche
 const GRID = 'grid grid-cols-[1fr_3rem_3rem_2.5rem] gap-1 items-center'
+const BADGE_RUOLO = Object.fromEntries(RUOLI.map((r) => [r.codice, r.head]))
 
 export default function RosaModale({ isOpen, onClose, squad }) {
     const tuttiGiocatori = useMemo(() => {
@@ -25,6 +27,16 @@ export default function RosaModale({ isOpen, onClose, squad }) {
         costo: tuttiGiocatori.reduce((s, g) => s + (parseInt(g.costo) || 0), 0),
         quotazione: tuttiGiocatori.reduce((s, g) => s + (g.quotazione || 0), 0),
     }), [tuttiGiocatori])
+
+    // Cessioni raggruppate per sessione, dalla più recente
+    const cessioni = useMemo(() => {
+        const gruppi = new Map()
+        for (const g of squad?.svincolati ?? []) {
+            gruppi.set(g.svincolatoM, [...(gruppi.get(g.svincolatoM) ?? []), g])
+        }
+        return [...gruppi.entries()].sort(([a], [b]) => b - a)
+    }, [squad])
+    const totaleCessioni = cessioni.reduce((s, [, lista]) => s + lista.length, 0)
 
     if (!squad) return null
 
@@ -135,27 +147,85 @@ export default function RosaModale({ isOpen, onClose, squad }) {
                                             </section>
                                         )
                                     })}
+
+                                    {/* ELENCO SVINCOLATI SQUADRA */}
+                                    {totaleCessioni > 0 && (
+                                        <Disclosure as="section" className="overflow-hidden rounded-lg border border-rose-200 bg-rose-50/50">
+                                            <DisclosureButton className="group flex w-full cursor-pointer items-center gap-2 px-3 py-2.5 text-left">
+                                                <span className="flex-1 text-sm font-extrabold uppercase tracking-wider text-rose-800">
+                                                    Svincolati nel mercato ({totaleCessioni})
+                                                </span>
+                                                <ChevronDownIcon className="h-5 w-5 text-rose-600 transition-transform group-data-open:rotate-180" />
+                                            </DisclosureButton>
+
+                                            <DisclosurePanel className="space-y-3 px-3 pb-3">
+                                                <div className={`${GRID} px-3 text-[10px] font-bold uppercase tracking-wider text-rose-700`}>
+                                                    <span />
+                                                    <span className="text-right">Costo</span>
+                                                    <span className="text-right">Q.A.</span>
+                                                    <span className="text-right">+/-</span>
+                                                </div>
+
+                                                {cessioni.map(([sessione, lista]) => (
+                                                    <div key={sessione}>
+                                                        <p className="mb-1 text-[11px] font-bold uppercase tracking-widest text-rose-600">
+                                                            {sessione}ª sessione
+                                                        </p>
+                                                        <div className="divide-y divide-rose-100 rounded-lg bg-white">
+                                                            {lista.map((g) => (
+                                                                <div key={g.id} className={`${GRID} px-3 py-2 text-sm`}>
+                                                                    <span className="flex min-w-0 items-center gap-2">
+                                                                        <span
+                                                                            className={`flex h-5 w-5 shrink-0 items-center justify-center rounded text-[10px] font-black ${
+                                                                                BADGE_RUOLO[g.ruolo] ?? 'bg-gray-100 text-gray-700'
+                                                                            }`}
+                                                                        >
+                                                                            {(g.ruolo || '?').toUpperCase()}
+                                                                        </span>
+                                                                        <span className="truncate font-semibold text-gray-600">{g.nome}</span>
+                                                                    </span>
+                                                                    <span className="text-right text-gray-500">{g.costo}</span>
+                                                                    <span className="text-right font-bold text-sky-700">{g.quotazione}</span>
+                                                                    <span
+                                                                        className={`text-right font-bold ${
+                                                                            g.variazione > 0 ? 'text-green-600' : g.variazione < 0 ? 'text-red-600' : 'text-gray-400'
+                                                                        }`}
+                                                                    >
+                                                                        {g.variazione > 0 ? '+' : ''}{g.variazione}
+                                                                    </span>
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </DisclosurePanel>
+                                        </Disclosure>
+                                    )}
                                 </div>
+
 
                                 {/* LEGENDA */}
                                 {haMercato && (
-                                    <div className="flex py-4 px-4 gap-2 flex-wrap">
-                                        <p className="text-xs text-gray-500">
-                                            <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 font-black text-emerald-800">M1</span>{' '}
-                                            acquistato nella 1ª sessione di mercato
-                                        </p>
-                                        <p className="text-xs text-gray-500">
-                                            <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 font-black text-emerald-800">M2</span>{' '}
-                                            acquistato nella 2ª sessione di mercato
-                                        </p>
-                                        <p className="text-xs text-gray-500">
-                                            <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 font-black text-emerald-800">M3</span>{' '}
-                                            acquistato nella 3ª sessione di mercato
-                                        </p>
-                                        <p className="text-xs text-gray-500">
-                                            <span className="ml-0.5 font-bold text-red-600" title="Calciatore svincolato / fuori lista">*</span>{' '}
-                                            Calciatore svincolato / fuori lista
-                                        </p>                            
+                                    <div>
+                                        <p className="text-[11px] py-1 px-4 uppercase tracking-widest font-semibold opacity-80 bg-gray-200 rounded-4xl w-50 m-2">Legenda Note</p>
+                                        <div className="flex pb-4 px-4 gap-2 flex-wrap">
+                                            <p className="text-xs text-gray-500">
+                                                <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 font-black text-emerald-800">M1</span>{' '}
+                                                acquistato nella 1ª sessione di mercato
+                                            </p>
+                                            <p className="text-xs text-gray-500">
+                                                <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 font-black text-emerald-800">M2</span>{' '}
+                                                acquistato nella 2ª sessione di mercato
+                                            </p>
+                                            <p className="text-xs text-gray-500">
+                                                <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 font-black text-emerald-800">M3</span>{' '}
+                                                acquistato nella 3ª sessione di mercato
+                                            </p>
+                                            <p className="text-xs text-gray-500">
+                                                <span className="ml-0.5 font-bold text-red-600" title="Calciatore svincolato / fuori lista">*</span>{' '}
+                                                Calciatore svincolato / fuori lista
+                                            </p>                            
+                                        </div>
                                     </div>
                                 )}
                             </DialogPanel>

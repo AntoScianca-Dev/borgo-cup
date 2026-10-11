@@ -187,6 +187,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 7268,
+          "nome": "Rodriguez Ju.",
+          "ruolo": "d",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7175,
+          "nome": "Joao Mario",
+          "ruolo": "d",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2728,
+          "nome": "Pellegrini Lu.",
+          "ruolo": "d",
+          "costo": 2,
+          "svincolatoM": 1
+        },
+        {
+          "id": 1852,
+          "nome": "Spinazzola",
+          "ruolo": "d",
+          "costo": 8,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2167,
+          "nome": "Orsolini",
+          "ruolo": "c",
+          "costo": 26,
+          "svincolatoM": 1
+        },
+        {
+          "id": 779,
+          "nome": "Cristante",
+          "ruolo": "c",
+          "costo": 8,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4923,
+          "nome": "Colombo",
+          "ruolo": "a",
+          "costo": 11,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -375,6 +426,57 @@
               "statoM": 1
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 6189,
+          "nome": "Missori",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5022,
+          "nome": "Pavlovic",
+          "ruolo": "d",
+          "costo": 14,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4998,
+          "nome": "Molina N.",
+          "ruolo": "d",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6875,
+          "nome": "Paz N.",
+          "ruolo": "c",
+          "costo": 30,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5800,
+          "nome": "Gudmundsson A.",
+          "ruolo": "c",
+          "costo": 13,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6397,
+          "nome": "Ramos G.",
+          "ruolo": "a",
+          "costo": 27,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4896,
+          "nome": "Maldini",
+          "ruolo": "a",
+          "costo": 5,
+          "svincolatoM": 1
         }
       ]
     },
@@ -565,6 +667,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 6039,
+          "nome": "Cabal",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 254,
+          "nome": "Dimarco",
+          "ruolo": "d",
+          "costo": 32,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6015,
+          "nome": "Berisha M.",
+          "ruolo": "c",
+          "costo": 5,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2194,
+          "nome": "Calhanoglu",
+          "ruolo": "c",
+          "costo": 27,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6572,
+          "nome": "Castro S.",
+          "ruolo": "a",
+          "costo": 14,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5951,
+          "nome": "Kolo Muani",
+          "ruolo": "a",
+          "costo": 26,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4871,
+          "nome": "Thuram",
+          "ruolo": "a",
+          "costo": 29,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -748,6 +901,22 @@
               "costo": 35
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 6908,
+          "nome": "Atta",
+          "ruolo": "c",
+          "costo": 17,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5119,
+          "nome": "Samardzic",
+          "ruolo": "c",
+          "costo": 12,
+          "svincolatoM": 1
         }
       ]
     },
@@ -933,6 +1102,29 @@
               "costo": 15
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 5800,
+          "nome": "Gudmundsson A.",
+          "ruolo": "c",
+          "costo": 13,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5119,
+          "nome": "Samardzic",
+          "ruolo": "c",
+          "costo": 12,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6397,
+          "nome": "Ramos G.",
+          "ruolo": "a",
+          "costo": 27,
+          "svincolatoM": 1
         }
       ]
     },
@@ -1123,6 +1315,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 7301,
+          "nome": "Tornqvist",
+          "ruolo": "p",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4375,
+          "nome": "Terzic",
+          "ruolo": "d",
+          "costo": 4,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7464,
+          "nome": "Oulai",
+          "ruolo": "c",
+          "costo": 6,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6844,
+          "nome": "Rowe",
+          "ruolo": "c",
+          "costo": 11,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2766,
+          "nome": "Zaniolo",
+          "ruolo": "c",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7351,
+          "nome": "Santos A.",
+          "ruolo": "a",
+          "costo": 14,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5882,
+          "nome": "Mota",
+          "ruolo": "a",
+          "costo": 5,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -1311,6 +1554,57 @@
               "costo": 14
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 5116,
+          "nome": "Martinez Jo.",
+          "ruolo": "p",
+          "costo": 17,
+          "svincolatoM": 1
+        },
+        {
+          "id": 1926,
+          "nome": "Di Gennaro",
+          "ruolo": "p",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7414,
+          "nome": "Kaiki",
+          "ruolo": "d",
+          "costo": 7,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6884,
+          "nome": "Conceicao",
+          "ruolo": "c",
+          "costo": 12,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5559,
+          "nome": "Da Cunha",
+          "ruolo": "c",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5951,
+          "nome": "Kolo Muani",
+          "ruolo": "a",
+          "costo": 26,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4871,
+          "nome": "Thuram",
+          "ruolo": "a",
+          "costo": 29,
+          "svincolatoM": 1
         }
       ]
     },
@@ -1501,6 +1795,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 6893,
+          "nome": "Kempf",
+          "ruolo": "d",
+          "costo": 5,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6189,
+          "nome": "Missori",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6039,
+          "nome": "Cabal",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6246,
+          "nome": "Lipani",
+          "ruolo": "c",
+          "costo": 2,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4856,
+          "nome": "Chukwueze",
+          "ruolo": "c",
+          "costo": 6,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7523,
+          "nome": "Varela G.",
+          "ruolo": "a",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5951,
+          "nome": "Kolo Muani",
+          "ruolo": "a",
+          "costo": 26,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -1689,6 +2034,57 @@
               "costo": 35
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 7545,
+          "nome": "Vismara",
+          "ruolo": "p",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7294,
+          "nome": "Valdepenas",
+          "ruolo": "d",
+          "costo": 6,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6320,
+          "nome": "Doekhi",
+          "ruolo": "d",
+          "costo": 7,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6189,
+          "nome": "Missori",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5422,
+          "nome": "Zalewski",
+          "ruolo": "c",
+          "costo": 6,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4777,
+          "nome": "McTominay",
+          "ruolo": "c",
+          "costo": 28,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6981,
+          "nome": "Vaz",
+          "ruolo": "a",
+          "costo": 1,
+          "svincolatoM": 1
         }
       ]
     },
@@ -1879,6 +2275,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 7219,
+          "nome": "Bernasconi",
+          "ruolo": "d",
+          "costo": 6,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7175,
+          "nome": "Joao Mario",
+          "ruolo": "d",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7436,
+          "nome": "Alajbegovic",
+          "ruolo": "c",
+          "costo": 12,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6815,
+          "nome": "Fadera",
+          "ruolo": "c",
+          "costo": 2,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4777,
+          "nome": "McTominay",
+          "ruolo": "c",
+          "costo": 28,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2766,
+          "nome": "Zaniolo",
+          "ruolo": "c",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4923,
+          "nome": "Colombo",
+          "ruolo": "a",
+          "costo": 11,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -2067,6 +2514,57 @@
               "costo": 35
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 2816,
+          "nome": "Di Lorenzo",
+          "ruolo": "d",
+          "costo": 12,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5800,
+          "nome": "Gudmundsson A.",
+          "ruolo": "c",
+          "costo": 13,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4911,
+          "nome": "Douglas Luiz",
+          "ruolo": "c",
+          "costo": 4,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4777,
+          "nome": "McTominay",
+          "ruolo": "c",
+          "costo": 28,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6981,
+          "nome": "Vaz",
+          "ruolo": "a",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5951,
+          "nome": "Kolo Muani",
+          "ruolo": "a",
+          "costo": 26,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4371,
+          "nome": "Raspadori",
+          "ruolo": "a",
+          "costo": 13,
+          "svincolatoM": 1
         }
       ]
     },
@@ -2257,6 +2755,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 7476,
+          "nome": "Bakoune",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6426,
+          "nome": "Pedersen",
+          "ruolo": "d",
+          "costo": 5,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7436,
+          "nome": "Alajbegovic",
+          "ruolo": "c",
+          "costo": 12,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6274,
+          "nome": "Diouf",
+          "ruolo": "c",
+          "costo": 8,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7249,
+          "nome": "Buksa",
+          "ruolo": "a",
+          "costo": 2,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6397,
+          "nome": "Ramos G.",
+          "ruolo": "a",
+          "costo": 27,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4371,
+          "nome": "Raspadori",
+          "ruolo": "a",
+          "costo": 13,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -2443,6 +2992,43 @@
               "costo": 35
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 7175,
+          "nome": "Joao Mario",
+          "ruolo": "d",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6844,
+          "nome": "Rowe",
+          "ruolo": "c",
+          "costo": 11,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4777,
+          "nome": "McTominay",
+          "ruolo": "c",
+          "costo": 28,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7561,
+          "nome": "Lontani",
+          "ruolo": "a",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5951,
+          "nome": "Kolo Muani",
+          "ruolo": "a",
+          "costo": 26,
+          "svincolatoM": 1
         }
       ]
     },
@@ -2633,6 +3219,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 4998,
+          "nome": "Molina N.",
+          "ruolo": "d",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6908,
+          "nome": "Atta",
+          "ruolo": "c",
+          "costo": 17,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5559,
+          "nome": "Da Cunha",
+          "ruolo": "c",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2379,
+          "nome": "Rabiot",
+          "ruolo": "c",
+          "costo": 22,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6397,
+          "nome": "Ramos G.",
+          "ruolo": "a",
+          "costo": 27,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5951,
+          "nome": "Kolo Muani",
+          "ruolo": "a",
+          "costo": 26,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5637,
+          "nome": "Davis K.",
+          "ruolo": "a",
+          "costo": 19,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -2820,6 +3457,50 @@
               "costo": 34
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 2728,
+          "nome": "Pellegrini Lu.",
+          "ruolo": "d",
+          "costo": 2,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6903,
+          "nome": "Hasa",
+          "ruolo": "c",
+          "costo": 2,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5800,
+          "nome": "Gudmundsson A.",
+          "ruolo": "c",
+          "costo": 13,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6215,
+          "nome": "Lucca",
+          "ruolo": "a",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5951,
+          "nome": "Kolo Muani",
+          "ruolo": "a",
+          "costo": 26,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2097,
+          "nome": "Kean",
+          "ruolo": "a",
+          "costo": 25,
+          "svincolatoM": 1
         }
       ]
     },
@@ -3010,6 +3691,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 6814,
+          "nome": "Norton-Cuffy",
+          "ruolo": "d",
+          "costo": 8,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5982,
+          "nome": "Spence",
+          "ruolo": "d",
+          "costo": 12,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6884,
+          "nome": "Conceicao",
+          "ruolo": "c",
+          "costo": 12,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6592,
+          "nome": "Forson O.",
+          "ruolo": "c",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5800,
+          "nome": "Gudmundsson A.",
+          "ruolo": "c",
+          "costo": 13,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2766,
+          "nome": "Zaniolo",
+          "ruolo": "c",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5637,
+          "nome": "Davis K.",
+          "ruolo": "a",
+          "costo": 19,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -3198,6 +3930,57 @@
               "statoM": 1
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 7268,
+          "nome": "Rodriguez Ju.",
+          "ruolo": "d",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6809,
+          "nome": "Marianucci",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7477,
+          "nome": "Colombo L.",
+          "ruolo": "c",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6592,
+          "nome": "Forson O.",
+          "ruolo": "c",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4777,
+          "nome": "McTominay",
+          "ruolo": "c",
+          "costo": 28,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7561,
+          "nome": "Lontani",
+          "ruolo": "a",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7484,
+          "nome": "Adams A.",
+          "ruolo": "a",
+          "costo": 12,
+          "svincolatoM": 1
         }
       ]
     },
@@ -3388,6 +4171,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 5320,
+          "nome": "Paleari",
+          "ruolo": "p",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7470,
+          "nome": "Oyono J.",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6727,
+          "nome": "Couto",
+          "ruolo": "d",
+          "costo": 8,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7456,
+          "nome": "El Azzouzi A.",
+          "ruolo": "c",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4199,
+          "nome": "Loftus-Cheek",
+          "ruolo": "c",
+          "costo": 4,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2766,
+          "nome": "Zaniolo",
+          "ruolo": "c",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7158,
+          "nome": "Moro L.",
+          "ruolo": "a",
+          "costo": 1,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -3576,6 +4410,57 @@
               "costo": 35
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 2809,
+          "nome": "Vigorito",
+          "ruolo": "p",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7294,
+          "nome": "Valdepenas",
+          "ruolo": "d",
+          "costo": 6,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7209,
+          "nome": "Sorensen O.",
+          "ruolo": "c",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5687,
+          "nome": "Vlasic",
+          "ruolo": "c",
+          "costo": 14,
+          "svincolatoM": 1
+        },
+        {
+          "id": 4777,
+          "nome": "McTominay",
+          "ruolo": "c",
+          "costo": 28,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7342,
+          "nome": "Elphege",
+          "ruolo": "a",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6435,
+          "nome": "Krstovic",
+          "ruolo": "a",
+          "costo": 18,
+          "svincolatoM": 1
         }
       ]
     },
@@ -3766,6 +4651,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 4998,
+          "nome": "Molina N.",
+          "ruolo": "d",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 254,
+          "nome": "Dimarco",
+          "ruolo": "d",
+          "costo": 32,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6191,
+          "nome": "Belahyane",
+          "ruolo": "c",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5800,
+          "nome": "Gudmundsson A.",
+          "ruolo": "c",
+          "costo": 13,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5687,
+          "nome": "Vlasic",
+          "ruolo": "c",
+          "costo": 14,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2194,
+          "nome": "Calhanoglu",
+          "ruolo": "c",
+          "costo": 27,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2097,
+          "nome": "Kean",
+          "ruolo": "a",
+          "costo": 25,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -3954,6 +4890,57 @@
               "costo": 35
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 6426,
+          "nome": "Pedersen",
+          "ruolo": "d",
+          "costo": 5,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6908,
+          "nome": "Atta",
+          "ruolo": "c",
+          "costo": 17,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5559,
+          "nome": "Da Cunha",
+          "ruolo": "c",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5507,
+          "nome": "Busio",
+          "ruolo": "c",
+          "costo": 5,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2766,
+          "nome": "Zaniolo",
+          "ruolo": "c",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7561,
+          "nome": "Lontani",
+          "ruolo": "a",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6434,
+          "nome": "Yildiz",
+          "ruolo": "a",
+          "costo": 23,
+          "svincolatoM": 1
         }
       ]
     },
@@ -4144,6 +5131,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 7175,
+          "nome": "Joao Mario",
+          "ruolo": "d",
+          "costo": 3,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6426,
+          "nome": "Pedersen",
+          "ruolo": "d",
+          "costo": 5,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6189,
+          "nome": "Missori",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6207,
+          "nome": "Almqvist",
+          "ruolo": "c",
+          "costo": 4,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5800,
+          "nome": "Gudmundsson A.",
+          "ruolo": "c",
+          "costo": 13,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5687,
+          "nome": "Vlasic",
+          "ruolo": "c",
+          "costo": 14,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7017,
+          "nome": "Douvikas",
+          "ruolo": "a",
+          "costo": 20,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -4333,6 +5371,57 @@
             }
           ]
         }
+      ],
+      "svincolati": [
+        {
+          "id": 6189,
+          "nome": "Missori",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 254,
+          "nome": "Dimarco",
+          "ruolo": "d",
+          "costo": 32,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5559,
+          "nome": "Da Cunha",
+          "ruolo": "c",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 5119,
+          "nome": "Samardzic",
+          "ruolo": "c",
+          "costo": 12,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7351,
+          "nome": "Santos A.",
+          "ruolo": "a",
+          "costo": 14,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6831,
+          "nome": "Neres",
+          "ruolo": "a",
+          "costo": 6,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6435,
+          "nome": "Krstovic",
+          "ruolo": "a",
+          "costo": 18,
+          "svincolatoM": 1
+        }
       ]
     },
     {
@@ -4520,6 +5609,50 @@
               "costo": 35
             }
           ]
+        }
+      ],
+      "svincolati": [
+        {
+          "id": 7260,
+          "nome": "Ziolkowski",
+          "ruolo": "d",
+          "costo": 1,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7219,
+          "nome": "Bernasconi",
+          "ruolo": "d",
+          "costo": 6,
+          "svincolatoM": 1
+        },
+        {
+          "id": 6980,
+          "nome": "Venturino",
+          "ruolo": "c",
+          "costo": 2,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2766,
+          "nome": "Zaniolo",
+          "ruolo": "c",
+          "costo": 18,
+          "svincolatoM": 1
+        },
+        {
+          "id": 7374,
+          "nome": "Mendy P.",
+          "ruolo": "a",
+          "costo": 4,
+          "svincolatoM": 1
+        },
+        {
+          "id": 2061,
+          "nome": "Simeone",
+          "ruolo": "a",
+          "costo": 15,
+          "svincolatoM": 1
         }
       ]
     }

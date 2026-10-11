@@ -80,7 +80,8 @@ export default function Squadre() {
                     acc[key] = [enrichGiocatore(value[0])]
                     return acc
                 }, {})
-            }] : []
+            }] : [],
+            svincolati: (rosa?.svincolati ?? []).map(enrichGiocatore),
         }
         
         setSelectedSquad(squadEnriched)
