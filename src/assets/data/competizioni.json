@@ -3,7 +3,7 @@
         {
             "id": 0,
             "stato": "None",
-            "giornataA": 5
+            "giornataA": 6
         },
         {
             "id": 1,
@@ -12,9 +12,9 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "38' gironata di serie A",
-            "avanzamento": 13.2,
+            "avanzamento": 15.8,
             "totale": 38,
-            "giornata": 5,
+            "giornata": 6,
             "img": "/images/campionato.png",
             "link": "/campionato",
             "squadre": 24
@@ -96,9 +96,9 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "38' gironata di serie A",
-            "avanzamento": 13.2,
+            "avanzamento": 15.8,
             "totale": 38,
-            "giornata": 5,
+            "giornata": 6,
             "icon": "🔝",
             "link": "/punteggio",
             "squadre": 24
@@ -110,9 +110,9 @@
             "gInizio": 3,
             "inizio": "3' giornata di serie A",
             "fine": "7' giornata di serie A",
-            "avanzamento": 60.0,
+            "avanzamento": 80.0,
             "totale": 5,
-            "giornata": 3,
+            "giornata": 4,
             "icon": "🌍",
             "link": "/preliminari",
             "squadre": 24
@@ -222,9 +222,9 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 14.3,
+            "avanzamento": 17.1,
             "totale": 35,
-            "giornata": 5,
+            "giornata": 6,
             "img": "/images/serieA.png",
             "link": "/serieA",
             "squadre": 8
@@ -236,9 +236,9 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 14.3,
+            "avanzamento": 17.1,
             "totale": 35,
-            "giornata": 5,
+            "giornata": 6,
             "img": "/images/serieB.png",
             "link": "/serieB",
             "squadre": 8
@@ -250,9 +250,9 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 14.3,
+            "avanzamento": 17.1,
             "totale": 35,
-            "giornata": 5,
+            "giornata": 6,
             "img": "/images/serieC.png",
             "link": "/serieC",
             "squadre": 8
