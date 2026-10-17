@@ -17,6 +17,7 @@ import Survivor from './components/Survivor'
 import CoppaItalia from './components/CoppaItalia'
 import AdminMercato from './components/AdminMercato'
 import ScrollTopButton from './components/ScrollTopButton'
+import CoppaEuropea from './components/CoppaEuropea'
 
 export default function App() {
 
@@ -41,6 +42,9 @@ export default function App() {
             <Route path='/competizioni/preliminari' element={<PreliminariCE/> } />
             <Route path='/competizioni/survivor' element={<Survivor /> } />
             <Route path='/competizioni/coppaIta' element={<CoppaItalia /> } />
+            <Route path="/competizioni/championsLeague" element={<CoppaEuropea key={11} id={11} />} />
+            <Route path="/competizioni/europaLeague" element={<CoppaEuropea key={12} id={12} />} />
+            <Route path="/competizioni/conferenceLeague" element={<CoppaEuropea key={13} id={13} />} />
             <Route path='/admin-mercato' element={<AdminMercato /> } />
           </Routes>
         </main>
