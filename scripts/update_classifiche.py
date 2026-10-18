@@ -2,6 +2,7 @@ import json
 import os
 from utils_cli import input_float, input_int, input_posizione, sincronizza_competizione
 from coppe_europee import FORMATO_COPPE, aggiorna_coppa_europea
+from coppa_italia import aggiorna_coppa_italia
 
 FILE_PATH = "src/assets/data/classifiche.json"
 FILE_SQUADRE_PATH = "src/assets/data/squadre.json"
@@ -339,6 +340,8 @@ def main():
             aggiorna_squid_game_cup(comp_scelta, data_competizioni)
         elif nome_comp in FORMATO_COPPE:
             aggiorna_coppa_europea(comp_scelta, squadre, data_competizioni)
+        elif nome_comp == "Coppa Italia":
+            aggiorna_coppa_italia(comp_scelta, data_competizioni, classifiche)
         else:
             print(f"\n⚠️ Nessuna regola specifica trovata per '{nome_comp}'.")
 

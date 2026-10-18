@@ -52,3 +52,12 @@ def sincronizza_competizione(data_comp, nome_comp, nuova_giornata):
         comp["avanzamento"] = round((nuova_giornata / totale) * 100, 1)
 
     print(f"  📊 Competizioni.json -> {nome_comp}: Giornata {comp['giornata']}/{totale} | Stato: {comp['stato']} | Avanzamento: {comp.get('avanzamento', 0)}%")
+
+def input_gol_opzionale(prompt):
+    while True:
+        valore = input(prompt).strip()
+        if not valore:
+            return None
+        if valore.isdigit():
+            return int(valore)
+        print("❌ Inserisci un numero intero oppure premi INVIO per saltare.")

@@ -4,6 +4,9 @@ import classificheData from '../assets/data/classifiche.json'
 import competizioniData from '../assets/data/competizioni.json'
 import { Chip, Raccordo, Fila, Partita, Logo, SwitchVista, Calendario } from './PartiteUI'
 import { vincitore } from '../hooks/partiteUtils'
+import { CalendarDaysIcon } from '@heroicons/react/24/outline'
+import IconaTabellone from './IconaTabellone'
+
 const COMPETIZIONE_ID = 5
 
 // Struttura ufficiale: l'ordine delle partite nel JSON è l'ordine nel tabellone
@@ -17,8 +20,8 @@ const FORMATO = [
 ]
 
 const VISTE = [
-    { id: 'tabellone', label: 'Tabellone' },
-    { id: 'calendario', label: 'Calendario' },
+    { id: 'tabellone', label: 'Tabellone', Icona: IconaTabellone },
+    { id: 'calendario', label: 'Calendario', Icona: CalendarDaysIcon },
 ]
 
 function Tabellone({ turni }) {

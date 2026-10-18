@@ -90,7 +90,7 @@ export function SwitchVista({ opzioni, valore, onChange }) {
         <div
             role="group"
             aria-label="Vista"
-            className="relative mx-auto grid w-full max-w-sm p-1 bg-sky-100 rounded-tl-2xl rounded-br-2xl shadow-inner"
+            className="relative mx-auto grid w-full max-w-md p-1 bg-sky-100 rounded-tl-2xl rounded-br-2xl shadow-inner"
             style={{ gridTemplateColumns: `repeat(${n}, minmax(0, 1fr))` }}
         >
             <span
@@ -98,17 +98,18 @@ export function SwitchVista({ opzioni, valore, onChange }) {
                 className="absolute top-1 bottom-1 left-1 rounded-tl-xl rounded-br-xl bg-sky-700 shadow-md transition-transform duration-300"
                 style={{ width: `calc((100% - 0.5rem) / ${n})`, transform: `translateX(${indice * 100}%)` }}
             />
-            {opzioni.map((o) => (
+            {opzioni.map(({ id, label, Icona }) => (
                 <button
-                    key={o.id}
+                    key={id}
                     type="button"
-                    aria-pressed={o.id === valore}
-                    onClick={() => onChange(o.id)}
-                    className={`relative z-10 py-1.5 text-xs sm:text-sm font-bold transition-colors duration-300 cursor-pointer rounded-tl-xl rounded-br-xl focus:outline-none focus-visible:ring-4 focus-visible:ring-sky-400 ${
-                        o.id === valore ? 'text-white' : 'text-sky-800'
+                    aria-pressed={id === valore}
+                    onClick={() => onChange(id)}
+                    className={`relative z-10 flex items-center justify-center gap-1.5 py-2 text-xs sm:text-sm font-bold transition-colors duration-300 cursor-pointer rounded-tl-xl rounded-br-xl focus:outline-none focus-visible:ring-4 focus-visible:ring-sky-400 ${
+                        id === valore ? 'text-white' : 'text-sky-800'
                     }`}
                 >
-                    {o.label}
+                    {Icona && <Icona className="h-4 w-4 shrink-0 sm:h-5 sm:w-5" />}
+                    {label}
                 </button>
             ))}
         </div>
@@ -130,7 +131,7 @@ export function Calendario({ turni }) {
 
     return (
         <div className="space-y-4">
-            <div className="flex gap-2 overflow-x-auto snap-x p-2 bg-sky-100 rounded-2xl shadow-inner">
+            <div className="flex gap-1 flex-wrap justify-evenly p-2 bg-sky-100 rounded-2xl shadow-inner">
                 {turni.map((t, i) => (
                     <button
                         key={t.id}
@@ -146,7 +147,7 @@ export function Calendario({ turni }) {
             </div>
 
             {partite.length === 0 ? (
-                <p className="text-center text-gray-400 py-10 text-sm">Nessuna partita inserita per questo turno</p>
+                <p className="text-center text-gray-400 py-10 text-sm">Turno da definire</p>
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {partite.map((m, k) => {

@@ -1,4 +1,4 @@
-from utils_cli import input_int, input_posizione, sincronizza_competizione
+from utils_cli import input_gol_opzionale, input_int, input_posizione, sincronizza_competizione
 from collections import Counter
 # -------------------------------------------------------------
 # COPPE EUROPEE: Champions, Europa e Conference League
@@ -305,16 +305,6 @@ def assegna_posizioni(comp):
             assegna_manuale(squadre)
 
     comp["partecipanti"].sort(key=lambda p: (p["girone"], p["posizione"]))
-
-
-def input_gol_opzionale(prompt):
-    while True:
-        valore = input(prompt).strip()
-        if not valore:
-            return None
-        if valore.isdigit():
-            return int(valore)
-        print("❌ Inserisci un numero intero oppure premi INVIO per saltare.")
 
 
 def inserisci_giornata_gironi(comp):

@@ -4,14 +4,16 @@ import classificheData from '../assets/data/classifiche.json'
 import competizioniData from '../assets/data/competizioni.json'
 import { Calendario, Chip, Fila, Logo, Partita, Raccordo, SwitchVista } from './PartiteUI'
 import { vincitore } from '../hooks/partiteUtils'
+import { CalendarDaysIcon, TableCellsIcon } from '@heroicons/react/24/outline'
+import IconaTabellone from './IconaTabellone'
 
 const GIRONI = ['A', 'B']
 const NOMI_GIORNATE = ['Andata · 1ª', 'Andata · 2ª', 'Andata · 3ª', 'Ritorno · 1ª', 'Ritorno · 2ª', 'Ritorno · 3ª']
 
 const VISTE = [
-    { id: 'calendario', label: '📅 Calendario' },
-    { id: 'classifica', label: '📊 Classifica' },
-    { id: 'tabellone', label: '🌳 Tabellone' },
+    { id: 'classifica', label: 'Classifica', Icona: TableCellsIcon },
+    { id: 'calendario', label: 'Calendario', Icona: CalendarDaysIcon },
+    { id: 'tabellone', label: 'Tabellone', Icona: IconaTabellone },
 ]
 
 const STATS = [
@@ -27,16 +29,16 @@ const STATS = [
 const vincenti = (n) => Array.from({ length: n }, (_, k) => [`V${2 * k + 1}`, `V${2 * k + 2}`])
 
 const ZONA = {
-    qualificata: { riga: 'bg-emerald-50', chip: 'bg-emerald-100 text-emerald-800', pallino: 'bg-emerald-500' },
-    europa: { riga: 'bg-amber-50', chip: 'bg-amber-100 text-amber-800', pallino: 'bg-amber-400' },
+    qualificata: { riga: 'bg-emerald-50', chip: 'bg-emerald-500 text-emerald-800', pallino: 'bg-emerald-500' },
+    europa: { riga: 'bg-amber-50', chip: 'bg-amber-400 text-amber-800', pallino: 'bg-amber-400' },
 }
 
 // Per ogni competizione: chi si qualifica dai gironi e struttura del tabellone (slot del primo turno = posizioni di girone)
 const CONFIG = {
     11: {
         qualifica: [
-            { da: 1, a: 2, nome: 'Semifinale', ...ZONA.qualificata },
-            { da: 3, a: 3, nome: 'Europa League', ...ZONA.europa },
+            { da: 1, a: 2, nome: 'Qualificata fase finale', ...ZONA.qualificata },
+            { da: 3, a: 3, nome: 'Qualificata fase finale Europa League', ...ZONA.europa },
         ],
         tabellone: [
             { nome: 'Semifinali', slot: [['1A', '2B'], ['1B', '2A']] },
@@ -44,7 +46,7 @@ const CONFIG = {
         ],
     },
     12: {
-        qualifica: [{ da: 1, a: 3, nome: 'Quarti di finale', ...ZONA.qualificata }],
+        qualifica: [{ da: 1, a: 3, nome: 'Qualificata fase finale', ...ZONA.qualificata }],
         tabellone: [
             { nome: 'Quarti di finale', slot: [['1A', '3B'], ['3CHA', '2B'], ['1B', '3A'], ['3CHB', '2A']] },
             { nome: 'Semifinali', slot: vincenti(2) },
@@ -52,7 +54,7 @@ const CONFIG = {
         ],
     },
     13: {
-        qualifica: [{ da: 1, a: 2, nome: 'Semifinale', ...ZONA.qualificata }],
+        qualifica: [{ da: 1, a: 2, nome: 'Qualificata fase finale', ...ZONA.qualificata }],
         tabellone: [
             { nome: 'Semifinali', slot: [['1A', '2B'], ['1B', '2A']] },
             { nome: 'Finale', slot: vincenti(1) },
@@ -80,16 +82,19 @@ function RigaClassifica({ squadra, posizione, zona }) {
         >
             <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3 min-w-0">
-                    <span className="w-9 h-9 shrink-0 flex items-center justify-center rounded-full bg-white shadow-inner font-black text-gray-700">
-                        {posizione}
+                    <span className="relative shrink-0">
+                        <span className="w-9 h-9 shrink-0 flex items-center justify-center rounded-full bg-white shadow-inner font-black text-gray-700">
+                            {posizione}
+                        </span>
+                        {zona && (
+                            <span
+                                className={`absolute -top-0.5 -right-0.5 w-3 h-3 flex items-center justify-center rounded-full text-white shadow-2xl ${zona.chip}`}
+                            >
+                            </span>
+                        )}
                     </span>
                     <div className="min-w-0">
                         <p className="truncate font-bold text-lg text-gray-800">{squadra.nome}</p>
-                        {zona && (
-                            <span className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-bold ${zona.chip}`}>
-                                {zona.nome}
-                            </span>
-                        )}
                     </div>
                 </div>
                 <span className="text-2xl font-black tabular-nums text-sky-950">{squadra.punteggio || 0}</span>
