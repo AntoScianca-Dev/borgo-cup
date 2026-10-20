@@ -1,6 +1,5 @@
 from itertools import count
-
-from utils_cli import input_gol_opzionale, input_int, sincronizza_competizione
+from utils_cli import chiedi_float_opzionale, input_gol_opzionale, input_int, punti_campionato, sincronizza_competizione
 
 # Struttura ufficiale (stesso ordine letto dal tabellone in CoppaItalia.jsx).
 # "giornate" = giornate di Serie A in cui si gioca ogni gara.
@@ -51,17 +50,6 @@ def chiedi_scelta(prompt, validi):
         print("❌ Scelta non valida.")
 
 
-def chiedi_float_opzionale(prompt):
-    while True:
-        valore = input(prompt).strip().replace(",", ".")
-        if not valore:
-            return None
-        try:
-            return float(valore)
-        except ValueError:
-            print("❌ Inserisci un numero oppure premi INVIO per saltare.")
-
-
 def chiedi_chi_passa(casa, ospite):
     while True:
         scelta = input(f"  Chi passa il turno? (1 = {casa}, 2 = {ospite}, INVIO = ancora da decidere): ").strip()
@@ -70,12 +58,6 @@ def chiedi_chi_passa(casa, ospite):
         if scelta in ("1", "2"):
             return "casa" if scelta == "1" else "ospite"
         print("❌ Inserisci 1, 2 oppure INVIO.")
-
-
-def punti_campionato(classifiche, squadra_id):
-    campionato = next((c for c in classifiche if c.get("nome") == "Campionato"), {})
-    p = next((p for p in campionato.get("partecipanti", []) if p["id"] == squadra_id), None)
-    return p.get("punteggio", 0) if p else None
 
 
 def descrivi(m):

@@ -3,7 +3,7 @@
         {
             "id": 0,
             "stato": "None",
-            "giornataA": 6
+            "giornataA": 7
         },
         {
             "id": 1,
@@ -12,9 +12,9 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "38' gironata di serie A",
-            "avanzamento": 15.8,
+            "avanzamento": 18.4,
             "totale": 38,
-            "giornata": 6,
+            "giornata": 7,
             "img": "/images/campionato.png",
             "link": "/campionato",
             "squadre": 24
@@ -77,9 +77,9 @@
             "gInizio": 3,
             "inizio": "3' giornata di serie A",
             "fine": "29' giornata di serie A",
-            "avanzamento": 14.3,
+            "avanzamento": 21.4,
             "totale": 14,
-            "giornata": 2,
+            "giornata": 3,
             "img": "/images/survivor.png",
             "link": "/survivor",
             "squadre": 24
@@ -96,9 +96,9 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "38' gironata di serie A",
-            "avanzamento": 15.8,
+            "avanzamento": 18.4,
             "totale": 38,
-            "giornata": 6,
+            "giornata": 7,
             "icon": "🔝",
             "link": "/punteggio",
             "squadre": 24
@@ -106,13 +106,13 @@
         {
             "id": 10,
             "nome": "Preliminari Coppe Europee",
-            "stato": "Attivo",
+            "stato": "Terminata",
             "gInizio": 3,
             "inizio": "3' giornata di serie A",
             "fine": "7' giornata di serie A",
-            "avanzamento": 80.0,
+            "avanzamento": 100.0,
             "totale": 5,
-            "giornata": 4,
+            "giornata": 5,
             "icon": "🌍",
             "link": "/preliminari",
             "squadre": 24
@@ -222,9 +222,9 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 17.1,
+            "avanzamento": 20.0,
             "totale": 35,
-            "giornata": 6,
+            "giornata": 7,
             "img": "/images/serieA.png",
             "link": "/serieA",
             "squadre": 8
@@ -236,9 +236,9 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 17.1,
+            "avanzamento": 20.0,
             "totale": 35,
-            "giornata": 6,
+            "giornata": 7,
             "img": "/images/serieB.png",
             "link": "/serieB",
             "squadre": 8
@@ -250,9 +250,9 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 17.1,
+            "avanzamento": 20.0,
             "totale": 35,
-            "giornata": 6,
+            "giornata": 7,
             "img": "/images/serieC.png",
             "link": "/serieC",
             "squadre": 8

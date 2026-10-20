@@ -61,3 +61,32 @@ def input_gol_opzionale(prompt):
         if valore.isdigit():
             return int(valore)
         print("❌ Inserisci un numero intero oppure premi INVIO per saltare.")
+
+def fmt(n):
+    return f"{round(n, 2):.2f}".rstrip("0").rstrip(".")
+
+def chiedi_partecipante(partecipanti, prompt):
+    """Ritorna il partecipante scelto per ID, oppure None se si preme INVIO."""
+    per_id = {p["id"]: p for p in partecipanti}
+    while True:
+        valore = input(prompt).strip()
+        if not valore:
+            return None
+        if valore.isdigit() and int(valore) in per_id:
+            return per_id[int(valore)]
+        print("❌ ID non valido. Riprova.")
+
+def chiedi_float_opzionale(prompt):
+    while True:
+        valore = input(prompt).strip().replace(",", ".")
+        if not valore:
+            return None
+        try:
+            return float(valore)
+        except ValueError:
+            print("❌ Inserisci un numero oppure premi INVIO per saltare.")
+
+def punti_campionato(classifiche, squadra_id):
+    campionato = next((c for c in classifiche if c.get("nome") == "Campionato"), {})
+    p = next((p for p in campionato.get("partecipanti", []) if p["id"] == squadra_id), None)
+    return p.get("punteggio", 0) if p else None

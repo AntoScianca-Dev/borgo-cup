@@ -20,7 +20,7 @@
             "id": 22,
             "ruolo": "C",
             "nome": "De Roon",
-            "quotazione": 5,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Roma"
         },
@@ -28,7 +28,7 @@
             "id": 133,
             "ruolo": "P",
             "nome": "Skorupski",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Bologna"
         },
@@ -36,7 +36,7 @@
             "id": 152,
             "ruolo": "C",
             "nome": "Zielinski",
-            "quotazione": 13,
+            "quotazione": 14,
             "selezionato": 2,
             "squadraA": "Inter"
         },
@@ -85,7 +85,7 @@
             "id": 254,
             "ruolo": "D",
             "nome": "Dimarco",
-            "quotazione": 28,
+            "quotazione": 27,
             "selezionato": 13,
             "squadraA": "Inter"
         },
@@ -201,7 +201,7 @@
             "id": 531,
             "ruolo": "A",
             "nome": "Berardi",
-            "quotazione": 17,
+            "quotazione": 19,
             "selezionato": 0,
             "squadraA": "Sassuolo"
         },
@@ -209,7 +209,7 @@
             "id": 536,
             "ruolo": "C",
             "nome": "Politano",
-            "quotazione": 11,
+            "quotazione": 12,
             "selezionato": 2,
             "squadraA": "Napoli"
         },
@@ -241,7 +241,7 @@
             "id": 608,
             "ruolo": "A",
             "nome": "Zapata D.",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Torino"
         },
@@ -249,7 +249,7 @@
             "id": 610,
             "ruolo": "P",
             "nome": "Gollini",
-            "quotazione": 3,
+            "quotazione": 5,
             "selezionato": 2,
             "squadraA": "Roma"
         },
@@ -257,7 +257,7 @@
             "id": 632,
             "ruolo": "C",
             "nome": "Zaccagni",
-            "quotazione": 19,
+            "quotazione": 20,
             "selezionato": 2,
             "squadraA": "Lazio"
         },
@@ -290,7 +290,7 @@
             "id": 795,
             "ruolo": "C",
             "nome": "El Shaarawy",
-            "quotazione": 7,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Genoa"
         },
@@ -306,7 +306,7 @@
             "id": 827,
             "ruolo": "C",
             "nome": "Locatelli",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Juventus"
         },
@@ -322,7 +322,7 @@
             "id": 1852,
             "ruolo": "D",
             "nome": "Spinazzola",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Napoli"
         },
@@ -330,7 +330,7 @@
             "id": 1870,
             "ruolo": "C",
             "nome": "Barella",
-            "quotazione": 18,
+            "quotazione": 19,
             "selezionato": 1,
             "squadraA": "Inter"
         },
@@ -338,7 +338,7 @@
             "id": 1871,
             "ruolo": "C",
             "nome": "Deiola",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Cagliari"
         },
@@ -362,7 +362,7 @@
             "id": 1933,
             "ruolo": "C",
             "nome": "Mandragora",
-            "quotazione": 12,
+            "quotazione": 13,
             "selezionato": 0,
             "squadraA": "Torino"
         },
@@ -378,7 +378,7 @@
             "id": 2038,
             "ruolo": "A",
             "nome": "Pinamonti",
-            "quotazione": 12,
+            "quotazione": 14,
             "selezionato": 0,
             "squadraA": "Lazio"
         },
@@ -386,7 +386,7 @@
             "id": 2061,
             "ruolo": "A",
             "nome": "Simeone",
-            "quotazione": 12,
+            "quotazione": 15,
             "selezionato": 2,
             "squadraA": "Torino"
         },
@@ -394,7 +394,7 @@
             "id": 2077,
             "ruolo": "C",
             "nome": "Pasalic",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Atalanta"
         },
@@ -402,7 +402,7 @@
             "id": 2097,
             "ruolo": "A",
             "nome": "Kean",
-            "quotazione": 22,
+            "quotazione": 20,
             "selezionato": 1,
             "squadraA": "Como"
         },
@@ -419,7 +419,7 @@
             "id": 2120,
             "ruolo": "D",
             "nome": "Bastoni",
-            "quotazione": 12,
+            "quotazione": 11,
             "selezionato": 3,
             "squadraA": "Inter"
         },
@@ -443,7 +443,7 @@
             "id": 2137,
             "ruolo": "A",
             "nome": "Scamacca",
-            "quotazione": 19,
+            "quotazione": 18,
             "selezionato": 1,
             "squadraA": "Atalanta"
         },
@@ -451,7 +451,7 @@
             "id": 2155,
             "ruolo": "A",
             "nome": "Cutrone",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Monza"
         },
@@ -459,7 +459,7 @@
             "id": 2167,
             "ruolo": "C",
             "nome": "Orsolini",
-            "quotazione": 23,
+            "quotazione": 22,
             "selezionato": 3,
             "squadraA": "Bologna"
         },
@@ -475,7 +475,7 @@
             "id": 2170,
             "ruolo": "P",
             "nome": "Milinkovic-Savic V.",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 8,
             "squadraA": "Napoli"
         },
@@ -483,7 +483,7 @@
             "id": 2188,
             "ruolo": "D",
             "nome": "Marusic",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Lazio"
         },
@@ -491,7 +491,7 @@
             "id": 2194,
             "ruolo": "C",
             "nome": "Calhanoglu",
-            "quotazione": 28,
+            "quotazione": 29,
             "selezionato": 13,
             "squadraA": "Inter"
         },
@@ -507,7 +507,7 @@
             "id": 2296,
             "ruolo": "D",
             "nome": "Mancini",
-            "quotazione": 16,
+            "quotazione": 15,
             "selezionato": 1,
             "squadraA": "Roma"
         },
@@ -524,7 +524,7 @@
             "id": 2379,
             "ruolo": "C",
             "nome": "Rabiot",
-            "quotazione": 26,
+            "quotazione": 28,
             "selezionato": 1,
             "squadraA": "Milan"
         },
@@ -549,7 +549,7 @@
             "id": 2423,
             "ruolo": "C",
             "nome": "Pulisic",
-            "quotazione": 25,
+            "quotazione": 24,
             "selezionato": 3,
             "squadraA": "Milan"
         },
@@ -557,7 +557,7 @@
             "id": 2514,
             "ruolo": "D",
             "nome": "Stones",
-            "quotazione": 10,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Inter"
         },
@@ -565,7 +565,7 @@
             "id": 2517,
             "ruolo": "C",
             "nome": "De Bruyne",
-            "quotazione": 20,
+            "quotazione": 19,
             "selezionato": 3,
             "squadraA": "Napoli"
         },
@@ -573,7 +573,7 @@
             "id": 2521,
             "ruolo": "P",
             "nome": "De Gea",
-            "quotazione": 9,
+            "quotazione": 8,
             "selezionato": 2,
             "squadraA": "Fiorentina"
         },
@@ -589,7 +589,7 @@
             "id": 2528,
             "ruolo": "C",
             "nome": "Matic",
-            "quotazione": 10,
+            "quotazione": 11,
             "selezionato": 0,
             "squadraA": "Sassuolo"
         },
@@ -597,7 +597,7 @@
             "id": 2529,
             "ruolo": "C",
             "nome": "Mkhitaryan",
-            "quotazione": 6,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Inter"
         },
@@ -639,7 +639,7 @@
             "id": 2724,
             "ruolo": "D",
             "nome": "Buongiorno",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Napoli"
         },
@@ -655,7 +655,7 @@
             "id": 2741,
             "ruolo": "C",
             "nome": "Pessina",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Monza"
         },
@@ -663,7 +663,7 @@
             "id": 2764,
             "ruolo": "A",
             "nome": "Martinez L.",
-            "quotazione": 36,
+            "quotazione": 35,
             "selezionato": 23,
             "squadraA": "Inter"
         },
@@ -671,7 +671,7 @@
             "id": 2765,
             "ruolo": "C",
             "nome": "Odgaard",
-            "quotazione": 6,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Bologna"
         },
@@ -719,7 +719,7 @@
             "id": 2816,
             "ruolo": "D",
             "nome": "Di Lorenzo",
-            "quotazione": 12,
+            "quotazione": 11,
             "selezionato": 6,
             "squadraA": "Napoli"
         },
@@ -743,7 +743,7 @@
             "id": 2848,
             "ruolo": "C",
             "nome": "Frattesi",
-            "quotazione": 13,
+            "quotazione": 14,
             "selezionato": 16,
             "squadraA": "Lazio"
         },
@@ -751,7 +751,7 @@
             "id": 2857,
             "ruolo": "C",
             "nome": "Traorè Hj.",
-            "quotazione": 4,
+            "quotazione": 3,
             "selezionato": 0,
             "squadraA": "Genoa"
         },
@@ -767,7 +767,7 @@
             "id": 4137,
             "ruolo": "D",
             "nome": "Diego Carlos",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Parma"
         },
@@ -775,7 +775,7 @@
             "id": 4147,
             "ruolo": "D",
             "nome": "Caleta-Car",
-            "quotazione": 6,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Sassuolo"
         },
@@ -783,7 +783,7 @@
             "id": 4159,
             "ruolo": "D",
             "nome": "Akanji",
-            "quotazione": 13,
+            "quotazione": 12,
             "selezionato": 1,
             "squadraA": "Inter"
         },
@@ -815,7 +815,7 @@
             "id": 4210,
             "ruolo": "D",
             "nome": "Mina",
-            "quotazione": 10,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Cagliari"
         },
@@ -831,7 +831,7 @@
             "id": 4236,
             "ruolo": "P",
             "nome": "Muric",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Sassuolo"
         },
@@ -847,7 +847,7 @@
             "id": 4263,
             "ruolo": "D",
             "nome": "Kabasele",
-            "quotazione": 3,
+            "quotazione": 2,
             "selezionato": 3,
             "squadraA": "Udinese"
         },
@@ -855,7 +855,7 @@
             "id": 4287,
             "ruolo": "C",
             "nome": "Lobotka",
-            "quotazione": 12,
+            "quotazione": 13,
             "selezionato": 0,
             "squadraA": "Napoli"
         },
@@ -863,7 +863,7 @@
             "id": 4312,
             "ruolo": "P",
             "nome": "Maignan",
-            "quotazione": 15,
+            "quotazione": 14,
             "selezionato": 4,
             "squadraA": "Milan"
         },
@@ -871,7 +871,7 @@
             "id": 4317,
             "ruolo": "D",
             "nome": "N'Dicka",
-            "quotazione": 11,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Roma"
         },
@@ -895,7 +895,7 @@
             "id": 4360,
             "ruolo": "P",
             "nome": "Caprile",
-            "quotazione": 14,
+            "quotazione": 13,
             "selezionato": 0,
             "squadraA": "Cagliari"
         },
@@ -903,7 +903,7 @@
             "id": 4364,
             "ruolo": "C",
             "nome": "Gaetano",
-            "quotazione": 6,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Atalanta"
         },
@@ -959,7 +959,7 @@
             "id": 4409,
             "ruolo": "D",
             "nome": "Rrahmani",
-            "quotazione": 15,
+            "quotazione": 13,
             "selezionato": 5,
             "squadraA": "Napoli"
         },
@@ -967,7 +967,7 @@
             "id": 4431,
             "ruolo": "P",
             "nome": "Carnesecchi",
-            "quotazione": 16,
+            "quotazione": 17,
             "selezionato": 1,
             "squadraA": "Atalanta"
         },
@@ -975,7 +975,7 @@
             "id": 4433,
             "ruolo": "D",
             "nome": "Zortea",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 3,
             "squadraA": "Bologna"
         },
@@ -983,7 +983,7 @@
             "id": 4436,
             "ruolo": "C",
             "nome": "Cambiaghi",
-            "quotazione": 10,
+            "quotazione": 11,
             "selezionato": 0,
             "squadraA": "Bologna"
         },
@@ -1008,7 +1008,7 @@
             "id": 4463,
             "ruolo": "A",
             "nome": "Esposito Se.",
-            "quotazione": 15,
+            "quotazione": 16,
             "selezionato": 0,
             "squadraA": "Sassuolo"
         },
@@ -1032,7 +1032,7 @@
             "id": 4479,
             "ruolo": "C",
             "nome": "Elmas",
-            "quotazione": 6,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Atalanta"
         },
@@ -1048,7 +1048,7 @@
             "id": 4502,
             "ruolo": "D",
             "nome": "Gallo",
-            "quotazione": 5,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Lecce"
         },
@@ -1081,7 +1081,7 @@
             "id": 4664,
             "ruolo": "D",
             "nome": "Badiashile",
-            "quotazione": 6,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Napoli"
         },
@@ -1098,7 +1098,7 @@
             "id": 4705,
             "ruolo": "D",
             "nome": "Balerdi",
-            "quotazione": 9,
+            "quotazione": 10,
             "selezionato": 1,
             "squadraA": "Roma"
         },
@@ -1115,7 +1115,7 @@
             "id": 4734,
             "ruolo": "D",
             "nome": "Miranda J.",
-            "quotazione": 11,
+            "quotazione": 12,
             "selezionato": 2,
             "squadraA": "Bologna"
         },
@@ -1123,7 +1123,7 @@
             "id": 4751,
             "ruolo": "D",
             "nome": "Tomori",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Milan"
         },
@@ -1140,7 +1140,7 @@
             "id": 4777,
             "ruolo": "C",
             "nome": "McTominay",
-            "quotazione": 23,
+            "quotazione": 22,
             "selezionato": 2,
             "squadraA": "Napoli"
         },
@@ -1148,7 +1148,7 @@
             "id": 4807,
             "ruolo": "D",
             "nome": "Hermoso",
-            "quotazione": 13,
+            "quotazione": 14,
             "selezionato": 0,
             "squadraA": "Roma"
         },
@@ -1172,7 +1172,7 @@
             "id": 4856,
             "ruolo": "C",
             "nome": "Chukwueze",
-            "quotazione": 10,
+            "quotazione": 11,
             "selezionato": 2,
             "squadraA": "Milan"
         },
@@ -1188,7 +1188,7 @@
             "id": 4870,
             "ruolo": "C",
             "nome": "Adopo",
-            "quotazione": 11,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Cagliari"
         },
@@ -1196,7 +1196,7 @@
             "id": 4871,
             "ruolo": "A",
             "nome": "Thuram",
-            "quotazione": 32,
+            "quotazione": 33,
             "selezionato": 2,
             "squadraA": "Inter"
         },
@@ -1228,7 +1228,7 @@
             "id": 4911,
             "ruolo": "C",
             "nome": "Douglas Luiz",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 4,
             "squadraA": "Juventus"
         },
@@ -1236,7 +1236,7 @@
             "id": 4923,
             "ruolo": "A",
             "nome": "Colombo",
-            "quotazione": 10,
+            "quotazione": 9,
             "selezionato": 3,
             "squadraA": "Genoa"
         },
@@ -1244,7 +1244,7 @@
             "id": 4925,
             "ruolo": "D",
             "nome": "Carboni A.",
-            "quotazione": 4,
+            "quotazione": 5,
             "selezionato": 1,
             "squadraA": "Monza"
         },
@@ -1261,7 +1261,7 @@
             "id": 4947,
             "ruolo": "C",
             "nome": "Brescianini",
-            "quotazione": 3,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Fiorentina"
         },
@@ -1285,7 +1285,7 @@
             "id": 4964,
             "ruolo": "P",
             "nome": "Vicario",
-            "quotazione": 16,
+            "quotazione": 14,
             "selezionato": 0,
             "squadraA": "Juventus"
         },
@@ -1293,7 +1293,7 @@
             "id": 4970,
             "ruolo": "C",
             "nome": "Messias",
-            "quotazione": 9,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Genoa"
         },
@@ -1301,7 +1301,7 @@
             "id": 4973,
             "ruolo": "C",
             "nome": "McKennie",
-            "quotazione": 14,
+            "quotazione": 13,
             "selezionato": 0,
             "squadraA": "Juventus"
         },
@@ -1309,7 +1309,7 @@
             "id": 4976,
             "ruolo": "D",
             "nome": "Kalulu",
-            "quotazione": 12,
+            "quotazione": 11,
             "selezionato": 2,
             "squadraA": "Juventus"
         },
@@ -1317,7 +1317,7 @@
             "id": 4994,
             "ruolo": "D",
             "nome": "Vojvoda",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 5,
             "squadraA": "Udinese"
         },
@@ -1325,7 +1325,7 @@
             "id": 4998,
             "ruolo": "D",
             "nome": "Molina N.",
-            "quotazione": 17,
+            "quotazione": 16,
             "selezionato": 4,
             "squadraA": "Roma"
         },
@@ -1365,7 +1365,7 @@
             "id": 5036,
             "ruolo": "C",
             "nome": "Caqueret",
-            "quotazione": 6,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Como"
         },
@@ -1373,7 +1373,7 @@
             "id": 5116,
             "ruolo": "P",
             "nome": "Martinez Jo.",
-            "quotazione": 14,
+            "quotazione": 13,
             "selezionato": 6,
             "squadraA": "Inter"
         },
@@ -1381,7 +1381,7 @@
             "id": 5119,
             "ruolo": "C",
             "nome": "Samardzic",
-            "quotazione": 14,
+            "quotazione": 13,
             "selezionato": 2,
             "squadraA": "Atalanta"
         },
@@ -1389,7 +1389,7 @@
             "id": 5131,
             "ruolo": "C",
             "nome": "Gilmour",
-            "quotazione": 7,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Napoli"
         },
@@ -1397,7 +1397,7 @@
             "id": 5172,
             "ruolo": "C",
             "nome": "Jones C.",
-            "quotazione": 12,
+            "quotazione": 11,
             "selezionato": 0,
             "squadraA": "Inter"
         },
@@ -1413,7 +1413,7 @@
             "id": 5295,
             "ruolo": "C",
             "nome": "Musah",
-            "quotazione": 5,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Milan"
         },
@@ -1421,7 +1421,7 @@
             "id": 5298,
             "ruolo": "C",
             "nome": "Pobega",
-            "quotazione": 9,
+            "quotazione": 11,
             "selezionato": 0,
             "squadraA": "Bologna"
         },
@@ -1445,7 +1445,7 @@
             "id": 5319,
             "ruolo": "C",
             "nome": "Sohm",
-            "quotazione": 4,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Venezia"
         },
@@ -1470,7 +1470,7 @@
             "id": 5365,
             "ruolo": "D",
             "nome": "Dragusin",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 2,
             "squadraA": "Fiorentina"
         },
@@ -1486,7 +1486,7 @@
             "id": 5422,
             "ruolo": "C",
             "nome": "Zalewski",
-            "quotazione": 6,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Atalanta"
         },
@@ -1511,7 +1511,7 @@
             "id": 5436,
             "ruolo": "A",
             "nome": "Raimondo",
-            "quotazione": 12,
+            "quotazione": 16,
             "selezionato": 1,
             "squadraA": "Frosinone"
         },
@@ -1535,7 +1535,7 @@
             "id": 5457,
             "ruolo": "C",
             "nome": "Maleh",
-            "quotazione": 4,
+            "quotazione": 5,
             "selezionato": 2,
             "squadraA": "Lecce"
         },
@@ -1551,7 +1551,7 @@
             "id": 5481,
             "ruolo": "D",
             "nome": "Mazzocchi",
-            "quotazione": 1,
+            "quotazione": 2,
             "selezionato": 0,
             "squadraA": "Venezia"
         },
@@ -1584,7 +1584,7 @@
             "id": 5504,
             "ruolo": "C",
             "nome": "Coulibaly L.",
-            "quotazione": 11,
+            "quotazione": 12,
             "selezionato": 0,
             "squadraA": "Lecce"
         },
@@ -1600,7 +1600,7 @@
             "id": 5514,
             "ruolo": "D",
             "nome": "Vasquez",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Genoa"
         },
@@ -1608,7 +1608,7 @@
             "id": 5520,
             "ruolo": "D",
             "nome": "Cambiaso",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 1,
             "squadraA": "Juventus"
         },
@@ -1624,7 +1624,7 @@
             "id": 5527,
             "ruolo": "D",
             "nome": "Zanoli",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Udinese"
         },
@@ -1649,7 +1649,7 @@
             "id": 5559,
             "ruolo": "C",
             "nome": "Da Cunha",
-            "quotazione": 17,
+            "quotazione": 16,
             "selezionato": 2,
             "squadraA": "Como"
         },
@@ -1673,7 +1673,7 @@
             "id": 5585,
             "ruolo": "A",
             "nome": "Malen",
-            "quotazione": 36,
+            "quotazione": 35,
             "selezionato": 24,
             "squadraA": "Roma"
         },
@@ -1689,7 +1689,7 @@
             "id": 5603,
             "ruolo": "D",
             "nome": "Pongracic",
-            "quotazione": 2,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Fiorentina"
         },
@@ -1697,7 +1697,7 @@
             "id": 5620,
             "ruolo": "D",
             "nome": "Tavares N.",
-            "quotazione": 11,
+            "quotazione": 13,
             "selezionato": 6,
             "squadraA": "Lazio"
         },
@@ -1705,7 +1705,7 @@
             "id": 5637,
             "ruolo": "A",
             "nome": "Davis K.",
-            "quotazione": 19,
+            "quotazione": 18,
             "selezionato": 0,
             "squadraA": "Udinese"
         },
@@ -1746,7 +1746,7 @@
             "id": 5678,
             "ruolo": "D",
             "nome": "Holm",
-            "quotazione": 6,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Bologna"
         },
@@ -1778,7 +1778,7 @@
             "id": 5694,
             "ruolo": "A",
             "nome": "Beto",
-            "quotazione": 13,
+            "quotazione": 12,
             "selezionato": 0,
             "squadraA": "Fiorentina"
         },
@@ -1786,7 +1786,7 @@
             "id": 5695,
             "ruolo": "D",
             "nome": "Haps",
-            "quotazione": 4,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Venezia"
         },
@@ -1794,7 +1794,7 @@
             "id": 5701,
             "ruolo": "D",
             "nome": "Obert",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Cagliari"
         },
@@ -1819,7 +1819,7 @@
             "id": 5734,
             "ruolo": "A",
             "nome": "Soulè",
-            "quotazione": 16,
+            "quotazione": 17,
             "selezionato": 0,
             "squadraA": "Roma"
         },
@@ -1851,7 +1851,7 @@
             "id": 5750,
             "ruolo": "D",
             "nome": "Ostigard",
-            "quotazione": 10,
+            "quotazione": 9,
             "selezionato": 2,
             "squadraA": "Genoa"
         },
@@ -1867,7 +1867,7 @@
             "id": 5757,
             "ruolo": "D",
             "nome": "Cittadini",
-            "quotazione": 4,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Frosinone"
         },
@@ -1891,7 +1891,7 @@
             "id": 5792,
             "ruolo": "C",
             "nome": "Ederson D.S.",
-            "quotazione": 13,
+            "quotazione": 12,
             "selezionato": 0,
             "squadraA": "Atalanta"
         },
@@ -1940,7 +1940,7 @@
             "id": 5831,
             "ruolo": "D",
             "nome": "Gatti",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 1,
             "squadraA": "Juventus"
         },
@@ -1948,7 +1948,7 @@
             "id": 5833,
             "ruolo": "D",
             "nome": "Gila",
-            "quotazione": 13,
+            "quotazione": 15,
             "selezionato": 1,
             "squadraA": "Milan"
         },
@@ -1964,7 +1964,7 @@
             "id": 5840,
             "ruolo": "D",
             "nome": "Olivera",
-            "quotazione": 4,
+            "quotazione": 3,
             "selezionato": 0,
             "squadraA": "Napoli"
         },
@@ -1980,7 +1980,7 @@
             "id": 5844,
             "ruolo": "C",
             "nome": "Thorstvedt",
-            "quotazione": 9,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Sassuolo"
         },
@@ -1996,7 +1996,7 @@
             "id": 5851,
             "ruolo": "D",
             "nome": "Doig",
-            "quotazione": 9,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Sassuolo"
         },
@@ -2004,7 +2004,7 @@
             "id": 5858,
             "ruolo": "C",
             "nome": "Ferguson",
-            "quotazione": 9,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Bologna"
         },
@@ -2020,7 +2020,7 @@
             "id": 5872,
             "ruolo": "C",
             "nome": "Helgason",
-            "quotazione": 2,
+            "quotazione": 3,
             "selezionato": 1,
             "squadraA": "Venezia"
         },
@@ -2037,7 +2037,7 @@
             "id": 5877,
             "ruolo": "D",
             "nome": "Carlos Augusto",
-            "quotazione": 12,
+            "quotazione": 14,
             "selezionato": 3,
             "squadraA": "Inter"
         },
@@ -2045,7 +2045,7 @@
             "id": 5878,
             "ruolo": "C",
             "nome": "Colpani",
-            "quotazione": 8,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Monza"
         },
@@ -2061,7 +2061,7 @@
             "id": 5882,
             "ruolo": "A",
             "nome": "Mota",
-            "quotazione": 8,
+            "quotazione": 10,
             "selezionato": 1,
             "squadraA": "Monza"
         },
@@ -2093,7 +2093,7 @@
             "id": 5946,
             "ruolo": "C",
             "nome": "Sow",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Genoa"
         },
@@ -2101,7 +2101,7 @@
             "id": 5951,
             "ruolo": "A",
             "nome": "Kolo Muani",
-            "quotazione": 23,
+            "quotazione": 22,
             "selezionato": 7,
             "squadraA": "Juventus"
         },
@@ -2109,7 +2109,7 @@
             "id": 5982,
             "ruolo": "D",
             "nome": "Spence",
-            "quotazione": 10,
+            "quotazione": 9,
             "selezionato": 4,
             "squadraA": "Inter"
         },
@@ -2125,7 +2125,7 @@
             "id": 5995,
             "ruolo": "A",
             "nome": "De Ketelaere",
-            "quotazione": 15,
+            "quotazione": 14,
             "selezionato": 1,
             "squadraA": "Atalanta"
         },
@@ -2149,7 +2149,7 @@
             "id": 6010,
             "ruolo": "C",
             "nome": "Fazzini",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 2,
             "squadraA": "Cagliari"
         },
@@ -2181,7 +2181,7 @@
             "id": 6024,
             "ruolo": "C",
             "nome": "Sulemana I.",
-            "quotazione": 3,
+            "quotazione": 2,
             "selezionato": 0,
             "squadraA": "Sassuolo"
         },
@@ -2197,7 +2197,7 @@
             "id": 6042,
             "ruolo": "D",
             "nome": "Lucumì",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 2,
             "squadraA": "Juventus"
         },
@@ -2205,7 +2205,7 @@
             "id": 6046,
             "ruolo": "D",
             "nome": "Hien",
-            "quotazione": 6,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Atalanta"
         },
@@ -2221,7 +2221,7 @@
             "id": 6052,
             "ruolo": "A",
             "nome": "Hojlund",
-            "quotazione": 26,
+            "quotazione": 25,
             "selezionato": 1,
             "squadraA": "Napoli"
         },
@@ -2237,7 +2237,7 @@
             "id": 6060,
             "ruolo": "A",
             "nome": "Laurientè",
-            "quotazione": 16,
+            "quotazione": 15,
             "selezionato": 0,
             "squadraA": "Sassuolo"
         },
@@ -2302,7 +2302,7 @@
             "id": 6190,
             "ruolo": "C",
             "nome": "Pisilli",
-            "quotazione": 9,
+            "quotazione": 10,
             "selezionato": 1,
             "squadraA": "Roma"
         },
@@ -2310,7 +2310,7 @@
             "id": 6191,
             "ruolo": "C",
             "nome": "Belahyane",
-            "quotazione": 6,
+            "quotazione": 8,
             "selezionato": 4,
             "squadraA": "Lazio"
         },
@@ -2326,7 +2326,7 @@
             "id": 6204,
             "ruolo": "A",
             "nome": "Kvernadze",
-            "quotazione": 12,
+            "quotazione": 13,
             "selezionato": 5,
             "squadraA": "Frosinone"
         },
@@ -2342,7 +2342,7 @@
             "id": 6207,
             "ruolo": "C",
             "nome": "Almqvist",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Parma"
         },
@@ -2398,7 +2398,7 @@
             "id": 6229,
             "ruolo": "A",
             "nome": "Tourè E.",
-            "quotazione": 10,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Parma"
         },
@@ -2406,7 +2406,7 @@
             "id": 6238,
             "ruolo": "D",
             "nome": "Oyono A.",
-            "quotazione": 10,
+            "quotazione": 11,
             "selezionato": 1,
             "squadraA": "Frosinone"
         },
@@ -2457,7 +2457,7 @@
             "id": 6248,
             "ruolo": "P",
             "nome": "Stankovic F.",
-            "quotazione": 4,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Venezia"
         },
@@ -2482,7 +2482,7 @@
             "id": 6274,
             "ruolo": "C",
             "nome": "Diouf",
-            "quotazione": 12,
+            "quotazione": 13,
             "selezionato": 1,
             "squadraA": "Inter"
         },
@@ -2490,7 +2490,7 @@
             "id": 6294,
             "ruolo": "C",
             "nome": "Ndour",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 1,
             "squadraA": "Fiorentina"
         },
@@ -2506,7 +2506,7 @@
             "id": 6320,
             "ruolo": "D",
             "nome": "Doekhi",
-            "quotazione": 9,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Lazio"
         },
@@ -2522,7 +2522,7 @@
             "id": 6372,
             "ruolo": "C",
             "nome": "Moreira",
-            "quotazione": 16,
+            "quotazione": 17,
             "selezionato": 6,
             "squadraA": "Milan"
         },
@@ -2530,7 +2530,7 @@
             "id": 6397,
             "ruolo": "A",
             "nome": "Ramos G.",
-            "quotazione": 24,
+            "quotazione": 23,
             "selezionato": 10,
             "squadraA": "Milan"
         },
@@ -2538,7 +2538,7 @@
             "id": 6398,
             "ruolo": "C",
             "nome": "Isaksen",
-            "quotazione": 10,
+            "quotazione": 12,
             "selezionato": 0,
             "squadraA": "Lazio"
         },
@@ -2562,7 +2562,7 @@
             "id": 6415,
             "ruolo": "P",
             "nome": "Palmisani",
-            "quotazione": 9,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Frosinone"
         },
@@ -2588,7 +2588,7 @@
             "id": 6434,
             "ruolo": "A",
             "nome": "Yildiz",
-            "quotazione": 19,
+            "quotazione": 18,
             "selezionato": 1,
             "squadraA": "Juventus"
         },
@@ -2596,7 +2596,7 @@
             "id": 6435,
             "ruolo": "A",
             "nome": "Krstovic",
-            "quotazione": 19,
+            "quotazione": 21,
             "selezionato": 0,
             "squadraA": "Atalanta"
         },
@@ -2604,7 +2604,7 @@
             "id": 6462,
             "ruolo": "P",
             "nome": "Okoye",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Udinese"
         },
@@ -2612,7 +2612,7 @@
             "id": 6482,
             "ruolo": "P",
             "nome": "Mandas",
-            "quotazione": 14,
+            "quotazione": 15,
             "selezionato": 0,
             "squadraA": "Lazio"
         },
@@ -2628,7 +2628,7 @@
             "id": 6495,
             "ruolo": "D",
             "nome": "Comuzzo",
-            "quotazione": 8,
+            "quotazione": 9,
             "selezionato": 2,
             "squadraA": "Torino"
         },
@@ -2677,7 +2677,7 @@
             "id": 6530,
             "ruolo": "A",
             "nome": "Ghedjemis",
-            "quotazione": 10,
+            "quotazione": 11,
             "selezionato": 0,
             "squadraA": "Frosinone"
         },
@@ -2685,7 +2685,7 @@
             "id": 6531,
             "ruolo": "D",
             "nome": "Jimenez A.",
-            "quotazione": 11,
+            "quotazione": 12,
             "selezionato": 3,
             "squadraA": "Fiorentina"
         },
@@ -2693,7 +2693,7 @@
             "id": 6534,
             "ruolo": "P",
             "nome": "Perri",
-            "quotazione": 9,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Torino"
         },
@@ -2701,7 +2701,7 @@
             "id": 6537,
             "ruolo": "D",
             "nome": "Goglichidze",
-            "quotazione": 4,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Monza"
         },
@@ -2733,7 +2733,7 @@
             "id": 6572,
             "ruolo": "A",
             "nome": "Castro S.",
-            "quotazione": 12,
+            "quotazione": 14,
             "selezionato": 2,
             "squadraA": "Roma"
         },
@@ -2749,7 +2749,7 @@
             "id": 6593,
             "ruolo": "C",
             "nome": "Akinsanmiro",
-            "quotazione": 8,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Monza"
         },
@@ -2782,7 +2782,7 @@
             "id": 6629,
             "ruolo": "C",
             "nome": "Dele-Bashiru",
-            "quotazione": 4,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Lazio"
         },
@@ -2798,7 +2798,7 @@
             "id": 6632,
             "ruolo": "D",
             "nome": "Gaspar K.",
-            "quotazione": 4,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Lecce"
         },
@@ -2831,7 +2831,7 @@
             "id": 6642,
             "ruolo": "D",
             "nome": "Coco",
-            "quotazione": 8,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Torino"
         },
@@ -2848,7 +2848,7 @@
             "id": 6646,
             "ruolo": "A",
             "nome": "Adams C.",
-            "quotazione": 12,
+            "quotazione": 14,
             "selezionato": 0,
             "squadraA": "Torino"
         },
@@ -2864,7 +2864,7 @@
             "id": 6659,
             "ruolo": "D",
             "nome": "Lucchesi",
-            "quotazione": 4,
+            "quotazione": 3,
             "selezionato": 0,
             "squadraA": "Monza"
         },
@@ -2880,7 +2880,7 @@
             "id": 6662,
             "ruolo": "P",
             "nome": "Corvi",
-            "quotazione": 5,
+            "quotazione": 6,
             "selezionato": 2,
             "squadraA": "Parma"
         },
@@ -2897,7 +2897,7 @@
             "id": 6664,
             "ruolo": "D",
             "nome": "Delprato",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Parma"
         },
@@ -2913,7 +2913,7 @@
             "id": 6669,
             "ruolo": "A",
             "nome": "Bonny",
-            "quotazione": 9,
+            "quotazione": 11,
             "selezionato": 2,
             "squadraA": "Inter"
         },
@@ -2945,7 +2945,7 @@
             "id": 6675,
             "ruolo": "A",
             "nome": "Dovbyk",
-            "quotazione": 14,
+            "quotazione": 13,
             "selezionato": 0,
             "squadraA": "Bologna"
         },
@@ -2961,7 +2961,7 @@
             "id": 6678,
             "ruolo": "C",
             "nome": "Liberali",
-            "quotazione": 5,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Como"
         },
@@ -2977,7 +2977,7 @@
             "id": 6681,
             "ruolo": "D",
             "nome": "Sagrado",
-            "quotazione": 6,
+            "quotazione": 5,
             "selezionato": 1,
             "squadraA": "Venezia"
         },
@@ -3010,7 +3010,7 @@
             "id": 6727,
             "ruolo": "D",
             "nome": "Couto",
-            "quotazione": 9,
+            "quotazione": 8,
             "selezionato": 1,
             "squadraA": "Como"
         },
@@ -3034,7 +3034,7 @@
             "id": 6783,
             "ruolo": "C",
             "nome": "Unai Gomez",
-            "quotazione": 6,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Udinese"
         },
@@ -3075,7 +3075,7 @@
             "id": 6821,
             "ruolo": "D",
             "nome": "Hainaut",
-            "quotazione": 10,
+            "quotazione": 11,
             "selezionato": 3,
             "squadraA": "Venezia"
         },
@@ -3099,7 +3099,7 @@
             "id": 6827,
             "ruolo": "C",
             "nome": "Njie",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Fiorentina"
         },
@@ -3123,7 +3123,7 @@
             "id": 6844,
             "ruolo": "C",
             "nome": "Rowe",
-            "quotazione": 9,
+            "quotazione": 8,
             "selezionato": 2,
             "squadraA": "Atalanta"
         },
@@ -3131,7 +3131,7 @@
             "id": 6867,
             "ruolo": "D",
             "nome": "Valle",
-            "quotazione": 8,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Como"
         },
@@ -3139,7 +3139,7 @@
             "id": 6869,
             "ruolo": "D",
             "nome": "Ramon",
-            "quotazione": 13,
+            "quotazione": 14,
             "selezionato": 1,
             "squadraA": "Como"
         },
@@ -3147,7 +3147,7 @@
             "id": 6875,
             "ruolo": "C",
             "nome": "Paz N.",
-            "quotazione": 28,
+            "quotazione": 29,
             "selezionato": 7,
             "squadraA": "Como"
         },
@@ -3188,7 +3188,7 @@
             "id": 6892,
             "ruolo": "D",
             "nome": "Schingtienne",
-            "quotazione": 2,
+            "quotazione": 3,
             "selezionato": 3,
             "squadraA": "Venezia"
         },
@@ -3196,7 +3196,7 @@
             "id": 6893,
             "ruolo": "D",
             "nome": "Kempf",
-            "quotazione": 5,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Como"
         },
@@ -3204,7 +3204,7 @@
             "id": 6895,
             "ruolo": "C",
             "nome": "Dominguez B.",
-            "quotazione": 5,
+            "quotazione": 6,
             "selezionato": 1,
             "squadraA": "Sassuolo"
         },
@@ -3236,7 +3236,7 @@
             "id": 6904,
             "ruolo": "A",
             "nome": "Yeboah J.",
-            "quotazione": 8,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Venezia"
         },
@@ -3244,7 +3244,7 @@
             "id": 6908,
             "ruolo": "C",
             "nome": "Atta",
-            "quotazione": 14,
+            "quotazione": 13,
             "selezionato": 1,
             "squadraA": "Fiorentina"
         },
@@ -3261,7 +3261,7 @@
             "id": 6917,
             "ruolo": "C",
             "nome": "Masini",
-            "quotazione": 7,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Frosinone"
         },
@@ -3277,7 +3277,7 @@
             "id": 6956,
             "ruolo": "D",
             "nome": "Solet",
-            "quotazione": 12,
+            "quotazione": 10,
             "selezionato": 3,
             "squadraA": "Udinese"
         },
@@ -3301,7 +3301,7 @@
             "id": 6977,
             "ruolo": "D",
             "nome": "Otoa",
-            "quotazione": 3,
+            "quotazione": 2,
             "selezionato": 0,
             "squadraA": "Genoa"
         },
@@ -3343,7 +3343,7 @@
             "id": 6986,
             "ruolo": "D",
             "nome": "Rensch",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Roma"
         },
@@ -3351,7 +3351,7 @@
             "id": 6989,
             "ruolo": "D",
             "nome": "Tiago Gabriel",
-            "quotazione": 10,
+            "quotazione": 11,
             "selezionato": 1,
             "squadraA": "Lecce"
         },
@@ -3359,7 +3359,7 @@
             "id": 6990,
             "ruolo": "D",
             "nome": "Veiga D.",
-            "quotazione": 8,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Lecce"
         },
@@ -3375,7 +3375,7 @@
             "id": 7001,
             "ruolo": "A",
             "nome": "N'Dri",
-            "quotazione": 4,
+            "quotazione": 7,
             "selezionato": 2,
             "squadraA": "Lecce"
         },
@@ -3392,7 +3392,7 @@
             "id": 7012,
             "ruolo": "D",
             "nome": "Provstgaard",
-            "quotazione": 4,
+            "quotazione": 7,
             "selezionato": 2,
             "squadraA": "Lazio"
         },
@@ -3400,7 +3400,7 @@
             "id": 7014,
             "ruolo": "D",
             "nome": "Smolcic I.",
-            "quotazione": 2,
+            "quotazione": 3,
             "selezionato": 0,
             "squadraA": "Como"
         },
@@ -3408,7 +3408,7 @@
             "id": 7017,
             "ruolo": "A",
             "nome": "Douvikas",
-            "quotazione": 22,
+            "quotazione": 23,
             "selezionato": 3,
             "squadraA": "Como"
         },
@@ -3416,7 +3416,7 @@
             "id": 7023,
             "ruolo": "A",
             "nome": "Pellegrino M.",
-            "quotazione": 16,
+            "quotazione": 15,
             "selezionato": 0,
             "squadraA": "Fiorentina"
         },
@@ -3433,7 +3433,7 @@
             "id": 7036,
             "ruolo": "C",
             "nome": "Bakola",
-            "quotazione": 9,
+            "quotazione": 11,
             "selezionato": 1,
             "squadraA": "Sassuolo"
         },
@@ -3449,7 +3449,7 @@
             "id": 7060,
             "ruolo": "C",
             "nome": "Cacciamani",
-            "quotazione": 9,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Torino"
         },
@@ -3505,7 +3505,7 @@
             "id": 7120,
             "ruolo": "A",
             "nome": "Lang",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 2,
             "squadraA": "Napoli"
         },
@@ -3521,7 +3521,7 @@
             "id": 7126,
             "ruolo": "C",
             "nome": "Baturina",
-            "quotazione": 21,
+            "quotazione": 20,
             "selezionato": 8,
             "squadraA": "Como"
         },
@@ -3546,7 +3546,7 @@
             "id": 7129,
             "ruolo": "C",
             "nome": "Rodriguez Je.",
-            "quotazione": 10,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Como"
         },
@@ -3554,7 +3554,7 @@
             "id": 7131,
             "ruolo": "D",
             "nome": "Floriani Mussolini",
-            "quotazione": 4,
+            "quotazione": 5,
             "selezionato": 4,
             "squadraA": "Lazio"
         },
@@ -3562,7 +3562,7 @@
             "id": 7138,
             "ruolo": "C",
             "nome": "Ordonez C.",
-            "quotazione": 3,
+            "quotazione": 2,
             "selezionato": 0,
             "squadraA": "Parma"
         },
@@ -3612,7 +3612,7 @@
             "id": 7161,
             "ruolo": "A",
             "nome": "Bayo V.",
-            "quotazione": 2,
+            "quotazione": 1,
             "selezionato": 4,
             "squadraA": "Udinese"
         },
@@ -3620,7 +3620,7 @@
             "id": 7162,
             "ruolo": "A",
             "nome": "Giovane",
-            "quotazione": 5,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Napoli"
         },
@@ -3677,7 +3677,7 @@
             "id": 7183,
             "ruolo": "C",
             "nome": "Aboukhlal",
-            "quotazione": 2,
+            "quotazione": 3,
             "selezionato": 0,
             "squadraA": "Torino"
         },
@@ -3701,7 +3701,7 @@
             "id": 7203,
             "ruolo": "C",
             "nome": "Jashari",
-            "quotazione": 4,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Milan"
         },
@@ -3709,7 +3709,7 @@
             "id": 7208,
             "ruolo": "C",
             "nome": "Miller L.",
-            "quotazione": 4,
+            "quotazione": 3,
             "selezionato": 0,
             "squadraA": "Udinese"
         },
@@ -3735,7 +3735,7 @@
             "id": 7212,
             "ruolo": "D",
             "nome": "Heggem",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 2,
             "squadraA": "Bologna"
         },
@@ -3743,7 +3743,7 @@
             "id": 7213,
             "ruolo": "A",
             "nome": "Frigan",
-            "quotazione": 3,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Parma"
         },
@@ -3759,7 +3759,7 @@
             "id": 7220,
             "ruolo": "D",
             "nome": "Belghali",
-            "quotazione": 7,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Torino"
         },
@@ -3767,7 +3767,7 @@
             "id": 7223,
             "ruolo": "C",
             "nome": "Vergara",
-            "quotazione": 9,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Napoli"
         },
@@ -3783,7 +3783,7 @@
             "id": 7235,
             "ruolo": "D",
             "nome": "Troilo",
-            "quotazione": 4,
+            "quotazione": 3,
             "selezionato": 2,
             "squadraA": "Parma"
         },
@@ -3791,7 +3791,7 @@
             "id": 7238,
             "ruolo": "D",
             "nome": "Kouadio",
-            "quotazione": 4,
+            "quotazione": 7,
             "selezionato": 5,
             "squadraA": "Monza"
         },
@@ -3799,7 +3799,7 @@
             "id": 7240,
             "ruolo": "D",
             "nome": "Siebert",
-            "quotazione": 4,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Lecce"
         },
@@ -3888,7 +3888,7 @@
             "id": 7294,
             "ruolo": "D",
             "nome": "Valdepenas",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 4,
             "squadraA": "Fiorentina"
         },
@@ -3896,7 +3896,7 @@
             "id": 7301,
             "ruolo": "P",
             "nome": "Tornqvist",
-            "quotazione": 2,
+            "quotazione": 5,
             "selezionato": 1,
             "squadraA": "Monza"
         },
@@ -3904,7 +3904,7 @@
             "id": 7311,
             "ruolo": "C",
             "nome": "Romano",
-            "quotazione": 11,
+            "quotazione": 12,
             "selezionato": 0,
             "squadraA": "Cagliari"
         },
@@ -3929,7 +3929,7 @@
             "id": 7314,
             "ruolo": "C",
             "nome": "Taylor K.",
-            "quotazione": 13,
+            "quotazione": 12,
             "selezionato": 0,
             "squadraA": "Lazio"
         },
@@ -4010,7 +4010,7 @@
             "id": 7341,
             "ruolo": "C",
             "nome": "Amorim",
-            "quotazione": 4,
+            "quotazione": 3,
             "selezionato": 0,
             "squadraA": "Genoa"
         },
@@ -4018,7 +4018,7 @@
             "id": 7342,
             "ruolo": "A",
             "nome": "Elphege",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 1,
             "squadraA": "Parma"
         },
@@ -4051,7 +4051,7 @@
             "id": 7349,
             "ruolo": "A",
             "nome": "Kulenovic",
-            "quotazione": 9,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Torino"
         },
@@ -4059,7 +4059,7 @@
             "id": 7351,
             "ruolo": "A",
             "nome": "Santos A.",
-            "quotazione": 12,
+            "quotazione": 11,
             "selezionato": 0,
             "squadraA": "Napoli"
         },
@@ -4092,7 +4092,7 @@
             "id": 7374,
             "ruolo": "A",
             "nome": "Mendy P.",
-            "quotazione": 10,
+            "quotazione": 11,
             "selezionato": 0,
             "squadraA": "Cagliari"
         },
@@ -4143,7 +4143,7 @@
             "id": 7410,
             "ruolo": "D",
             "nome": "Viery",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 1,
             "squadraA": "Fiorentina"
         },
@@ -4151,7 +4151,7 @@
             "id": 7411,
             "ruolo": "P",
             "nome": "Daffara",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Parma"
         },
@@ -4159,7 +4159,7 @@
             "id": 7412,
             "ruolo": "C",
             "nome": "Milla",
-            "quotazione": 6,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Como"
         },
@@ -4175,7 +4175,7 @@
             "id": 7414,
             "ruolo": "D",
             "nome": "Kaiki",
-            "quotazione": 10,
+            "quotazione": 11,
             "selezionato": 0,
             "squadraA": "Como"
         },
@@ -4191,7 +4191,7 @@
             "id": 7436,
             "ruolo": "C",
             "nome": "Alajbegovic",
-            "quotazione": 11,
+            "quotazione": 12,
             "selezionato": 4,
             "squadraA": "Juventus"
         },
@@ -4247,7 +4247,7 @@
             "id": 7464,
             "ruolo": "C",
             "nome": "Oulai",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Fiorentina"
         },
@@ -4280,7 +4280,7 @@
             "id": 7469,
             "ruolo": "D",
             "nome": "Bracaglia",
-            "quotazione": 10,
+            "quotazione": 11,
             "selezionato": 0,
             "squadraA": "Frosinone"
         },
@@ -4306,7 +4306,7 @@
             "id": 7472,
             "ruolo": "C",
             "nome": "Calò",
-            "quotazione": 12,
+            "quotazione": 14,
             "selezionato": 5,
             "squadraA": "Frosinone"
         },
@@ -4339,7 +4339,7 @@
             "id": 7476,
             "ruolo": "D",
             "nome": "Bakoune",
-            "quotazione": 4,
+            "quotazione": 3,
             "selezionato": 0,
             "squadraA": "Monza"
         },
@@ -4387,7 +4387,7 @@
             "id": 7484,
             "ruolo": "A",
             "nome": "Adams A.",
-            "quotazione": 11,
+            "quotazione": 13,
             "selezionato": 1,
             "squadraA": "Venezia"
         },
@@ -4395,7 +4395,7 @@
             "id": 7485,
             "ruolo": "D",
             "nome": "Mangas",
-            "quotazione": 11,
+            "quotazione": 13,
             "selezionato": 3,
             "squadraA": "Monza"
         },
@@ -4403,7 +4403,7 @@
             "id": 7523,
             "ruolo": "A",
             "nome": "Varela G.",
-            "quotazione": 11,
+            "quotazione": 14,
             "selezionato": 5,
             "squadraA": "Monza"
         },
@@ -4451,7 +4451,7 @@
             "id": 7532,
             "ruolo": "D",
             "nome": "Kofler",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 0,
             "squadraA": "Cagliari"
         },
@@ -4475,7 +4475,7 @@
             "id": 7535,
             "ruolo": "C",
             "nome": "Fitz-Jim",
-            "quotazione": 6,
+            "quotazione": 5,
             "selezionato": 4,
             "squadraA": "Torino"
         },
@@ -4499,7 +4499,7 @@
             "id": 7538,
             "ruolo": "D",
             "nome": "Halhal",
-            "quotazione": 2,
+            "quotazione": 3,
             "selezionato": 0,
             "squadraA": "Venezia"
         },
@@ -4524,7 +4524,7 @@
             "id": 7546,
             "ruolo": "A",
             "nome": "Robinson J.",
-            "quotazione": 7,
+            "quotazione": 10,
             "selezionato": 0,
             "squadraA": "Monza"
         },
@@ -4532,7 +4532,7 @@
             "id": 7547,
             "ruolo": "A",
             "nome": "Kevin Carlos",
-            "quotazione": 10,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Cagliari"
         },
@@ -4556,7 +4556,7 @@
             "id": 7551,
             "ruolo": "C",
             "nome": "Schmid",
-            "quotazione": 12,
+            "quotazione": 13,
             "selezionato": 0,
             "squadraA": "Frosinone"
         },
@@ -4564,7 +4564,7 @@
             "id": 7553,
             "ruolo": "D",
             "nome": "Omar Fayed",
-            "quotazione": 1,
+            "quotazione": 2,
             "selezionato": 0,
             "squadraA": "Frosinone"
         },
@@ -4572,7 +4572,7 @@
             "id": 7554,
             "ruolo": "A",
             "nome": "Romero D.",
-            "quotazione": 14,
+            "quotazione": 15,
             "selezionato": 0,
             "squadraA": "Parma"
         },
@@ -4604,7 +4604,7 @@
             "id": 7561,
             "ruolo": "A",
             "nome": "Lontani",
-            "quotazione": 7,
+            "quotazione": 8,
             "selezionato": 7,
             "squadraA": "Parma"
         },
@@ -4652,7 +4652,7 @@
             "id": 7573,
             "ruolo": "D",
             "nome": "Cinquegrano",
-            "quotazione": 5,
+            "quotazione": 4,
             "selezionato": 1,
             "squadraA": "Sassuolo"
         },
@@ -4660,7 +4660,7 @@
             "id": 7574,
             "ruolo": "C",
             "nome": "Foe Ondoa",
-            "quotazione": 2,
+            "quotazione": 5,
             "selezionato": 0,
             "squadraA": "Monza"
         },
@@ -4684,7 +4684,7 @@
             "id": 7580,
             "ruolo": "D",
             "nome": "Sutalo J.",
-            "quotazione": 7,
+            "quotazione": 8,
             "selezionato": 0,
             "squadraA": "Lazio"
         },
@@ -4692,7 +4692,7 @@
             "id": 7599,
             "ruolo": "D",
             "nome": "Lulli",
-            "quotazione": 3,
+            "quotazione": 6,
             "selezionato": 1,
             "squadraA": "Roma"
         },
@@ -4748,7 +4748,7 @@
             "id": 7610,
             "ruolo": "A",
             "nome": "Birligea",
-            "quotazione": 4,
+            "quotazione": 3,
             "selezionato": 0,
             "squadraA": "Frosinone"
         },
@@ -4764,7 +4764,7 @@
             "id": 7612,
             "ruolo": "A",
             "nome": "Bobcek",
-            "quotazione": 8,
+            "quotazione": 7,
             "selezionato": 0,
             "squadraA": "Frosinone"
         },
@@ -4796,7 +4796,7 @@
             "id": 7620,
             "ruolo": "A",
             "nome": "Zeballos",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Monza"
         },
@@ -4804,7 +4804,7 @@
             "id": 7621,
             "ruolo": "D",
             "nome": "Sugawara",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Cagliari"
         },
@@ -4820,7 +4820,7 @@
             "id": 7623,
             "ruolo": "A",
             "nome": "Gnonto",
-            "quotazione": 7,
+            "quotazione": 6,
             "selezionato": 0,
             "squadraA": "Fiorentina"
         },
@@ -4828,7 +4828,7 @@
             "id": 7624,
             "ruolo": "C",
             "nome": "Braganca",
-            "quotazione": 8,
+            "quotazione": 9,
             "selezionato": 0,
             "squadraA": "Torino"
         },
@@ -4836,7 +4836,7 @@
             "id": 7625,
             "ruolo": "C",
             "nome": "Goncalves P.",
-            "quotazione": 11,
+            "quotazione": 10,
             "selezionato": 1,
             "squadraA": "Fiorentina"
         },
