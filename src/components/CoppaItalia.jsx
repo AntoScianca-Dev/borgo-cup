@@ -6,6 +6,7 @@ import { Chip, Raccordo, Fila, Partita, Logo, SwitchVista, Calendario } from './
 import { vincitore } from '../hooks/partiteUtils'
 import { CalendarDaysIcon } from '@heroicons/react/24/outline'
 import IconaTabellone from './IconaTabellone'
+import headerC from '../assets/image/header_coppaIta.png'
 
 const COMPETIZIONE_ID = 5
 
@@ -123,7 +124,12 @@ export default function CoppaItalia() {
         <div className="max-w-4xl mx-auto space-y-6 px-3 pb-6">
             {/* Header */}
             <Link to="/competizioni" className="block">
-                <h1 className="py-6 rounded-tl-4xl rounded-br-4xl bg-linear-to-br from-sky-900 via-sky-700 to-sky-500 text-sky-50 shadow-lg">
+                <h1 className=" py-2 md:py-6 rounded-tl-4xl rounded-br-4xl bg-linear-to-br from-sky-900 via-sky-700 to-sky-500 text-sky-50 shadow-lg"
+                    style={{
+                    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${headerC})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'bottom',
+                }}>
                     <span className="flex justify-evenly items-center gap-1">
                         {competizione?.img && (
                             <img src={competizione.img} alt="" className="w-16 h-16 object-contain" />

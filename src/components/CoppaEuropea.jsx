@@ -6,6 +6,9 @@ import { Calendario, Chip, Fila, Logo, Partita, Raccordo, SwitchVista } from './
 import { vincitore } from '../hooks/partiteUtils'
 import { CalendarDaysIcon, TableCellsIcon } from '@heroicons/react/24/outline'
 import IconaTabellone from './IconaTabellone'
+import headerChL from '../assets/image/header_championsL.png'
+import headerEuL from '../assets/image/header_europaL.png'
+import headerCoL from '../assets/image/header_conferenceL.png'
 
 const GIRONI = ['A', 'B']
 const NOMI_GIORNATE = ['Andata · 1ª', 'Andata · 2ª', 'Andata · 3ª', 'Ritorno · 1ª', 'Ritorno · 2ª', 'Ritorno · 3ª']
@@ -36,6 +39,7 @@ const ZONA = {
 // Per ogni competizione: chi si qualifica dai gironi e struttura del tabellone (slot del primo turno = posizioni di girone)
 const CONFIG = {
     11: {
+        header: headerChL,
         qualifica: [
             { da: 1, a: 2, nome: 'Qualificata fase finale', ...ZONA.qualificata },
             { da: 3, a: 3, nome: 'Qualificata fase finale Europa League', ...ZONA.europa },
@@ -46,6 +50,7 @@ const CONFIG = {
         ],
     },
     12: {
+        header: headerEuL,
         qualifica: [{ da: 1, a: 3, nome: 'Qualificata fase finale', ...ZONA.qualificata }],
         tabellone: [
             { nome: 'Quarti di finale', slot: [['1A', '3B'], ['3CHA', '2B'], ['1B', '3A'], ['3CHB', '2A']] },
@@ -54,6 +59,7 @@ const CONFIG = {
         ],
     },
     13: {
+        header: headerCoL,
         qualifica: [{ da: 1, a: 2, nome: 'Qualificata fase finale', ...ZONA.qualificata }],
         tabellone: [
             { nome: 'Semifinali', slot: [['1A', '2B'], ['1B', '2A']] },
@@ -246,7 +252,12 @@ export default function CoppaEuropea({ id }) {
     return (
         <div className="max-w-4xl mx-auto space-y-6 px-3 pb-6">
             <Link to="/competizioni" className="block">
-                <h1 className="py-6 rounded-tl-4xl rounded-br-4xl bg-linear-to-br from-sky-900 via-sky-700 to-sky-500 text-sky-50 shadow-lg">
+                <h1
+                    className="py-6 rounded-tl-4xl rounded-br-4xl text-sky-50 shadow-lg bg-cover bg-center"
+                    style={{
+                        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${config.header}), linear-gradient(135deg, #0c4a6e, #0369a1, #0ea5e9)`,
+                    }}
+                >
                     <span className="flex flex-col items-center gap-1">
                         {competizione?.img && <img src={competizione.img} alt="" className="w-16 h-16 object-contain" />}
                         <span className="text-3xl sm:text-4xl font-medium tracking-tight drop-shadow">{coppa.nome}</span>

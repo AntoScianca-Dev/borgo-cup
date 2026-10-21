@@ -50,12 +50,13 @@
             "gInizio": 8,
             "inizio": "8' giornata di serie A",
             "fine": "32' giornata di serie A",
-            "avanzamento": 0,
+            "avanzamento": 0.0,
             "totale": 9,
             "giornata": 0,
             "img": "/images/coppa_Italia.png",
             "link": "/coppaIta",
-            "squadre": 24
+            "squadre": 24,
+            "info": "SI"
         },
         {
             "id": 6,

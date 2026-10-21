@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { vincitore, codice } from '../hooks/partiteUtils'
+import { colonneConfronto, risultatoConfronto, vincitore, codice } from '../hooks/partiteUtils'
 
 // Se la squadra non è ancora nota mostra l'etichetta dello slot (es. "1A", "V1")
 function Lato({ sq, etichetta, vince, perde, grande }) {
@@ -24,6 +24,7 @@ function Lato({ sq, etichetta, vince, perde, grande }) {
 
 export function Partita({ match, etichette, grande = false, titolo }) {
     const v = vincitore(match)
+    const r = risultatoConfronto(match)
 
     return (
         <div
@@ -43,13 +44,18 @@ export function Partita({ match, etichette, grande = false, titolo }) {
                 </div>
 
                 <div className="mt-1 border-t border-sky-100 pt-0.5 text-center">
-                    {match?.conclusa ? (
+                    {r ? (
                         <>
                             <p className={`font-black tabular-nums leading-tight ${grande ? 'text-2xl' : 'text-sm sm:text-base'}`}>
-                                <span className={v === 'ospite' ? 'text-gray-400' : 'text-gray-900'}>{match.golCasa}</span>
+                                <span className={v === 'ospite' ? 'text-gray-400' : 'text-gray-900'}>{r.casa}</span>
                                 <span className="text-gray-300"> : </span>
-                                <span className={v === 'casa' ? 'text-gray-400' : 'text-gray-900'}>{match.golOspite}</span>
+                                <span className={v === 'casa' ? 'text-gray-400' : 'text-gray-900'}>{r.ospite}</span>
                             </p>
+                            {r.etichetta && (
+                                <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wide text-amber-600">
+                                    {r.etichetta}
+                                </p>
+                            )}
                             {match.rigoriCasa != null && (
                                 <p className="text-[9px] sm:text-[10px] text-gray-500">
                                     rig. {match.rigoriCasa}-{match.rigoriOspite}
@@ -147,36 +153,18 @@ export function Calendario({ turni }) {
             </div>
 
             {partite.length === 0 ? (
-                <p className="text-center text-gray-400 py-10 text-sm">Turno da definire</p>
+                <div className="flex text-gray-400 flex-col justify-center items-center">
+                    <p className="text-center">Turno da definire</p>
+                    <svg width="4rem" height="4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2V6M12 18V22M6 12H2M22 12H18M19.0784 19.0784L16.25 16.25M19.0784 4.99994L16.25 7.82837M4.92157 19.0784L7.75 16.25M4.92157 4.99994L7.75 7.82837" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {partite.map((m, k) => {
-                        const v = vincitore(m)
-                        return (
-                            <div
-                                key={m.id ?? k}
-                                className={`min-w-0 rounded-2xl bg-white shadow-md border-l-8 overflow-hidden ${
-                                    m.conclusa ? 'border-emerald-500' : 'border-amber-400'
-                                }`}
-                            >
-                                <div className="flex items-center justify-between px-3 pt-2">
-                                    <span className="text-[11px] font-bold uppercase tracking-widest text-sky-700">
-                                        {m.girone ? `Girone ${m.girone}` : turno.nome}
-                                    </span>
-                                    <span
-                                        className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${
-                                            m.conclusa ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'
-                                        }`}
-                                    >
-                                        {m.conclusa ? 'Conclusa' : m.orario || 'Da giocare'}
-                                    </span>
-                                </div>
-                                <Squadra grande sq={m.squadraCasa} gol={m.golCasa} rigori={m.rigoriCasa} conclusa={m.conclusa} vince={v === 'casa'} />
-                                <div className="mx-3 h-px bg-sky-100" />
-                                <Squadra grande sq={m.squadraOspite} gol={m.golOspite} rigori={m.rigoriOspite} conclusa={m.conclusa} vince={v === 'ospite'} />
-                            </div>
-                        )
-                    })}
+                    {partite.map((m, k) => (
+                        <CardCalendario key={m.id ?? k} m={m} turno={turno} />
+                    ))}
                 </div>
             )}
         </div>
@@ -204,28 +192,84 @@ export function Logo({ sq, className }) {
     )
 }
 
-export function Squadra({ sq, gol, rigori, conclusa, vince, grande = false }) {
+function RigaCalendario({ sq, lato, colonne, vince }) {
     return (
-        <div className={`flex items-center gap-2 px-2.5 ${grande ? 'py-2' : 'py-1'} ${vince ? 'bg-emerald-50' : ''}`}>
-            <Logo sq={sq} className={grande ? 'w-8 h-8' : 'w-5 h-5'} />
+        <div className={`flex items-center gap-2 px-3 py-2 ${vince ? 'bg-emerald-50' : ''}`}>
+            <Logo sq={sq} className="w-8 h-8" />
             <span
-                className={`flex-1 min-w-0 truncate ${grande ? 'text-sm sm:text-base' : 'text-xs'} ${
-                    !sq
-                        ? 'italic text-gray-400'
-                        : vince
-                        ? 'font-extrabold text-gray-900'
-                        : 'font-semibold text-gray-600'
+                className={`flex-1 min-w-0 truncate ${
+                    !sq ? 'italic text-gray-400' : vince ? 'font-extrabold text-gray-900' : 'font-semibold text-gray-600'
                 }`}
             >
                 {sq?.nome ?? 'Da definire'}
             </span>
-            {conclusa && (
-                <span className="flex items-baseline gap-1 tabular-nums">
-                    {rigori != null && <span className="text-[10px] text-gray-400">({rigori})</span>}
-                    <span className={`font-black ${grande ? 'text-xl' : 'text-sm'} ${vince ? 'text-emerald-700' : 'text-gray-500'}`}>
-                        {gol}
-                    </span>
+            {colonne.map((c) => (
+                <span
+                    key={c.label}
+                    className={`w-9 shrink-0 text-center tabular-nums ${
+                        c.tot ? 'text-lg font-black text-gray-900' : 'text-sm text-gray-500'
+                    }`}
+                >
+                    {c[lato]}
                 </span>
+            ))}
+        </div>
+    )
+}
+
+function CardCalendario({ m, turno }) {
+    const colonne = colonneConfronto(m)
+    const v = vincitore(m)
+    const stato = m.conclusa ? 'Conclusa' : colonne.length ? 'In corso' : m.orario || 'Da giocare'
+    const passa = m.passa === 'casa' ? m.squadraCasa : m.passa === 'ospite' ? m.squadraOspite : null
+
+    return (
+        <div
+            className={`min-w-0 rounded-2xl bg-white shadow-md border-l-8 overflow-hidden ${
+                m.conclusa ? 'border-emerald-500' : 'border-amber-400'
+            }`}
+        >
+            <div className="flex items-center justify-between px-3 pt-2">
+                <span className="text-[11px] font-bold uppercase tracking-widest text-sky-700">
+                    {m.girone ? `Girone ${m.girone}` : turno.nome}
+                </span>
+                <span
+                    className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${
+                        m.conclusa ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'
+                    }`}
+                >
+                    {stato}
+                </span>
+            </div>
+
+            {colonne.length > 0 && (
+                <div className="flex justify-end gap-2 px-3 pt-1">
+                    {colonne.map((c) => (
+                        <span
+                            key={c.label}
+                            className={`w-9 text-center text-[10px] font-bold uppercase tracking-wide ${
+                                c.tot ? 'text-sky-700' : 'text-gray-400'
+                            }`}
+                        >
+                            {c.label}
+                        </span>
+                    ))}
+                </div>
+            )}
+
+            <RigaCalendario sq={m.squadraCasa} lato="casa" colonne={colonne} vince={v === 'casa'} />
+            <div className="mx-3 h-px bg-sky-100" />
+            <RigaCalendario sq={m.squadraOspite} lato="ospite" colonne={colonne} vince={v === 'ospite'} />
+
+            {m.rigoriCasa != null && (
+                <p className="px-3 pb-2 text-right text-[11px] text-gray-500">
+                    rig. {m.rigoriCasa}-{m.rigoriOspite}
+                </p>
+            )}
+            {passa && m.decisaDa && (
+                <p className="bg-emerald-50 px-3 py-1 text-[11px] font-semibold text-emerald-800">
+                    Parità nel totale: passa {passa.nome} ({m.decisaDa})
+                </p>
             )}
         </div>
     )

@@ -43,7 +43,7 @@ const calcAvanzamento = (comp) => {
 function CompetizioneCard({ comp }) {
     const stile = STATI[comp.stato] ?? STATO_DEFAULT
     const perc = calcAvanzamento(comp)
-    const consultabile = comp.stato === 'Attivo' || comp.stato === 'Terminata'
+    const consultabile = comp.stato === 'Attivo' || comp.stato === 'Terminata' || comp.info === 'SI'
 
     return (
         <article

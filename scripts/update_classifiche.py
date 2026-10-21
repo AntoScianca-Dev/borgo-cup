@@ -344,7 +344,7 @@ def main():
         elif nome_comp[:14] == "Squid Game Cup":
             aggiorna_squid_game_cup(comp_scelta, data_competizioni)
         elif nome_comp in FORMATO_COPPE:
-            aggiorna_coppa_europea(comp_scelta, squadre, data_competizioni)
+            aggiorna_coppa_europea(comp_scelta, squadre, data_competizioni, classifiche)
         elif nome_comp == "Coppa Italia":
             aggiorna_coppa_italia(comp_scelta, data_competizioni, classifiche)
         else:

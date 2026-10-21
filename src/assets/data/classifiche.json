@@ -278,7 +278,213 @@
         {
             "id": 5,
             "nome": "Coppa Italia",
-            "partecipanti": []
+            "partecipanti": [
+                {
+                    "id": "prelim",
+                    "nome": "Preliminari",
+                    "partite": [
+                        {
+                            "id": 1,
+                            "squadraCasa": {
+                                "id": 23,
+                                "nome": "HAPPY MILF FC"
+                            },
+                            "squadraOspite": {
+                                "id": 6,
+                                "nome": "San Marino"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 2,
+                            "squadraCasa": {
+                                "id": 12,
+                                "nome": "Amala fc"
+                            },
+                            "squadraOspite": {
+                                "id": 11,
+                                "nome": "Squarta Praga"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 3,
+                            "squadraCasa": {
+                                "id": 21,
+                                "nome": "VeroMat29"
+                            },
+                            "squadraOspite": {
+                                "id": 13,
+                                "nome": "SenzaNome"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 4,
+                            "squadraCasa": {
+                                "id": 2,
+                                "nome": "FC Santo Stefano"
+                            },
+                            "squadraOspite": {
+                                "id": 10,
+                                "nome": "sam PDOR"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 5,
+                            "squadraCasa": {
+                                "id": 16,
+                                "nome": "Zanzibar"
+                            },
+                            "squadraOspite": {
+                                "id": 5,
+                                "nome": "Longobarda united"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 6,
+                            "squadraCasa": {
+                                "id": 19,
+                                "nome": "AG13 FC"
+                            },
+                            "squadraOspite": {
+                                "id": 20,
+                                "nome": "REVOLUTION"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 7,
+                            "squadraCasa": {
+                                "id": 1,
+                                "nome": "FC Carmine"
+                            },
+                            "squadraOspite": {
+                                "id": 4,
+                                "nome": "Banana83"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 8,
+                            "squadraCasa": {
+                                "id": 9,
+                                "nome": "Hertha Vernello VII - La maturazione"
+                            },
+                            "squadraOspite": {
+                                "id": 3,
+                                "nome": "Spera Ebbasta"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "ottavi",
+                    "nome": "Ottavi",
+                    "partite": [
+                        {
+                            "id": 9,
+                            "squadraCasa": {
+                                "id": 22,
+                                "nome": "DG Team"
+                            },
+                            "squadraOspite": null,
+                            "conclusa": false
+                        },
+                        {
+                            "id": 10,
+                            "squadraCasa": {
+                                "id": 18,
+                                "nome": "Sgherza s  Fc"
+                            },
+                            "squadraOspite": null,
+                            "conclusa": false
+                        },
+                        {
+                            "id": 11,
+                            "squadraCasa": {
+                                "id": 8,
+                                "nome": "TenenteRagno"
+                            },
+                            "squadraOspite": null,
+                            "conclusa": false
+                        },
+                        {
+                            "id": 12,
+                            "squadraCasa": {
+                                "id": 24,
+                                "nome": "MESSI MALE FC"
+                            },
+                            "squadraOspite": null,
+                            "conclusa": false
+                        },
+                        {
+                            "id": 13,
+                            "squadraCasa": {
+                                "id": 15,
+                                "nome": "all in - quae intus"
+                            },
+                            "squadraOspite": null,
+                            "conclusa": false
+                        },
+                        {
+                            "id": 14,
+                            "squadraCasa": {
+                                "id": 17,
+                                "nome": "FC TORETTO"
+                            },
+                            "squadraOspite": null,
+                            "conclusa": false
+                        },
+                        {
+                            "id": 15,
+                            "squadraCasa": {
+                                "id": 14,
+                                "nome": "G.s.11"
+                            },
+                            "squadraOspite": null,
+                            "conclusa": false
+                        },
+                        {
+                            "id": 16,
+                            "squadraCasa": {
+                                "id": 7,
+                                "nome": "A.C. Marchigiana"
+                            },
+                            "squadraOspite": null,
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "quarti",
+                    "nome": "Quarti",
+                    "partite": [
+                        null,
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "id": "semifinali",
+                    "nome": "Semifinali",
+                    "partite": [
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "id": "finale",
+                    "nome": "Finale",
+                    "partite": [
+                        null
+                    ]
+                }
+            ]
         },
         {
             "id": 6,

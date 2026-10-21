@@ -1,3 +1,4 @@
+from confronti import decidi_passaggio
 from utils_cli import input_gol_opzionale, input_int, input_posizione, sincronizza_competizione
 from collections import Counter
 # -------------------------------------------------------------
@@ -24,6 +25,21 @@ FORMATO_COPPE = {
     "Conference League": [("Semifinali", [("1A", "2B"), ("1B", "2A")]), ("Finale", _vincenti(1))],
 }
 
+GIORNATE_TABELLONE = {
+    "Champions League": [
+        {"andata": 27, "ritorno": 30, "spareggio": 31},  # semifinali
+        {"gara": 33, "spareggio": 34},                    # finale
+    ],
+    "Europa League": [
+        {"andata": 27, "ritorno": 28, "spareggio": 29},  # quarti
+        {"andata": 30, "ritorno": 31, "spareggio": 32},  # semifinali
+        {"gara": 33, "spareggio": 34},                    # finale
+    ],
+    "Conference League": [
+        {"andata": 27, "ritorno": 30, "spareggio": 31},
+        {"gara": 33, "spareggio": 34},
+    ],
+}
 
 def assicura_struttura(comp):
     """Crea, se mancano, i turni dei gironi e del tabellone nell'ordine letto dall'app."""
@@ -349,7 +365,51 @@ def inserisci_giornata_gironi(comp):
 
 # --- Tabellone ------------------------------------------------
 
-def inserisci_partita_tabellone(comp, squadre):
+def registra_gare(m, giornate, finale, classifiche):
+    """Chiede i gol di ogni gara, calcola il totale e decide chi passa. Modifica e ritorna la partita."""
+    casa, ospite = m["squadraCasa"]["nome"], m["squadraOspite"]["nome"]
+    gare = ["gara"] if finale else ["andata", "ritorno"]
+    etichette = {"gara": "Gara unica", "andata": "Andata", "ritorno": "Ritorno"}
+
+    print("  (INVIO = non ancora giocata / invariata)")
+    for g in gare:
+        att = m.get(g)
+        attuale = f" [attuale {att['golCasa']}:{att['golOspite']}]" if att else ""
+        gc = input_gol_opzionale(f"  {etichette[g]} ({giornate[g]}ª giornata) · gol {casa}{attuale}: ")
+        if gc is None:
+            continue
+        m[g] = {"golCasa": gc, "golOspite": input_int(f"  {etichette[g]} · gol {ospite}: ")}
+
+    giocate = [m[g] for g in gare if g in m]
+    if not giocate:
+        if m.get("conclusa") or "golCasa" in m:
+            print("  ℹ️ Risultato precedente senza dettaglio: reinserisci le gare per aggiornarlo.")
+            return m
+        orario = input("  Data/orario (INVIO per saltare): ").strip()
+        if orario:
+            m["orario"] = orario
+        return m
+
+    m["golCasa"] = sum(x["golCasa"] for x in giocate)
+    m["golOspite"] = sum(x["golOspite"] for x in giocate)
+    for chiave in ("passa", "decisaDa"):
+        m.pop(chiave, None)
+
+    if len(giocate) < len(gare):
+        m["conclusa"] = False
+        return m
+
+    if m["golCasa"] != m["golOspite"]:
+        m.pop("spareggio", None)
+    turno = {"id": "finale" if finale else "doppio", "giornate": giornate}
+    lato, motivo = decidi_passaggio(m, turno, classifiche)
+    m["conclusa"] = lato is not None
+    if lato and m["golCasa"] == m["golOspite"]:
+        m["passa"], m["decisaDa"] = lato, motivo
+    return m
+
+
+def inserisci_partita_tabellone(comp, squadre, classifiche):
     formato = FORMATO_COPPE[comp["nome"]]
 
     print("\nTurni del tabellone:")
@@ -362,6 +422,8 @@ def inserisci_partita_tabellone(comp, squadre):
         print("❌ Turno non valido.")
 
     nome_turno, slot = formato[i - 1]
+    giornate = GIORNATE_TABELLONE[comp["nome"]][i - 1]
+    finale = i == len(formato)
     turno = trova_turno(comp, f"t{i}")
 
     print(f"\n{nome_turno}:")
@@ -381,42 +443,36 @@ def inserisci_partita_tabellone(comp, squadre):
         extra = f" → {suggerita['nome']} (INVIO per confermare)" if suggerita else ""
         return f"  Squadra {lato} [{etichetta}]{extra}, ID: "
 
-    sugg_casa = risolvi_etichetta(comp, etichetta_casa, i)
+    # Suggerita: quella ricavata dallo slot, altrimenti quella già inserita
+    sugg_casa = risolvi_etichetta(comp, etichetta_casa, i) or (esistente or {}).get("squadraCasa")
     casa = chiedi_squadra(prompt("1", etichetta_casa, sugg_casa), squadre, predefinita=sugg_casa)
 
-    sugg_ospite = risolvi_etichetta(comp, etichetta_ospite, i)
+    sugg_ospite = risolvi_etichetta(comp, etichetta_ospite, i) or (esistente or {}).get("squadraOspite")
     ammessi = {s["id"] for s in squadre} - {casa["id"]}
     ospite = chiedi_squadra(prompt("2", etichetta_ospite, sugg_ospite), squadre, ammessi, predefinita=sugg_ospite)
 
+    # Se le squadre non cambiano, si conservano i risultati già inseriti
+    stesse = (
+        esistente
+        and esistente["squadraCasa"]["id"] == casa["id"]
+        and esistente["squadraOspite"]["id"] == ospite["id"]
+    )
+    base = dict(esistente) if stesse else {}
     partita = {
+        **base,
         "id": esistente["id"] if esistente else prossimo_id_partita(comp),
         "squadraCasa": {"id": casa["id"], "nome": casa["nome"]},
         "squadraOspite": {"id": ospite["id"], "nome": ospite["nome"]},
-        "conclusa": False,
+        "conclusa": base.get("conclusa", False),
     }
 
-    if input("  Confronto concluso? (SI/NO): ").strip().upper() == "SI":
-        partita["golCasa"] = input_int(f"  Gol {casa['nome']} (totale del confronto): ")
-        partita["golOspite"] = input_int(f"  Gol {ospite['nome']} (totale del confronto): ")
-        partita["conclusa"] = True
-        if partita["golCasa"] == partita["golOspite"]:
-            while True:
-                scelta = input("  Parità: chi passa il turno? (1 = prima squadra, 2 = seconda): ").strip()
-                if scelta in ("1", "2"):
-                    break
-            partita["passa"] = "casa" if scelta == "1" else "ospite"
-    else:
-        orario = input("  Data/orario (INVIO per saltare): ").strip()
-        if orario:
-            partita["orario"] = orario
-
+    partita = registra_gare(partita, giornate, finale, classifiche)
     turno["partite"][k - 1] = partita
     print(f"  ✅ {nome_turno} · partita {k}: {descrivi_partita(partita)}")
 
-
 # --- Handler principale ---------------------------------------
 
-def aggiorna_coppa_europea(comp, squadre, data_comp):
+def aggiorna_coppa_europea(comp, squadre, data_comp, classifiche):
     print(f"\n--- Aggiornamento: {comp['nome']} ---")
     assicura_struttura(comp)
 
@@ -439,7 +495,7 @@ def aggiorna_coppa_europea(comp, squadre, data_comp):
         elif scelta == "2":
             inserisci_giornata_gironi(comp)
         elif scelta == "3":
-            inserisci_partita_tabellone(comp, squadre)
+            inserisci_partita_tabellone(comp, squadre, classifiche)
         elif scelta == "4":
             definisci_calendario(comp)
         else:
