@@ -74,6 +74,7 @@ function SquadraRow({ squadra, posizione, eliminata = false }) {
 export default function Squid({ id }) {
     const serie = squadreData.classifiche.find((c) => c.id === id)
     const competizione = competizioniData.competizioni.find((c) => c.id === id)
+    const stato = competizione?.stato || null
 
     const { attivi, eliminati } = useMemo(() => {
         const partecipanti = serie?.partecipanti ?? []
@@ -93,7 +94,7 @@ export default function Squid({ id }) {
     return (
         <div className="max-w-4xl mx-auto space-y-6">
             {/* Header */}
-            <Link to="/competizioni" className="block">
+            <Link to="/competizioni" state={{statoIniziale:stato}}  className="block">
                 <h1
                     className="py-6 rounded-tl-4xl rounded-br-4xl text-sky-50 text-4xl font-medium tracking-tight shadow-lg"
                     style={{

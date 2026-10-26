@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export default function Card({ title, description, icon, img, link }) {
+export default function Card({ title, description, icon, img, link, badge }) {
     return (
         <Link
             to={link}
@@ -28,6 +28,8 @@ export default function Card({ title, description, icon, img, link }) {
             {description && (
                 <p className="relative text-sm text-gray-600 leading-relaxed">{description}</p>
             )}
+
+            {badge && <div className="relative">{badge}</div>}
 
             {/* Freccia in fondo, allineata anche con card di altezza diversa */}
             <span className="relative mt-auto pt-2 inline-flex items-center gap-1 text-sm font-bold text-sky-700">

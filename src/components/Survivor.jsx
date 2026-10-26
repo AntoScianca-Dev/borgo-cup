@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import squadreData from '../assets/data/classifiche.json'
+import competizioniData from '../assets/data/competizioni.json'
 import headerS from '../assets/image/header_survivor.png'
 
 const COMPETIZIONE_ID = 7
@@ -36,6 +37,8 @@ function SquadraRow({ squadra, posizione, eliminata = false }) {
 
 export default function Survivor() {
     const serie = squadreData.classifiche.find((c) => c.id === COMPETIZIONE_ID)
+    const competizione = competizioniData.competizioni.find((c) => c.id === COMPETIZIONE_ID)
+    const stato = competizione?.stato || null
 
     const { attivi, eliminati } = useMemo(() => {
         const partecipanti = serie?.partecipanti ?? []
@@ -54,7 +57,7 @@ export default function Survivor() {
     return (
         <div className="max-w-4xl mx-auto space-y-6 px-3">
             {/* Header */}
-            <Link to="/competizioni" className="block">
+            <Link to="/competizioni" state={{statoIniziale:stato}}  className="block">
                 <h1
                     className="py-6 rounded-tl-4xl rounded-br-4xl text-4xl font-medium tracking-tight shadow-lg"
                     style={{
@@ -69,6 +72,12 @@ export default function Survivor() {
                     </span>
                 </h1>
             </Link>
+
+            <div className="flex justify-center">
+                <span className="bg-lime-900 text-lime-50 text-sm font-bold uppercase tracking-widest px-5 py-1.5 rounded-full shadow">
+                    {competizione.giornata}ª giornata
+                </span>
+            </div>
 
             {/* Intestazione tabella */}
             <div className="bg-linear-to-r from-lime-800 via-lime-700 to-lime-800 text-amber-50 rounded-2xl px-5 py-3 shadow-md flex justify-between items-center text-sm font-semibold uppercase tracking-wider">

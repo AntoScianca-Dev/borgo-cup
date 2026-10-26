@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import squadreData from '../assets/data/classifiche.json'
 import headerP from '../assets/image/header_punteggio.png'
+import competizioniData from '../assets/data/competizioni.json'
 
 const CLASSIFICA_ID = 9
 
@@ -57,6 +58,8 @@ function RecordCard({ squad }) {
 
 export default function PunteggioTop() {
     const classifica = squadreData.classifiche.find((c) => c.id === CLASSIFICA_ID)
+    const competizione = competizioniData.competizioni.find((c) => c.id === CLASSIFICA_ID)
+    const stato = competizione?.stato || null
 
     const partecipanti = useMemo(
         () => [...(classifica?.partecipanti ?? [])].sort((a, b) => a.id - b.id),
@@ -68,7 +71,7 @@ export default function PunteggioTop() {
     return (
         <div className="max-w-4xl mx-auto space-y-6 px-3">
             {/* Header */}
-            <Link to="/competizioni" className="block">
+            <Link to="/competizioni"  state={{statoIniziale:stato}}  className="block">
                 <h1
                     className="min-h-40 flex items-end justify-center px-4 pb-5 rounded-tl-4xl rounded-br-4xl text-sky-50 text-3xl sm:text-4xl font-medium tracking-tight text-center shadow-lg"
                     style={{

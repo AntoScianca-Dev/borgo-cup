@@ -98,6 +98,7 @@ function SquadraRow({ squadra, posizione, nomeCampionato, compatta }) {
 export default function SerieABC({ id }) {
     const serie = squadreData.classifiche.find((c) => c.id === id)
     const competizione = competizioniData.competizioni.find((c) => c.id === id)
+    const stato = competizione?.stato || null
     const [compatta, setCompatta] = useVistaCompatta()
 
     const classifica = useMemo(
@@ -112,7 +113,7 @@ export default function SerieABC({ id }) {
     return (
         <div className="max-w-4xl mx-auto space-y-6 px-3">
             {/* Header */}
-            <Link to="/competizioni" className="block">
+            <Link to="/competizioni" state={{statoIniziale:stato}}  className="block">
                 <h1
                     className="py-6 rounded-tl-4xl rounded-br-4xl text-sky-50 text-4xl font-medium tracking-tight shadow-lg"
                     style={{

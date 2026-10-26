@@ -9,6 +9,8 @@ import IconaTabellone from './IconaTabellone'
 import headerChL from '../assets/image/header_championsL.png'
 import headerEuL from '../assets/image/header_europaL.png'
 import headerCoL from '../assets/image/header_conferenceL.png'
+import ToggleVista from './ToggleVista'
+import useVistaCompatta from '../hooks/useVistaCompatta'
 
 const GIRONI = ['A', 'B']
 const NOMI_GIORNATE = ['Andata · 1ª', 'Andata · 2ª', 'Andata · 3ª', 'Ritorno · 1ª', 'Ritorno · 2ª', 'Ritorno · 3ª']
@@ -80,10 +82,12 @@ const risolvi = (etichetta, gironi) => {
 
 /* ---------- CLASSIFICA ---------- */
 
-function RigaClassifica({ squadra, posizione, zona }) {
+function RigaClassifica({ squadra, posizione, zona, compatta }) {
     return (
         <div
-            className={`min-w-0 rounded-2xl border-l-8 border-r-2 shadow-md p-3 ${zona?.riga ?? 'bg-white'}`}
+            className={`min-w-0 rounded-2xl border-l-8 border-r-2 shadow-md ${
+                compatta ? 'p-2' : 'p-3'
+            } ${zona?.riga ?? 'bg-white'}`}
             style={{ borderLeftColor: squadra.border, borderRightColor: squadra.border }}
         >
             <div className="flex items-center justify-between gap-3">
@@ -103,24 +107,28 @@ function RigaClassifica({ squadra, posizione, zona }) {
                         <p className="truncate font-bold text-lg text-gray-800">{squadra.nome}</p>
                     </div>
                 </div>
-                <span className="text-2xl font-black tabular-nums text-sky-950">{squadra.punteggio || 0}</span>
+                <span className="text-2xl font-black tabular-nums px-3 py-1 text-sky-950">{squadra.punteggio || 0}</span>
             </div>
 
-            <div className="grid grid-cols-6 gap-1.5 mt-3">
-                {STATS.map(({ key, label }) => (
-                    <div key={key} className="bg-white/80 rounded-xl py-1 text-center">
-                        <p className="text-[10px] font-semibold uppercase tracking-wide text-sky-600">{label}</p>
-                        <p className="text-sm font-bold text-gray-800">{squadra[key] ?? 0}</p>
-                    </div>
-                ))}
-            </div>
+            {!compatta && (
+                <div className="grid grid-cols-6 gap-1.5 mt-3">
+                    {STATS.map(({ key, label }) => (
+                        <div key={key} className="bg-white/80 rounded-xl py-1 text-center">
+                            <p className="text-[10px] font-semibold uppercase tracking-wide text-sky-600">{label}</p>
+                            <p className="text-sm font-bold text-gray-800">{squadra[key] ?? 0}</p>
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
     )
 }
 
 function Classifica({ gironi, qualifica }) {
+    const [compatta, setCompatta] = useVistaCompatta()
     return (
         <div className="space-y-6">
+            <ToggleVista compatta={compatta} onChange={setCompatta} />
             <div className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-xs font-semibold text-gray-600">
                 {qualifica.map((z) => (
                     <span key={z.nome} className="flex items-center gap-1.5">
@@ -140,13 +148,14 @@ function Classifica({ gironi, qualifica }) {
                     {gironi[nome].length === 0 ? (
                         <p className="text-center text-gray-400 py-6 text-sm">Nessuna squadra inserita</p>
                     ) : (
-                        <div className="grid grid-cols-1 gap-3">
+                        <div className={`grid grid-cols-1 ${compatta ? 'gap-2' : 'gap-3'}`}>
                             {gironi[nome].map((s, i) => (
                                 <RigaClassifica
                                     key={s.id ?? i}
                                     squadra={s}
                                     posizione={i + 1}
                                     zona={qualifica.find((z) => i + 1 >= z.da && i + 1 <= z.a)}
+                                    compatta={compatta}
                                 />
                             ))}
                         </div>
@@ -202,10 +211,15 @@ export default function CoppaEuropea({ id }) {
     const config = CONFIG[id]
     const coppa = classificheData.classifiche.find((c) => c.id === id)
     const competizione = competizioniData.competizioni.find((c) => c.id === id)
+    const stato = competizione?.stato || null
+
+    const tabelloneStart = (coppa?.turni ?? []).some(
+        (t) => t.fase === 'tabellone' && t.partite?.some((p) => p !== null)
+    )
 
     // Se il tabellone ha già dati si apre quello, altrimenti la classifica
     const [vista, setVista] = useState(() =>
-        (coppa?.turni ?? []).some((t) => t.fase === 'tabellone' && t.partite?.length) ? 'tabellone' : 'classifica'
+        tabelloneStart ? 'tabellone' : 'classifica'
     )
 
     const gironi = useMemo(() => {
@@ -251,7 +265,7 @@ export default function CoppaEuropea({ id }) {
 
     return (
         <div className="max-w-4xl mx-auto space-y-6 px-3 pb-6">
-            <Link to="/competizioni" className="block">
+            <Link to="/competizioni"  state={{statoIniziale:stato}}  className="block">
                 <h1
                     className="py-6 rounded-tl-4xl rounded-br-4xl text-sky-50 shadow-lg bg-cover bg-center"
                     style={{

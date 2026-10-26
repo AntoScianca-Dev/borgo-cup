@@ -26,7 +26,7 @@ const CAL_GIRONI = [
     {
         titolo: 'Andata',
         righe: [
-            { label: '1ª giornata', valore: g(8) },
+            { label: '1ª giornata', valore: g(9) },
             { label: '2ª giornata', valore: g(12) },
             { label: '3ª giornata', valore: g(15) },
         ],

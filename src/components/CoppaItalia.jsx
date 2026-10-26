@@ -103,6 +103,7 @@ export default function CoppaItalia() {
 
     const coppa = classificheData.classifiche.find((c) => c.id === COMPETIZIONE_ID)
     const competizione = competizioniData.competizioni.find((c) => c.id === COMPETIZIONE_ID)
+    const stato = competizione?.stato || null
 
     // Normalizza i turni sul formato ufficiale e completa le partite mancanti con null
     const turni = useMemo(() => {
@@ -123,7 +124,7 @@ export default function CoppaItalia() {
     return (
         <div className="max-w-4xl mx-auto space-y-6 px-3 pb-6">
             {/* Header */}
-            <Link to="/competizioni" className="block">
+            <Link to="/competizioni"  state={{statoIniziale:stato}}  className="block">
                 <h1 className=" py-2 md:py-6 rounded-tl-4xl rounded-br-4xl bg-linear-to-br from-sky-900 via-sky-700 to-sky-500 text-sky-50 shadow-lg"
                     style={{
                     backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(7, 89, 133, 0.2)), url(${headerC})`,

@@ -1,6 +1,10 @@
 import { useMemo } from 'react'
 import Card from './Card'
+import BadgeStato from './BadgeStato'
+import useNow from '../hooks/useNow'
 import competizioniData from '../assets/data/competizioni.json'
+import { formatoData, giornataSerieA, statoCompetizione, traQuanto } from '../hooks/calendario'
+import { Link } from 'react-router-dom'
 
 const EDIZIONE = '9ª Edizione'
 const STAGIONE = 'Stagione 2026/2027'
@@ -43,16 +47,23 @@ function SectionTitle({ children, badge }) {
 
 export default function Home() {
     const competizioni = competizioniData.competizioni || competizioniData
-
-    const giornataCorrente = competizioni.find((c) => c.id === 0)?.giornataA
-    const prossimaGiornata = giornataCorrente != null ? giornataCorrente + 1 : null
+    const now = useNow()
+    const giornataCorrente = giornataSerieA(now)
 
     const attive = useMemo(() => competizioni.filter((c) => c.stato === 'Attivo'), [competizioni])
 
-    const inPartenza = useMemo(
-        () => (prossimaGiornata ? competizioni.filter((c) => c.gInizio === prossimaGiornata) : []),
-        [competizioni, prossimaGiornata]
-    )
+    // Le competizioni che iniziano per prime (stessa giornata di Serie A)
+    const inPartenza = useMemo(() => {
+        const inizi = competizioni
+            .map((comp) => ({ comp, stato: statoCompetizione(comp, now) }))
+            .filter(({ stato }) => stato?.tipo === 'inizia')
+        if (inizi.length === 0) return null
+
+        const prima = Math.min(...inizi.map(({ stato }) => stato.turno.giornataA))
+        const gruppo = inizi.filter(({ stato }) => stato.turno.giornataA === prima)
+        const { inizio, definitivo } = gruppo[0].stato.turno
+        return { giornataA: prima, inizio, definitivo, competizioni: gruppo.map(({ comp }) => comp) }
+    }, [competizioni, now])
 
     return (
         <div className="space-y-12 max-w-6xl mx-auto px-4 pb-8">
@@ -84,6 +95,7 @@ export default function Home() {
                                 img={comp.img}
                                 icon={comp.icon}
                                 link={`/competizioni${comp.link}`}
+                                badge={<BadgeStato comp={comp} now={now} />}
                             />
                         ))}
                     </div>
@@ -91,24 +103,35 @@ export default function Home() {
             )}
 
             {/* In partenza */}
-            {inPartenza.length > 0 && (
+            {inPartenza && (
                 <section className="bg-linear-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-3xl p-5 sm:p-6 shadow-sm max-w-2xl mx-auto">
-                    <p className="text-center text-xs font-bold uppercase tracking-widest text-amber-700 mb-1">
-                        Prossimamente
-                    </p>
-                    <h2 className="text-center text-xl font-extrabold text-amber-950 mb-4">
-                        Al via con la Giornata {prossimaGiornata}
+                    <p className="text-center text-xs font-bold uppercase tracking-widest text-amber-700 mb-1">Prossimamente</p>
+                    <h2 className="text-center text-xl font-extrabold text-amber-950">
+                        Al via con la {inPartenza.giornataA}ª giornata di Serie A
                     </h2>
+                    <p className="mt-1 mb-4 text-center text-sm font-semibold text-amber-800">
+                        {traQuanto(inPartenza.inizio, now)} · {formatoData(inPartenza.inizio)}
+                        {!inPartenza.definitivo && ' · da confermare'}
+                    </p>
                     <div className="flex flex-wrap justify-center gap-3">
-                        {inPartenza.map((comp) => (
-                            <span
-                                key={comp.id}
-                                className="inline-flex items-center gap-2 bg-white text-amber-950 font-semibold px-4 py-2 rounded-full border border-amber-300 shadow-sm"
-                            >
-                                {comp.icon && <span>{comp.icon}</span>}
-                                {comp.nome}
-                            </span>
-                        ))}
+                        {inPartenza.competizioni.map((comp) => {
+                            const isLinkable = comp.info === 'SI' || comp.stato === 'Attivo';
+                            const link = isLinkable ? `/competizioni${comp.link}` : '/competizioni';
+                            return(
+                                <Link 
+                                    key={comp.id}
+                                    to={link}
+                                    state={!isLinkable ? { statoIniziale: 'In attesa' } : undefined}
+                                >
+                                <span
+                                    className="inline-flex items-center gap-2 bg-white text-amber-950 font-semibold px-4 py-2 rounded-full border border-amber-300 shadow-sm"
+                                    >
+                                    {comp.icon && <span>{comp.icon}</span>}
+                                    {comp.nome}
+                                </span>
+                            </Link>
+                            )
+                        })}
                     </div>
                 </section>
             )}

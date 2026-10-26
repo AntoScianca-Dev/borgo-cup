@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import competizioniData from '../assets/data/competizioni.json'
 
 const STATI = {
@@ -106,7 +106,10 @@ function CompetizioneCard({ comp }) {
 
 export default function Competizioni() {
     const competizioni = competizioniData.competizioni || competizioniData
-    const [selectedFilter, setSelectedFilter] = useState(null)
+    const location = useLocation()
+    
+    const statoIniziale = location.state?.statoIniziale || null
+    const [selectedFilter, setSelectedFilter] = useState(statoIniziale)
 
     const valide = useMemo(
         () => competizioni.filter((c) => c.stato !== 'None'),

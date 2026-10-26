@@ -82,6 +82,8 @@ export default function Classifica() {
     const campionato = squadreData.classifiche.find((c) => c.id === COMPETIZIONE_ID)
     const competizione = competizioniData.competizioni.find((c) => c.id === COMPETIZIONE_ID)
 
+    const stato = competizione?.stato || null
+
     const classifica = useMemo(
         () => [...(campionato?.partecipanti ?? [])].sort((a, b) => a.posizione - b.posizione),
         [campionato]
@@ -92,7 +94,7 @@ export default function Classifica() {
     return (
         <div className="max-w-4xl mx-auto space-y-6 px-3">
             {/* Header */}
-            <Link to="/competizioni" className="block">
+            <Link to="/competizioni" state={{statoIniziale:stato}} className="block">
                 <h1
                     className="py-6 rounded-tl-4xl rounded-br-4xl text-sky-50 text-4xl font-medium tracking-tight shadow-lg"
                     style={{

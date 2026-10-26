@@ -87,6 +87,8 @@ function Girone({ nome, squadre, compatta }) {
 export default function PreliminariCE() {
     const preliminari = squadreData.classifiche.find((c) => c.id === COMPETIZIONE_ID)
     const competizione = competizioniData.competizioni.find((c) => c.id === COMPETIZIONE_ID)
+    const stato = competizione?.stato || null
+    
     const [compatta, setCompatta] = useVistaCompatta()
 
     const gironi = useMemo(() => {
@@ -104,7 +106,7 @@ export default function PreliminariCE() {
     return (
         <div className="max-w-4xl mx-auto space-y-6 px-3">
             {/* Header */}
-            <Link to="/competizioni" className="block">
+            <Link to="/competizioni"  state={{statoIniziale:stato}}  className="block">
                 <h1
                     className="py-6 px-2 rounded-tl-4xl rounded-br-4xl text-sky-50 shadow-lg"
                     style={{

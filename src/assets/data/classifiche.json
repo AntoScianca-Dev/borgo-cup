@@ -9,10 +9,11 @@
                     "nome": "DG Team",
                     "variazione": 1,
                     "posizione": 1,
-                    "punteggio": 582.5,
+                    "punteggio": 650.0,
                     "border": "#3C3D3D",
                     "punteggiGiornata": {
-                        "7": 89.5
+                        "7": 89.5,
+                        "8": 67.5
                     }
                 },
                 {
@@ -20,230 +21,251 @@
                     "nome": "A.C. Marchigiana",
                     "variazione": 2,
                     "posizione": 2,
-                    "punteggio": 563.0,
+                    "punteggio": 628.0,
                     "border": "#E9262E",
                     "punteggiGiornata": {
-                        "7": 74.0
-                    }
-                },
-                {
-                    "id": 17,
-                    "nome": "FC TORETTO",
-                    "variazione": 4,
-                    "posizione": 3,
-                    "punteggio": 543.5,
-                    "border": "#F92734",
-                    "punteggiGiornata": {
-                        "7": 73.0
+                        "7": 74.0,
+                        "8": 65.0
                     }
                 },
                 {
                     "id": 8,
                     "nome": "TenenteRagno",
-                    "variazione": 3,
-                    "posizione": 4,
-                    "punteggio": 538.5,
+                    "variazione": 4,
+                    "posizione": 3,
+                    "punteggio": 618.0,
                     "border": "#990B5A",
                     "punteggiGiornata": {
-                        "7": 67.0
+                        "7": 67.0,
+                        "8": 79.5
+                    }
+                },
+                {
+                    "id": 17,
+                    "nome": "FC TORETTO",
+                    "variazione": 3,
+                    "posizione": 4,
+                    "punteggio": 614.5,
+                    "border": "#F92734",
+                    "punteggiGiornata": {
+                        "7": 73.0,
+                        "8": 71.0
+                    }
+                },
+                {
+                    "id": 15,
+                    "nome": "all in - quae intus",
+                    "variazione": 6,
+                    "posizione": 5,
+                    "punteggio": 613.0,
+                    "border": "#6A3394",
+                    "punteggiGiornata": {
+                        "7": 75.0,
+                        "8": 75.5
+                    }
+                },
+                {
+                    "id": 12,
+                    "nome": "Amala fc",
+                    "variazione": 9,
+                    "posizione": 6,
+                    "punteggio": 610.5,
+                    "border": "#E9484E",
+                    "punteggiGiornata": {
+                        "7": 85.0,
+                        "8": 78.5
+                    }
+                },
+                {
+                    "id": 18,
+                    "nome": "Sgherza s  Fc",
+                    "variazione": 8,
+                    "posizione": 7,
+                    "punteggio": 606.5,
+                    "border": "#0B0FFF",
+                    "punteggiGiornata": {
+                        "7": 67.5,
+                        "8": 74.0
+                    }
+                },
+                {
+                    "id": 14,
+                    "nome": "G.s.11",
+                    "variazione": 7,
+                    "posizione": 8,
+                    "punteggio": 602.0,
+                    "border": "#5CADA7",
+                    "punteggiGiornata": {
+                        "7": 77.5,
+                        "8": 69.0
+                    }
+                },
+                {
+                    "id": 1,
+                    "nome": "FC Carmine",
+                    "variazione": 10,
+                    "posizione": 9,
+                    "punteggio": 600.5,
+                    "border": "#652D8E",
+                    "punteggiGiornata": {
+                        "7": 80.5,
+                        "8": 71.5
                     }
                 },
                 {
                     "id": 24,
                     "nome": "MESSI MALE FC",
                     "variazione": 5,
-                    "posizione": 5,
-                    "punteggio": 538.0,
+                    "posizione": 10,
+                    "punteggio": 600.5,
                     "border": "#10499E",
                     "punteggiGiornata": {
-                        "7": 72.0
-                    }
-                },
-                {
-                    "id": 15,
-                    "nome": "all in - quae intus",
-                    "variazione": 8,
-                    "posizione": 6,
-                    "punteggio": 537.5,
-                    "border": "#6A3394",
-                    "punteggiGiornata": {
-                        "7": 75.0
-                    }
-                },
-                {
-                    "id": 14,
-                    "nome": "G.s.11",
-                    "variazione": 10,
-                    "posizione": 7,
-                    "punteggio": 533.0,
-                    "border": "#5CADA7",
-                    "punteggiGiornata": {
-                        "7": 77.5
-                    }
-                },
-                {
-                    "id": 18,
-                    "nome": "Sgherza s  Fc",
-                    "variazione": 6,
-                    "posizione": 8,
-                    "punteggio": 532.5,
-                    "border": "#0B0FFF",
-                    "punteggiGiornata": {
-                        "7": 67.5
-                    }
-                },
-                {
-                    "id": 12,
-                    "nome": "Amala fc",
-                    "variazione": 16,
-                    "posizione": 9,
-                    "punteggio": 532.0,
-                    "border": "#E9484E",
-                    "punteggiGiornata": {
-                        "7": 85.0
-                    }
-                },
-                {
-                    "id": 1,
-                    "nome": "FC Carmine",
-                    "variazione": 14,
-                    "posizione": 10,
-                    "punteggio": 529.0,
-                    "border": "#652D8E",
-                    "punteggiGiornata": {
-                        "7": 80.5
+                        "7": 72.0,
+                        "8": 62.5
                     }
                 },
                 {
                     "id": 16,
                     "nome": "Zanzibar",
-                    "variazione": 12,
+                    "variazione": 11,
                     "posizione": 11,
-                    "punteggio": 527.5,
+                    "punteggio": 600.5,
                     "border": "#FA0F1E",
                     "punteggiGiornata": {
-                        "7": 76.0
+                        "7": 76.0,
+                        "8": 73.0
                     }
                 },
                 {
                     "id": 2,
                     "nome": "FC Santo Stefano",
-                    "variazione": 9,
+                    "variazione": 12,
                     "posizione": 12,
-                    "punteggio": 526.5,
+                    "punteggio": 596.5,
                     "border": "#F78A8A",
                     "punteggiGiornata": {
-                        "7": 67.5
+                        "7": 67.5,
+                        "8": 70.0
                     }
                 },
                 {
                     "id": 21,
                     "nome": "VeroMat29",
-                    "variazione": 7,
+                    "variazione": 13,
                     "posizione": 13,
-                    "punteggio": 525.0,
+                    "punteggio": 596.0,
                     "border": "#2AF4F3",
                     "punteggiGiornata": {
-                        "7": 62.5
-                    }
-                },
-                {
-                    "id": 19,
-                    "nome": "AG13 FC",
-                    "variazione": 13,
-                    "posizione": 14,
-                    "punteggio": 521.0,
-                    "border": "#1DA6E0",
-                    "punteggiGiornata": {
-                        "7": 70.5
+                        "7": 62.5,
+                        "8": 71.0
                     }
                 },
                 {
                     "id": 9,
                     "nome": "Hertha Vernello VII - La maturazione",
-                    "variazione": 20,
-                    "posizione": 15,
-                    "punteggio": 520.0,
+                    "variazione": 15,
+                    "posizione": 14,
+                    "punteggio": 595.0,
                     "border": "#773448",
                     "punteggiGiornata": {
-                        "7": 79.5
+                        "7": 79.5,
+                        "8": 75.0
                     }
                 },
                 {
-                    "id": 23,
-                    "nome": "HAPPY MILF FC",
-                    "variazione": 18,
-                    "posizione": 16,
-                    "punteggio": 517.5,
-                    "border": "#CD0A16",
+                    "id": 19,
+                    "nome": "AG13 FC",
+                    "variazione": 14,
+                    "posizione": 15,
+                    "punteggio": 593.5,
+                    "border": "#1DA6E0",
                     "punteggiGiornata": {
-                        "7": 74.0
-                    }
-                },
-                {
-                    "id": 6,
-                    "nome": "San Marino",
-                    "variazione": 15,
-                    "posizione": 17,
-                    "punteggio": 516.5,
-                    "border": "#ACE2F9",
-                    "punteggiGiornata": {
-                        "7": 68.5
+                        "7": 70.5,
+                        "8": 72.5
                     }
                 },
                 {
                     "id": 3,
                     "nome": "Spera Ebbasta",
-                    "variazione": 17,
-                    "posizione": 18,
-                    "punteggio": 516.5,
+                    "variazione": 18,
+                    "posizione": 16,
+                    "punteggio": 593.0,
                     "border": "#5D2A82",
                     "punteggiGiornata": {
-                        "7": 73.0
+                        "7": 73.0,
+                        "8": 76.5
+                    }
+                },
+                {
+                    "id": 6,
+                    "nome": "San Marino",
+                    "variazione": 17,
+                    "posizione": 17,
+                    "punteggio": 589.5,
+                    "border": "#ACE2F9",
+                    "punteggiGiornata": {
+                        "7": 68.5,
+                        "8": 73.0
                     }
                 },
                 {
                     "id": 20,
                     "nome": "REVOLUTION",
-                    "variazione": 21,
-                    "posizione": 19,
-                    "punteggio": 515.5,
+                    "variazione": 19,
+                    "posizione": 18,
+                    "punteggio": 587.0,
                     "border": "#901F1F",
                     "punteggiGiornata": {
-                        "7": 75.5
-                    }
-                },
-                {
-                    "id": 13,
-                    "nome": "SenzaNome",
-                    "variazione": 11,
-                    "posizione": 20,
-                    "punteggio": 506.0,
-                    "border": "#393C3D",
-                    "punteggiGiornata": {
-                        "7": 53.5
-                    }
-                },
-                {
-                    "id": 10,
-                    "nome": "sam PDOR",
-                    "variazione": 19,
-                    "posizione": 21,
-                    "punteggio": 506.0,
-                    "border": "#0B22F4",
-                    "punteggiGiornata": {
-                        "7": 63.0
+                        "7": 75.5,
+                        "8": 71.5
                     }
                 },
                 {
                     "id": 5,
                     "nome": "Longobarda united",
                     "variazione": 22,
-                    "posizione": 22,
-                    "punteggio": 505.5,
+                    "posizione": 19,
+                    "punteggio": 586.5,
                     "border": "#EC7074",
                     "punteggiGiornata": {
-                        "7": 73.0
+                        "7": 73.0,
+                        "8": 81.0
+                    }
+                },
+                {
+                    "id": 10,
+                    "nome": "sam PDOR",
+                    "variazione": 21,
+                    "posizione": 20,
+                    "punteggio": 577.0,
+                    "border": "#0B22F4",
+                    "punteggiGiornata": {
+                        "7": 63.0,
+                        "8": 71.0
+                    }
+                },
+                {
+                    "id": 23,
+                    "nome": "HAPPY MILF FC",
+                    "variazione": 16,
+                    "posizione": 21,
+                    "punteggio": 576.5,
+                    "border": "#CD0A16",
+                    "punteggiGiornata": {
+                        "7": 74.0,
+                        "8": 59.0
+                    }
+                },
+                {
+                    "id": 13,
+                    "nome": "SenzaNome",
+                    "variazione": 20,
+                    "posizione": 22,
+                    "punteggio": 575.0,
+                    "border": "#393C3D",
+                    "punteggiGiornata": {
+                        "7": 53.5,
+                        "8": 69.0
                     }
                 },
                 {
@@ -251,10 +273,11 @@
                     "nome": "Banana83",
                     "variazione": 23,
                     "posizione": 23,
-                    "punteggio": 475.5,
+                    "punteggio": 533.5,
                     "border": "#FAD7D7",
                     "punteggiGiornata": {
-                        "7": 57.0
+                        "7": 57.0,
+                        "8": 58.0
                     }
                 },
                 {
@@ -262,14 +285,15 @@
                     "nome": "Squarta Praga",
                     "variazione": 24,
                     "posizione": 24,
-                    "punteggio": 423.0,
+                    "punteggio": 483.5,
                     "border": "#550808",
                     "punteggiGiornata": {
-                        "7": 64.5
+                        "7": 64.5,
+                        "8": 60.5
                     }
                 }
             ],
-            "ultimaGiornata": 7
+            "ultimaGiornata": 8
         },
         {
             "id": 4,
@@ -293,7 +317,13 @@
                                 "id": 6,
                                 "nome": "San Marino"
                             },
-                            "conclusa": false
+                            "conclusa": false,
+                            "andata": {
+                                "golCasa": 0,
+                                "golOspite": 2
+                            },
+                            "golCasa": 0,
+                            "golOspite": 2
                         },
                         {
                             "id": 2,
@@ -305,7 +335,13 @@
                                 "id": 11,
                                 "nome": "Squarta Praga"
                             },
-                            "conclusa": false
+                            "conclusa": false,
+                            "andata": {
+                                "golCasa": 3,
+                                "golOspite": 0
+                            },
+                            "golCasa": 3,
+                            "golOspite": 0
                         },
                         {
                             "id": 3,
@@ -317,7 +353,13 @@
                                 "id": 13,
                                 "nome": "SenzaNome"
                             },
-                            "conclusa": false
+                            "conclusa": false,
+                            "andata": {
+                                "golCasa": 1,
+                                "golOspite": 1
+                            },
+                            "golCasa": 1,
+                            "golOspite": 1
                         },
                         {
                             "id": 4,
@@ -329,7 +371,13 @@
                                 "id": 10,
                                 "nome": "sam PDOR"
                             },
-                            "conclusa": false
+                            "conclusa": false,
+                            "andata": {
+                                "golCasa": 1,
+                                "golOspite": 1
+                            },
+                            "golCasa": 1,
+                            "golOspite": 1
                         },
                         {
                             "id": 5,
@@ -341,7 +389,13 @@
                                 "id": 5,
                                 "nome": "Longobarda united"
                             },
-                            "conclusa": false
+                            "conclusa": false,
+                            "andata": {
+                                "golCasa": 2,
+                                "golOspite": 3
+                            },
+                            "golCasa": 2,
+                            "golOspite": 3
                         },
                         {
                             "id": 6,
@@ -353,7 +407,13 @@
                                 "id": 20,
                                 "nome": "REVOLUTION"
                             },
-                            "conclusa": false
+                            "conclusa": false,
+                            "andata": {
+                                "golCasa": 2,
+                                "golOspite": 1
+                            },
+                            "golCasa": 2,
+                            "golOspite": 1
                         },
                         {
                             "id": 7,
@@ -365,7 +425,13 @@
                                 "id": 4,
                                 "nome": "Banana83"
                             },
-                            "conclusa": false
+                            "conclusa": false,
+                            "andata": {
+                                "golCasa": 1,
+                                "golOspite": 0
+                            },
+                            "golCasa": 1,
+                            "golOspite": 0
                         },
                         {
                             "id": 8,
@@ -377,7 +443,13 @@
                                 "id": 3,
                                 "nome": "Spera Ebbasta"
                             },
-                            "conclusa": false
+                            "conclusa": false,
+                            "andata": {
+                                "golCasa": 2,
+                                "golOspite": 2
+                            },
+                            "golCasa": 2,
+                            "golOspite": 2
                         }
                     ]
                 },
@@ -834,6 +906,14 @@
                     "nome": "DG Team",
                     "border": "#3C3D3D",
                     "punteggio": 89.5
+                },
+                {
+                    "id": 8,
+                    "titolo": "Giornata 8",
+                    "id_S": 5,
+                    "nome": "Longobarda united",
+                    "border": "#EC7074",
+                    "punteggio": 81.0
                 }
             ]
         },
@@ -1267,15 +1347,1487 @@
         },
         {
             "id": 11,
-            "nome": "Champions League"
+            "nome": "Champions League",
+            "partecipanti": [
+                {
+                    "id": 2,
+                    "nome": "FC Santo Stefano",
+                    "border": "#F78A8A",
+                    "girone": "A",
+                    "posizione": 1,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 5,
+                    "nome": "Longobarda united",
+                    "border": "#EC7074",
+                    "girone": "A",
+                    "posizione": 2,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 16,
+                    "nome": "Zanzibar",
+                    "border": "#FA0F1E",
+                    "girone": "A",
+                    "posizione": 3,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 22,
+                    "nome": "DG Team",
+                    "border": "#3C3D3D",
+                    "girone": "A",
+                    "posizione": 4,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 3,
+                    "nome": "Spera Ebbasta",
+                    "border": "#5D2A82",
+                    "girone": "B",
+                    "posizione": 1,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 13,
+                    "nome": "SenzaNome",
+                    "border": "#393C3D",
+                    "girone": "B",
+                    "posizione": 2,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 17,
+                    "nome": "FC TORETTO",
+                    "border": "#F92734",
+                    "girone": "B",
+                    "posizione": 3,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 24,
+                    "nome": "MESSI MALE FC",
+                    "border": "#10499E",
+                    "girone": "B",
+                    "posizione": 4,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                }
+            ],
+            "turni": [
+                {
+                    "id": "g1",
+                    "fase": "gironi",
+                    "nome": "Andata · 1ª",
+                    "partite": [
+                        {
+                            "id": 1,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 2,
+                                "nome": "FC Santo Stefano"
+                            },
+                            "squadraOspite": {
+                                "id": 16,
+                                "nome": "Zanzibar"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 2,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 5,
+                                "nome": "Longobarda united"
+                            },
+                            "squadraOspite": {
+                                "id": 22,
+                                "nome": "DG Team"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 13,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 17,
+                                "nome": "FC TORETTO"
+                            },
+                            "squadraOspite": {
+                                "id": 3,
+                                "nome": "Spera Ebbasta"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 14,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 13,
+                                "nome": "SenzaNome"
+                            },
+                            "squadraOspite": {
+                                "id": 24,
+                                "nome": "MESSI MALE FC"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g2",
+                    "fase": "gironi",
+                    "nome": "Andata · 2ª",
+                    "partite": [
+                        {
+                            "id": 3,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 22,
+                                "nome": "DG Team"
+                            },
+                            "squadraOspite": {
+                                "id": 2,
+                                "nome": "FC Santo Stefano"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 4,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 16,
+                                "nome": "Zanzibar"
+                            },
+                            "squadraOspite": {
+                                "id": 5,
+                                "nome": "Longobarda united"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 15,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 3,
+                                "nome": "Spera Ebbasta"
+                            },
+                            "squadraOspite": {
+                                "id": 13,
+                                "nome": "SenzaNome"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 16,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 24,
+                                "nome": "MESSI MALE FC"
+                            },
+                            "squadraOspite": {
+                                "id": 17,
+                                "nome": "FC TORETTO"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g3",
+                    "fase": "gironi",
+                    "nome": "Andata · 3ª",
+                    "partite": [
+                        {
+                            "id": 5,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 22,
+                                "nome": "DG Team"
+                            },
+                            "squadraOspite": {
+                                "id": 16,
+                                "nome": "Zanzibar"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 6,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 5,
+                                "nome": "Longobarda united"
+                            },
+                            "squadraOspite": {
+                                "id": 2,
+                                "nome": "FC Santo Stefano"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 17,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 24,
+                                "nome": "MESSI MALE FC"
+                            },
+                            "squadraOspite": {
+                                "id": 3,
+                                "nome": "Spera Ebbasta"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 18,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 13,
+                                "nome": "SenzaNome"
+                            },
+                            "squadraOspite": {
+                                "id": 17,
+                                "nome": "FC TORETTO"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g4",
+                    "fase": "gironi",
+                    "nome": "Ritorno · 1ª",
+                    "partite": [
+                        {
+                            "id": 7,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 16,
+                                "nome": "Zanzibar"
+                            },
+                            "squadraOspite": {
+                                "id": 2,
+                                "nome": "FC Santo Stefano"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 8,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 22,
+                                "nome": "DG Team"
+                            },
+                            "squadraOspite": {
+                                "id": 5,
+                                "nome": "Longobarda united"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 19,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 3,
+                                "nome": "Spera Ebbasta"
+                            },
+                            "squadraOspite": {
+                                "id": 17,
+                                "nome": "FC TORETTO"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 20,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 24,
+                                "nome": "MESSI MALE FC"
+                            },
+                            "squadraOspite": {
+                                "id": 13,
+                                "nome": "SenzaNome"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g5",
+                    "fase": "gironi",
+                    "nome": "Ritorno · 2ª",
+                    "partite": [
+                        {
+                            "id": 9,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 2,
+                                "nome": "FC Santo Stefano"
+                            },
+                            "squadraOspite": {
+                                "id": 22,
+                                "nome": "DG Team"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 10,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 5,
+                                "nome": "Longobarda united"
+                            },
+                            "squadraOspite": {
+                                "id": 16,
+                                "nome": "Zanzibar"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 21,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 13,
+                                "nome": "SenzaNome"
+                            },
+                            "squadraOspite": {
+                                "id": 3,
+                                "nome": "Spera Ebbasta"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 22,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 17,
+                                "nome": "FC TORETTO"
+                            },
+                            "squadraOspite": {
+                                "id": 24,
+                                "nome": "MESSI MALE FC"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g6",
+                    "fase": "gironi",
+                    "nome": "Ritorno · 3ª",
+                    "partite": [
+                        {
+                            "id": 11,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 16,
+                                "nome": "Zanzibar"
+                            },
+                            "squadraOspite": {
+                                "id": 22,
+                                "nome": "DG Team"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 12,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 2,
+                                "nome": "FC Santo Stefano"
+                            },
+                            "squadraOspite": {
+                                "id": 5,
+                                "nome": "Longobarda united"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 23,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 3,
+                                "nome": "Spera Ebbasta"
+                            },
+                            "squadraOspite": {
+                                "id": 24,
+                                "nome": "MESSI MALE FC"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 24,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 17,
+                                "nome": "FC TORETTO"
+                            },
+                            "squadraOspite": {
+                                "id": 13,
+                                "nome": "SenzaNome"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "t1",
+                    "fase": "tabellone",
+                    "nome": "Semifinali",
+                    "partite": [
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "id": "t2",
+                    "fase": "tabellone",
+                    "nome": "Finale",
+                    "partite": [
+                        null
+                    ]
+                }
+            ]
         },
         {
             "id": 12,
-            "nome": "Europa League"
+            "nome": "Europa League",
+            "partecipanti": [
+                {
+                    "id": 1,
+                    "nome": "FC Carmine",
+                    "border": "#652D8E",
+                    "girone": "A",
+                    "posizione": 1,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 23,
+                    "nome": "HAPPY MILF FC",
+                    "border": "#CD0A16",
+                    "girone": "A",
+                    "posizione": 2,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 15,
+                    "nome": "all in - quae intus",
+                    "border": "#6A3394",
+                    "girone": "A",
+                    "posizione": 3,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 14,
+                    "nome": "G.s.11",
+                    "border": "#5CADA7",
+                    "girone": "A",
+                    "posizione": 4,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 8,
+                    "nome": "TenenteRagno",
+                    "border": "#990B5A",
+                    "girone": "B",
+                    "posizione": 1,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 12,
+                    "nome": "Amala fc",
+                    "border": "#E9484E",
+                    "girone": "B",
+                    "posizione": 2,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 7,
+                    "nome": "A.C. Marchigiana",
+                    "border": "#E9262E",
+                    "girone": "B",
+                    "posizione": 3,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 20,
+                    "nome": "REVOLUTION",
+                    "border": "#901F1F",
+                    "girone": "B",
+                    "posizione": 4,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                }
+            ],
+            "turni": [
+                {
+                    "id": "g1",
+                    "fase": "gironi",
+                    "nome": "Andata · 1ª",
+                    "partite": [
+                        {
+                            "id": 1,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 1,
+                                "nome": "FC Carmine"
+                            },
+                            "squadraOspite": {
+                                "id": 23,
+                                "nome": "HAPPY MILF FC"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 2,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 15,
+                                "nome": "all in - quae intus"
+                            },
+                            "squadraOspite": {
+                                "id": 14,
+                                "nome": "G.s.11"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 13,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 8,
+                                "nome": "TenenteRagno"
+                            },
+                            "squadraOspite": {
+                                "id": 12,
+                                "nome": "Amala fc"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 14,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 7,
+                                "nome": "A.C. Marchigiana"
+                            },
+                            "squadraOspite": {
+                                "id": 20,
+                                "nome": "REVOLUTION"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g2",
+                    "fase": "gironi",
+                    "nome": "Andata · 2ª",
+                    "partite": [
+                        {
+                            "id": 3,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 14,
+                                "nome": "G.s.11"
+                            },
+                            "squadraOspite": {
+                                "id": 1,
+                                "nome": "FC Carmine"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 4,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 23,
+                                "nome": "HAPPY MILF FC"
+                            },
+                            "squadraOspite": {
+                                "id": 15,
+                                "nome": "all in - quae intus"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 15,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 20,
+                                "nome": "REVOLUTION"
+                            },
+                            "squadraOspite": {
+                                "id": 8,
+                                "nome": "TenenteRagno"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 16,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 12,
+                                "nome": "Amala fc"
+                            },
+                            "squadraOspite": {
+                                "id": 7,
+                                "nome": "A.C. Marchigiana"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g3",
+                    "fase": "gironi",
+                    "nome": "Andata · 3ª",
+                    "partite": [
+                        {
+                            "id": 5,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 14,
+                                "nome": "G.s.11"
+                            },
+                            "squadraOspite": {
+                                "id": 23,
+                                "nome": "HAPPY MILF FC"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 6,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 15,
+                                "nome": "all in - quae intus"
+                            },
+                            "squadraOspite": {
+                                "id": 1,
+                                "nome": "FC Carmine"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 17,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 20,
+                                "nome": "REVOLUTION"
+                            },
+                            "squadraOspite": {
+                                "id": 12,
+                                "nome": "Amala fc"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 18,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 7,
+                                "nome": "A.C. Marchigiana"
+                            },
+                            "squadraOspite": {
+                                "id": 8,
+                                "nome": "TenenteRagno"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g4",
+                    "fase": "gironi",
+                    "nome": "Ritorno · 1ª",
+                    "partite": [
+                        {
+                            "id": 7,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 23,
+                                "nome": "HAPPY MILF FC"
+                            },
+                            "squadraOspite": {
+                                "id": 1,
+                                "nome": "FC Carmine"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 8,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 14,
+                                "nome": "G.s.11"
+                            },
+                            "squadraOspite": {
+                                "id": 15,
+                                "nome": "all in - quae intus"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 19,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 12,
+                                "nome": "Amala fc"
+                            },
+                            "squadraOspite": {
+                                "id": 8,
+                                "nome": "TenenteRagno"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 20,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 20,
+                                "nome": "REVOLUTION"
+                            },
+                            "squadraOspite": {
+                                "id": 7,
+                                "nome": "A.C. Marchigiana"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g5",
+                    "fase": "gironi",
+                    "nome": "Ritorno · 2ª",
+                    "partite": [
+                        {
+                            "id": 9,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 1,
+                                "nome": "FC Carmine"
+                            },
+                            "squadraOspite": {
+                                "id": 14,
+                                "nome": "G.s.11"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 10,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 15,
+                                "nome": "all in - quae intus"
+                            },
+                            "squadraOspite": {
+                                "id": 23,
+                                "nome": "HAPPY MILF FC"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 21,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 8,
+                                "nome": "TenenteRagno"
+                            },
+                            "squadraOspite": {
+                                "id": 20,
+                                "nome": "REVOLUTION"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 22,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 7,
+                                "nome": "A.C. Marchigiana"
+                            },
+                            "squadraOspite": {
+                                "id": 12,
+                                "nome": "Amala fc"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g6",
+                    "fase": "gironi",
+                    "nome": "Ritorno · 3ª",
+                    "partite": [
+                        {
+                            "id": 11,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 23,
+                                "nome": "HAPPY MILF FC"
+                            },
+                            "squadraOspite": {
+                                "id": 14,
+                                "nome": "G.s.11"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 12,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 1,
+                                "nome": "FC Carmine"
+                            },
+                            "squadraOspite": {
+                                "id": 15,
+                                "nome": "all in - quae intus"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 23,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 12,
+                                "nome": "Amala fc"
+                            },
+                            "squadraOspite": {
+                                "id": 20,
+                                "nome": "REVOLUTION"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 24,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 8,
+                                "nome": "TenenteRagno"
+                            },
+                            "squadraOspite": {
+                                "id": 7,
+                                "nome": "A.C. Marchigiana"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "t1",
+                    "fase": "tabellone",
+                    "nome": "Quarti di finale",
+                    "partite": [
+                        null,
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "id": "t2",
+                    "fase": "tabellone",
+                    "nome": "Semifinali",
+                    "partite": [
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "id": "t3",
+                    "fase": "tabellone",
+                    "nome": "Finale",
+                    "partite": [
+                        null
+                    ]
+                }
+            ]
         },
         {
             "id": 13,
-            "nome": "Conference League"
+            "nome": "Conference League",
+            "partecipanti": [
+                {
+                    "id": 6,
+                    "nome": "San Marino",
+                    "border": "#ACE2F9",
+                    "girone": "A",
+                    "posizione": 1,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 9,
+                    "nome": "Hertha Vernello VII - La maturazione",
+                    "border": "#773448",
+                    "girone": "A",
+                    "posizione": 2,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 4,
+                    "nome": "Banana83",
+                    "border": "#FAD7D7",
+                    "girone": "A",
+                    "posizione": 3,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 11,
+                    "nome": "Squarta Praga",
+                    "border": "#550808",
+                    "girone": "A",
+                    "posizione": 4,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 18,
+                    "nome": "Sgherza s  Fc",
+                    "border": "#0B0FFF",
+                    "girone": "B",
+                    "posizione": 1,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 19,
+                    "nome": "AG13 FC",
+                    "border": "#1DA6E0",
+                    "girone": "B",
+                    "posizione": 2,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 21,
+                    "nome": "VeroMat29",
+                    "border": "#2AF4F3",
+                    "girone": "B",
+                    "posizione": 3,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                },
+                {
+                    "id": 10,
+                    "nome": "sam PDOR",
+                    "border": "#0B22F4",
+                    "girone": "B",
+                    "posizione": 4,
+                    "punteggio": 0,
+                    "giocate": 0,
+                    "vinte": 0,
+                    "pari": 0,
+                    "perso": 0,
+                    "gf": 0,
+                    "gs": 0
+                }
+            ],
+            "turni": [
+                {
+                    "id": "g1",
+                    "fase": "gironi",
+                    "nome": "Andata · 1ª",
+                    "partite": [
+                        {
+                            "id": 1,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 6,
+                                "nome": "San Marino"
+                            },
+                            "squadraOspite": {
+                                "id": 9,
+                                "nome": "Hertha Vernello VII - La maturazione"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 2,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 4,
+                                "nome": "Banana83"
+                            },
+                            "squadraOspite": {
+                                "id": 11,
+                                "nome": "Squarta Praga"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 13,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 18,
+                                "nome": "Sgherza s  Fc"
+                            },
+                            "squadraOspite": {
+                                "id": 19,
+                                "nome": "AG13 FC"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 14,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 21,
+                                "nome": "VeroMat29"
+                            },
+                            "squadraOspite": {
+                                "id": 10,
+                                "nome": "sam PDOR"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g2",
+                    "fase": "gironi",
+                    "nome": "Andata · 2ª",
+                    "partite": [
+                        {
+                            "id": 3,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 11,
+                                "nome": "Squarta Praga"
+                            },
+                            "squadraOspite": {
+                                "id": 6,
+                                "nome": "San Marino"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 4,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 9,
+                                "nome": "Hertha Vernello VII - La maturazione"
+                            },
+                            "squadraOspite": {
+                                "id": 4,
+                                "nome": "Banana83"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 15,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 10,
+                                "nome": "sam PDOR"
+                            },
+                            "squadraOspite": {
+                                "id": 18,
+                                "nome": "Sgherza s  Fc"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 16,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 19,
+                                "nome": "AG13 FC"
+                            },
+                            "squadraOspite": {
+                                "id": 21,
+                                "nome": "VeroMat29"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g3",
+                    "fase": "gironi",
+                    "nome": "Andata · 3ª",
+                    "partite": [
+                        {
+                            "id": 5,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 11,
+                                "nome": "Squarta Praga"
+                            },
+                            "squadraOspite": {
+                                "id": 9,
+                                "nome": "Hertha Vernello VII - La maturazione"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 6,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 4,
+                                "nome": "Banana83"
+                            },
+                            "squadraOspite": {
+                                "id": 6,
+                                "nome": "San Marino"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 17,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 10,
+                                "nome": "sam PDOR"
+                            },
+                            "squadraOspite": {
+                                "id": 19,
+                                "nome": "AG13 FC"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 18,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 21,
+                                "nome": "VeroMat29"
+                            },
+                            "squadraOspite": {
+                                "id": 18,
+                                "nome": "Sgherza s  Fc"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g4",
+                    "fase": "gironi",
+                    "nome": "Ritorno · 1ª",
+                    "partite": [
+                        {
+                            "id": 7,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 9,
+                                "nome": "Hertha Vernello VII - La maturazione"
+                            },
+                            "squadraOspite": {
+                                "id": 6,
+                                "nome": "San Marino"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 8,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 11,
+                                "nome": "Squarta Praga"
+                            },
+                            "squadraOspite": {
+                                "id": 4,
+                                "nome": "Banana83"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 19,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 19,
+                                "nome": "AG13 FC"
+                            },
+                            "squadraOspite": {
+                                "id": 18,
+                                "nome": "Sgherza s  Fc"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 20,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 10,
+                                "nome": "sam PDOR"
+                            },
+                            "squadraOspite": {
+                                "id": 21,
+                                "nome": "VeroMat29"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g5",
+                    "fase": "gironi",
+                    "nome": "Ritorno · 2ª",
+                    "partite": [
+                        {
+                            "id": 9,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 6,
+                                "nome": "San Marino"
+                            },
+                            "squadraOspite": {
+                                "id": 11,
+                                "nome": "Squarta Praga"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 10,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 4,
+                                "nome": "Banana83"
+                            },
+                            "squadraOspite": {
+                                "id": 9,
+                                "nome": "Hertha Vernello VII - La maturazione"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 21,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 18,
+                                "nome": "Sgherza s  Fc"
+                            },
+                            "squadraOspite": {
+                                "id": 10,
+                                "nome": "sam PDOR"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 22,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 21,
+                                "nome": "VeroMat29"
+                            },
+                            "squadraOspite": {
+                                "id": 19,
+                                "nome": "AG13 FC"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "g6",
+                    "fase": "gironi",
+                    "nome": "Ritorno · 3ª",
+                    "partite": [
+                        {
+                            "id": 11,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 9,
+                                "nome": "Hertha Vernello VII - La maturazione"
+                            },
+                            "squadraOspite": {
+                                "id": 11,
+                                "nome": "Squarta Praga"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 12,
+                            "girone": "A",
+                            "squadraCasa": {
+                                "id": 6,
+                                "nome": "San Marino"
+                            },
+                            "squadraOspite": {
+                                "id": 4,
+                                "nome": "Banana83"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 23,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 19,
+                                "nome": "AG13 FC"
+                            },
+                            "squadraOspite": {
+                                "id": 10,
+                                "nome": "sam PDOR"
+                            },
+                            "conclusa": false
+                        },
+                        {
+                            "id": 24,
+                            "girone": "B",
+                            "squadraCasa": {
+                                "id": 18,
+                                "nome": "Sgherza s  Fc"
+                            },
+                            "squadraOspite": {
+                                "id": 21,
+                                "nome": "VeroMat29"
+                            },
+                            "conclusa": false
+                        }
+                    ]
+                },
+                {
+                    "id": "t1",
+                    "fase": "tabellone",
+                    "nome": "Semifinali",
+                    "partite": [
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "id": "t2",
+                    "fase": "tabellone",
+                    "nome": "Finale",
+                    "partite": [
+                        null
+                    ]
+                }
+            ]
         },
         {
             "id": 14,
@@ -1592,102 +3144,102 @@
                     "nome": "A.C. Marchigiana",
                     "border": "#E9262E",
                     "posizione": 1,
-                    "giocate": 7,
+                    "giocate": 8,
                     "vinte": 4,
                     "pari": 2,
-                    "perso": 1,
+                    "perso": 2,
                     "punteggio": 14,
                     "gf": 20,
-                    "gs": 14
+                    "gs": 16
                 },
                 {
                     "id": 18,
                     "nome": "Sgherza s  Fc",
                     "border": "#0B0FFF",
                     "posizione": 2,
-                    "giocate": 7,
-                    "vinte": 3,
+                    "giocate": 8,
+                    "vinte": 4,
                     "pari": 2,
                     "perso": 2,
-                    "punteggio": 11,
-                    "gf": 15,
-                    "gs": 13
+                    "punteggio": 14,
+                    "gf": 17,
+                    "gs": 14
                 },
                 {
                     "id": 16,
                     "nome": "Zanzibar",
                     "border": "#FA0F1E",
                     "posizione": 3,
-                    "giocate": 7,
-                    "vinte": 2,
+                    "giocate": 8,
+                    "vinte": 3,
                     "pari": 3,
                     "perso": 2,
-                    "punteggio": 9,
-                    "gf": 16,
-                    "gs": 16
-                },
-                {
-                    "id": 13,
-                    "nome": "SenzaNome",
-                    "border": "#393C3D",
-                    "posizione": 4,
-                    "giocate": 7,
-                    "vinte": 2,
-                    "pari": 3,
-                    "perso": 2,
-                    "punteggio": 9,
-                    "gf": 13,
-                    "gs": 13
-                },
-                {
-                    "id": 11,
-                    "nome": "Squarta Praga",
-                    "border": "#550808",
-                    "posizione": 5,
-                    "giocate": 7,
-                    "vinte": 2,
-                    "pari": 3,
-                    "perso": 2,
-                    "punteggio": 9,
-                    "gf": 10,
-                    "gs": 9
-                },
-                {
-                    "id": 10,
-                    "nome": "sam PDOR",
-                    "border": "#0B22F4",
-                    "posizione": 6,
-                    "giocate": 7,
-                    "vinte": 2,
-                    "pari": 2,
-                    "perso": 3,
-                    "punteggio": 8,
-                    "gf": 12,
-                    "gs": 15
+                    "punteggio": 12,
+                    "gf": 18,
+                    "gs": 17
                 },
                 {
                     "id": 8,
                     "nome": "TenenteRagno",
                     "border": "#990B5A",
-                    "posizione": 7,
-                    "giocate": 7,
-                    "vinte": 1,
+                    "posizione": 4,
+                    "giocate": 8,
+                    "vinte": 2,
                     "pari": 5,
                     "perso": 1,
-                    "punteggio": 8,
+                    "punteggio": 11,
+                    "gf": 17,
+                    "gs": 15
+                },
+                {
+                    "id": 13,
+                    "nome": "SenzaNome",
+                    "border": "#393C3D",
+                    "posizione": 5,
+                    "giocate": 8,
+                    "vinte": 2,
+                    "pari": 3,
+                    "perso": 3,
+                    "punteggio": 9,
                     "gf": 14,
                     "gs": 15
+                },
+                {
+                    "id": 11,
+                    "nome": "Squarta Praga",
+                    "border": "#550808",
+                    "posizione": 6,
+                    "giocate": 8,
+                    "vinte": 2,
+                    "pari": 3,
+                    "perso": 3,
+                    "punteggio": 9,
+                    "gf": 10,
+                    "gs": 12
+                },
+                {
+                    "id": 10,
+                    "nome": "sam PDOR",
+                    "border": "#0B22F4",
+                    "posizione": 7,
+                    "giocate": 8,
+                    "vinte": 2,
+                    "pari": 2,
+                    "perso": 4,
+                    "punteggio": 8,
+                    "gf": 13,
+                    "gs": 17
                 },
                 {
                     "id": 3,
                     "nome": "Spera Ebbasta",
                     "posizione": 8,
-                    "giocate": 7,
-                    "vinte": 0,
+                    "giocate": 8,
+                    "vinte": 1,
                     "pari": 4,
                     "perso": 3,
-                    "punteggio": 4,
-                    "gf": 13,
+                    "punteggio": 7,
+                    "gf": 15,
                     "gs": 18,
                     "border": "#5D2A82"
                 }
@@ -1720,6 +3272,34 @@
                     "ospite": 18,
                     "golCasa": 1,
                     "golOspite": 1
+                },
+                {
+                    "giornata": 8,
+                    "casa": 3,
+                    "ospite": 7,
+                    "golCasa": 2,
+                    "golOspite": 0
+                },
+                {
+                    "giornata": 8,
+                    "casa": 16,
+                    "ospite": 10,
+                    "golCasa": 2,
+                    "golOspite": 1
+                },
+                {
+                    "giornata": 8,
+                    "casa": 8,
+                    "ospite": 11,
+                    "golCasa": 3,
+                    "golOspite": 0
+                },
+                {
+                    "giornata": 8,
+                    "casa": 13,
+                    "ospite": 18,
+                    "golCasa": 1,
+                    "golOspite": 2
                 }
             ]
         },
@@ -1728,107 +3308,107 @@
             "nome": "Serie B",
             "partecipanti": [
                 {
-                    "id": 17,
-                    "nome": "FC TORETTO",
-                    "border": "#F92734",
-                    "posizione": 1,
-                    "giocate": 7,
-                    "vinte": 5,
-                    "pari": 0,
-                    "perso": 2,
-                    "punteggio": 15,
-                    "gf": 18,
-                    "gs": 11
-                },
-                {
                     "id": 21,
                     "nome": "VeroMat29",
                     "border": "#2AF4F3",
-                    "posizione": 2,
-                    "giocate": 7,
-                    "vinte": 3,
+                    "posizione": 1,
+                    "giocate": 8,
+                    "vinte": 4,
                     "pari": 3,
                     "perso": 1,
-                    "punteggio": 12,
-                    "gf": 13,
+                    "punteggio": 15,
+                    "gf": 14,
                     "gs": 12
+                },
+                {
+                    "id": 17,
+                    "nome": "FC TORETTO",
+                    "border": "#F92734",
+                    "posizione": 2,
+                    "giocate": 8,
+                    "vinte": 5,
+                    "pari": 0,
+                    "perso": 3,
+                    "punteggio": 15,
+                    "gf": 19,
+                    "gs": 13
                 },
                 {
                     "id": 15,
                     "nome": "all in - quae intus",
                     "border": "#6A3394",
                     "posizione": 3,
-                    "giocate": 7,
-                    "vinte": 3,
+                    "giocate": 8,
+                    "vinte": 4,
                     "pari": 2,
                     "perso": 2,
-                    "punteggio": 11,
-                    "gf": 16,
-                    "gs": 14
-                },
-                {
-                    "id": 1,
-                    "nome": "FC Carmine",
-                    "border": "#652D8E",
-                    "posizione": 4,
-                    "giocate": 7,
-                    "vinte": 3,
-                    "pari": 2,
-                    "perso": 2,
-                    "punteggio": 11,
-                    "gf": 14,
-                    "gs": 12
+                    "punteggio": 14,
+                    "gf": 18,
+                    "gs": 15
                 },
                 {
                     "id": 9,
                     "nome": "Hertha Vernello VII - La maturazione",
                     "border": "#773448",
-                    "posizione": 5,
-                    "giocate": 7,
-                    "vinte": 2,
+                    "posizione": 4,
+                    "giocate": 8,
+                    "vinte": 3,
                     "pari": 3,
                     "perso": 2,
-                    "punteggio": 9,
-                    "gf": 11,
-                    "gs": 11
+                    "punteggio": 12,
+                    "gf": 13,
+                    "gs": 12
+                },
+                {
+                    "id": 1,
+                    "nome": "FC Carmine",
+                    "border": "#652D8E",
+                    "posizione": 5,
+                    "giocate": 8,
+                    "vinte": 3,
+                    "pari": 2,
+                    "perso": 3,
+                    "punteggio": 11,
+                    "gf": 15,
+                    "gs": 14
                 },
                 {
                     "id": 23,
                     "nome": "HAPPY MILF FC",
                     "border": "#CD0A16",
                     "posizione": 6,
-                    "giocate": 7,
+                    "giocate": 8,
                     "vinte": 2,
                     "pari": 2,
-                    "perso": 3,
+                    "perso": 4,
                     "punteggio": 8,
                     "gf": 14,
-                    "gs": 15
+                    "gs": 17
                 },
                 {
                     "id": 4,
                     "nome": "Banana83",
                     "border": "#FAD7D7",
                     "posizione": 7,
-                    "giocate": 7,
+                    "giocate": 8,
                     "vinte": 2,
                     "pari": 1,
-                    "perso": 4,
+                    "perso": 5,
                     "punteggio": 7,
                     "gf": 9,
-                    "gs": 15
+                    "gs": 16
                 },
                 {
                     "id": 19,
                     "nome": "AG13 FC",
                     "border": "#1DA6E0",
                     "posizione": 8,
-                    "giocate": 7,
-                    "vinte": 0,
+                    "giocate": 8,
+                    "vinte": 1,
                     "pari": 3,
                     "perso": 4,
-                    "punteggio": 3,
-                    "gf": 12,
+                    "punteggio": 6,
+                    "gf": 14,
                     "gs": 17
                 }
             ],
@@ -1860,6 +3440,34 @@
                     "ospite": 4,
                     "golCasa": 3,
                     "golOspite": 0
+                },
+                {
+                    "giornata": 8,
+                    "casa": 4,
+                    "ospite": 21,
+                    "golCasa": 0,
+                    "golOspite": 1
+                },
+                {
+                    "giornata": 8,
+                    "casa": 9,
+                    "ospite": 17,
+                    "golCasa": 2,
+                    "golOspite": 1
+                },
+                {
+                    "giornata": 8,
+                    "casa": 23,
+                    "ospite": 19,
+                    "golCasa": 0,
+                    "golOspite": 2
+                },
+                {
+                    "giornata": 8,
+                    "casa": 1,
+                    "ospite": 15,
+                    "golCasa": 1,
+                    "golOspite": 2
                 }
             ]
         },
@@ -1872,90 +3480,90 @@
                     "nome": "DG Team",
                     "border": "#3C3D3D",
                     "posizione": 1,
-                    "giocate": 7,
+                    "giocate": 8,
                     "vinte": 7,
                     "pari": 0,
-                    "perso": 0,
+                    "perso": 1,
                     "punteggio": 21,
-                    "gf": 23,
-                    "gs": 9
+                    "gf": 24,
+                    "gs": 12
                 },
                 {
                     "id": 14,
                     "nome": "G.s.11",
                     "border": "#5CADA7",
                     "posizione": 2,
-                    "giocate": 7,
+                    "giocate": 8,
                     "vinte": 5,
                     "pari": 0,
-                    "perso": 2,
+                    "perso": 3,
                     "punteggio": 15,
-                    "gf": 16,
-                    "gs": 10
+                    "gf": 17,
+                    "gs": 13
                 },
                 {
                     "id": 24,
                     "nome": "MESSI MALE FC",
                     "border": "#10499E",
                     "posizione": 3,
-                    "giocate": 7,
+                    "giocate": 8,
                     "vinte": 4,
                     "pari": 1,
-                    "perso": 2,
+                    "perso": 3,
                     "punteggio": 13,
                     "gf": 17,
-                    "gs": 15
-                },
-                {
-                    "id": 12,
-                    "nome": "Amala fc",
-                    "border": "#E9484E",
-                    "posizione": 4,
-                    "giocate": 7,
-                    "vinte": 2,
-                    "pari": 1,
-                    "perso": 4,
-                    "punteggio": 7,
-                    "gf": 16,
-                    "gs": 18
-                },
-                {
-                    "id": 2,
-                    "nome": "FC Santo Stefano",
-                    "border": "#F78A8A",
-                    "posizione": 5,
-                    "giocate": 7,
-                    "vinte": 2,
-                    "pari": 1,
-                    "perso": 4,
-                    "punteggio": 7,
-                    "gf": 15,
-                    "gs": 18
+                    "gs": 16
                 },
                 {
                     "id": 20,
                     "nome": "REVOLUTION",
                     "border": "#901F1F",
-                    "posizione": 6,
-                    "giocate": 7,
-                    "vinte": 2,
+                    "posizione": 4,
+                    "giocate": 8,
+                    "vinte": 3,
                     "pari": 1,
                     "perso": 4,
-                    "punteggio": 7,
-                    "gf": 13,
+                    "punteggio": 10,
+                    "gf": 14,
+                    "gs": 19
+                },
+                {
+                    "id": 12,
+                    "nome": "Amala fc",
+                    "border": "#E9484E",
+                    "posizione": 5,
+                    "giocate": 8,
+                    "vinte": 3,
+                    "pari": 1,
+                    "perso": 4,
+                    "punteggio": 10,
+                    "gf": 19,
                     "gs": 19
                 },
                 {
                     "id": 5,
                     "nome": "Longobarda united",
                     "border": "#EC7074",
-                    "posizione": 7,
-                    "giocate": 7,
-                    "vinte": 2,
+                    "posizione": 6,
+                    "giocate": 8,
+                    "vinte": 3,
                     "pari": 1,
                     "perso": 4,
+                    "punteggio": 10,
+                    "gf": 14,
+                    "gs": 21
+                },
+                {
+                    "id": 2,
+                    "nome": "FC Santo Stefano",
+                    "border": "#F78A8A",
+                    "posizione": 7,
+                    "giocate": 8,
+                    "vinte": 2,
+                    "pari": 1,
+                    "perso": 5,
                     "punteggio": 7,
-                    "gf": 11,
+                    "gf": 16,
                     "gs": 20
                 },
                 {
@@ -1963,13 +3571,13 @@
                     "nome": "San Marino",
                     "border": "#ACE2F9",
                     "posizione": 8,
-                    "giocate": 7,
-                    "vinte": 1,
+                    "giocate": 8,
+                    "vinte": 2,
                     "pari": 1,
                     "perso": 5,
-                    "punteggio": 4,
-                    "gf": 13,
-                    "gs": 15
+                    "punteggio": 7,
+                    "gf": 15,
+                    "gs": 16
                 }
             ],
             "risultati": [
@@ -1999,6 +3607,34 @@
                     "casa": 14,
                     "ospite": 2,
                     "golCasa": 2,
+                    "golOspite": 1
+                },
+                {
+                    "giornata": 8,
+                    "casa": 2,
+                    "ospite": 6,
+                    "golCasa": 1,
+                    "golOspite": 2
+                },
+                {
+                    "giornata": 8,
+                    "casa": 14,
+                    "ospite": 12,
+                    "golCasa": 1,
+                    "golOspite": 3
+                },
+                {
+                    "giornata": 8,
+                    "casa": 22,
+                    "ospite": 5,
+                    "golCasa": 1,
+                    "golOspite": 3
+                },
+                {
+                    "giornata": 8,
+                    "casa": 24,
+                    "ospite": 20,
+                    "golCasa": 0,
                     "golOspite": 1
                 }
             ]

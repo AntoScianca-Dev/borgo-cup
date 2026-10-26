@@ -3,7 +3,7 @@
         {
             "id": 0,
             "stato": "None",
-            "giornataA": 7
+            "giornataA": 8
         },
         {
             "id": 1,
@@ -12,12 +12,18 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "38' gironata di serie A",
-            "avanzamento": 18.4,
+            "avanzamento": 21.1,
             "totale": 38,
-            "giornata": 7,
+            "giornata": 8,
             "img": "/images/campionato.png",
             "link": "/campionato",
-            "squadre": 24
+            "squadre": 24,
+            "giornateA": [
+                {
+                    "da": 1,
+                    "a": 38
+                }
+            ]
         },
         {
             "id": 2,
@@ -41,22 +47,36 @@
             "giornata": 0,
             "img": "images/sup_cop_EUR.png",
             "link": "/supercoppaEur",
-            "squadre": 2
+            "squadre": 2,
+            "giornateA": [
+                35
+            ]
         },
         {
             "id": 5,
             "nome": "Coppa Italia",
-            "stato": "In attesa",
+            "stato": "Attivo",
             "gInizio": 8,
             "inizio": "8' giornata di serie A",
             "fine": "32' giornata di serie A",
-            "avanzamento": 0.0,
+            "avanzamento": 11.1,
             "totale": 9,
-            "giornata": 0,
+            "giornata": 1,
             "img": "/images/coppa_Italia.png",
             "link": "/coppaIta",
             "squadre": 24,
-            "info": "SI"
+            "info": "SI",
+            "giornateA": [
+                8,
+                11,
+                14,
+                17,
+                20,
+                23,
+                26,
+                29,
+                33
+            ]
         },
         {
             "id": 6,
@@ -69,7 +89,10 @@
             "giornata": 0,
             "img": "/images/sup_cop_ITA.png",
             "link": "/supercoppaIta",
-            "squadre": 2
+            "squadre": 2,
+            "giornateA": [
+                37
+            ]
         },
         {
             "id": 7,
@@ -83,7 +106,14 @@
             "giornata": 3,
             "img": "/images/survivor.png",
             "link": "/survivor",
-            "squadre": 24
+            "squadre": 24,
+            "giornateA": [
+                {
+                    "da": 3,
+                    "a": 29,
+                    "passo": 2
+                }
+            ]
         },
         {
             "id": 8,
@@ -97,12 +127,18 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "38' gironata di serie A",
-            "avanzamento": 18.4,
+            "avanzamento": 21.1,
             "totale": 38,
-            "giornata": 7,
+            "giornata": 8,
             "icon": "🔝",
             "link": "/punteggio",
-            "squadre": 24
+            "squadre": 24,
+            "giornateA": [
+                {
+                    "da": 1,
+                    "a": 38
+                }
+            ]
         },
         {
             "id": 10,
@@ -116,7 +152,13 @@
             "giornata": 5,
             "icon": "🌍",
             "link": "/preliminari",
-            "squadre": 24
+            "squadre": 24,
+            "giornateA": [
+                {
+                    "da": 3,
+                    "a": 7
+                }
+            ]
         },
         {
             "id": 11,
@@ -125,12 +167,20 @@
             "gInizio": 9,
             "inizio": "9' giornata di serie A",
             "fine": "33' giornata di serie A",
-            "avanzamento": 0,
+            "avanzamento": 0.0,
             "totale": 9,
             "giornata": 0,
             "img": "/images/champions.png",
             "link": "/championsLeague",
-            "squadre": 8
+            "squadre": 8,
+            "info": "SI",
+            "giornateA": [
+                {
+                    "da": 9,
+                    "a": 33,
+                    "passo": 3
+                }
+            ]
         },
         {
             "id": 12,
@@ -139,12 +189,26 @@
             "gInizio": 9,
             "inizio": "9' giornata di serie A",
             "fine": "33' giornata di serie A",
-            "avanzamento": 0,
+            "avanzamento": 0.0,
             "totale": 11,
             "giornata": 0,
             "img": "/images/europaLeague.png",
             "link": "/europaLeague",
-            "squadre": 8
+            "squadre": 8,
+            "info": "SI",
+            "giornateA": [
+                9,
+                12,
+                15,
+                18,
+                21,
+                24,
+                27,
+                28,
+                30,
+                31,
+                33
+            ]
         },
         {
             "id": 13,
@@ -153,12 +217,20 @@
             "gInizio": 9,
             "inizio": "9' giornata di serie A",
             "fine": "33' giornata di serie A",
-            "avanzamento": 0,
+            "avanzamento": 0.0,
             "totale": 9,
             "giornata": 0,
             "img": "/images/conference.png",
-            "link": "conferenceLeague",
-            "squadre": 8
+            "link": "/conferenceLeague",
+            "squadre": 8,
+            "info": "SI",
+            "giornateA": [
+                {
+                    "da": 9,
+                    "a": 33,
+                    "passo": 3
+                }
+            ]
         },
         {
             "id": 14,
@@ -172,7 +244,13 @@
             "giornata": 5,
             "img": "/images/squid.png",
             "link": "/squidGame1",
-            "squadre": 24
+            "squadre": 24,
+            "giornateA": [
+                {
+                    "da": 1,
+                    "a": 5
+                }
+            ]
         },
         {
             "id": 15,
@@ -186,7 +264,13 @@
             "giornata": 0,
             "img": "/images/squid.png",
             "link": "/squidGame2",
-            "squadre": 24
+            "squadre": 24,
+            "giornateA": [
+                {
+                    "da": 11,
+                    "a": 15
+                }
+            ]
         },
         {
             "id": 16,
@@ -200,7 +284,13 @@
             "giornata": 0,
             "img": "/images/squid.png",
             "link": "/squidGame3",
-            "squadre": 24
+            "squadre": 24,
+            "giornateA": [
+                {
+                    "da": 21,
+                    "a": 25
+                }
+            ]
         },
         {
             "id": 17,
@@ -214,7 +304,13 @@
             "giornata": 0,
             "img": "/images/squid.png",
             "link": "/squidGame4",
-            "squadre": 24
+            "squadre": 24,
+            "giornateA": [
+                {
+                    "da": 31,
+                    "a": 35
+                }
+            ]
         },
         {
             "id": 18,
@@ -223,12 +319,18 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 20.0,
+            "avanzamento": 22.9,
             "totale": 35,
-            "giornata": 7,
+            "giornata": 8,
             "img": "/images/serieA.png",
             "link": "/serieA",
-            "squadre": 8
+            "squadre": 8,
+            "giornateA": [
+                {
+                    "da": 1,
+                    "a": 35
+                }
+            ]
         },
         {
             "id": 19,
@@ -237,12 +339,18 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 20.0,
+            "avanzamento": 22.9,
             "totale": 35,
-            "giornata": 7,
+            "giornata": 8,
             "img": "/images/serieB.png",
             "link": "/serieB",
-            "squadre": 8
+            "squadre": 8,
+            "giornateA": [
+                {
+                    "da": 1,
+                    "a": 35
+                }
+            ]
         },
         {
             "id": 20,
@@ -251,12 +359,18 @@
             "gInizio": 1,
             "inizio": "1' giornata di serie A",
             "fine": "35' giornata di serie A",
-            "avanzamento": 20.0,
+            "avanzamento": 22.9,
             "totale": 35,
-            "giornata": 7,
+            "giornata": 8,
             "img": "/images/serieC.png",
             "link": "/serieC",
-            "squadre": 8
+            "squadre": 8,
+            "giornateA": [
+                {
+                    "da": 1,
+                    "a": 35
+                }
+            ]
         }
     ]
 }
