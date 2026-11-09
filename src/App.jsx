@@ -39,6 +39,7 @@ export default function App() {
             <Route path='/competizioni/serieC' element={<SerieABC id={20} /> } />
             <Route path='/competizioni/punteggio' element={<PunteggioTop/> } />
             <Route path='/competizioni/squidGame1' element={<Squid id={14}/> } />
+            <Route path='/competizioni/squidGame2' element={<Squid id={15}/> } />
             <Route path='/competizioni/preliminari' element={<PreliminariCE/> } />
             <Route path='/competizioni/survivor' element={<Survivor /> } />
             <Route path='/competizioni/coppaIta' element={<CoppaItalia /> } />

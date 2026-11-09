@@ -6,6 +6,7 @@ from coppa_italia import aggiorna_coppa_italia
 from giornata_lega import NOME_CAMPIONATO, NOME_TOP, aggiorna_giornata_lega
 from survivor_cup import NOME_SURVIVOR, aggiorna_survivor_cup
 from gironi import NOMI_GIRONI, aggiorna_gironi
+from squid_game import aggiorna_squid_game_cup
 
 FILE_PATH = "src/assets/data/classifiche.json"
 FILE_SQUADRE_PATH = "src/assets/data/squadre.json"
@@ -50,39 +51,39 @@ def aggiorna_giornata_serie_a(data_comp):
 # HANDLERS SPECIFICI PER COMPETIZIONE
 # -------------------------------------------------------------
 
-def aggiorna_squid_game_cup(comp, data_comp):
-    soglie = {1: 70.0, 2: 73.0, 3: 75.0, 4: 78.0, 5: 80.0}
+# def aggiorna_squid_game_cup(comp, data_comp):
+#     soglie = {1: 70.0, 2: 73.0, 3: 75.0, 4: 78.0, 5: 80.0}
 
-    print(f"\n--- Aggiornamento: {comp['nome']} ---")
-    while True:
-        step = input_int("Seleziona Step da aggiornare (1, 2, 3, 4, 5): ")
-        if step in soglie:
-            break
-        print("❌ Step non valido. Inserisci un valore compreso tra 1 e 5.")
+#     print(f"\n--- Aggiornamento: {comp['nome']} ---")
+#     while True:
+#         step = input_int("Seleziona Step da aggiornare (1, 2, 3, 4, 5): ")
+#         if step in soglie:
+#             break
+#         print("❌ Step non valido. Inserisci un valore compreso tra 1 e 5.")
 
-    sincronizza_competizione(data_comp, comp["nome"], step)
+#     sincronizza_competizione(data_comp, comp["nome"], step)
 
-    soglia = soglie[step]
-    chiave_step = f"step{step}"
-    partecipanti = comp.get("partecipanti", [])
+#     soglia = soglie[step]
+#     chiave_step = f"step{step}"
+#     partecipanti = comp.get("partecipanti", [])
 
-    partecipanti_ordinati = sorted(partecipanti, key=lambda x: x.get("punteggio", 0), reverse=True)
+#     partecipanti_ordinati = sorted(partecipanti, key=lambda x: x.get("punteggio", 0), reverse=True)
 
-    for p in partecipanti_ordinati:
-        stato_attuale = str(p.get("attivo", "")).upper()
-        if stato_attuale not in ["SI", "ATTIVO", "TRUE"]:
-            continue
+#     for p in partecipanti_ordinati:
+#         stato_attuale = str(p.get("attivo", "")).upper()
+#         if stato_attuale not in ["SI", "ATTIVO", "TRUE"]:
+#             continue
 
-        print(f"\n>> Partecipante: {p['nome']}")
-        punteggio = input_float(f"  Inserisci punteggio per {chiave_step}: ")
+#         print(f"\n>> Partecipante: {p['nome']}")
+#         punteggio = input_float(f"  Inserisci punteggio per {chiave_step}: ")
         
-        p[chiave_step] = punteggio
-        p["punteggio"] = punteggio
+#         p[chiave_step] = punteggio
+#         p["punteggio"] = punteggio
 
-        if punteggio >= soglia:
-            p["attivo"] = "SI"
-        else:
-            p["attivo"] = "NO"
+#         if punteggio >= soglia:
+#             p["attivo"] = "SI"
+#         else:
+#             p["attivo"] = "NO"
 
 # -------------------------------------------------------------
 # MAIN CLI
@@ -137,7 +138,7 @@ def main():
         elif nome_comp in NOMI_GIRONI:
             aggiorna_gironi(comp_scelta, data_competizioni)
         elif nome_comp[:14] == "Squid Game Cup":
-            aggiorna_squid_game_cup(comp_scelta, data_competizioni)
+            aggiorna_squid_game_cup(comp_scelta, squadre, data_competizioni, classifiche)
         elif nome_comp in FORMATO_COPPE:
             aggiorna_coppa_europea(comp_scelta, squadre, data_competizioni, classifiche)
         elif nome_comp == "Coppa Italia":
